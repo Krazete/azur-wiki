@@ -1,0 +1,216 @@
+import os
+import json
+
+dirName = 'EN/ShareCfg'
+child = {}
+
+def dl_child():
+    '''Downloads JSON files relevant to "Project Identity: TB" from AzurLaneTools' AzurLaneData repository.'''
+    from github import Github
+    repo = Github().get_repo('AzurLaneTools/AzurLaneData')
+    contents = repo.get_contents(dirName)
+
+    os.makedirs(dirName, exist_ok=True)
+    for content in contents:
+        if content.name.startswith('child_'):
+            with open('{}/{}'.format(dirName, content.name), 'w', encoding='utf-8') as fp:
+                fp.write(content.decoded_content)
+
+def init_child():
+    import json
+    for fileName in os.listdir(dirName):
+        if fileName.startswith('child_') and fileName.endswith('.json'):
+            suffix = fileName[6:-5]
+            with open('{}/{}'.format(dirName, fileName), 'r', encoding='utf-8') as fp:
+                child[suffix] = json.load(fp)
+
+    # if len(child) < 1:
+    #     dl_child()
+    #     init_child()
+init_child()
+
+###
+
+data = {}
+
+url = 'https://raw.githubusercontent.com/AzurLaneTools/AzurLaneData/main/EN/ShareCfg/child_{}.json'
+
+for key in ['resource', 'attr', 'item', 'polaroid', 'site', 'site_option', 'shop', 'ending']:
+    with open('EN/ShareCfg/child_{}.json'.format(key), 'r', encoding='utf-8') as fp:
+        _ = json.load(fp)
+        data[key] = {}
+        for i in _['all']:
+            data[key][i] = _[str(i)]
+        if key == 'polaroid':
+            data['x'] = _['get_id_list_by_group']
+
+os.makedirs('out')
+
+def save_csv(name, tabs):
+    csv = ''
+    for row in tabs:
+        for cell in row:
+            csv += '"{}",'.format(cell)
+        csv = csv[:-1] + '\n'
+    with open('out/{}chart.csv'.format(name), 'w', encoding='utf-8') as fp:
+        fp.write(csv)
+    return csv
+
+def save_table(name, tabs):
+    lines = ['{| class="azltable sortable" style="text-align:center"']
+    for cell in tabs[0]:
+        lines.append('! {}'.format(cell))
+    lines.append('|-')
+    for row in tabs[1:]:
+        for cell in row:
+            lines.append('| {}'.format(cell))
+        lines.append('|-')
+    lines[-1] = '|}'
+
+    table = ''
+    for line in lines:
+        table += line.strip() + '\n'
+
+    with open('out/{}chart.txt'.format(name), 'w', encoding='utf-8') as fp:
+        fp.write(table)
+    return table
+
+def filter_data(key, condition):
+    for id in data[key]:
+        datum = data[key][id]
+        if condition(datum):
+            yield datum
+
+# for shopid in data['shop']:
+#     filter_data('site_option', lambda datum = shop in datum['param'])
+
+def chart_items():
+    items = data['resource'] | data['attr']
+    colindex = {}
+    tabs = [['Item', 'Activity', 'Time']]
+    for i, iid in enumerate(items):
+        tabs[0].append(items[iid]['name'])
+        colindex[iid] = i
+    for iid in data['item']:
+        item = data['item'][iid]
+        tabs.append([item['name']])
+
+        shids = []
+        for shid in data['shop']:
+            shop = data['shop'][shid]
+            for goods in shop['goods_pool']:
+                if iid == goods[0]:
+                    shids.append(shid)
+        site_options = []
+        soids = []
+        sotime = []
+        for soid in data['site_option']:
+            site_option = data['site_option'][soid]
+            for shid in shids:
+                if shid in site_option['param']:
+                    site_options.append(site_option['name'])
+                    soids.append(soid)
+                    sotime.append(str(site_option['time_limit']))
+        sites = []
+        for sid in data['site']:
+            site = data['site'][sid]
+            for soid in soids:
+                if soid in site['option']:
+                    sites.append(site['name'])
+        assert len(site_options) < 2
+        assert len(sites) < 2
+        tabs[-1].append('{} - {}'.format(''.join(sites), ''.join(site_options)))
+        tabs[-1].append(''.join(sotime))
+
+        tabs[-1] += [''] * len(colindex)
+        for reward in item['display']:
+            i = colindex[reward[1]]
+            tabs[-1][i + 3] = '{:+}'.format(reward[2])
+    
+    cats = {tab[1]: {'cols': [], 'data': []} for tab in tabs}
+    for tab in tabs:
+        for i, col in enumerate(tab):
+            if i in [1, 2]:
+                continue
+            if col.strip() not in ['', '-']:
+                cats[tab[1]]['cols'].append(i)
+    for cid in cats:
+        cats[cid]['data'] = [[tabs[0][i] for i in set(sorted(cats[cid]['cols']))]]
+    for tab in tabs:
+        cats[tab[1]]['data'].append([tab[i] for i in set(sorted(cats[tab[1]]['cols']))])
+    for cid in cats:
+        save_table(cid, cats[cid]['data'])
+
+    save_csv('item', tabs)
+    return save_table('item', tabs)
+
+def chart_arbitrary(key, idkey):
+    for intid in data[key]['all']:
+        id = str(intid)
+        data = data[key][id]
+
+def chart_polaroids():
+    tabs = [['Group', 'ID', 'Title', 'Stage', 'Personality', 'Location']]
+    for id in data['polaroid']:
+        gid = 0
+        for gidstr in data['x']:
+            if id in data['x'][gidstr]:
+                gid = int(gidstr)
+
+        polaroid = data['polaroid'][id]
+
+        title = polaroid['title']
+
+        slist = [str(i) for i in polaroid['stage']]
+        stages = ', '.join(slist)
+        
+        plist = []
+        for pid in polaroid['xingge']:
+            plist.append(data['attr'][pid]['name'])
+        personalities = ', '.join(plist)
+
+        lset = set()
+        for soid in data['site_option']:
+            site_option = data['site_option'][soid]
+            if gid in site_option['polarid_list']:
+                for sid in data['site']:
+                    site = data['site'][sid]
+                    if soid in site['option']:
+                        lset.add(site['name'])
+        locations = ', '.join(lset)
+
+        tabs.append([gid - 100, id, title, stages, personalities, locations])
+
+    save_csv('polaroid', tabs)
+
+    grouped = {}
+    for tab in tabs:
+        if tab[0] in grouped:
+            for i, t in enumerate(tab):
+                grouped[tab[0]][i].add(t)
+        else:
+            grouped[tab[0]] = [set([t]) for t in tab]
+    gtabs = [[', '.join((str(g) for g in gtab)) for gtab in grouped[i]] for i in grouped]
+    save_table('polo', gtabs)
+
+    return save_table('polaroid', tabs)
+
+def chart_endings():
+    csv = 'Ending,Personality,Stat 1,Value,Stat 2,Value,Ability 1,Value,Ability 2,Value\n'
+    table = '{| class="azltable sortable" style="text-align:center"\n'
+
+    for eid in data['ending']:
+        ending = data['ending'][eid]
+        print(ending['name'])
+
+if __name__ == '__main__':
+    lines = ['This game mode is for special secretaries and does not impact any other aspect of the game at all.']
+    lines.append('==Moments==')
+    lines.append(chart_polaroids())
+    lines.append('==Items==')
+    lines.append(chart_items())
+
+    page = '\n'.join(line.strip() for line in lines) + '\n'
+    with open('out/page.txt', 'w', encoding='utf-8') as fp:
+        fp.write(page)
+    # chart_endings()
