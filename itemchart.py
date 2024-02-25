@@ -9,10 +9,10 @@ child = {}
 
 def dl_child():
     '''Downloads JSON files relevant to Project Identity: TB.'''
+    os.makedirs(dirName, exist_ok=True)
+
     repo = Github().get_repo('AzurLaneTools/AzurLaneData')
     contents = repo.get_contents(dirName)
-
-    os.makedirs(dirName, exist_ok=True)
     for content in contents:
         if content.name.startswith('child_'):
             with open('{}/{}'.format(dirName, content.name), 'wb') as fp:
@@ -36,36 +36,34 @@ def init_child(download=False):
 
 # Save
 
-os.makedirs('out')
+def save_csv(name, table):
+    os.makedirs('output', exist_ok=True)
 
-def save_csv(name, tabs):
     csv = ''
-    for row in tabs:
+    for row in table:
         for cell in row:
-            csv += '"{}",'.format(cell)
+            csv += '"{}",'.format(cell.strip())
         csv = csv[:-1] + '\n'
-    with open('out/{}chart.csv'.format(name), 'w', encoding='utf-8') as fp:
+    with open('output/{}.csv'.format(name), 'w', encoding='utf-8') as fp:
         fp.write(csv)
     return csv
 
-def save_table(name, tabs):
-    lines = ['{| class="azltable sortable" style="text-align:center"']
-    for cell in tabs[0]:
-        lines.append('! {}'.format(cell))
-    lines.append('|-')
-    for row in tabs[1:]:
+def save_wikitable(name, table):
+    os.makedirs('output', exist_ok=True)
+
+    lines = ['{| class="wikitable sortable mw-collapsible" style="text-align:center"']
+    for i, row in enumerate(table):
         for cell in row:
-            lines.append('| {}'.format(cell))
+            lines.append('{} {}'.format('!' if i <= 0 else '|', cell.strip()).strip())
         lines.append('|-')
     lines[-1] = '|}'
 
-    table = ''
-    for line in lines:
-        table += line.strip() + '\n'
+    wikitable = '\n'.join(table) + '\n'
+    with open('output/{}.txt'.format(name), 'w', encoding='utf-8') as fp:
+        fp.write(wikitable)
+    return wikitable
 
-    with open('out/{}chart.txt'.format(name), 'w', encoding='utf-8') as fp:
-        fp.write(table)
-    return table
+# IDK
 
 def filter_data(key, condition):
     for id in data[key]:
@@ -79,13 +77,13 @@ def filter_data(key, condition):
 def chart_items():
     items = data['resource'] | data['attr']
     colindex = {}
-    tabs = [['Item', 'Activity', 'Time']]
+    table = [['Item', 'Activity', 'Time']]
     for i, iid in enumerate(items):
-        tabs[0].append(items[iid]['name'])
+        table[0].append(items[iid]['name'])
         colindex[iid] = i
     for iid in data['item']:
         item = data['item'][iid]
-        tabs.append([item['name']])
+        table.append([item['name']])
 
         shids = []
         for shid in data['shop']:
@@ -111,30 +109,30 @@ def chart_items():
                     sites.append(site['name'])
         assert len(site_options) < 2
         assert len(sites) < 2
-        tabs[-1].append('{} - {}'.format(''.join(sites), ''.join(site_options)))
-        tabs[-1].append(''.join(sotime))
+        table[-1].append('{} - {}'.format(''.join(sites), ''.join(site_options)))
+        table[-1].append(''.join(sotime))
 
-        tabs[-1] += [''] * len(colindex)
+        table[-1] += [''] * len(colindex)
         for reward in item['display']:
             i = colindex[reward[1]]
-            tabs[-1][i + 3] = '{:+}'.format(reward[2])
+            table[-1][i + 3] = '{:+}'.format(reward[2])
     
-    cats = {tab[1]: {'cols': [], 'data': []} for tab in tabs}
-    for tab in tabs:
+    cats = {tab[1]: {'cols': [], 'data': []} for tab in table}
+    for tab in table:
         for i, col in enumerate(tab):
             if i in [1, 2]:
                 continue
             if col.strip() not in ['', '-']:
                 cats[tab[1]]['cols'].append(i)
     for cid in cats:
-        cats[cid]['data'] = [[tabs[0][i] for i in set(sorted(cats[cid]['cols']))]]
-    for tab in tabs:
+        cats[cid]['data'] = [[table[0][i] for i in set(sorted(cats[cid]['cols']))]]
+    for tab in table:
         cats[tab[1]]['data'].append([tab[i] for i in set(sorted(cats[tab[1]]['cols']))])
     for cid in cats:
-        save_table(cid, cats[cid]['data'])
+        save_wikitable(cid, cats[cid]['data'])
 
-    save_csv('item', tabs)
-    return save_table('item', tabs)
+    save_csv('item', table)
+    return save_wikitable('item', table)
 
 def chart_arbitrary(key, idkey):
     for intid in data[key]['all']:
@@ -142,7 +140,7 @@ def chart_arbitrary(key, idkey):
         data = data[key][id]
 
 def chart_polaroids():
-    tabs = [['Group', 'ID', 'Title', 'Stage', 'Personality', 'Location']]
+    table = [['Group', 'ID', 'Title', 'Stage', 'Personality', 'Location']]
     for id in data['polaroid']:
         gid = 0
         for gidstr in data['x']:
@@ -171,21 +169,21 @@ def chart_polaroids():
                         lset.add(site['name'])
         locations = ', '.join(lset)
 
-        tabs.append([gid - 100, id, title, stages, personalities, locations])
+        table.append([gid - 100, id, title, stages, personalities, locations])
 
-    save_csv('polaroid', tabs)
+    save_csv('polaroid', table)
 
     grouped = {}
-    for tab in tabs:
+    for tab in table:
         if tab[0] in grouped:
             for i, t in enumerate(tab):
                 grouped[tab[0]][i].add(t)
         else:
             grouped[tab[0]] = [set([t]) for t in tab]
-    gtabs = [[', '.join((str(g) for g in gtab)) for gtab in grouped[i]] for i in grouped]
-    save_table('polo', gtabs)
+    gtable = [[', '.join((str(g) for g in gtab)) for gtab in grouped[i]] for i in grouped]
+    save_wikitable('polo', gtable)
 
-    return save_table('polaroid', tabs)
+    return save_wikitable('polaroid', table)
 
 def chart_endings():
     csv = 'Ending,Personality,Stat 1,Value,Stat 2,Value,Ability 1,Value,Ability 2,Value\n'
