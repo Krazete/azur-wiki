@@ -1,48 +1,40 @@
 import os
 import json
+from github import Github # unnecessary if `dl_child` function is unused
+
+# Initialize
 
 dirName = 'EN/ShareCfg'
 child = {}
 
 def dl_child():
-    '''Downloads JSON files relevant to "Project Identity: TB" from AzurLaneTools' AzurLaneData repository.'''
-    from github import Github
+    '''Downloads JSON files relevant to Project Identity: TB.'''
     repo = Github().get_repo('AzurLaneTools/AzurLaneData')
     contents = repo.get_contents(dirName)
 
     os.makedirs(dirName, exist_ok=True)
     for content in contents:
         if content.name.startswith('child_'):
-            with open('{}/{}'.format(dirName, content.name), 'w', encoding='utf-8') as fp:
+            with open('{}/{}'.format(dirName, content.name), 'wb') as fp:
                 fp.write(content.decoded_content)
 
-def init_child():
-    import json
-    for fileName in os.listdir(dirName):
-        if fileName.startswith('child_') and fileName.endswith('.json'):
-            suffix = fileName[6:-5]
-            with open('{}/{}'.format(dirName, fileName), 'r', encoding='utf-8') as fp:
-                child[suffix] = json.load(fp)
+def init_child(download=False):
+    '''Initializes `child` object with JSON files downloaded from `dl_child` function.'''
+    if download:
+        dl_child()
+    if os.path.exists(dirName):
+        for fileName in os.listdir(dirName):
+            if fileName.startswith('child_') and fileName.endswith('.json'):
+                suffix = fileName[6:-5]
+                with open('{}/{}'.format(dirName, fileName), 'r', encoding='utf-8') as fp:
+                    child[suffix] = json.load(fp)
+    if len(child) <= 0:
+        if download:
+            raise Exception('Data initialization failed.')
+        else:
+            init_child(True)
 
-    # if len(child) < 1:
-    #     dl_child()
-    #     init_child()
-init_child()
-
-###
-
-data = {}
-
-url = 'https://raw.githubusercontent.com/AzurLaneTools/AzurLaneData/main/EN/ShareCfg/child_{}.json'
-
-for key in ['resource', 'attr', 'item', 'polaroid', 'site', 'site_option', 'shop', 'ending']:
-    with open('EN/ShareCfg/child_{}.json'.format(key), 'r', encoding='utf-8') as fp:
-        _ = json.load(fp)
-        data[key] = {}
-        for i in _['all']:
-            data[key][i] = _[str(i)]
-        if key == 'polaroid':
-            data['x'] = _['get_id_list_by_group']
+# Save
 
 os.makedirs('out')
 
@@ -214,3 +206,5 @@ if __name__ == '__main__':
     with open('out/page.txt', 'w', encoding='utf-8') as fp:
         fp.write(page)
     # chart_endings()
+
+    init_child()
