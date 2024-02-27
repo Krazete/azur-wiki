@@ -1,6 +1,6 @@
 import os
 import json
-from github import Github # unnecessary if `dl_child` function is unused
+from github import Github
 
 # Initialize
 
@@ -8,7 +8,7 @@ dirName = 'EN/ShareCfg'
 child = {}
 
 def dl_child():
-    '''Downloads JSON files relevant to Project Identity: TB.'''
+    '''Downloads JSON files relevant to "Project Identity: TB" from AzurLaneData repo.'''
     os.makedirs(dirName, exist_ok=True)
 
     repo = Github().get_repo('AzurLaneTools/AzurLaneData')
@@ -18,10 +18,33 @@ def dl_child():
             with open('{}/{}'.format(dirName, content.name), 'wb') as fp:
                 fp.write(content.decoded_content)
 
-def init_child(download=False):
-    '''Initializes `child` object with JSON files downloaded from `dl_child` function.'''
-    if download:
+def update_child(force=False):
+    '''Runs `dl_child` function and updates version file if update is detected.'''
+    os.makedirs('versions', exist_ok=True)
+    version = 'versions/EN.txt'
+
+    current = None
+    if os.path.exists(version):
+        with open(version, 'rb') as fp:
+            current = fp.read()
+
+    repo = Github().get_repo('AzurLaneTools/AzurLaneData')
+    contents = repo.get_contents(version)
+    latest = contents.decoded_content
+
+    if current == latest and not force:
+        print('Up to date.')
+    else:
+        print('Updating data files...')
         dl_child()
+        with open(version, 'wb') as fp:
+            fp.write(latest)
+        print('Data files successfully updated.')
+
+def init_child(download=False):
+    '''Initializes `child` object with JSON files downloaded from AzurLaneData repo.'''
+    if download:
+        update_child(True)
     if os.path.exists(dirName):
         for fileName in os.listdir(dirName):
             if fileName.startswith('child_') and fileName.endswith('.json'):
@@ -66,44 +89,44 @@ def save_wikitable(name, table):
 # IDK
 
 def filter_data(key, condition):
-    for id in data[key]:
-        datum = data[key][id]
+    for id in child[key]:
+        datum = child[key][id]
         if condition(datum):
             yield datum
 
-# for shopid in data['shop']:
+# for shopid in child['shop']:
 #     filter_data('site_option', lambda datum = shop in datum['param'])
 
 def chart_items():
-    items = data['resource'] | data['attr']
+    items = child['resource'] | child['attr']
     colindex = {}
     table = [['Item', 'Activity', 'Time']]
     for i, iid in enumerate(items):
         table[0].append(items[iid]['name'])
         colindex[iid] = i
-    for iid in data['item']:
-        item = data['item'][iid]
+    for iid in child['item']:
+        item = child['item'][iid]
         table.append([item['name']])
 
         shids = []
-        for shid in data['shop']:
-            shop = data['shop'][shid]
+        for shid in child['shop']:
+            shop = child['shop'][shid]
             for goods in shop['goods_pool']:
                 if iid == goods[0]:
                     shids.append(shid)
         site_options = []
         soids = []
         sotime = []
-        for soid in data['site_option']:
-            site_option = data['site_option'][soid]
+        for soid in child['site_option']:
+            site_option = child['site_option'][soid]
             for shid in shids:
                 if shid in site_option['param']:
                     site_options.append(site_option['name'])
                     soids.append(soid)
                     sotime.append(str(site_option['time_limit']))
         sites = []
-        for sid in data['site']:
-            site = data['site'][sid]
+        for sid in child['site']:
+            site = child['site'][sid]
             for soid in soids:
                 if soid in site['option']:
                     sites.append(site['name'])
@@ -135,19 +158,19 @@ def chart_items():
     return save_wikitable('item', table)
 
 def chart_arbitrary(key, idkey):
-    for intid in data[key]['all']:
+    for intid in child[key]['all']:
         id = str(intid)
-        data = data[key][id]
+        child = child[key][id]
 
 def chart_polaroids():
     table = [['Group', 'ID', 'Title', 'Stage', 'Personality', 'Location']]
-    for id in data['polaroid']:
+    for id in child['polaroid']:
         gid = 0
-        for gidstr in data['x']:
-            if id in data['x'][gidstr]:
+        for gidstr in child['x']:
+            if id in child['x'][gidstr]:
                 gid = int(gidstr)
 
-        polaroid = data['polaroid'][id]
+        polaroid = child['polaroid'][id]
 
         title = polaroid['title']
 
@@ -156,15 +179,15 @@ def chart_polaroids():
         
         plist = []
         for pid in polaroid['xingge']:
-            plist.append(data['attr'][pid]['name'])
+            plist.append(child['attr'][pid]['name'])
         personalities = ', '.join(plist)
 
         lset = set()
-        for soid in data['site_option']:
-            site_option = data['site_option'][soid]
+        for soid in child['site_option']:
+            site_option = child['site_option'][soid]
             if gid in site_option['polarid_list']:
-                for sid in data['site']:
-                    site = data['site'][sid]
+                for sid in child['site']:
+                    site = child['site'][sid]
                     if soid in site['option']:
                         lset.add(site['name'])
         locations = ', '.join(lset)
@@ -189,8 +212,8 @@ def chart_endings():
     csv = 'Ending,Personality,Stat 1,Value,Stat 2,Value,Ability 1,Value,Ability 2,Value\n'
     table = '{| class="azltable sortable" style="text-align:center"\n'
 
-    for eid in data['ending']:
-        ending = data['ending'][eid]
+    for eid in child['ending']:
+        ending = child['ending'][eid]
         print(ending['name'])
 
 if __name__ == '__main__':
