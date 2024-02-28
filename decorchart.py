@@ -1,6 +1,7 @@
 import os
 import json
 import re
+from argparse import ArgumentParser
 from github import Github
 
 decor = {}
@@ -91,6 +92,10 @@ def build_decor():
         fp.write(page)
 
 if __name__ == '__main__':
-    # dl_decor()
+    parser = ArgumentParser()
+    parser.add_argument('-d', '--download', action='store_true', help='download decor files')
+    args = parser.parse_args()
+    if args.download:
+        dl_decor()
     init_decor()
     build_decor()

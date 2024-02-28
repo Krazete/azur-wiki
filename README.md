@@ -18,5 +18,5 @@ source venv\bin\activate # mac
 pip install -r requirements.txt
 
 python -m itemchart
-python -m decorchart # update input/decorchartnow.txt first
+python -m decorchart -d # update input/decorchartnow.txt first
 ```
