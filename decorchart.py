@@ -26,6 +26,9 @@ def init_decor():
 
 def get_current_info():
     '''Get supplementary data from the List of Furniture Sets section on the wiki Decorations page.'''
+    # Before running this, copy the textarea content on
+    # https://azurlane.koumakan.jp/w/index.php?title=Decorations&action=edit&section=8
+    # and paste it into the `input/decorchartnow.txt` file.
     pattern = re.compile('\| (\d+)\n(?:.+\n){4}((?:.+\n)+?)\|[-}]')
     info = {}
     with open('input/decorchartnow.txt', 'r', encoding='utf-8') as fp:
