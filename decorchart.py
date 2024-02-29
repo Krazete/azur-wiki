@@ -2,12 +2,13 @@ import os
 import json
 import re
 from argparse import ArgumentParser
+from urllib.request import urlopen
 from github import Github
 
 decor = {}
 
 def dl_decor():
-    '''Downloads JSON files relevant to Furniture from AzurLaneData repo.'''
+    '''Downloads decor JSON files from AzurLaneData and List of Furniture Sets section from Azur Lane Wiki.'''
     repo = Github().get_repo('AzurLaneTools/AzurLaneData')
     for lang in ['CN', 'EN', 'JP']:
         os.makedirs('{}/ShareCfg'.format(lang), exist_ok=True)
@@ -15,6 +16,11 @@ def dl_decor():
         content = repo.get_contents(pathName)
         with open(pathName, 'wb') as fp:
             fp.write(content.decoded_content)
+    
+    os.makedirs('input', exist_ok=True)
+    html = urlopen('https://azurlane.koumakan.jp/w/index.php?title=Decorations&action=raw&section=8')
+    with open('input/decorchartnow.txt', 'wb') as fp:
+        fp.write(html.read())
 
 def init_decor():
     '''Initializes `decor` object with JSON files downloaded from AzurLaneData repo.'''
@@ -27,9 +33,6 @@ def init_decor():
 
 def get_current_info():
     '''Get supplementary data from the List of Furniture Sets section on the wiki Decorations page.'''
-    # Before running this, copy the textarea content on
-    # https://azurlane.koumakan.jp/w/index.php?title=Decorations&action=edit&section=8
-    # and paste it into the `input/decorchartnow.txt` file.
     pattern = re.compile('\| (\d+)\n(?:.+\n){4}((?:.+\n)+?)\|[-}]')
     info = {}
     with open('input/decorchartnow.txt', 'r', encoding='utf-8') as fp:
