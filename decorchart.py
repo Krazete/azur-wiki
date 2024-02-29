@@ -82,7 +82,7 @@ def build_decor():
             ('| [[Furniture Sets/{0}|{0}]]' if themeEN.get('is_view') else '| {}').format(themeEN.get('name', '--').strip()),
             '| {}'.format(themeCN.get('name', '--').strip()),
             '| {}'.format(themeJP.get('name', '--').strip()),
-            info.get(id)[:-1]
+            info.get(id, '| colspan="3" | --\n| --').strip()
         ]
     lines.append('|}')
     
