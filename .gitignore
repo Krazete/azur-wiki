@@ -1,8 +1,8 @@
 *.pyc
 venv
-versions
 CN
 EN
 JP
 input
 output
+versionlog.json

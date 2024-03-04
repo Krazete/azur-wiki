@@ -2,25 +2,8 @@ import os
 import json
 import re
 from argparse import ArgumentParser
-from urllib.request import urlopen
-from github import Github
 
 decor = {}
-
-def dl_decor():
-    '''Downloads decor JSON files from AzurLaneData and List of Furniture Sets section from Azur Lane Wiki.'''
-    repo = Github().get_repo('AzurLaneTools/AzurLaneData')
-    for lang in ['CN', 'EN', 'JP']:
-        os.makedirs('{}/ShareCfg'.format(lang), exist_ok=True)
-        pathName = '{}/ShareCfg/backyard_theme_template.json'.format(lang)
-        content = repo.get_contents(pathName)
-        with open(pathName, 'wb') as fp:
-            fp.write(content.decoded_content)
-    
-    os.makedirs('input', exist_ok=True)
-    html = urlopen('https://azurlane.koumakan.jp/w/index.php?title=Decorations&action=raw&section=8')
-    with open('input/decorchartnow.txt', 'wb') as fp:
-        fp.write(html.read())
 
 def init_decor():
     '''Initializes `decor` object with JSON files downloaded from AzurLaneData repo.'''
@@ -99,6 +82,7 @@ if __name__ == '__main__':
     parser.add_argument('-d', '--download', action='store_true', help='download decor files')
     args = parser.parse_args()
     if args.download:
+        from downloader import dl_decor
         dl_decor()
     init_decor()
     build_decor()

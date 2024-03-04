@@ -1,2 +1,3 @@
 mwclient==0.10.1
 PyGithub==2.2.0
+UnityPy==1.10.7

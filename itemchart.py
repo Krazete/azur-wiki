@@ -1,61 +1,20 @@
 import os
 import json
+from argparse import ArgumentParser
 from github import Github
 
 # Initialize
 
-dirName = 'EN/ShareCfg'
 child = {}
 
-def dl_child():
-    '''Downloads JSON files relevant to "Project Identity: TB" from AzurLaneData repo.'''
-    os.makedirs(dirName, exist_ok=True)
-
-    repo = Github().get_repo('AzurLaneTools/AzurLaneData')
-    contents = repo.get_contents(dirName)
-    for content in contents:
-        if content.name.startswith('child_'):
-            with open('{}/{}'.format(dirName, content.name), 'wb') as fp:
-                fp.write(content.decoded_content)
-
-def update_child(force=False):
-    '''Runs `dl_child` function and updates version file if update is detected.'''
-    os.makedirs('versions', exist_ok=True)
-    version = 'versions/EN.txt'
-
-    current = None
-    if os.path.exists(version):
-        with open(version, 'rb') as fp:
-            current = fp.read()
-
-    repo = Github().get_repo('AzurLaneTools/AzurLaneData')
-    contents = repo.get_contents(version)
-    latest = contents.decoded_content
-
-    if current == latest and not force:
-        print('Up to date.')
-    else:
-        print('Updating data files...')
-        dl_child()
-        with open(version, 'wb') as fp:
-            fp.write(latest)
-        print('Data files successfully updated.')
-
-def init_child(download=False):
+def init_child():
     '''Initializes `child` object with JSON files downloaded from AzurLaneData repo.'''
-    if download:
-        update_child(True)
-    if os.path.exists(dirName):
-        for fileName in os.listdir(dirName):
-            if fileName.startswith('child_') and fileName.endswith('.json'):
-                suffix = fileName[6:-5]
-                with open('{}/{}'.format(dirName, fileName), 'r', encoding='utf-8') as fp:
-                    child[suffix] = json.load(fp)
-    if len(child) <= 0:
-        if download:
-            raise Exception('Data initialization failed.')
-        else:
-            init_child(True)
+    folder = 'EN/ShareCfg'
+    for filename in os.listdir(folder):
+        if filename.startswith('child_') and filename.endswith('.json'):
+            suffix = filename[6:-5]
+            with open('{}/{}'.format(folder, filename), 'r', encoding='utf-8') as fp:
+                child[suffix] = json.load(fp)
 
 # Save
 
@@ -217,15 +176,21 @@ def chart_endings():
         print(ending['name'])
 
 if __name__ == '__main__':
-    lines = ['This game mode is for special secretaries and does not impact any other aspect of the game at all.']
-    lines.append('==Moments==')
-    lines.append(chart_polaroids())
-    lines.append('==Items==')
-    lines.append(chart_items())
+    # lines = ['This game mode is for special secretaries and does not impact any other aspect of the game at all.']
+    # lines.append('==Moments==')
+    # lines.append(chart_polaroids())
+    # lines.append('==Items==')
+    # lines.append(chart_items())
 
-    page = '\n'.join(line.strip() for line in lines) + '\n'
-    with open('out/page.txt', 'w', encoding='utf-8') as fp:
-        fp.write(page)
+    # page = '\n'.join(line.strip() for line in lines) + '\n'
+    # with open('out/page.txt', 'w', encoding='utf-8') as fp:
+    #     fp.write(page)
     # chart_endings()
 
+    parser = ArgumentParser()
+    parser.add_argument('-d', '--download', action='store_true', help='download decor files')
+    args = parser.parse_args()
+    if args.download:
+        from downloader import dl_child
+        dl_child()
     init_child()
