@@ -2,6 +2,7 @@ import os
 import json
 from argparse import ArgumentParser
 from github import Github
+from educate import textures
 
 # Initialize
 
@@ -188,7 +189,7 @@ if __name__ == '__main__':
     # chart_endings()
 
     parser = ArgumentParser()
-    parser.add_argument('-d', '--download', action='store_true', help='download decor files')
+    parser.add_argument('-d', '--download', action='store_true', help='download data files')
     args = parser.parse_args()
     if args.download:
         from downloader import dl_child
