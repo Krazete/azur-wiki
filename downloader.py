@@ -76,6 +76,7 @@ def dl_story():
     subpaths = [
         'ShareCfg/memory_group', # memory groups
         'ShareCfg/memory_template', # memories
+        'ShareCfg/ship_skin_template', # shipgirl names
         'GameCfg/story' # memory text
     ]
     for lang in get_latest('story', ['CN', 'EN', 'JP']):
@@ -85,7 +86,7 @@ def dl_story():
         for subpath in subpaths:
             path = '{}/{}.json'.format(lang, subpath)
             with open(path, 'wb') as fp:
-                if 'JP' in path and 'story' in path: # nonstandard naming
+                if 'JP/GameCfg/story' in path: # nonstandard naming
                     path = '{}/{}jp.json'.format(lang, subpath)
                 content = repo.get_contents(path)
                 if content.content == '':
