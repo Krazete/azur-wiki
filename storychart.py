@@ -31,31 +31,6 @@ for gid in book['group']['EN']:
         print(gid)
         break
 
-# parse book
-for mid in book['group']['EN'][gid]['memories']:
-    memory = book['memory']['EN'][str(mid)]
-    icon = memory['icon']
-    sid = memory['story'].lower()
-    line = book['story']['EN'][sid]
-    for script in line['scripts']:
-        skinid = str(script.get('actor'))
-        skinname = book['skin']['EN'].get(skinid, {}).get('name')
-        actorname = script.get('actorName', skinname)
-        actortext = script.get('say')
-        if skinname:
-            ppp = '[S:{}:{}]'.format(skinname, actorname)
-        else:
-            ppp = '[O:{}]'.format(actorname)
-        print(skinname, actorname)
-        print('\t', actortext)
-        # also: 'options'
-    break
-
-# group
-#   memory
-#     skin
-#     line
-
 bgnames = {
     'aircraft_future': 'Aircraft Future',
     'aostelab': 'Aoste Lab',
@@ -75,6 +50,15 @@ bgnames = {
     'xiangting': 'Ashen Simulacrum',
     'zhedie': 'Parallel Superimposition'
 }
+
+bannedbanners = [
+    'Dr. Anzeel',
+    # 'Dr. Aoste',
+    'Bon Homme Richard',
+    'Jintsuu META',
+    'Yorktown META',
+    'Arbiter: The Devil XV'
+]
 
 def parse_scripts(scripts, lang):
     lines = []
@@ -115,7 +99,10 @@ def parse_scripts(scripts, lang):
         if len(br) > 0:
             lines.append(' | [] ' + '<br>'.join(br))
 
-        if skinnameEN in ['Dr. Anzeel', 'Dr. Aoste', 'Bon Homme Richard']:
+        if 'optionFlag' in script:
+            actortext = 'Option {}<br>{}'.format(script['optionFlag'], actortext)
+
+        if skinnameEN in bannedbanners:
             skinname = None
         if skinname:
             if skinnameEN == actorname:
@@ -126,6 +113,15 @@ def parse_scripts(scripts, lang):
             lines.append(' | [O:{}] {}'.format(actorname, actortext))
         elif actortext:
             lines.append(' | [] {}'.format(actortext))
+        
+        if 'options' in script:
+            for option in script['options']:
+                lines.append(' | [O:Commander] \'\'\'Option {}\'\'\'<br>{}'.format(option['flag'], option['content']))
+
+        if 'sequence' in script:
+            sqe = '<br>'.join(x[0] for x in script['sequence']).strip()
+            if sqe:
+                lines.append(' | [] {}'.format(sqe))
     return lines, abcdefg
 
 def build_memory(gid):
@@ -167,7 +163,7 @@ def build_memory(gid):
     return '\n'.join(lines) + '\n'
 
 # init_book()
-abc = build_memory(235)
+abc = build_memory(278)
 with open('output/story.txt', 'w', encoding='utf-8') as fp:
     fp.write(abc)
 
