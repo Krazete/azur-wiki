@@ -82,7 +82,7 @@ bannedbanners = [
     # 'Dr. Anzeel',
     # 'Dr. Aoste',
     'Bon Homme Richard',
-    'Jintsuu META',
+    # 'Jintsuu META',
     'Yorktown META',
     'Arbiter: The Devil XV'
 ]
@@ -147,7 +147,8 @@ def parse_scripts(scripts, lang):
 
         if skinnameEN in bannedbanners:
             skinname = None
-        if skinname:
+        paintingname = book['skin'][lang].get(str(skinid), {}).get('painting', '')
+        if skinname and not paintingname.endswith('_hei'):
             if skinnameEN == actorname:
                 lines.append(' | [S:{}] {}'.format(actorname, actortext))
             else:
@@ -193,7 +194,13 @@ def build_memory(gid):
                 ' | Language = {}'.format(lang)
             ]
             sid = memory['story']
-            story = book['story'][lang][sid.lower()]
+            story = book['story'][lang].get(sid.lower())
+
+            # print('STORY:', sid)
+            if story == None: # todo: figure out how to identify split stories (37-1, 37-2, 37-3) (b/c battle sims)
+                print('NOSTORY:', sid)
+                continue
+
             scriptlines, abdefg = parse_scripts(story['scripts'], lang)
             lines += scriptlines
             bgs = bgs.union(abdefg)
@@ -214,6 +221,13 @@ def build_memory(gid):
 abc = build_memory(gid)
 with open('output/story.txt', 'w', encoding='utf-8') as fp:
     fp.write(abc)
+
+# find stories with certain sprite ids
+for sss in book['story']['EN']:
+    # if '900332' in str(book['story']['EN'][sss]): # anzeel sprite
+    if '900333' in str(book['story']['EN'][sss]): # aoste sprite
+    # if '900407' in str(book['story']['EN'][sss]): # silver fox
+        print(sss)
 
 if __name__ == '__main__':
     parser = ArgumentParser()
