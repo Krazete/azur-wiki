@@ -8,6 +8,7 @@ langs = {
     'JP': 'Japanese'
 }
 book = {}
+namecode = {}
 
 def init_book():
     '''Initializes `child` object with JSON files downloaded from AzurLaneData repo.'''
@@ -29,67 +30,20 @@ init_book()
 
 # find a book by title
 for gid in book['group']['EN']:
-    if 'Peregrination' in book['group']['EN'][gid]['title']:
+    if 'Causality' in book['group']['EN'][gid]['title']:
+    # if 'Superimposition' in book['group']['EN'][gid]['title']:
+    # if 'Peregrination' in book['group']['EN'][gid]['title']:
         print(gid)
         break
 
-namecode = {
-    '491': '亚德',
-    '449': '埃尔宾',
-    '525': '英格拉罕',
-    '91': '赤城',
-    '468': '易北',
-    '82': '三笠',
-    '440': '腓特烈大帝',
-    '421': '柯尼斯堡',
-    '530': '同盟',
-    '133': '水无月',
-    '158': '江风',
-    '428': '欧根',
-    '50': '能代',
-    '188': '樫野',
-    '427': '欧根亲王',
-    '519': '菲利克斯',
-    '453': '海因里希亲王',
-    '55': '青叶',
-    '84': '武藏',
-    '98': '明石',
-    '75': '陆奥',
-    '529': '苏维埃同盟',
-    '39': '神通',
-    '12': '响',
-    '96': '瑞鹤',
-    '401': 'Z2',
-    '3': '白雪',
-    '161': '天城',
-    '182': '信浓',
-    '18': '岛风',
-    '6': '绫波',
-    '74': '长门',
-    '191': '飞龙·META',
-    '20': '不知火',
-    '448': '埃姆登', 
-    '480': '埃吉尔',
-    '521': '兴登堡',
-    '14': '电',
-    '435': '俾斯麦',
-    '408': 'Z23',
-    '462': '布伦希尔德',
-    '478': '沙恩霍斯特·META',
-    '516': '雷根斯堡',
-    '461': '吕佐夫',
-    '83': '大和',
-    '194': '提康德罗加',
-    '292': '四万十',
-    '203': '风云',
-    '294': '云仙',
-    '11': '晓',
-    '22': '雪风',
-    '13': '雷', 
-    '441': '腓特烈',
-    '65': '羽黑',
-    '199': '新泽西'
-}
+def init_namecode():
+    matches = re.findall('{namecode:(\d+):(.+?)}', str(book))
+    for match in matches:
+        if match[0] in namecode:
+            assert namecode[match[0]] == match[1], match
+        namecode[match[0]] = match[1]
+    return
+init_namecode()
 
 bgnames = {
     # Parallel Superimposition
@@ -120,7 +74,8 @@ bgnames = {
 ignoredbgnames = [
     'bg_unnamearea_0', # sakura islands map
     'bg_zhuiluo_2', # big lava 'x' island map
-    'star_level_bg_1104' # white screen
+    'star_level_bg_1100',
+    'star_level_bg_1104', # white screen???
 ]
 
 bannedbanners = [
@@ -135,15 +90,23 @@ bannedbanners = [
 def parse_scripts(scripts, lang):
     lines = []
     bgrn = None
+    bgmrn = None
     abcdefg = set()
     for script in scripts:
         skinid = script.get('actor')
         skinnameEN = book['skin']['EN'].get(str(skinid), {}).get('name', '').replace(' (Retrofit)', '/Kai').strip()
-        skinname = book['skin'][lang].get(str(skinid), {}).get('name', '').strip()
-        actorname = script.get('actorName', skinname).strip()
+        skinname = book['skin'][lang].get(str(skinid), {}).get('name', '').replace(' (Retrofit)', '/Kai').strip()
+        actorname = script.get('actorName', skinname).replace(' (Retrofit)', '/Kai').strip()
         actortext = script.get('say', '').strip()
 
-        actorname = re.sub('·?改', '', actorname) # kai
+        if 'subActors' in script: # todo: include subactors in output file
+            for subactor in script['subActors']:
+                subskinid = subactor['actor']
+                subskinnameEN = book['skin']['EN'].get(str(subskinid), {}).get('name', '').replace(' (Retrofit)', '/Kai').strip()
+                subskinname = book['skin'][lang].get(str(subskinid), {}).get('name', '').replace(' (Retrofit)', '/Kai').strip()
+                print(subskinnameEN, subskinname)
+
+        actorname = re.sub('[.·]?改', '', actorname) # kai
 
         br = []
         if 'bgName' in script and script['bgName'] != bgrn:
@@ -169,8 +132,9 @@ def parse_scripts(scripts, lang):
                     abcdefg.add(bgrn)
             if bgrn not in ignoredbgnames:
                 br.append('[[File:{}|300px]]'.format(filename))
-        if 'bgm' in script:
-            br.append('bgm: {}'.format(script['bgm']))
+        if 'bgm' in script and script['bgm'] != bgmrn:
+            bgmrn = script['bgm']
+            br.append('bgm: {}'.format(bgmrn))
         if len(br) > 0:
             lines.append(' | [] ' + '<br>'.join(br))
 
@@ -201,9 +165,12 @@ def parse_scripts(scripts, lang):
                 lines.append(' | [O:Commander] \'\'\'Option {}\'\'\'<br>{}'.format(option['flag'], optcon))
 
         if 'sequence' in script:
-            sqe = '<br>'.join(x[0] for x in script['sequence']).strip()
-            if sqe:
-                lines.append(' | [] {}'.format(sqe))
+            sqe = []
+            for x in script['sequence']:
+                sqe.append(re.sub('<.+?>', '', x[0]).replace('\n', '<br>'))
+            sqeall = '<br>'.join(sqe).strip()
+            if sqeall:
+                lines.append(' | [] {}'.format(sqeall))
     return lines, abcdefg
 
 def build_memory(gid):
@@ -244,8 +211,7 @@ def build_memory(gid):
     print(bgs)
     return '\n'.join(lines) + '\n'
 
-abc = build_memory(278)
-# abc = build_memory(235)
+abc = build_memory(gid)
 with open('output/story.txt', 'w', encoding='utf-8') as fp:
     fp.write(abc)
 
