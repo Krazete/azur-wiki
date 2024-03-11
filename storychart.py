@@ -25,13 +25,74 @@ def init_book():
                 book.setdefault(cat, {})
                 book[cat][lang] = json.load(fp)
 
+init_book()
+
 # find a book by title
 for gid in book['group']['EN']:
-    if 'Parallel Superimposition' in book['group']['EN'][gid]['title']:
+    if 'Peregrination' in book['group']['EN'][gid]['title']:
         print(gid)
         break
 
+namecode = {
+    '491': '亚德',
+    '449': '埃尔宾',
+    '525': '英格拉罕',
+    '91': '赤城',
+    '468': '易北',
+    '82': '三笠',
+    '440': '腓特烈大帝',
+    '421': '柯尼斯堡',
+    '530': '同盟',
+    '133': '水无月',
+    '158': '江风',
+    '428': '欧根',
+    '50': '能代',
+    '188': '樫野',
+    '427': '欧根亲王',
+    '519': '菲利克斯',
+    '453': '海因里希亲王',
+    '55': '青叶',
+    '84': '武藏',
+    '98': '明石',
+    '75': '陆奥',
+    '529': '苏维埃同盟',
+    '39': '神通',
+    '12': '响',
+    '96': '瑞鹤',
+    '401': 'Z2',
+    '3': '白雪',
+    '161': '天城',
+    '182': '信浓',
+    '18': '岛风',
+    '6': '绫波',
+    '74': '长门',
+    '191': '飞龙·META',
+    '20': '不知火',
+    '448': '埃姆登', 
+    '480': '埃吉尔',
+    '521': '兴登堡',
+    '14': '电',
+    '435': '俾斯麦',
+    '408': 'Z23',
+    '462': '布伦希尔德',
+    '478': '沙恩霍斯特·META',
+    '516': '雷根斯堡',
+    '461': '吕佐夫',
+    '83': '大和',
+    '194': '提康德罗加',
+    '292': '四万十',
+    '203': '风云',
+    '294': '云仙',
+    '11': '晓',
+    '22': '雪风',
+    '13': '雷', 
+    '441': '腓特烈',
+    '65': '羽黑',
+    '199': '新泽西'
+}
+
 bgnames = {
+    # Parallel Superimposition
     'aircraft_future': 'Aircraft Future',
     'aostelab': 'Aoste Lab',
     'camelot': 'Pledge of the Radiant Court',
@@ -48,11 +109,22 @@ bgnames = {
     'story_tower': 'Virtual Tower',
     'wuzang': 'Violet Tempest, Blooming Lycoris',
     'xiangting': 'Ashen Simulacrum',
-    'zhedie': 'Parallel Superimposition'
+    'zhedie': 'Parallel Superimposition',
+    # Snowrealm Peregrination
+    'deepecho': 'Abyssal Refrain',
+    'guild_blue': 'Guild Blue',
+    'guild_red_n': 'Guild Red Background Part 2',
+    'xuejing': 'Snowrealm Peregrination'
 }
 
+ignoredbgnames = [
+    'bg_unnamearea_0', # sakura islands map
+    'bg_zhuiluo_2', # big lava 'x' island map
+    'star_level_bg_1104' # white screen
+]
+
 bannedbanners = [
-    'Dr. Anzeel',
+    # 'Dr. Anzeel',
     # 'Dr. Aoste',
     'Bon Homme Richard',
     'Jintsuu META',
@@ -66,10 +138,12 @@ def parse_scripts(scripts, lang):
     abcdefg = set()
     for script in scripts:
         skinid = script.get('actor')
-        skinnameEN = book['skin']['EN'].get(str(skinid), {}).get('name', '').strip()
+        skinnameEN = book['skin']['EN'].get(str(skinid), {}).get('name', '').replace(' (Retrofit)', '/Kai').strip()
         skinname = book['skin'][lang].get(str(skinid), {}).get('name', '').strip()
         actorname = script.get('actorName', skinname).strip()
         actortext = script.get('say', '').strip()
+
+        actorname = re.sub('·?改', '', actorname) # kai
 
         br = []
         if 'bgName' in script and script['bgName'] != bgrn:
@@ -77,13 +151,14 @@ def parse_scripts(scripts, lang):
             if bgrn.startswith('star_level_bg_'):
                 filename = 'Skin BG {}.png'.format(bgrn[14:])
             else:
-                bgmatch = re.match('^bg_(.+?)(?:_(?:bg)?(\d+))?$', bgrn)
+                bgmatch = re.match('^bg_(.+?)(?:_(bg|cg|n)?(\d+))?$', bgrn)
                 if bgmatch:
                     bggroups = bgmatch.groups()
                     if bggroups[0] in bgnames:
                         bgtitle = bgnames[bggroups[0]]
-                        if bggroups[1]:
-                            filename = 'Memory {} Background {}.png'.format(bgtitle, bggroups[1])
+                        if bggroups[2]:
+                            bgcg = {'cg': 'CG', 'n': 'Background Part'}.get(bggroups[1], 'Background')
+                            filename = 'Memory {} {} {}.png'.format(bgtitle, bgcg, bggroups[2])
                         else:
                             filename = 'Memory {} Background.png'.format(bgtitle)
                     else:
@@ -92,7 +167,7 @@ def parse_scripts(scripts, lang):
                 else:
                     filename = bgrn + 'HMMMM'
                     abcdefg.add(bgrn)
-            if bgrn != 'star_level_bg_1104': # pure white
+            if bgrn not in ignoredbgnames:
                 br.append('[[File:{}|300px]]'.format(filename))
         if 'bgm' in script:
             br.append('bgm: {}'.format(script['bgm']))
@@ -101,6 +176,10 @@ def parse_scripts(scripts, lang):
 
         if 'optionFlag' in script:
             actortext = 'Option {}<br>{}'.format(script['optionFlag'], actortext)
+
+        for nc in namecode:
+            actorname = re.sub('{{namecode:{}(:.+?)?}}'.format(nc), namecode[nc], actorname)
+            actortext = re.sub('{{namecode:{}(:.+?)?}}'.format(nc), namecode[nc], actortext)
 
         if skinnameEN in bannedbanners:
             skinname = None
@@ -116,7 +195,10 @@ def parse_scripts(scripts, lang):
         
         if 'options' in script:
             for option in script['options']:
-                lines.append(' | [O:Commander] \'\'\'Option {}\'\'\'<br>{}'.format(option['flag'], option['content']))
+                optcon = option['content']
+                for nc in namecode:
+                    optcon = re.sub('{{namecode:{}(:.+?)?}}'.format(nc), namecode[nc], optcon)
+                lines.append(' | [O:Commander] \'\'\'Option {}\'\'\'<br>{}'.format(option['flag'], optcon))
 
         if 'sequence' in script:
             sqe = '<br>'.join(x[0] for x in script['sequence']).strip()
@@ -162,8 +244,8 @@ def build_memory(gid):
     print(bgs)
     return '\n'.join(lines) + '\n'
 
-# init_book()
 abc = build_memory(278)
+# abc = build_memory(235)
 with open('output/story.txt', 'w', encoding='utf-8') as fp:
     fp.write(abc)
 
