@@ -82,6 +82,17 @@ def dl_decor():
     with open('input/decorchartnow.txt', 'wb') as fp:
         fp.write(html.read())
 
+def dl_decorset():
+    '''Download decor set data files.'''
+    for lang in get_latest('decorset', ['EN']):
+        folder = '{}/ShareCfg'.format(lang)
+        os.makedirs(folder, exist_ok=True)
+        for prefix in ['backyard_theme', 'furniture_data', 'furniture_shop']:
+            path = '{}/{}_template.json'.format(folder, prefix)
+            decontent = get_decontent(path)
+            with open(path, 'wb') as fp:
+                fp.write(decontent)
+
 def dl_story():
     '''Download story data files.'''
     subpaths = [
