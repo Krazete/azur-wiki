@@ -9,31 +9,6 @@ langs = {
     'JP': 'Japanese'
 }
 book = {}
-namecode = {}
-
-def init_namecode():
-    '''Initializes namecode dictionary or loads it from file if up to date.'''
-    global namecode
-    if os.path.exists('versionlog.json'):
-        with open('versionlog.json', 'r') as fp:
-            versionlog = json.load(fp)
-    else:
-        raise Exception('No versionlog found.')
-    uptodate = 'namecode' in versionlog and 'story' in versionlog and versionlog['namecode'] == versionlog['story']
-    if uptodate and os.path.exists('input/namecode.json'):
-        with open('input/namecode.json', 'r', encoding='utf-8') as fp:
-            namecode = json.load(fp)
-    else:
-        matches = re.findall('{namecode:(\d+):(.+?)}', str(book)) # hacky search
-        for match in matches:
-            if match[0] in namecode:
-                assert namecode[match[0]] == match[1], 'MISMATCH: namecode {} = {} & {}'.format(match[0], namecode[match[0]], match[1])
-            namecode[match[0]] = match[1]
-        with open('input/namecode.json', 'w', encoding='utf-8') as fp:
-            json.dump(namecode, fp)
-        versionlog['namecode'] = versionlog['story']
-        with open('versionlog.json', 'w', encoding='utf-8') as fp:
-            json.dump(versionlog, fp)
 
 def init_book():
     '''Initializes `child` object with JSON files downloaded from AzurLaneData repo.'''
@@ -41,6 +16,7 @@ def init_book():
         'ShareCfg/memory_group': 'group',
         'ShareCfg/memory_template': 'memory',
         'ShareCfg/ship_skin_template': 'skin',
+        'ShareCfg/name_code': 'code',
         'GameCfg/story': 'story'
     }
     for lang in langs:
@@ -106,34 +82,35 @@ def parse_scripts(scripts, lang):
             bgmrn = script['bgm']
             br.append('bgm: {}'.format(bgmrn))
         if len(br) > 0:
-            lines.append(' | [] ' + '<br>'.join(br))
+            lines.append('| [] ' + '<br>'.join(br))
 
         if 'optionFlag' in script:
             actortext = 'Option {}<br>{}'.format(script['optionFlag'], actortext)
 
-        for nc in namecode:
-            actorname = re.sub('{{namecode:{}(:.+?)?}}'.format(nc), namecode[nc], actorname)
-            actortext = re.sub('{{namecode:{}(:.+?)?}}'.format(nc), namecode[nc], actortext)
+        for nc in book['code'][lang]:
+            skinnameEN = re.sub('{{namecode:{}(:.+?)?}}'.format(nc), book['code']['EN'][nc]['name'], skinnameEN)
+            actorname = re.sub('{{namecode:{}(:.+?)?}}'.format(nc), book['code'][lang][nc]['name'], actorname)
+            actortext = re.sub('{{namecode:{}(:.+?)?}}'.format(nc), book['code'][lang][nc]['name'], actortext)
 
         if skinnameEN in bannedbanners:
             skinname = None
         paintingname = book['skin'][lang].get(str(skinid), {}).get('painting', '')
         if skinname and not paintingname.endswith('_hei'):
             if skinnameEN == actorname:
-                lines.append(' | [S:{}] {}'.format(actorname, actortext))
+                lines.append('| [S:{}] {}'.format(actorname, actortext))
             else:
-                lines.append(' | [S:{}:{}] {}'.format(skinnameEN, actorname, actortext))
+                lines.append('| [S:{}:{}] {}'.format(skinnameEN, actorname, actortext))
         elif actorname:
-            lines.append(' | [O:{}] {}'.format(actorname, actortext))
+            lines.append('| [O:{}] {}'.format(actorname, actortext))
         elif actortext:
-            lines.append(' | [] {}'.format(actortext))
+            lines.append('| [] {}'.format(actortext))
         
         if 'options' in script:
             for option in script['options']:
                 optcon = option['content']
-                for nc in namecode:
-                    optcon = re.sub('{{namecode:{}(:.+?)?}}'.format(nc), namecode[nc], optcon)
-                lines.append(' | [O:Commander] \'\'\'Option {}\'\'\'<br>{}'.format(option['flag'], optcon))
+                for nc in book['code'][lang]:
+                    optcon = re.sub('{{namecode:{}(:.+?)?}}'.format(nc), book['code'][lang][nc]['name'], optcon)
+                lines.append('| [O:Commander] \'\'\'Option {}\'\'\'<br>{}'.format(option['flag'], optcon))
 
         if 'sequence' in script:
             seqlist = []
@@ -141,7 +118,7 @@ def parse_scripts(scripts, lang):
                 seqlist.append(re.sub('<.+?>', '', seq[0]).replace('\n', '<br>'))
             seqlistall = '<br>'.join(seqlist).strip()
             if seqlistall:
-                lines.append(' | [] {}'.format(seqlistall))
+                lines.append('| [] {}'.format(seqlistall))
     return lines, nobgname
 
 def build_memory(gid):
@@ -159,9 +136,9 @@ def build_memory(gid):
             lines += [
                 'Chapter {}='.format(i + 1),
                 '{{Story',
-                ' | Title = {}'.format(memory['title']),
-                ' | Unlock = {}'.format(memory['condition']),
-                ' | Language = {}'.format(lang)
+                '| Title = {}'.format(memory['title']),
+                '| Unlock = {}'.format(memory['condition']),
+                '| Language = {}'.format(lang)
             ]
             sid = memory['story']
             story = book['story'][lang].get(sid.lower())
@@ -285,7 +262,6 @@ if __name__ == '__main__':
         dl_story()
     init_book()
     if args.title:
-        init_namecode()
         gid = get_groupid(args.title)
         mid = build_memory(gid)
         with open('output/story.txt', 'w', encoding='utf-8') as fp:

@@ -99,6 +99,7 @@ def dl_story():
         'ShareCfg/memory_group', # memory groups
         'ShareCfg/memory_template', # memories
         'ShareCfg/ship_skin_template', # shipgirl names
+        'ShareCfg/name_code', # shipgirl namecodes
         'GameCfg/story' # memory text
     ]
     for lang in get_latest('story', ['CN', 'EN', 'JP']):
