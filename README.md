@@ -20,10 +20,11 @@ python -m builditem # build tb page
 python -m builddecor # build furniture page
 python -m builddecor -d # update inputs first
 
-python -m builddecorset -n <NAME> # build furniture set page
+python -m builddecorset -s <SET NAME> # build furniture set page
+python -m builddecorset -i <ITEM NAME> # build furniture item line
 python -m builddecorset -d # update inputs first
 
 python -m buildstory -t <TITLE> # build story pages for matching titles
-python -m buildstory -d # update inputs first
 python -m buildstory -p <CHARACTER> # get story titles containing sprites of matching characters
+python -m buildstory -d # update inputs first
 ```
