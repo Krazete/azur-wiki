@@ -20,6 +20,12 @@ def get_themeid(name):
         if name in decorset['theme'][tid]['name']:
             return tid
 
+def get_itemid(name):
+    '''Get item id by name or name fragment.'''
+    for iid in decorset['item']:
+        if name in decorset['item'][iid]['name']:
+            return iid
+
 itemrarity = [
     'Unobtainable',
     'Normal',
@@ -36,6 +42,8 @@ itemtype = {
     4: 'Floor',
     5: 'Floor Item',
     6: 'Wall Decoration',
+    9: 'Arch',
+    11: 'Moving Object',
     14: 'Following'
 }
 
@@ -54,6 +62,7 @@ strint = [
 ]
 
 def build_decorset(tid):
+    '''Build a wikitable from AzurLaneData files.'''
     theme = decorset['theme'][tid]
     lines = [
         '*\'\'\'Description:\'\'\' \'\'{}\'\''.format(theme['desc']),
@@ -101,8 +110,12 @@ def build_decorset(tid):
 
     os.makedirs('output', exist_ok=True)
     page = '\n'.join(lines) + '\n'
-    with open('output/decorsetchart.txt', 'w', encoding='utf-8') as fp:
+    with open('output/decorset.txt', 'w', encoding='utf-8') as fp:
         fp.write(page)
+
+def build_item(iid):
+    '''Build a wikitable item entry line.'''
+    return iid
 
 # *'''Description:''' ''SET_DESCRIPTION''
 # {{FurnitureTable|ThemeIcon=FurnIcon_SET_ICON.png|Theme=SET_NAME
@@ -113,6 +126,7 @@ if __name__ == '__main__':
     parser = ArgumentParser()
     parser.add_argument('-d', '--download', action='store_true', help='download data files')
     parser.add_argument('-n', '--name', help='build decor set by name')
+    parser.add_argument('-i', '--item', help='build decor item entry by name')
     args = parser.parse_args()
     if args.download:
         from downloader import dl_decorset
@@ -120,4 +134,11 @@ if __name__ == '__main__':
     if args.name:
         init_decorset()
         tid = get_themeid(args.name)
+        build_decorset(tid)
+    if args.item:
+        if len(decorset) <= 0:
+            init_decorset()
+        iid = get_itemid(args.item)
+        with open('output/decoritem.txt', 'w', encoding='utf-8') as fp:
+            fp.write(page)
         build_decorset(tid)

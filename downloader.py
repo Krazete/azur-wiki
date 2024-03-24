@@ -79,7 +79,7 @@ def dl_decor():
             fp.write(decontent)
     os.makedirs('input', exist_ok=True)
     html = urlopen('https://azurlane.koumakan.jp/w/index.php?title=Decorations&action=raw&section=8')
-    with open('input/decorchartnow.txt', 'wb') as fp:
+    with open('input/decornow.txt', 'wb') as fp:
         fp.write(html.read())
 
 def dl_decorset():

@@ -18,7 +18,7 @@ def get_current_info():
     '''Get supplementary data from the List of Furniture Sets section on the wiki Decorations page.'''
     pattern = re.compile('\| (\d+)\n(?:.+\n){4}((?:.+\n)+?)\|[-}]')
     info = {}
-    with open('input/decorchartnow.txt', 'r', encoding='utf-8') as fp:
+    with open('input/decornow.txt', 'r', encoding='utf-8') as fp:
         matches = re.findall(pattern, fp.read())
         for match in matches:
             assert len(match) == 2
@@ -74,7 +74,7 @@ def build_decor():
     
     os.makedirs('output', exist_ok=True)
     page = '\n'.join(lines) + '\n'
-    with open('output/decorchart.txt', 'w', encoding='utf-8') as fp:
+    with open('output/decor.txt', 'w', encoding='utf-8') as fp:
         fp.write(page)
 
 if __name__ == '__main__':
