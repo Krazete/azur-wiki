@@ -18,8 +18,8 @@ def get_new_version(id, langs):
         idversionlog = versionlog.get(id, {})
         idversion = idversionlog.get(lang)
 
-        contents = repo.get_contents('versions/{}.txt'.format(lang))
-        ghversion = contents.decoded_content.decode()
+        decontent = get_decontent('versions/{}.txt'.format(lang))
+        ghversion = decontent.decode()
         ghversionlog.setdefault(lang, ghversion)
 
         if idversion != ghversion:
@@ -46,6 +46,17 @@ def get_latest(id, langs):
     else:
         print('Data is up to date.')
 
+def get_decontent(path):
+    '''Returns decoded content of path or retrieves HTML if content is empty.'''
+    content = repo.get_contents(path)
+    if isinstance(content, list):
+        print('ERROR:', path, 'is a folder, not a file.')
+    if content.content == '':
+        print('NOTE:', path, 'is a big file.')
+        html = urlopen(content.download_url)
+        return html.read()
+    return content.decoded_content
+
 def dl_child():
     '''Download Project Identity: TB data files.'''
     for lang in get_latest('child', ['EN']):
@@ -63,9 +74,9 @@ def dl_decor():
         folder = '{}/ShareCfg'.format(lang)
         os.makedirs(folder, exist_ok=True)
         path = '{}/backyard_theme_template.json'.format(folder)
-        content = repo.get_contents(path)
+        decontent = get_decontent(path)
         with open(path, 'wb') as fp:
-            fp.write(content.decoded_content)
+            fp.write(decontent)
     os.makedirs('input', exist_ok=True)
     html = urlopen('https://azurlane.koumakan.jp/w/index.php?title=Decorations&action=raw&section=8')
     with open('input/decorchartnow.txt', 'wb') as fp:
@@ -88,9 +99,5 @@ def dl_story():
             with open(path, 'wb') as fp:
                 if 'JP/GameCfg/story' in path: # nonstandard naming
                     path = '{}/{}jp.json'.format(lang, subpath)
-                content = repo.get_contents(path)
-                if content.content == '':
-                    html = urlopen(content.download_url)
-                    fp.write(html.read())
-                else:
-                    fp.write(content.decoded_content)
+                decontent = get_decontent(path)
+                fp.write(decontent)
