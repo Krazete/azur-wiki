@@ -39,17 +39,17 @@ itemrarity = [
 itemtype = {
     1: 'Wallpaper',
     2: 'Furniture',
-    3: 'Decoration', # Misc
+    3: 'Decoration', # in Misc
     4: 'Floor',
-    5: 'Floor Item',
+    5: 'Floor Item', # like rugs, roads, carpets; can place decor on top
     6: 'Wall Decoration',
     7: 'Special', # Models, Medals, Monthly Rewards
     8: 'Special', # Tatami Stage only
     9: 'Arch',
-    10: 'Special', # Wall Decor
+    10: 'Wallpaper Item', # can place wall decor on top; can overlap
     11: 'Moving Object', # Mount
     12: 'Special', # Teleporter Gate only
-    13: 'Special', # Collection
+    13: 'Special', # Interactive, in Collection
     14: 'Following',
     15: 'Special' # Antique Pipa only
 }
