@@ -137,7 +137,7 @@ def build_decoritem(item):
             notes.append('{} can {} here.'.format(strint[actions[action]], get_action(action)))
 
     if 'spine' in item:
-        notes.append('Special interaction with shipgirls.') # must edit; clarify what the action is (dance, magic trick, etc)
+        notes.append('Special interaction.') # must edit; clarify what the action is (dance, magic trick, etc) and if it's on tap or on shipgirl interaction
 
     trigger = item['can_trigger'] # has message window if trigger[0] > 0
     if len(trigger) > 1: # plays audio from window
