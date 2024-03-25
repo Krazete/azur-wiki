@@ -101,7 +101,7 @@ def get_action(action):
         'attack': 'stand',
         'stand2': 'stand',
         'wash': 'bath',
-        'yun': 'stand'
+        'yun': 'stand' # dizzy
     }
     for aid in replacements:
         action = action.replace(aid, replacements[aid])
@@ -124,6 +124,7 @@ def build_decoritem(item):
     ]
 
     notes = []
+
     if 'interAction' in item:
         actions = {}
         for action in item['interAction']:
@@ -150,7 +151,13 @@ def build_decoritem(item):
     for match in matches:
         event = match.replace('/', ' ').strip().replace(' ', '-')
         notes.append('{{{{Audio|file=FurnLine {}.ogg}}}} {}'.format(event, event)) # must edit; file name will be incorrect
+
+    if 'interaction_bgm' in item: # Super Stage, AzuNavi! Radio Booth, and Holostage only
+        notes.append('Plays audio on shipgirl interaction:')
+        notes.append(item['interaction_bgm'][1])
+
     note = '<br>'.join(notes)
+    # todo: check spine for other actions (dance, magic trick, etc)
     details.append(note)
 
     return '|' + '|'.join(str(detail) for detail in details)
