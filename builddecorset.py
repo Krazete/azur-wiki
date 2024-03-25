@@ -131,7 +131,20 @@ def build_decoritem(item):
             actions[action[0]] += 1
         for action in actions:
             notes.append('{} can {} here.'.format(strint[actions[action]], get_action(action)))
-    matches = re.findall('\'event:(.+?)\'', str(item)) # plays audio
+
+    if item['gain_by']:
+        notes.append('Obtained in {}.'.format(item['gain_by'].strip()))
+
+    trigger = item['can_trigger'] # has message window if trigger[0] > 0
+    if len(trigger) > 1: # plays audio from window
+        notes.append('Includes audio:')
+        for action in trigger[1:]: # must edit; delete non-audio actions
+            if isinstance(action, str):
+                notes.append(action)
+            elif isinstance(action, list):
+                notes.append('|'.join(action))
+
+    matches = re.findall('\'event:(.+?)\'', str(item.get('spine'))) # plays audio on tap
     if matches:
         notes.append('Plays audio when tapped:')
     for match in matches:
