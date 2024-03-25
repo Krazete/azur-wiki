@@ -39,15 +39,19 @@ itemrarity = [
 itemtype = {
     1: 'Wallpaper',
     2: 'Furniture',
-    3: 'Decoration',
+    3: 'Decoration', # Misc
     4: 'Floor',
     5: 'Floor Item',
     6: 'Wall Decoration',
+    7: 'Special', # Models, Medals, Monthly Rewards
+    8: 'Special', # Tatami Stage only
     9: 'Arch',
-    10: 'Special',
-    11: 'Moving Object',
-    13: 'Special',
-    14: 'Following'
+    10: 'Special', # Wall Decor
+    11: 'Moving Object', # Mount
+    12: 'Special', # Teleporter Gate only
+    13: 'Special', # Collection
+    14: 'Following',
+    15: 'Special' # Antique Pipa only
 }
 
 strint = [
@@ -134,8 +138,7 @@ def build_decoritem(item):
         event = match.replace('/', ' ').strip().replace(' ', '-')
         notes.append('{{{{Audio|file=FurnLine {}.ogg}}}} {}'.format(event, event)) # must edit; file name will be incorrect
     note = '<br>'.join(notes)
-    if notes:
-        details.append(note)
+    details.append(note)
 
     return '|' + '|'.join(str(detail) for detail in details)
 
