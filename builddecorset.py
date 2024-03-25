@@ -125,6 +125,9 @@ def build_decoritem(item):
 
     notes = []
 
+    if item['gain_by']:
+        notes.append('Obtained in {}.'.format(item['gain_by'].strip()))
+
     if 'interAction' in item:
         actions = {}
         for action in item['interAction']:
@@ -133,8 +136,8 @@ def build_decoritem(item):
         for action in actions:
             notes.append('{} can {} here.'.format(strint[actions[action]], get_action(action)))
 
-    if item['gain_by']:
-        notes.append('Obtained in {}.'.format(item['gain_by'].strip()))
+    if 'spine' in item:
+        notes.append('Special interaction with shipgirls.') # must edit; clarify what the action is (dance, magic trick, etc)
 
     trigger = item['can_trigger'] # has message window if trigger[0] > 0
     if len(trigger) > 1: # plays audio from window
@@ -145,6 +148,10 @@ def build_decoritem(item):
             elif isinstance(action, list):
                 notes.append('|'.join(action))
 
+    if 'interaction_bgm' in item: # Super Stage, AzuNavi! Radio Booth, and Holostage only
+        notes.append('Plays audio on shipgirl interaction:')
+        notes.append(item['interaction_bgm'][1])
+
     matches = re.findall('\'event:(.+?)\'', str(item.get('spine'))) # plays audio on tap
     if matches:
         notes.append('Plays audio when tapped:')
@@ -152,12 +159,7 @@ def build_decoritem(item):
         event = match.replace('/', ' ').strip().replace(' ', '-')
         notes.append('{{{{Audio|file=FurnLine {}.ogg}}}} {}'.format(event, event)) # must edit; file name will be incorrect
 
-    if 'interaction_bgm' in item: # Super Stage, AzuNavi! Radio Booth, and Holostage only
-        notes.append('Plays audio on shipgirl interaction:')
-        notes.append(item['interaction_bgm'][1])
-
     note = '<br>'.join(notes)
-    # todo: check spine for other actions (dance, magic trick, etc)
     details.append(note)
 
     return '|' + '|'.join(str(detail) for detail in details)
