@@ -44,14 +44,14 @@ itemtype = {
     5: 'Floor Item', # like rugs, roads, carpets; can place decor on top
     6: 'Wall Decoration',
     7: 'Special', # Models, Medals, Monthly Rewards
-    8: 'Special', # Tatami Stage only
+    8: 'Special', # Tatami Stage only; elevated floor (walkable)
     9: 'Arch',
     10: 'Wallpaper Item', # can place wall decor on top; can overlap
     11: 'Moving Object', # Mount
     12: 'Special', # Teleporter Gate only
     13: 'Special', # Interactive, in Collection
     14: 'Following',
-    15: 'Special' # Antique Pipa only
+    15: 'Special' # Antique Pipa only; can play music (both audio and an instrument sim)
 }
 
 strint = [
