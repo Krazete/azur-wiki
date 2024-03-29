@@ -113,6 +113,7 @@ def get_action(action):
         'yun': 'stand' # dizzy
     }
     for aid in replacements:
+        print(action)
         action = action.replace(aid, replacements[aid])
     return action
 
@@ -165,7 +166,7 @@ def build_decoritem(item):
     if 'spine' in item:
         for action in walk(item['spine']):
             if action in ['attack', 'dance', 'sit', 'sleep', 'tuozhuai2', 'stand2', 'walk', 'yun']:
-                actions.append(action)
+                actions.append(get_action(action))
     if len(actions) == 1:
         notes.append('One shipgirl can {} here.'.format(actions[0]))
     elif len(actions) > 1:
