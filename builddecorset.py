@@ -70,13 +70,19 @@ strint = [
 
 def build_decorset(tid):
     '''Build a wikitable from AzurLaneData files.'''
-    theme = decorset['theme'][tid]
+    theme = decorset['theme'].get(tid, {
+        'name': 'NO THEME',
+        'desc': 'NO THEME',
+        'icon': 'NO THEME',
+        'ids': []
+    })
     lines = [
         '*\'\'\'Description:\'\'\' \'\'{}\'\''.format(theme['desc'].strip()),
         '{{{{FurnitureTable|ThemeIcon=FurnIcon_{}.png|Theme={}'.format(theme['icon'].replace(' ', '_'), theme['name'].strip())
     ]
 
-    iids = [str(iid) for iid in theme['ids']] + list(decorset['item'])
+    themeids = [str(iid) for iid in theme['ids']]
+    iids = themeids + list(decorset['item'])
     visited = set()
     for iid in iids:
         if iid in visited:
@@ -84,6 +90,8 @@ def build_decorset(tid):
         visited.add(iid)
         item = decorset['item'][iid]
         if str(item['themeId']) == tid:
+            if iid not in themeids:
+                print('SPECIAL:', item['name'])
             line = build_decoritem(item)
             if item['rarity'] > 0:
                 lines.append(line)
@@ -98,8 +106,9 @@ def build_decorset(tid):
 
 def get_action(action):
     replacements = {
-        'attack': 'stand',
+        'attack': 'stand', # Miniature Public Park only
         'stand2': 'stand',
+        'tuozhuai2': 'float', # drag, hang
         'wash': 'bath',
         'yun': 'stand' # dizzy
     }
@@ -107,13 +116,25 @@ def get_action(action):
         action = action.replace(aid, replacements[aid])
     return action
 
+def walk(x):
+    if isinstance(x, list):
+        for y in x:
+            for z in walk(y):
+                yield z
+    elif isinstance(x, dict):
+        for key in x:
+            for y in walk(x[key]):
+                yield walk(y)
+    else:
+        yield x
+
 def build_decoritem(item):
     '''Build a wikitable item entry line.'''
     iid = str(item['id'])
     details = [
         item['name'].strip(),
         item['icon'],
-        item['describe'].strip(),
+        re.sub('\s+', ' ', re.sub('<.+?>', ' ', item['describe'])).strip(),
         itemrarity[item['rarity']],
         itemtype.get(item['type'], '<TYPE_{}>'.format(item['type'])),
         decorset['shop'].get(iid, {}).get('dorm_icon_price', ''),
@@ -126,20 +147,34 @@ def build_decoritem(item):
     notes = []
 
     if item['gain_by']:
-        notes.append('Obtained in {}.'.format(item['gain_by'].strip()))
+        notes.append('Obtained in [[{}]].'.format(item['gain_by'].strip()))
 
     if 'interAction' in item:
         actions = {}
         for action in item['interAction']:
-            actions.setdefault(action[0], 0)
-            actions[action[0]] += 1
+            if isinstance(action, list):
+                act = action[0]
+            elif isinstance(action, dict): # Colorful Armor only
+                act = action[list(action)[0]]
+            actions.setdefault(act, 0)
+            actions[act] += 1
         for action in actions:
             notes.append('{} can {} here.'.format(strint[actions[action]], get_action(action)))
 
+    actions = []
     if 'spine' in item:
-        notes.append('Special interaction.') # must edit; clarify what the action is (dance, magic trick, etc) and if it's on tap or on shipgirl interaction
+        for action in walk(item['spine']):
+            if action in ['attack', 'dance', 'sit', 'sleep', 'tuozhuai2', 'stand2', 'walk', 'yun']:
+                actions.append(action)
+    if len(actions) == 1:
+        notes.append('One shipgirl can {} here.'.format(actions[0]))
+    elif len(actions) > 1:
+        notes.append('Special interaction.') # must edit; clarify what the action is (bungee, magic trick, etc) and if it's on tap or on shipgirl interaction
+        print('MUST EDIT ACTION:', item['name'])
 
     trigger = item['can_trigger'] # has message window if trigger[0] > 0
+    if trigger[0] > 0:
+        notes.append('TROPHY') # must edit out; just for detecting items with popup windows
     if len(trigger) > 1: # plays audio from window
         notes.append('Includes audio:')
         for action in trigger[1:]: # must edit; delete non-audio actions
@@ -147,6 +182,7 @@ def build_decoritem(item):
                 notes.append(action)
             elif isinstance(action, list):
                 notes.append('|'.join(action))
+        print('MUST EDIT AUDIO:', item['name'])
 
     if 'interaction_bgm' in item: # Super Stage, AzuNavi! Radio Booth, and Holostage only
         notes.append('Plays audio on shipgirl interaction:')
@@ -158,6 +194,7 @@ def build_decoritem(item):
     for match in matches:
         event = match.replace('/', ' ').strip().replace(' ', '-')
         notes.append('{{{{Audio|file=FurnLine {}.ogg}}}} {}'.format(event, event)) # must edit; file name will be incorrect
+        print('MUST EDIT AUDIO:', item['name'])
 
     note = '<br>'.join(notes)
     details.append(note)
@@ -178,14 +215,14 @@ if __name__ == '__main__':
     if args.download:
         from downloader import dl_decorset
         dl_decorset()
+    init_decorset()
     if args.setname:
-        init_decorset()
         tid = get_themeid(args.setname)
         build_decorset(tid)
-    if args.itemname:
-        if len(decorset) <= 0:
-            init_decorset()
+    elif args.itemname:
         item = get_item(args.itemname)
         line = build_decoritem(item)
         with open('output/decoritem.txt', 'w', encoding='utf-8') as fp:
             fp.write(line)
+    else:
+        build_decorset('0')

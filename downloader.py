@@ -78,7 +78,7 @@ def dl_decor():
         with open(path, 'wb') as fp:
             fp.write(decontent)
     os.makedirs('input', exist_ok=True)
-    html = urlopen('https://azurlane.koumakan.jp/w/index.php?title=Decorations&action=raw&section=8')
+    html = urlopen('https://azurlane.koumakan.jp/w/index.php?title=Decorations&action=raw&section=9')
     with open('input/decornow.txt', 'wb') as fp:
         fp.write(html.read())
 
