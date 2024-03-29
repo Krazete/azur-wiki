@@ -167,9 +167,10 @@ def build_memory(gid):
 
 # find stories with certain sprite ids
 def get_groupids_by_painting(name):
+    '''Find stories that include the specified shipgirl by name, skin name, or skin id.'''
     for skid in book['skin']['EN']:
         skin = book['skin']['EN'][skid]
-        if name in skin.get('name'):
+        if name.lower() in skin.get('name').lower() or name.lower() in skin.get('painting').lower():
             # skid = skin['ship_group'] # should be the same already
             print('{} ({})'.format(skin.get('name'), skin.get('painting')))
             
