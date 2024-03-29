@@ -113,7 +113,6 @@ def get_action(action):
         'yun': 'stand' # dizzy
     }
     for aid in replacements:
-        print(action)
         action = action.replace(aid, replacements[aid])
     return action
 
