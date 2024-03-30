@@ -17,7 +17,8 @@ def init_book():
         'ShareCfg/memory_template': 'memory',
         'ShareCfg/ship_skin_template': 'skin',
         'ShareCfg/name_code': 'code',
-        'GameCfg/story': 'story'
+        'GameCfg/story': 'story',
+        'GameCfg/dungeon': 'battle'
     }
     for lang in langs:
         for subpath in subpaths:
@@ -42,7 +43,14 @@ def parse_scripts(scripts, lang):
         skinid = script.get('actor')
         skinnameEN = book['skin']['EN'].get(str(skinid), {}).get('name', '').replace(' (Retrofit)', '/Kai').strip()
         skinname = book['skin'][lang].get(str(skinid), {}).get('name', '').replace(' (Retrofit)', '/Kai').strip()
-        actorname = script.get('actorName', skinname).replace(' (Retrofit)', '/Kai').strip()
+        actorname = script.get('actorName', '').replace(' (Retrofit)', '/Kai').strip()
+        if actorname == '':
+            sgid = book['skin'][lang].get(str(skinid), {}).get('ship_group', '')
+            for skid in book['skin'][lang]:
+                skin = book['skin'][lang][skid]
+                if skin['ship_group'] == sgid and skin['group_index'] == 0:
+                    actorname = skin['name']
+                    break
         actortext = script.get('say', '').strip()
 
         if 'subActors' in script: # todo: include subactors in output file
@@ -94,6 +102,8 @@ def parse_scripts(scripts, lang):
 
         if skinnameEN in bannedbanners:
             skinname = None
+        if skinnameEN in skinnames:
+            skinnameEN = skinnames[skinnameEN]
         paintingname = book['skin'][lang].get(str(skinid), {}).get('painting', '')
         if skinname and not paintingname.endswith('_hei'):
             if skinnameEN == actorname:
@@ -141,12 +151,18 @@ def build_memory(gid):
                 '| Language = {}'.format(lang)
             ]
             sid = memory['story']
-            story = book['story'][lang].get(sid.lower())
-
-            # print('STORY:', sid)
-            if story == None: # todo: figure out how to identify split stories (37-1, 37-2, 37-3) (b/c battle sims)
-                print('NO STORY:', sid)
-                continue
+            if sid.lower() in book['story'][lang]:
+                story = book['story'][lang][sid.lower()]
+            else: # battle sim
+                story = {'scripts': []}
+                battle = book['battle'][lang][sid.lower()]
+                triggers = []
+                for stage in battle['stages']:
+                    for wave in stage['waves']:
+                        if wave['triggerType'] == 3:
+                            triggers.append(wave['triggerParams']['id'])
+                for trigger in triggers:
+                    story['scripts'] = story['scripts'] + book['story'][lang][trigger.lower()]['scripts']
 
             scriptlines, nobgname = parse_scripts(story['scripts'], lang)
             lines += scriptlines
@@ -218,12 +234,33 @@ bgnames = {
     'deepecho': 'Abyssal Refrain',
     'guild_blue': 'Guild Blue',
     'guild_red_n': 'Guild Red Background Part 2',
-    'xuejing': 'Snowrealm Peregrination'
+    'xuejing': 'Snowrealm Peregrination',
+    # Zero to Hero
+    'mmorpg': 'From Zero to Hero',
+    'story_chuansong': 'Fantastical Encounter',
+    'story_school': 'School',
+    'unnamearea_1': 'Italy',
+}
+
+skinnames = { # todo: fill out, or figure out the pattern
+    'The Black Cat Cometh!': 'AkashiParty',
+    'Supporting Sorceress': 'ArkhangelskRPG',
+    'Skyward Burning Love': 'BlücherRPG',
+    'Sadistic Demon': 'DevonshireRPG',
+    'A Good Girl\'s Magic': 'JadeRPG',
+    'A Legend is Born?!': 'JavelinRPG',
+    'Sleepageddon': 'LaffeyRPG',
+    'Breeze of Blessings': 'LiverpoolRPG',
+    'Normal Potion Maker': 'NubianRPG',
+    'Snow White Guardian Angel': 'UnicornRPG',
+    'Upgrade Failure?!': 'Z23RPG',
+    'The Bard of Hamelin': 'Z46RPG',
 }
 
 ignoredbgnames = [
     'bg_unnamearea_0', # sakura islands map
     'bg_zhuiluo_2', # big lava 'x' island map
+    'blackbg',
     'star_level_bg_1100',
     'star_level_bg_1104', # white screen???
 ]
@@ -238,19 +275,18 @@ bannedbanners = [
 ]
 
 if 0: # testing
-    gid = get_groupid('Causality')
+    # gid = get_groupid('Causality')
     # gid = get_groupid('Superimposition')
     # gid = get_groupid('Peregrination')
+    gid = get_groupid('Zero')
     mid = build_memory(gid)
     with open('output/story.txt', 'w', encoding='utf-8') as fp:
         fp.write(mid)
 
-    get_groupid_by_painting('anjie') # anzeel
-    # get_groupid_by_painting('aosita') # aoste
-    # get_groupid_by_painting('silverfox') # silver fox
-    # get_groupid_by_painting('anjie_hei') # anzeel shadow
-    # get_groupid_by_painting('aosita_hei') # aoste shadow
-    # get_groupid_by_painting('silverfox_shadow') # silver fox shadow
+    # get_groupids_by_painting('anzeel') # anjie
+    # get_groupids_by_painting('aoste') # aosita
+    # get_groupids_by_painting('silver fox') # silverfox
+    get_groupids_by_painting('colette') # kelei
 
 if __name__ == '__main__':
     parser = ArgumentParser()

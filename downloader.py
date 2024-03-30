@@ -100,7 +100,8 @@ def dl_story():
         'ShareCfg/memory_template', # memories
         'ShareCfg/ship_skin_template', # shipgirl names
         'ShareCfg/name_code', # shipgirl namecodes
-        'GameCfg/story' # memory text
+        'GameCfg/story', # memory text
+        'GameCfg/dungeon' # battle sim info
     ]
     for lang in get_latest('story', ['CN', 'EN', 'JP']):
         for subfolder in ['Share', 'Game']:
