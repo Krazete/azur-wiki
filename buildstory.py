@@ -34,6 +34,24 @@ def get_groupid(title):
         if title in book['group']['EN'][gid]['title']:
             return gid
 
+def getwikiname(skinid, lang):
+    skin = book['skin'][lang].get(str(skinid))
+    if not skin:
+        return ''
+    sgid = skin['ship_group']
+    stid = skin['shop_type_id']
+    if not stid:
+        return skin['name']
+    for skid in book['skin'][lang]:
+        skin2 = book['skin'][lang][skid]
+        if skin2['ship_group'] == sgid and skin2['group_index'] == 0:
+            skname = skin2['name'].strip()
+            shtype = shop_type[stid]
+            if skname in shop_type_fixer:
+                if shtype in shop_type_fixer[skname]:
+                    shtype = shop_type_fixer[skname][shtype]
+            return '{}/{}'.format(skname, shtype)
+
 def parse_scripts(scripts, lang):
     lines = []
     bgrn = None
@@ -41,24 +59,21 @@ def parse_scripts(scripts, lang):
     nobgname = set()
     for script in scripts:
         skinid = script.get('actor')
-        skinnameEN = book['skin']['EN'].get(str(skinid), {}).get('name', '').replace(' (Retrofit)', '/Kai').strip()
-        skinname = book['skin'][lang].get(str(skinid), {}).get('name', '').replace(' (Retrofit)', '/Kai').strip()
-        actorname = script.get('actorName', '').replace(' (Retrofit)', '/Kai').strip()
-        if actorname == '':
-            sgid = book['skin'][lang].get(str(skinid), {}).get('ship_group', '')
-            for skid in book['skin'][lang]:
-                skin = book['skin'][lang][skid]
-                if skin['ship_group'] == sgid and skin['group_index'] == 0:
-                    actorname = skin['name']
-                    break
+        skinnameEN = getwikiname(skinid, 'EN')
+        skinname = getwikiname(skinid, lang)
+        actorname = script.get('actorName', '').strip()
+        if not actorname and skinnameEN != skinname:
+            actorname = skinname.split('/')[0]
         actortext = script.get('say', '').strip()
 
+        subactors = []
         if 'subActors' in script: # todo: include subactors in output file
             for subactor in script['subActors']:
                 subskinid = subactor['actor']
-                subskinnameEN = book['skin']['EN'].get(str(subskinid), {}).get('name', '').replace(' (Retrofit)', '/Kai').strip()
-                subskinname = book['skin'][lang].get(str(subskinid), {}).get('name', '').replace(' (Retrofit)', '/Kai').strip()
+                subskinnameEN = getwikiname(subskinid, 'EN')
+                subskinname = getwikiname(subskinid, lang)
                 print('SUBACTORS:', subskinnameEN, subskinname)
+                subactors.append(subskinnameEN)
 
         actorname = re.sub('[.·]?改', '', actorname) # kai
 
@@ -97,19 +112,23 @@ def parse_scripts(scripts, lang):
 
         for nc in book['code'][lang]:
             skinnameEN = re.sub('{{namecode:{}(:.+?)?}}'.format(nc), book['code']['EN'][nc]['name'], skinnameEN)
+            skinname = re.sub('{{namecode:{}(:.+?)?}}'.format(nc), book['code'][lang][nc]['name'], skinname)
             actorname = re.sub('{{namecode:{}(:.+?)?}}'.format(nc), book['code'][lang][nc]['name'], actorname)
             actortext = re.sub('{{namecode:{}(:.+?)?}}'.format(nc), book['code'][lang][nc]['name'], actortext)
+            for subactor in subactors:
+                subactor = re.sub('{{namecode:{}(:.+?)?}}'.format(nc), book['code'][lang][nc]['name'], subactor)
 
         if skinnameEN in bannedbanners:
             skinname = None
-        if skinnameEN in skinnames:
-            skinnameEN = skinnames[skinnameEN]
         paintingname = book['skin'][lang].get(str(skinid), {}).get('painting', '')
         if skinname and not paintingname.endswith('_hei'):
-            if skinnameEN == actorname:
-                lines.append('| [S:{}] {}'.format(actorname, actortext))
+            if skinnameEN and actorname:
+                lines.append('| [S:{}:{}]'.format(skinnameEN, actorname))
             else:
-                lines.append('| [S:{}:{}] {}'.format(skinnameEN, actorname, actortext))
+                lines.append('| [S:{}]'.format(skinnameEN))
+            for subactor in subactors:
+                lines[-1] += '[S:{}]'.format(subactor)
+            lines[-1] += ' {}'.format(actortext)
         elif actorname:
             lines.append('| [O:{}] {}'.format(actorname, actortext))
         elif actortext:
@@ -211,7 +230,48 @@ def get_groupids_by_painting(name):
 
 # manually built lists
 
+# from skin_page_template.json
+shop_type = {
+    # 0: 'Original', # on wiki, this is alpha art
+    1: 'Christmas',
+    2: 'New Year',
+    3: 'Spring',
+    4: 'School',
+    6: 'Summer',
+    7: 'Party',
+    8: 'Halloween',
+    9: 'Casual',
+    10: 'Festival',
+    11: 'Idol',
+    12: 'Special Exercise',
+    13: 'Sport',
+    14: 'RaceQueen',
+    15: 'Hospital',
+    16: 'Bunny',
+    17: 'Maid',
+    18: 'Vampire',
+    19: 'Fairy Tale',
+    20: 'Casual',
+    21: 'Dance',
+    22: 'Hot Springs',
+    23: 'Work',
+    24: 'RPG',
+    9997: 'Kai',
+    9998: 'Wedding',
+    9999: 'OTHER', # other
+}
+
+shop_type_fixer = { # todo: find mislabeled shop_type instances
+    'Ayanami': {
+        'Casual': 'RaceQueen'
+    },
+    'Prototype Bulin MKII': {
+        'OTHER': 'Event'
+    }
+}
+
 bgnames = {
+    'bg_bigbuli': 'The Golden Doubulin',
     # Parallel Superimposition
     'aircraft_future': 'Aircraft Future',
     'aostelab': 'Aoste Lab',
@@ -239,22 +299,7 @@ bgnames = {
     'mmorpg': 'From Zero to Hero',
     'story_chuansong': 'Fantastical Encounter',
     'story_school': 'School',
-    'unnamearea_1': 'Italy',
-}
-
-skinnames = { # todo: fill out, or figure out the pattern
-    'The Black Cat Cometh!': 'AkashiParty',
-    'Supporting Sorceress': 'ArkhangelskRPG',
-    'Skyward Burning Love': 'BlücherRPG',
-    'Sadistic Demon': 'DevonshireRPG',
-    'A Good Girl\'s Magic': 'JadeRPG',
-    'A Legend is Born?!': 'JavelinRPG',
-    'Sleepageddon': 'LaffeyRPG',
-    'Breeze of Blessings': 'LiverpoolRPG',
-    'Normal Potion Maker': 'NubianRPG',
-    'Snow White Guardian Angel': 'UnicornRPG',
-    'Upgrade Failure?!': 'Z23RPG',
-    'The Bard of Hamelin': 'Z46RPG',
+    'unnamearea': 'Unnamed Area',
 }
 
 ignoredbgnames = [
