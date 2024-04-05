@@ -22,7 +22,7 @@ python -m builddecor -d # update inputs first
 
 python -m builddecorset # build table of furniture items not part of a set
 python -m builddecorset -s <SET NAME> # build furniture set table
-python -m builddecorset -i <ITEM NAME> # build furniture item line
+python -m builddecorset -i <ITEM NAME> # build furniture item entries
 python -m builddecorset -d # update inputs first
 
 python -m buildstory -t <TITLE> # build story tables for matching titles

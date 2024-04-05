@@ -20,12 +20,12 @@ def get_themeid(name):
         if name in decorset['theme'][tid]['name']:
             return tid
 
-def get_item(name):
-    '''Get item object by name or name fragment.'''
+def get_items(name):
+    '''Get item objects by name or name fragment.'''
     for iid in decorset['item']:
         item = decorset['item'][iid]
         if name in item['name']:
-            return item
+            yield item
 
 itemrarity = [
     'Unobtainable',
@@ -193,7 +193,7 @@ def build_decoritem(item):
         notes.append('Plays audio when tapped:')
     for match in matches:
         event = match.replace('/', ' ').strip().replace(' ', '-')
-        notes.append('{{{{Audio|file=FurnLine {}.ogg}}}} {}'.format(event, event)) # must edit; file name will be incorrect
+        notes.append('{{{{Audio|file=FurnLine {0}.ogg}}}} [[Media:FurnLine {0}.ogg|{0}]]'.format(event)) # must edit; file name will be incorrect
         print('MUST EDIT AUDIO:', item['name'])
 
     note = '<br>'.join(notes)
@@ -210,7 +210,7 @@ if __name__ == '__main__':
     parser = ArgumentParser()
     parser.add_argument('-d', '--download', action='store_true', help='download data files')
     parser.add_argument('-s', '--setname', help='build decor set table by name')
-    parser.add_argument('-i', '--itemname', help='build decor item entry by name')
+    parser.add_argument('-i', '--itemname', help='build decor item entries by name')
     args = parser.parse_args()
     if args.download:
         from downloader import dl_decorset
@@ -220,9 +220,9 @@ if __name__ == '__main__':
         tid = get_themeid(args.setname)
         build_decorset(tid)
     elif args.itemname:
-        item = get_item(args.itemname)
-        line = build_decoritem(item)
+        items = get_items(args.itemname)
+        lines = [build_decoritem(item) for item in items]
         with open('output/decoritem.txt', 'w', encoding='utf-8') as fp:
-            fp.write(line)
+            fp.write('\n'.join(lines) + '\n')
     else:
         build_decorset('0')
