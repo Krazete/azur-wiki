@@ -15,11 +15,12 @@ def build_voices():
     voice = {}
     for key in story:
         for line in story[key].get('scripts', []):
-            if 'voice' in line:
-                b = re.sub('(\D)(\d)(\D)', '\g<1> \g<2>\g<3>', line['voice'])
+            audio = 'voice' # or 'soundeffect'
+            if audio in line:
+                b = re.sub('(\D)(\d)(\D)', '\g<1> \g<2>\g<3>', line[audio])
                 b = re.sub('(\D)(\d)$', '\g<1> \g<2>', b)
                 voice.setdefault(b, set())
-                voice[b].add(line['say'])
+                voice[b].add(line.get('say', ''))
     unique = {}
     general = {}
     for b in voice:
@@ -28,9 +29,15 @@ def build_voices():
         else:
             general[b] = list(voice[b])
     with open('output/voice_unique.json', 'w', encoding='utf-8') as fp:
-        json.dump(unique, fp, indent=4, separators=(',', ': '), sort_keys=True)
+        json.dump(unique, fp, ensure_ascii=False, indent=4, separators=(',', ': '), sort_keys=True)
     with open('output/voice_general.json', 'w', encoding='utf-8') as fp:
-        json.dump(general, fp, indent=4, separators=(',', ': '), sort_keys=True)
+        json.dump(general, fp, ensure_ascii=False, indent=4, separators=(',', ': '), sort_keys=True)
+
+    combined = unique
+    for b in general:
+        combined[b] = '<br>'.join(general[b])
+    with open('output/voice.json', 'w', encoding='utf-8') as fp:
+        json.dump(combined, fp, ensure_ascii=False, indent=4, separators=(',', ': '), sort_keys=True)
 
 if __name__ == '__main__':
     parser = ArgumentParser()
