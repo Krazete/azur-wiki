@@ -84,11 +84,17 @@ def dl_decor():
 
 def dl_decorset():
     '''Download decor set data files.'''
+    files = [
+        'backyard_theme_template',
+        'furniture_data_template',
+        'furniture_shop_template',
+        'shop_furniture_relation'
+    ]
     for lang in get_latest('decorset', ['EN']):
         folder = '{}/ShareCfg'.format(lang)
         os.makedirs(folder, exist_ok=True)
-        for prefix in ['backyard_theme', 'furniture_data', 'furniture_shop']:
-            path = '{}/{}_template.json'.format(folder, prefix)
+        for file in files:
+            path = '{}/{}.json'.format(folder, file)
             decontent = get_decontent(path)
             with open(path, 'wb') as fp:
                 fp.write(decontent)

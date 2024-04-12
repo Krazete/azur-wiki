@@ -13,6 +13,8 @@ def init_decorset():
         decorset['item'] = json.load(fp)
     with open('EN/ShareCfg/furniture_shop_template.json', 'r', encoding='utf-8') as fp:
         decorset['shop'] = json.load(fp)
+    with open('EN/ShareCfg/shop_furniture_relation.json', 'r', encoding='utf-8') as fp:
+        decorset['rel'] = json.load(fp)
 
 def get_themeid(name):
     '''Get theme id by set name or name fragment.'''
@@ -145,6 +147,13 @@ def build_decoritem(item):
     ]
 
     notes = []
+
+    for rid in decorset['rel']:
+        rel = decorset['rel'][rid]
+        if rel['fur_id'] == item['id']:
+            matches = re.match('(.+)——(.+)', rel['desc'])
+            if matches:
+                notes.append('[[{0}]] - [[{0}/Gallery#{1}-0|{1}]] Motif'.format(matches[1].strip(), matches[2].strip()))
 
     if item['gain_by']:
         notes.append('Obtained in [[{}]].'.format(item['gain_by'].strip()))
