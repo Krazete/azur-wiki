@@ -70,7 +70,7 @@ strint = [
     'Ten shipgirls'
 ]
 
-def build_decorset(tid):
+def build_decorset(tid, endbar):
     '''Build a wikitable from AzurLaneData files.'''
     theme = decorset['theme'].get(tid, {
         'name': 'NO THEME',
@@ -94,7 +94,7 @@ def build_decorset(tid):
         if str(item['themeId']) == tid:
             if iid not in themeids:
                 print('SPECIAL:', item['name'])
-            line = build_decoritem(item)
+            line = build_decoritem(item, endbar)
             if item['rarity'] > 0:
                 lines.append(line)
             else:
@@ -130,7 +130,7 @@ def walk(x):
     else:
         yield x
 
-def build_decoritem(item):
+def build_decoritem(item, endbar):
     '''Build a wikitable item entry line.'''
     iid = str(item['id'])
     details = [
@@ -206,7 +206,8 @@ def build_decoritem(item):
         print('MUST EDIT AUDIO:', item['name'])
 
     note = '<br>'.join(notes)
-    details.append(note)
+    if note or endbar:
+        details.append(note)
 
     return '|' + '|'.join(str(detail) for detail in details)
 
@@ -219,6 +220,7 @@ if __name__ == '__main__':
     parser = ArgumentParser()
     parser.add_argument('-d', '--download', action='store_true', help='download data files')
     parser.add_argument('-s', '--setname', help='build decor set table by name')
+    parser.add_argument('-e', '--endbar', action='store_true', help='include last `|` in lines with no note')
     parser.add_argument('-i', '--itemname', help='build decor item entries by name')
     args = parser.parse_args()
     if args.download:
@@ -227,11 +229,11 @@ if __name__ == '__main__':
     init_decorset()
     if args.setname:
         tid = get_themeid(args.setname)
-        build_decorset(tid)
+        build_decorset(tid, args.endbar)
     elif args.itemname:
         items = get_items(args.itemname)
-        lines = [build_decoritem(item) for item in items]
+        lines = [build_decoritem(item, args.endbar) for item in items]
         with open('output/decoritem.txt', 'w', encoding='utf-8') as fp:
             fp.write('\n'.join(lines) + '\n')
     else:
-        build_decorset('0')
+        build_decorset('0', args.endbar)
