@@ -121,8 +121,9 @@ def parse_scripts(scripts, lang):
         if skinnameEN in bannedbanners:
             skinname = None
         paintingname = book['skin'][lang].get(str(skinid), {}).get('painting', '')
+        actortext = actortext.replace('=', '{{=}}')
         if skinname and not paintingname.endswith('_hei'):
-            if skinnameEN and actorname:
+            if skinnameEN and actorname and skinnameEN.split('/')[0] != actorname:
                 lines.append('| [S:{}:{}]'.format(skinnameEN, actorname))
             else:
                 lines.append('| [S:{}]'.format(skinnameEN))
@@ -139,7 +140,7 @@ def parse_scripts(scripts, lang):
                 optcon = option['content']
                 for nc in book['code'][lang]:
                     optcon = re.sub('{{namecode:{}(:.+?)?}}'.format(nc), book['code'][lang][nc]['name'], optcon)
-                lines.append('| [O:Commander] \'\'\'Option {}\'\'\'<br>{}'.format(option['flag'], optcon))
+                lines.append('| [] \'\'\'Option {}\'\'\'<br>{}'.format(option['flag'], optcon)) # usually Commander
 
         if 'sequence' in script:
             seqlist = []
