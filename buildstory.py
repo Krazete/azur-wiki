@@ -191,12 +191,18 @@ def build_memory(gid):
         lines.pop()
         lines += ['}}', '|-|']
     lines.pop()
+
+    groupEN = book['group']['EN'][str(gid)]
+
     lines += [
         '</tabber>',
         '<noinclude>',
         '{{MemoryNavbox}}',
         '</noinclude>',
-        '[[Category:Event Memories|{}]]'.format(book['group']['EN'][str(gid)]['title'])
+        '[[Category:{} Memories|{}]]'.format(
+            memory_type[groupEN['type']][groupEN['subtype']],
+            groupEN['title']
+        )
     ]
     print('UNKNOWN BGS:', bgs)
     return '\n'.join(lines) + '\n'
@@ -230,6 +236,16 @@ def get_groupids_by_painting(name):
                 print('-', title)
 
 # manually built lists
+
+memory_type = {
+    1: {0: 'Campaign'},
+    2: {
+        1: 'Event',
+        2: 'Special',
+        3: 'Permanent'
+    },
+    3: {0: 'Character'}
+}
 
 # from skin_page_template.json
 shop_type = {
