@@ -176,7 +176,7 @@ def build_decoritem(item):
             if action in ['attack', 'dance', 'sit', 'sleep', 'tuozhuai2', 'stand2', 'walk', 'yun']:
                 actions.append(get_action(action))
     if len(actions) == 1:
-        notes.append('One shipgirl can {} here.'.format(actions[0]))
+        notes.append('{} can {} here.'.format(strint[1 + len(item['spine_extra'])], actions[0]))
     elif len(actions) > 1:
         notes.append('Special interaction.') # must edit; clarify what the action is (bungee, magic trick, etc) and if it's on tap or on shipgirl interaction
         print('MUST EDIT ACTION:', item['name'])
