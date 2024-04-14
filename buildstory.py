@@ -364,7 +364,7 @@ if 0: # testing
     # get_groupids_by_painting('silver fox') # silverfox
     get_groupids_by_painting('colette') # kelei
 
-    def findeq(pattern): # check stories for `=` (named parameter bug)
+    def findeq(key, pattern): # check stories for `=` (named parameter bug)
         checked = [
             'Veiled in White',
             'A Bump in the Rainy Night',
@@ -386,7 +386,7 @@ if 0: # testing
                         group = book['group'][lang][gid]
                         if memory['id'] in group['memories']:
                             titleEN = book['group']['EN'][gid]['title']
-                            print('\t' if titleEN in checked else '', z, lang, titleEN, group['id'], id, say, sep='|')
+                            print('\t' if titleEN in checked else '', z, lang, titleEN, group['id'], id, say, sep=' | ')
                             return True
             return False
 
@@ -395,8 +395,8 @@ if 0: # testing
             for sid in book['story'][lang]:
                 story = book['story'][lang][sid]
                 for script in story.get('scripts', {}):
-                    if 'say' in script:
-                        say = script['say']
+                    if key in script:
+                        say = str(script[key])
                         if re.findall(pattern, say):
                             x += 1
                             if getmemory(story['id'], lang, 'A'):
@@ -428,9 +428,12 @@ if 0: # testing
                                     break
                             if breakout:
                                 continue
-                            print('\t' if story['id'] in checked404 else '', '-', lang, 'NOT FOUND', story['id'], say, sep='|')
+                            print('\t' if story['id'] in checked404 else '', '-', lang, 'NOT FOUND', story['id'], say, sep=' | ')
         print(x)
-    findeq('^[^<]*=')
+    findeq('say', '^[^<]*=') # =
+    findeq('actor', '900355') # hermit meta
+    # findeq('actorName', 'Omitter')
+    get_groupids_by_painting('Omitter')
 
 if __name__ == '__main__':
     parser = ArgumentParser()
