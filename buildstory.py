@@ -121,7 +121,11 @@ def parse_scripts(scripts, lang):
         if skinnameEN in bannedbanners:
             skinname = None
         paintingname = book['skin'][lang].get(str(skinid), {}).get('painting', '')
-        actortext = actortext.replace('=', '{{=}}')
+
+        skinnameEN = skinnameEN.replace(':', '') # for arbiters
+        actorname = actorname.replace(':', '') # for arbiters
+        actortext = actortext.replace('=', '&#61;') # prevent named parameters
+
         if skinname and not paintingname.endswith('_hei'):
             if skinnameEN and actorname and skinnameEN.split('/')[0] != actorname:
                 lines.append('| [S:{}:{}]'.format(skinnameEN, actorname))
@@ -317,6 +321,16 @@ bgnames = {
     'story_chuansong': 'Fantastical Encounter',
     'story_school': 'School',
     'unnamearea': 'Unnamed Area',
+    # Confluence of Nothingness
+    'bsm': 'Scherzo of Iron and Blood',
+    'bsmre': 'Confluence of Nothingness',
+    'xinnong2': 'Dreamwaker\'s Butterfly',
+    'fuxiangxian': 'Inverted Orthant',
+    'story_tiancheng': 'Crimson Echoes',
+    'battle_night': 'Night Battle',
+    'underwater': 'Underwater',
+    'story_italy': 'Italy',
+    '': '',
 }
 
 ignoredbgnames = [
@@ -349,6 +363,74 @@ if 0: # testing
     # get_groupids_by_painting('aoste') # aosita
     # get_groupids_by_painting('silver fox') # silverfox
     get_groupids_by_painting('colette') # kelei
+
+    def findeq(pattern): # check stories for `=` (named parameter bug)
+        checked = [
+            'Veiled in White',
+            'A Bump in the Rainy Night',
+            'Confluence of Nothingness',
+            'Prologue',
+        ]
+        checked404 = [
+            'KONGXIANGJIAOHUIDIAN31-3',
+            'WORLD508C',
+            'WORLD508E',
+            'WORLD508G',
+        ]
+
+        def getmemory(id, lang, z):
+            for mid in book['memory'][lang]:
+                memory = book['memory'][lang][mid]
+                if memory['story'] == id:
+                    for gid in book['group'][lang]:
+                        group = book['group'][lang][gid]
+                        if memory['id'] in group['memories']:
+                            titleEN = book['group']['EN'][gid]['title']
+                            print('\t' if titleEN in checked else '', z, lang, titleEN, group['id'], id, say, sep='|')
+                            return True
+            return False
+
+        x = 0
+        for lang in langs:
+            for sid in book['story'][lang]:
+                story = book['story'][lang][sid]
+                for script in story.get('scripts', {}):
+                    if 'say' in script:
+                        say = script['say']
+                        if re.findall(pattern, say):
+                            x += 1
+                            if getmemory(story['id'], lang, 'A'):
+                                continue
+                            breakout = False
+                            for bid in book['battle'][lang]:
+                                battle = book['battle'][lang][bid]
+                                for stage in battle['stages']:
+                                    for wave in stage['waves']:
+                                        if wave['triggerType'] == 3:
+                                            if wave['triggerParams']['id'] == story['id']:
+                                                if getmemory(str(battle['id']), lang, 'B'):
+                                                    breakout = True
+                                                    break
+                                        if 'spawn' in wave:
+                                            for spawn in wave['spawn']:
+                                                if 'phase' in spawn:
+                                                    for phase in spawn['phase']:
+                                                        if 'story' in phase:
+                                                            if phase['story'] == story['id']:
+                                                                if getmemory(str(battle['id']), lang, 'C'):
+                                                                    breakout = True
+                                                                    break
+                                        if breakout:
+                                            break
+                                    if breakout:
+                                        break
+                                if breakout:
+                                    break
+                            if breakout:
+                                continue
+                            print('\t' if story['id'] in checked404 else '', '-', lang, 'NOT FOUND', story['id'], say, sep='|')
+        print(x)
+    findeq('^[^<]*=')
 
 if __name__ == '__main__':
     parser = ArgumentParser()
