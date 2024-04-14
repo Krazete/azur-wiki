@@ -86,11 +86,15 @@ def parse_scripts(scripts, lang):
                 bgmatch = re.match('^bg_(.+?)(?:_(bg|cg|n)?(\d+))?$', bgrn)
                 if bgmatch:
                     bggroups = bgmatch.groups()
-                    if bggroups[0] in bgnames:
-                        bgtitle = bgnames[bggroups[0]]
+                    bgcode = bggroups[0].strip()
+                    if bgcode in bgnames:
+                        bgtitle = bgnames[bgcode]
                         if bggroups[2]:
                             bgcg = {'cg': 'CG', 'n': 'Background Part'}.get(bggroups[1], 'Background')
-                            filename = 'Memory {} {} {}.png'.format(bgtitle, bgcg, bggroups[2])
+                            bgn = bggroups[2]
+                            if bgcode in ['bsm', 'bsmre'] and bgcg == 'Background':
+                                bgn = int(bgn) + 1
+                            filename = 'Memory {} {} {}.png'.format(bgtitle, bgcg, bgn)
                         else:
                             filename = 'Memory {} Background.png'.format(bgtitle)
                     else:
@@ -122,8 +126,8 @@ def parse_scripts(scripts, lang):
             skinname = None
         paintingname = book['skin'][lang].get(str(skinid), {}).get('painting', '')
 
-        skinnameEN = skinnameEN.replace(':', '') # for arbiters
-        actorname = actorname.replace(':', '') # for arbiters
+        skinnameEN = skinnameEN.replace(':', '').strip() # for arbiters
+        actorname = actorname.replace(':', '').strip() # for arbiters
         actortext = actortext.replace('=', '&#61;') # prevent named parameters
 
         if skinname and not paintingname.endswith('_hei'):
@@ -162,7 +166,7 @@ def build_memory(gid):
         group = book['group'][lang][str(gid)]
         lines += [
             '{} Story='.format(langs[lang]),
-            '=== {} ==='.format(group['title']),
+            '=== {} ==='.format(group['title'].strip()),
             '{{#tag:tabber|'
         ]
         for i, mid in enumerate(group['memories']):
@@ -170,8 +174,8 @@ def build_memory(gid):
             lines += [
                 'Chapter {}='.format(i + 1),
                 '{{Story',
-                '| Title = {}'.format(memory['title']),
-                '| Unlock = {}'.format(memory['condition']),
+                '| Title = {}'.format(memory['title'].strip()),
+                '| Unlock = {}'.format(memory['condition'].strip()),
                 '| Language = {}'.format(lang)
             ]
             sid = memory['story']
@@ -330,6 +334,8 @@ bgnames = {
     'battle_night': 'Night Battle',
     'underwater': 'Underwater',
     'story_italy': 'Italy',
+    # Pledge of the Radiant Court
+    'midgard': 'Tower of Transcendence',
     '': '',
 }
 
@@ -347,8 +353,15 @@ bannedbanners = [
     'Bon Homme Richard',
     # 'Jintsuu META',
     'Yorktown META',
-    'Arbiter: The Devil XV'
+    'Arbiter The Devil XV',
+    'Arbiter The Tower XVI',
 ]
+
+bannerfixer = { # currently unimplemented; todo: implement or detect name some other way
+    '▅H▊▇ro▅■ph▇▆▅': 'Arbiter The Hierophant V',
+    # 'Enterprise': 'Enterprise META', # only sometimes
+    # 'Takao': 'Takao META', # only sometimes
+}
 
 if 0: # testing
     # gid = get_groupid('Causality')
@@ -433,7 +446,21 @@ if 0: # testing
     findeq('say', '^[^<]*=') # =
     findeq('actor', '900355') # hermit meta
     # findeq('actorName', 'Omitter')
+
     get_groupids_by_painting('Omitter')
+    get_groupids_by_painting('Compiler')
+    get_groupids_by_painting('Observer')
+    get_groupids_by_painting('Purifier')
+    # get_groupids_by_painting('Tester')
+    get_groupids_by_painting('unknown1') # Tester
+
+    get_groupids_by_painting('Empress')
+    get_groupids_by_painting('Temperance')
+    get_groupids_by_painting('Strength')
+    get_groupids_by_painting('Hierophant')
+    get_groupids_by_painting('Hermit')
+
+    get_groupids_by_painting('TB')
 
 if __name__ == '__main__':
     parser = ArgumentParser()
