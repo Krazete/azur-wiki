@@ -10,6 +10,8 @@ langs = {
 }
 book = {}
 
+tb = False # set True to quick fix Project Identity: TB issues
+
 def init_book():
     '''Initializes `child` object with JSON files downloaded from AzurLaneData repo.'''
     subpaths = {
@@ -27,6 +29,12 @@ def init_book():
             with open(path, 'r', encoding='utf-8') as fp:
                 book.setdefault(cat, {})
                 book[cat][lang] = json.load(fp)
+        if tb:
+            for i in range(1000, 2000):
+                book['skin'][lang][str(i)] = {
+                    'ship_group': 90284,
+                    'shop_type_id': 9999
+                }
 
 def get_groupid(title):
     '''Get memory group id by title or title fragment.'''
@@ -65,6 +73,14 @@ def parse_scripts(scripts, lang):
         if not actorname and skinnameEN != skinname:
             actorname = skinname.split('/')[0]
         actortext = script.get('say', '').strip()
+        if tb:
+            skinnameEN = skinnameEN.replace('/OTHER', '')
+            skinname = skinname.replace('/OTHER', '')
+            actortext = re.sub('\{tb\}|\$\d+', '<{}>'.format({
+                'EN': 'Commander',
+                'CN': '指挥官',
+                'JP': '指揮官'
+            }[lang]), actortext)
 
         subactors = []
         if 'subActors' in script: # todo: include subactors in output file
@@ -83,14 +99,14 @@ def parse_scripts(scripts, lang):
             if bgrn.startswith('star_level_bg_'):
                 filename = 'Skin BG {}.png'.format(bgrn[14:])
             else:
-                bgmatch = re.match('^bg_(.+?)(?:_(bg|cg|n)?(\d+))?$', bgrn)
+                bgmatch = re.match('^bg_(.+?)(?:_(bg|cg|n|room)?(\d+))?$', bgrn)
                 if bgmatch:
                     bggroups = bgmatch.groups()
                     bgcode = bggroups[0].strip()
                     if bgcode in bgnames:
                         bgtitle = bgnames[bgcode]
                         if bggroups[2]:
-                            bgcg = {'cg': 'CG', 'n': 'Background Part'}.get(bggroups[1], 'Background')
+                            bgcg = {'cg': 'CG', 'n': 'Background Part', 'room': 'Room Background'}.get(bggroups[1], 'Background')
                             bgn = bggroups[2]
                             if bgcode in ['bsm', 'bsmre'] and bgcg == 'Background':
                                 bgn = int(bgn) + 1
@@ -148,7 +164,7 @@ def parse_scripts(scripts, lang):
                 optcon = option['content']
                 for nc in book['code'][lang]:
                     optcon = re.sub('{{namecode:{}(:.+?)?}}'.format(nc), book['code'][lang][nc]['name'], optcon)
-                lines.append('| [] \'\'\'Option {}\'\'\'<br>{}'.format(option['flag'], optcon)) # usually Commander
+                lines.append('| [{}] \'\'\'Option {}\'\'\'<br>{}'.format('O:Commander' if tb else '', option['flag'], optcon)) # usually Commander
 
         if 'sequence' in script:
             seqlist = []
@@ -336,6 +352,10 @@ bgnames = {
     'story_italy': 'Italy',
     # Pledge of the Radiant Court
     'midgard': 'Tower of Transcendence',
+    # Reflections of the Oasis
+    'alexandria': 'Reflections of the Oasis',
+    # Convergence of Hearts
+    'project_tb': 'Project Identity TB',
     '': '',
 }
 
