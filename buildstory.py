@@ -1,6 +1,7 @@
 import os
 import re
 import json
+from urllib.parse import quote
 from argparse import ArgumentParser
 
 langs = {
@@ -464,6 +465,7 @@ if 0: # testing
                             print('\t' if story['id'] in checked404 else '', '-', lang, 'NOT FOUND', story['id'], say, sep=' | ')
         print(x)
     findeq('say', '^[^<]*=') # =
+    findeq('bgName', 'hongran') # Tranquil Sea, Distant Thunder
     findeq('actor', '900355') # hermit meta
     # findeq('actorName', 'Omitter')
 
@@ -497,6 +499,6 @@ if __name__ == '__main__':
         mid = build_memory(gid)
         with open('output/story.txt', 'w', encoding='utf-8') as fp:
             fp.write(mid)
-        print('https://azurlane.koumakan.jp/w/index.php?title=Memories/{}&action=raw'.format(book['group']['EN'][gid]['title'].replace(' ', '_')))
+        print('https://azurlane.koumakan.jp/wiki/Memories/{}?action=raw'.format(quote(book['group']['EN'][gid]['title'])))
     if args.painting:
         get_groupids_by_painting(args.painting)
