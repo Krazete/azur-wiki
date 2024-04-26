@@ -4,6 +4,7 @@ import re
 from argparse import ArgumentParser
 
 decorset = {}
+ignorelist = []
 
 def init_decorset():
     '''Initializes `decor` and `decoritem` objects with JSON files downloaded from AzurLaneData repo.'''
@@ -209,7 +210,8 @@ def build_decoritem(item, endbar):
     if note or endbar:
         details.append(note)
 
-    return '|' + '|'.join(str(detail) for detail in details)
+    start = '|IGNORE|' if item['name'].strip() in ignorelist else '|'
+    return start + '|'.join(str(detail) for detail in details)
 
 # *'''Description:''' ''SET_DESCRIPTION''
 # {{FurnitureTable|ThemeIcon=FurnIcon_SET_ICON.png|Theme=SET_NAME
@@ -236,4 +238,9 @@ if __name__ == '__main__':
         with open('output/decoritem.txt', 'w', encoding='utf-8') as fp:
             fp.write('\n'.join(lines) + '\n')
     else:
+        from urllib.request import urlopen
+        html = urlopen('https://azurlane.koumakan.jp/wiki/Decorations?action=raw')
+        whole = html.read().decode()
+        section = whole.split('== Furniture without Set ==')[1].split('== List of Furniture Sets ==')[0]
+        ignorelist = re.findall('\n\|\s*(.+?)\s*\|', section)
         build_decorset('0', args.endbar)
