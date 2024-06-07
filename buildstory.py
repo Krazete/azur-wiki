@@ -67,6 +67,9 @@ def parse_scripts(scripts, lang):
     bgmrn = None
     nobgname = set()
     for script in scripts:
+        if isinstance(script, str):
+            print('Not a script:', script)
+            continue
         skinid = script.get('actor')
         skinnameEN = getwikiname(skinid, 'EN')
         skinname = getwikiname(skinid, lang)
@@ -86,11 +89,12 @@ def parse_scripts(scripts, lang):
         subactors = []
         if 'subActors' in script: # todo: include subactors in output file
             for subactor in script['subActors']:
-                subskinid = subactor['actor']
-                subskinnameEN = getwikiname(subskinid, 'EN')
-                subskinname = getwikiname(subskinid, lang)
-                print('SUBACTORS:', subskinnameEN, subskinname)
-                subactors.append(subskinnameEN)
+                if 'actor' in subactor:
+                    subskinid = subactor['actor']
+                    subskinnameEN = getwikiname(subskinid, 'EN')
+                    subskinname = getwikiname(subskinid, lang)
+                    print('SUBACTORS:', subskinnameEN, subskinname)
+                    subactors.append(subskinnameEN)
 
         actorname = re.sub('[.·]?改', '', actorname) # kai
 
@@ -143,6 +147,15 @@ def parse_scripts(scripts, lang):
             skinname = None
         paintingname = book['skin'][lang].get(str(skinid), {}).get('painting', '')
 
+        # name quickfixes
+        if skinnameEN == 'Bon Homme Richard':
+            if not actorname:
+                actorname = skinnameEN
+            skinnameEN = 'Bon Homme Richard META'
+        if 'gaoxiong_dark' in paintingname:
+            skinnameEN = 'Takao META'
+        if 'qiye_dark' in paintingname:
+            skinnameEN = 'Enterprise META'
         skinnameEN = skinnameEN.replace(':', '').strip() # for arbiters
         actorname = actorname.replace(':', '').strip() # for arbiters
         actortext = actortext.replace('=', '&#61;') # prevent named parameters
@@ -209,9 +222,10 @@ def build_memory(gid):
                 for trigger in triggers:
                     story['scripts'] = story['scripts'] + book['story'][lang][trigger.lower()]['scripts']
 
-            scriptlines, nobgname = parse_scripts(story['scripts'], lang)
-            lines += scriptlines
-            bgs = bgs.union(nobgname)
+            if 'scripts' in story:
+                scriptlines, nobgname = parse_scripts(story['scripts'], lang)
+                lines += scriptlines
+                bgs = bgs.union(nobgname)
             lines += ['}}', '{{!}}-{{!}}']
         lines.pop()
         lines += ['}}', '|-|']
@@ -371,18 +385,12 @@ ignoredbgnames = [
 bannedbanners = [
     # 'Dr. Anzeel',
     # 'Dr. Aoste',
-    'Bon Homme Richard',
+    # 'Bon Homme Richard',
     # 'Jintsuu META',
-    'Yorktown META',
-    'Arbiter The Devil XV',
-    'Arbiter The Tower XVI',
+    # 'Yorktown META',
+    # 'Arbiter The Devil XV',
+    # 'Arbiter The Tower XVI',
 ]
-
-bannerfixer = { # currently unimplemented; todo: implement or detect name some other way
-    '▅H▊▇ro▅■ph▇▆▅': 'Arbiter The Hierophant V',
-    # 'Enterprise': 'Enterprise META', # only sometimes
-    # 'Takao': 'Takao META', # only sometimes
-}
 
 if 0: # testing
     # gid = get_groupid('Causality')
