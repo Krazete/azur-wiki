@@ -110,11 +110,11 @@ def build_decorset(tid, endbar):
 def get_action(action):
     replacements = {
         'attack': 'stand', # Miniature Public Park only
-        'stand2': 'stand',
-        'tuozhuai2': 'float', # drag, hang
+        'tuozhuai': 'float', # drag, hang
         'wash': 'bath',
         'yun': 'stand' # dizzy
     }
+    action = re.sub('\d+', '', action)
     for aid in replacements:
         action = action.replace(aid, replacements[aid])
     return action
@@ -171,16 +171,18 @@ def build_decoritem(item, endbar):
         for action in actions:
             notes.append('{} can {} here.'.format(strint[actions[action]], get_action(action)))
 
-    actions = []
+    actions = set()
     if 'spine' in item:
-        for action in walk(item['spine']):
-            if action in ['attack', 'dance', 'sit', 'sleep', 'tuozhuai2', 'stand2', 'walk', 'yun']:
-                actions.append(get_action(action))
+        for actionN in walk(item['spine']):
+            if isinstance(actionN, str):
+                action = get_action(actionN)
+                if action in ['attack', 'dance', 'sit', 'sleep', 'tuozhuai', 'stand', 'walk', 'yun']:
+                    actions.add(action)
     if len(actions) == 1:
-        notes.append('{} can {} here.'.format(strint[1 + len(item['spine_extra'])], actions[0]))
+        notes.append('{} can {} here.'.format(strint[1 + len(item['spine_extra'])], actions.pop())) # todo: detect different types of stand (edit get_action method)
     elif len(actions) > 1:
         notes.append('Special interaction.') # must edit; clarify what the action is (bungee, magic trick, etc) and if it's on tap or on shipgirl interaction
-        print('MUST EDIT ACTION:', item['name'])
+        print('MUST EDIT ACTION:', item['name'], actions)
 
     trigger = item['can_trigger'] # has message window if trigger[0] > 0
     if trigger[0] > 0:
