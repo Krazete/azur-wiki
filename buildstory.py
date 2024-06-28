@@ -80,11 +80,9 @@ def parse_scripts(scripts, lang):
         if tb:
             skinnameEN = skinnameEN.replace('/OTHER', '')
             skinname = skinname.replace('/OTHER', '')
-            actortext = re.sub('\{tb\}|\$\d+', '<{}>'.format({
-                'EN': 'Commander',
-                'CN': '指挥官',
-                'JP': '指揮官'
-            }[lang]), actortext)
+            actortext = re.sub('\{tb\}|\$\d+', '<{}>'.format(commander[lang]), actortext)
+        actorname = re.sub('\{playername\}', commander[lang], actorname)
+        actortext = re.sub('\{playername\}', commander[lang], actortext)
 
         subactors = []
         if 'subActors' in script: # todo: include subactors in output file
@@ -275,6 +273,12 @@ def get_groupids_by_painting(name):
                 print('-', title)
 
 # manually built lists
+
+commander = {
+    'EN': 'Commander',
+    'CN': '指挥官',
+    'JP': '指揮官'
+}
 
 memory_type = {
     1: {0: 'Campaign'},
