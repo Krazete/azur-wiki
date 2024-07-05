@@ -99,6 +99,21 @@ def dl_decorset():
             with open(path, 'wb') as fp:
                 fp.write(decontent)
 
+def dl_skin():
+    '''Download equip skin data files.'''
+    files = [
+        'equip_skin_theme_template',
+        'equip_skin_template'
+    ]
+    for lang in get_latest('skin', ['EN']):
+        folder = '{}/ShareCfg'.format(lang)
+        os.makedirs(folder, exist_ok=True)
+        for file in files:
+            path = '{}/{}.json'.format(folder, file)
+            decontent = get_decontent(path)
+            with open(path, 'wb') as fp:
+                fp.write(decontent)
+
 def dl_story():
     '''Download story data files.'''
     subpaths = [
