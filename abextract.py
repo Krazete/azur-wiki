@@ -1,4 +1,5 @@
 import os
+import re
 import UnityPy
 from UnityPy.files import BundleFile
 from pathlib import Path
@@ -7,12 +8,12 @@ assetbundles = UnityPy.load('AssetBundles')
 
 outpaths = {
     'Texture2D': set(),
-    'Sprite': set(),
-    'TextAsset': set()
+    # 'Sprite': set(),
+    # 'TextAsset': set()
 }
 
 iconnames = {
-    'equips': 'EquipSkinIcon {}', # revert for non-skins
+    'equips': 'EquipSkinIcon {}', # revert for non-skin gear; find gear categories in equip_data_statistics.json
     'furnitureicon': 'FurnIcon {}',
     'skillicon': 'Skill {}',
     'spweapon': 'Augment {}'
@@ -27,6 +28,7 @@ shipassets = {
 }
 
 shipnames = {
+    # 2024-07-02
     'aierdeliqi_8': 'EldridgeSchool2',
     'guanghui_7': 'IllustriousWork',
     'u31_2': 'U-31School',
@@ -37,7 +39,16 @@ shipnames = {
     'z43_2': 'Z43School',
     'z43': 'Z43',
     'z47_2': 'Z47School',
-    'z47': 'Z47'
+    'z47': 'Z47',
+    # 2024-07-11
+    'aijier_3': 'ÄgirSpring',
+    'aersasi': 'Alsace',
+    'beiyade': 'Bayard',
+    'dashan': 'Daisen',
+    'haerfude': 'Halford',
+    'haitian_5': 'Hai TienSpring2',
+    'nabulesi': 'Napoli',
+    'naximofu': 'Admiral Nakhimov',
 }
 
 paintings = set()
@@ -60,12 +71,12 @@ for obj in assetbundles.objects:
             outpath = Path(parent, template.format(shipname))
         # generate azur-paint commands
         elif parent.name == 'painting' and '_tex' not in asset.name and asset.name not in paintings:
-            cmd = 'python -m main2 {}-p {} -o {}{}{}'.format( # warning: often nonstandard
+            cmd = 'python -m main2 {}-p {} -o \'{}{}{}\''.format( # warning: often nonstandard
                 '-c ' if '_n' in asset.name else '',
                 asset.name,
-                shipnames.get(asset.name, asset.name),
+                shipnames.get(re.split('_\D', asset.name)[0], asset.name),
                 'CN' if '_hx' in asset.name else '',
-                'WithoutBackground' if '_n' in asset.name else ''
+                'WithoutBG' if '_n' in asset.name else ''
             )
             cmds.append(cmd)
         # iterate duplicate names
@@ -82,5 +93,6 @@ for obj in assetbundles.objects:
             with open(outpath, 'wb') as fp:
                 fp.write(asset.script.tobytes())
 
-with open('Texture2D/SHIP/azur-paint.txt', 'w') as fp:
-    fp.write('\n'.join(cmds))
+os.makedirs('Texture2D/SHIP', exist_ok=True)
+with open('Texture2D/SHIP/azur-paint.txt', 'wb') as fp:
+    fp.write(bytes('\n'.join(cmds), 'utf-8'))
