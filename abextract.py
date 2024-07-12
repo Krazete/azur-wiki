@@ -15,6 +15,7 @@ outpaths = {
 iconnames = {
     'equips': 'EquipSkinIcon {}', # revert for non-skin gear; find gear categories in equip_data_statistics.json
     'furnitureicon': 'FurnIcon {}',
+    'mangapic': 'Manga {}',
     'skillicon': 'Skill {}',
     'spweapon': 'Augment {}'
 }
