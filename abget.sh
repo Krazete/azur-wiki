@@ -1,7 +1,23 @@
 #!/bin/bash
-# todo: ask to delete current AssetBundles folder
-# todo: ask what number of days is considered new
-# retrieve all files with a last modified time of a week ago or less
+
+if [ -d AssetBundles ]; then
+    read -p "AssetBundles directory exists. Delete it? (y/n)"$'\n' delab
+    if [[ $delab == [Yy] ]]; then
+        rm -r AssetBundles
+        echo "AssetBundles deleted."
+    else
+        echo "AssetBundles retained."
+    fi
+fi
+
+read -p "Enter the age (in days) of files to extract."$'\n' days
+if [[ ! $days =~ ^[0-9]+$ ]]; then
+    echo "Error: Invalid number of days. Exiting..."
+    sleep 2
+    exit 1
+fi
+
+# retrieve all files with a last modified time of $days days ago or later
 now=$(date +%s)
 filelist=$(adb shell ls -Rpgot sdcard/Android/data/com.YoStarEN.AzurLane/files/AssetBundles) # sort by and include last modified time (mtime)
 while IFS=$'\t\r\n' read -r line; do
@@ -13,7 +29,7 @@ while IFS=$'\t\r\n' read -r line; do
         stamp=${BASH_REMATCH[1]} # date and time; format: "1970-01-01 00:00"
         mtime=$(date -d "$stamp" +%s) # stamp in seconds
         # mtime=$(adb shell -n stat -c %Y $srcpath) # unused alternative; too expensive and slow
-        age=$(($now - $mtime - 7*86400)) # date difference minus a week
+        age=$(($now - $mtime - $days * 86400)) # date difference minus $days days
         if [[ $age == -* ]]; then
             name=${BASH_REMATCH[2]}
             srcpath=$parent/$name # file path on phone
