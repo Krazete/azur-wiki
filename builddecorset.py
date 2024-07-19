@@ -80,8 +80,11 @@ def build_decorset(tid, endbar):
         'ids': []
     })
     lines = [
-        '*\'\'\'Description:\'\'\' \'\'{}\'\''.format(theme['desc'].strip()),
-        '{{{{FurnitureTable|ThemeIcon=FurnIcon_{}.png|Theme={}'.format(theme['icon'].replace(' ', '_'), theme['name'].strip())
+        '{{{{FurnitureTable|ThemeIcon=FurnIcon_{}.png|Theme={}|ThemeDesc={}'.format(
+            theme['icon'].replace(' ', '_'),
+            theme['name'].strip(),
+            theme['desc'].strip()
+        )
     ]
 
     themeids = [str(iid) for iid in theme['ids']]
@@ -215,8 +218,7 @@ def build_decoritem(item, endbar):
     start = '|IGNORE|' if item['name'].strip() in ignorelist else '|'
     return start + '|'.join(str(detail) for detail in details)
 
-# *'''Description:''' ''SET_DESCRIPTION''
-# {{FurnitureTable|ThemeIcon=FurnIcon_SET_ICON.png|Theme=SET_NAME
+# {{FurnitureTable|ThemeIcon=FurnIcon_SET_ICON.png|Theme=SET_NAME|ThemeDesc=SET_DESCRIPTION
 # |NAME|ICON|DESCRIPTION|RARITY|TYPE|COINS|GEMS|HAPPINESS|SIZE|QUANTITY(|NOTES)?
 # }}
 

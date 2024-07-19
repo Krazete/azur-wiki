@@ -20,19 +20,24 @@ def get_themeid(name):
     return '0'
 
 equiptype = {
-    (1, 2, 3): '{{DD}} DD Main Gun<br>{{CL}} CL Main Gun<br>{{CA}} CA Main Gun',
-    (4, 11): '{{BB}} BB Main Gun',
-    (5, 13): '{{Torpedo}} Torpedo<br>{{Torpedo}} Sub Torpedo',
-    (7,): '{{CV}} Fighter',
-    (8,): '{{CV}} Torpedo Bomber',
-    (9,): '{{CV}} Dive Bomber',
-    (10,): 'Auxiliary'
+    (1, 2, 3): 'DD/CL/CA',
+    (4, 11): 'BB',
+    (5, 13): 'Torpedo/SS',
+    (7,): 'Fighter',
+    (8,): 'TB',
+    (9,): 'DB',
+    (10,): 'Aux'
 }
 
 def build_skinbox(tid=None):
     '''Build a wikitable from AzurLaneData files.'''
     theme = skinbox['theme'].get(tid, {'name': 'NO THEME', 'ids': []})
-    lines = ['{{{{EquipSkinHeader|{}}}}}'.format(theme['name'].strip())]
+    lines = [
+        '{{{{EquipSkinTable|ThemeIcon={}_GearSkinBox.png|Theme={}'.format(
+            theme['name'].strip().replace(' ', '_'),
+            theme['name'].strip()
+        )
+    ]
 
     themeids = [str(iid) for iid in theme['ids']]
     iids = themeids + list(skinbox['item'])
@@ -47,7 +52,7 @@ def build_skinbox(tid=None):
             if iid not in themeids and tid != None:
                 print('SPECIAL/WRONG:', item['name'])
             lines.append(line)
-    lines.append('|}}<noinclude>[[Category:Equipment Skins|{}]]</noinclude>'.format(theme['name'].strip()[0]))
+    lines.append('}}')
 
     os.makedirs('output', exist_ok=True)
     page = '\n'.join(lines) + '\n'
@@ -59,17 +64,16 @@ def build_skinitem(item):
     iid = str(item['id'])
     itype = tuple(item['equip_type'])
     details = [
-        '{{EquipSkinRow',
         re.sub('(\S)\(', '\g<1> (', item['name']).strip(),
         item['icon'],
         re.sub('\s+', ' ', re.sub('<.+?>', ' ', item['desc'])).strip(),
         equiptype.get(itype, '<EQUIP_TYPE_{}>'.format(itype))
     ]
-    return '|'.join(details) + '}}'
+    return '|' + '|'.join(details)
 
-# {{EquipSkinHeader|SET_NAME}}
-# {{EquipSkinRow|NAME|ID|DESCRIPTION|{{TYPE_ID}} TYPE<br>{{TYPE2_ID}} TYPE2}}
-# |}<noinclude>[[Category:Equipment Skins|FIRST_LETTER_OF_SUBPAGE_TITLE]]</noinclude>
+# {{EquipSkinHeader|ThemeIcon=SET_ICON_GearSkinBox.png|Theme=SET_NAME
+# |NAME|ICON|DESCRIPTION|{{TYPE_ID}} TYPE<br>{{TYPE2_ID}} TYPE2
+# }}
 # set name may not be the same as subpage title (e.g. set Port Café is on page Equipment_Skins/Café)
 
 if __name__ == '__main__':
