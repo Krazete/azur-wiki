@@ -22,8 +22,8 @@ def get_themeid(name):
 equiptype = {
     (1, 2, 3): 'DD/CL/CA',
     (4, 11): 'BB',
-    (5, 13): 'Torpedo/SS',
-    (7,): 'Fighter',
+    (5, 13): 'Trp/SS',
+    (7,): 'Ftr',
     (8,): 'TB',
     (9,): 'DB',
     (10,): 'Aux'
