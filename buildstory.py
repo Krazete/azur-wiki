@@ -291,7 +291,7 @@ memory_type = {
 }
 
 # from skin_page_template.json
-shop_type = {
+shop_type = { # todo: use buildskinname.py instead
     # 0: 'Original', # on wiki, this is alpha art
     1: 'Christmas',
     2: 'New Year',
@@ -311,7 +311,7 @@ shop_type = {
     17: 'Maid',
     18: 'Vampire',
     19: 'Fairy Tale',
-    20: 'Casual',
+    20: 'Home Relaxation',
     21: 'Dance',
     22: 'Hot Springs',
     23: 'Work',

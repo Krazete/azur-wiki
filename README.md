@@ -26,11 +26,17 @@ python -m builddecorset -i <ITEM NAME> # build furniture item entries
 python -m builddecorset -e # include last `|` in lines with no note
 python -m builddecorset -d # (re)download prerequisite input data
 
-python -m buildskin # build table of all gear skins
-python -m buildskin -s <SET NAME> # build gear skin box table
-python -m buildskin -d # (re)download prerequisite input data
+python -m buildequipskin # build table of all gear skins
+python -m buildequipskin -s <SET NAME> # build gear skin box table
+python -m buildequipskin -d # (re)download prerequisite input data
 
 python -m buildstory -t <TITLE> # build story tables for matching titles
 python -m buildstory -p <CHARACTER> # get story titles containing sprites of matching characters
 python -m buildstory -d # (re)download prerequisite input data
+
+python -m buildskinname # build list of ship skin names
+python -m buildskinname -d # (re)download prerequisite input data
+
+python -m abextract # extract files from AssetBundles and build command list for azur-paint
+# execute abget.sh to get the latest AssetBundles files first
 ```

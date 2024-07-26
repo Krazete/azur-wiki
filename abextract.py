@@ -28,7 +28,7 @@ shipassets = {
     'squareicon': '{}Icon'
 }
 
-shipnames = { # name + shop_type_id + increment (in ship_skin_template.json)
+shipnames = { # run buildskinname to check what these should be
     # 2024-07-02
     'aierdeliqi_8': 'EldridgeSchool2',
     'guanghui_7': 'IllustriousWork',
@@ -56,7 +56,7 @@ shipnames = { # name + shop_type_id + increment (in ship_skin_template.json)
     'guogan': 'L\'Audacieux',
     'guogan_2': 'L\'AudacieuxRaceQueen',
     'haman_6': 'HammannRaceQueen',
-    'luoma_4': 'RomaRaceQueen',
+    'luoma_4': 'RomaSummer',
     'ruihe_4': 'ZuikakuRaceQueen2',
     'sitelasibao': 'Strasbourg',
     'sitelasibao_2': 'StrasbourgRaceQueen',
@@ -101,25 +101,27 @@ for obj in assetbundles.objects:
                 fp.write(asset.script.tobytes())
 
 # generate azur-paint commands
-cmds = []
-for fn in os.listdir('AssetBundles/painting'):
-    if Path('AssetBundles/painting', fn).is_file() and '_tex' not in fn:
-        shipname = shipnames.get(re.sub('_n|_hx|_bj|_rw', '', fn), fn)
-        cmds.append('{}{}python -m main2 {}-p {} -o "{}{}{}{}{}"'.format( # warning: often nonstandard
-            'IGNORE: ' if '_bj' in fn or '_rw' in fn else '',
-            'UNNAMED: ' if shipname == fn else '',
-            '-c ' if '_n' in fn else '',
-            fn,
-            shipname,
-            'CN' if '_hx' in fn else '',
-            'WithoutBG' if '_n' in fn else '',
-            'WithoutShipgirl' if '_bj' in fn else '',
-            'WithoutRigging' if '_rw' in fn else ''
-        ))
-if len(cmds):
-    os.makedirs('Texture2D/SHIP', exist_ok=True)
-    with open('Texture2D/SHIP/azur-paint.txt', 'wb') as fp:
-        fp.write(bytes('\n'.join(cmds), 'utf-8'))
+painting = Path('AssetBundles/painting')
+if painting.is_dir():
+    cmds = []
+    for fn in os.listdir(painting):
+        if Path(painting, fn).is_file() and '_tex' not in fn:
+            shipname = shipnames.get(re.sub('_n|_hx|_bj|_rw', '', fn), fn)
+            cmds.append('{}{}python -m main2 {}-p {} -o "{}{}{}{}{}"'.format( # warning: often nonstandard
+                'IGNORE: ' if '_bj' in fn or '_rw' in fn else '',
+                'UNNAMED: ' if shipname == fn else '',
+                '-c ' if '_n' in fn else '',
+                fn,
+                shipname,
+                'CN' if '_hx' in fn else '',
+                'WithoutBG' if '_n' in fn else '',
+                'WithoutShipgirl' if '_bj' in fn else '',
+                'WithoutRigging' if '_rw' in fn else ''
+            ))
+    if len(cmds):
+        os.makedirs('Texture2D/SHIP', exist_ok=True)
+        with open('Texture2D/SHIP/azur-paint.txt', 'wb') as fp:
+            fp.write(bytes('\n'.join(cmds), 'utf-8'))
 
 '''
 Notes on Names, Data Templates, and Categories

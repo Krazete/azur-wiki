@@ -135,3 +135,18 @@ def dl_story():
                     path = '{}/{}jp.json'.format(lang, subpath)
                 decontent = get_decontent(path)
                 fp.write(decontent)
+
+def dl_shipnames():
+    '''Download EN ship name files.'''
+    files = [
+        'ship_skin_template', # shipgirl names
+        'name_code', # shipgirl namecodes
+    ]
+    for lang in get_latest('shipnames', ['EN']):
+        folder = '{}/ShareCfg'.format(lang)
+        os.makedirs(folder, exist_ok=True)
+        for file in files:
+            path = '{}/{}.json'.format(folder, file)
+            decontent = get_decontent(path)
+            with open(path, 'wb') as fp:
+                fp.write(decontent)
