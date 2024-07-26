@@ -28,7 +28,7 @@ shipassets = {
     'squareicon': '{}Icon'
 }
 
-shipnames = {
+shipnames = { # name + shop_type_id + increment (in ship_skin_template.json)
     # 2024-07-02
     'aierdeliqi_8': 'EldridgeSchool2',
     'guanghui_7': 'IllustriousWork',
@@ -50,12 +50,24 @@ shipnames = {
     'haitian_5': 'Hai TienSpring2',
     'nabulesi': 'Napoli',
     'naximofu': 'Admiral Nakhimov',
+    # 2024-07-25
+    'dipulaikesi': 'Dupleix',
+    'dipulaikesi_2': 'DupleixRaceQueen',
+    'guogan': 'L\'Audacieux',
+    'guogan_2': 'L\'AudacieuxRaceQueen',
+    'haman_6': 'HammannRaceQueen',
+    'luoma_4': 'RomaRaceQueen',
+    'ruihe_4': 'ZuikakuRaceQueen2',
+    'sitelasibao': 'Strasbourg',
+    'sitelasibao_2': 'StrasbourgRaceQueen',
+    'u96_4': 'U-96RaceQueen',
+    'xiafei_4': 'JoffreRaceQueen',
+    'xia_alter': 'Kasumi META',
 }
 
-paintings = set()
-cmds = []
-
+# extract asset types as listed in outpaths
 for obj in assetbundles.objects:
+    break
     assetfile = obj.assets_file.assetbundle.m_Name
     if obj.type.name in outpaths:
         asset = obj.read()
@@ -68,24 +80,17 @@ for obj in assetbundles.objects:
         elif parent.name in shipassets:
             template = shipassets[parent.name]
             parent = Path(parent.parent, 'SHIP')
-            shipname = shipnames.get(asset.name.lower(), asset.name)
+            shipname = shipnames.get(asset.name.lower().replace('_hx', ''), asset.name)
+            if '_hx' in asset.name:
+                shipname += 'CN'
             outpath = Path(parent, template.format(shipname))
-        # generate azur-paint commands
-        elif parent.name == 'painting' and '_tex' not in asset.name and asset.name not in paintings:
-            cmd = 'python -m main2 {}-p {} -o \'{}{}{}\''.format( # warning: often nonstandard
-                '-c ' if '_n' in asset.name else '',
-                asset.name,
-                shipnames.get(re.split('_\D', asset.name)[0], asset.name),
-                'CN' if '_hx' in asset.name else '',
-                'WithoutBG' if '_n' in asset.name else '',
-                'WithoutRigging' if '_rw' in asset.name else ''
-            )
-            cmds.append(cmd)
-        # iterate duplicate names
-        i = 1
-        while outpath in outpaths[obj.type.name]:
-            outpath = '{} ({})'.format(outpath, i)
+        # increment duplicate names
+        i = 0
+        inc = ''
+        while str(outpath) + inc in outpaths[obj.type.name]:
             i += 1
+            inc = ' ({})'.format(i)
+        outpath = str(outpath) + inc
         outpaths[obj.type.name].add(outpath)
         # save
         os.makedirs(parent, exist_ok=True)
@@ -95,9 +100,26 @@ for obj in assetbundles.objects:
             with open(outpath, 'wb') as fp:
                 fp.write(asset.script.tobytes())
 
-os.makedirs('Texture2D/SHIP', exist_ok=True)
-with open('Texture2D/SHIP/azur-paint.txt', 'wb') as fp:
-    fp.write(bytes('\n'.join(cmds), 'utf-8'))
+# generate azur-paint commands
+cmds = []
+for fn in os.listdir('AssetBundles/painting'):
+    if Path('AssetBundles/painting', fn).is_file() and '_tex' not in fn:
+        shipname = shipnames.get(re.sub('_n|_hx|_bj|_rw', '', fn), fn)
+        cmds.append('{}{}python -m main2 {}-p {} -o "{}{}{}{}{}"'.format( # warning: often nonstandard
+            'IGNORE: ' if '_bj' in fn or '_rw' in fn else '',
+            'UNNAMED: ' if shipname == fn else '',
+            '-c ' if '_n' in fn else '',
+            fn,
+            shipname,
+            'CN' if '_hx' in fn else '',
+            'WithoutBG' if '_n' in fn else '',
+            'WithoutShipgirl' if '_bj' in fn else '',
+            'WithoutRigging' if '_rw' in fn else ''
+        ))
+if len(cmds):
+    os.makedirs('Texture2D/SHIP', exist_ok=True)
+    with open('Texture2D/SHIP/azur-paint.txt', 'wb') as fp:
+        fp.write(bytes('\n'.join(cmds), 'utf-8'))
 
 '''
 Notes on Names, Data Templates, and Categories
@@ -110,11 +132,26 @@ Skill Icon
 Event Banner
     <Event Name> Event Banner EN.png
     [[Category:Event banners]]
-Loading Screens
+Cruise Mission Menu
+    Cruise Missions Season <Season Number>.jpg
+    [[Category:Event banners]]
+Loading Screen
     Bg <YYYY>.<MM>.<DD> <Index>.png
     [[Category:Loading Screens]]
 Manga / Comic
     [[Category:Comics]]
+
+Memory Icon
+    Memory <Story Title>.png
+    [[Category:Memory thumbnails]]
+Character Memory Folder
+    <Ship Name>Memory.png
+    [[Category:Character Memory folders]]
+Hall of Fame Memory Icon
+    <Ship Name>HallofFame.png
+    [[Category:Memory thumbnails]]
+Secret CD
+    <Ship Name>Secret.png
 
 Gear / Equipment Skin
     [[Category:Equipment Skins]]
@@ -127,7 +164,7 @@ Gear / Equipment Skin Box (ALL)
     {{ItemData|Props/<File Name>|<Box ID>|Selection Gear Skin Box (<Box Name>)}}
     [[Category:Equipment skin boxes]]
 
-Augments
+Augment
     [[Category:Augment Module]]
 Gear / Equipment
     <Gear ID>.png
