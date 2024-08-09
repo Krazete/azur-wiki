@@ -67,7 +67,6 @@ shipnames = { # run buildskinname to check what these should be
 
 # extract asset types as listed in outpaths
 for obj in assetbundles.objects:
-    break
     assetfile = obj.assets_file.assetbundle.m_Name
     if obj.type.name in outpaths:
         asset = obj.read()

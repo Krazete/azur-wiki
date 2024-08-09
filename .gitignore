@@ -1,6 +1,7 @@
 *.pyc
 venv
 AssetBundles
+Texture2D
 CN
 EN
 JP
