@@ -191,6 +191,10 @@ Gear / Equipment
     sometimes:
         [[Category:Research-only Equipment]]
 
+Portrait Frame
+    <Frame ID>.png
+    [[Category:Portrait frames]]
+
 Research Blueprint
     <Ship Name>SUnit.png
     no category
