@@ -40,17 +40,24 @@ def build_skinbox(tid=None):
     ]
 
     themeids = [str(iid) for iid in theme['ids']]
+    if tid == None: # then get item ids from all themes
+        for thid in skinbox['theme']:
+            if thid not in ['all', '199']: # 199 is Misc
+                themeids += [str(iid) for iid in skinbox['theme'][thid]['ids']]
     iids = themeids + list(skinbox['item'])
     visited = {'all'}
     for iid in iids:
         if iid in visited:
             continue
         visited.add(iid)
-        item = skinbox['item'][iid]
-        if str(item['themeid']) == tid or tid == None:
+        item = skinbox['item'].get(iid)
+        if not item:
+            print('Item {} does not exist in EN.'.format(iid))
+        elif str(item['themeid']) == tid or tid == None:
             line = build_skinitem(item)
-            if iid not in themeids and tid != None:
-                print('SPECIAL/WRONG:', item['name'])
+            if iid not in themeids:
+                # print('SPECIAL/WRONG:', item['name'])
+                line = '|SPECIAL/WRONG' + line
             lines.append(line)
     lines.append('}}')
 
