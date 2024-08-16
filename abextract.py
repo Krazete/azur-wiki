@@ -17,7 +17,8 @@ iconnames = {
     'furnitureicon': 'FurnIcon {}',
     'mangapic': 'Manga {}',
     'skillicon': 'Skill {}',
-    'spweapon': 'Augment {}'
+    'spweapon': 'Augment {}',
+    'strategyicon': 'Buff {}'
 }
 
 shipassets = {
@@ -63,6 +64,29 @@ shipnames = { # run buildskinname to check what these should be
     'u96_4': 'U-96RaceQueen',
     'xiafei_4': 'JoffreRaceQueen',
     'xia_alter': 'Kasumi META',
+    # 2024-08-15
+    'aierdeliqi_g': 'EldridgeKai',
+    'ankeleiqi_h': 'AnchorageWedding',
+    'banerwei_3': 'PainlevéSummer',
+    'beier_2': 'BellWild West',
+    'beier': 'Bell',
+    'dujiaoshou_11': 'UnicornSport',
+    'fage_2': 'FargoWild West',
+    'fage': 'Fargo',
+    'feiteliedadi_2': 'Friedrich der GroßeNew Year',
+    'feiteliedadi_3': 'Friedrich der GroßeSummer',
+    'feiteliedadi_h': 'Friedrich der GroßeWedding',
+    'feiteliedadi': 'Friedrich der Große',
+    'feiyu_2': 'HerringWild West',
+    'feiyu': 'Herring',
+    'kaiersheng_3': 'KersaintWild West',
+    'pizibao_2': 'PittsburghWild West',
+    'pizibao': 'Pittsburgh',
+    'u556_2': 'U-556Party',
+    'u556_3': 'U-556Wild West',
+    'u556': 'U-556',
+    'yindianna_2': 'IndianaWild West',
+    'yindianna': 'Indiana',
 }
 
 # extract asset types as listed in outpaths
@@ -129,6 +153,8 @@ SHIP Images
     {{SkinFileData|<Ship Name>}}
 Skill Icon
     [[Category:Skill icons]]
+Event Buff Icon
+    [[Category:Buff icons]]
 
 Event Banner
     <Event Name> Event Banner EN.png
