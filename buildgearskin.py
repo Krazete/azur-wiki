@@ -89,8 +89,11 @@ if __name__ == '__main__':
     parser.add_argument('-s', '--setname', help='build equip skin table by name')
     args = parser.parse_args()
     if args.download:
-        from downloader import dl_skin
-        dl_skin()
+        from downloader import dl_sharecfg
+        dl_sharecfg('gearskin', ['EN'], [
+            'equip_skin_theme_template',
+            'equip_skin_template'
+        ])
     if args.setname:
         init_skin()
         tid = get_themeid(args.setname)

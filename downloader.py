@@ -57,6 +57,25 @@ def get_decontent(path):
         return html.read()
     return content.decoded_content
 
+def dl_sharecfg(id, langs, files):
+    '''Download specific files from the ShareCfg folder(s).'''
+    for lang in get_latest(id, langs):
+        folder = '{}/ShareCfg'.format(lang)
+        os.makedirs(folder, exist_ok=True)
+        for file in files:
+            path = '{}/{}.json'.format(folder, file)
+            decontent = get_decontent(path)
+            with open(path, 'wb') as fp:
+                fp.write(decontent)
+
+def dl_decor():
+    '''Download decor data files and List of Furniture Sets wiki page section.'''
+    dl_sharecfg('decor', ['CN', 'EN', 'JP'], ['backyard_theme_template'])
+    os.makedirs('input', exist_ok=True)
+    html = urlopen('https://azurlane.koumakan.jp/w/index.php?title=Decorations&action=raw&section=9')
+    with open('input/decornow.txt', 'wb') as fp:
+        fp.write(html.read())
+
 def dl_child():
     '''Download Project Identity: TB data files.'''
     for lang in get_latest('child', ['EN']):
@@ -67,52 +86,6 @@ def dl_child():
             if content.name.startswith('child_'):
                 with open(content.path, 'wb') as fp:
                     fp.write(content.decoded_content)
-
-def dl_decor():
-    '''Download decor data files and List of Furniture Sets wiki page section.'''
-    for lang in get_latest('decor', ['CN', 'EN', 'JP']):
-        folder = '{}/ShareCfg'.format(lang)
-        os.makedirs(folder, exist_ok=True)
-        path = '{}/backyard_theme_template.json'.format(folder)
-        decontent = get_decontent(path)
-        with open(path, 'wb') as fp:
-            fp.write(decontent)
-    os.makedirs('input', exist_ok=True)
-    html = urlopen('https://azurlane.koumakan.jp/w/index.php?title=Decorations&action=raw&section=9')
-    with open('input/decornow.txt', 'wb') as fp:
-        fp.write(html.read())
-
-def dl_decorset():
-    '''Download decor set data files.'''
-    files = [
-        'backyard_theme_template',
-        'furniture_data_template',
-        'furniture_shop_template',
-        'shop_furniture_relation'
-    ]
-    for lang in get_latest('decorset', ['EN']):
-        folder = '{}/ShareCfg'.format(lang)
-        os.makedirs(folder, exist_ok=True)
-        for file in files:
-            path = '{}/{}.json'.format(folder, file)
-            decontent = get_decontent(path)
-            with open(path, 'wb') as fp:
-                fp.write(decontent)
-
-def dl_skin():
-    '''Download equip skin data files.'''
-    files = [
-        'equip_skin_theme_template',
-        'equip_skin_template'
-    ]
-    for lang in get_latest('skin', ['EN']):
-        folder = '{}/ShareCfg'.format(lang)
-        os.makedirs(folder, exist_ok=True)
-        for file in files:
-            path = '{}/{}.json'.format(folder, file)
-            decontent = get_decontent(path)
-            with open(path, 'wb') as fp:
-                fp.write(decontent)
 
 def dl_story():
     '''Download story data files.'''
@@ -134,19 +107,4 @@ def dl_story():
                 if 'JP/GameCfg/story' in path: # nonstandard naming
                     path = '{}/{}jp.json'.format(lang, subpath)
                 decontent = get_decontent(path)
-                fp.write(decontent)
-
-def dl_shipnames():
-    '''Download EN ship name files.'''
-    files = [
-        'ship_skin_template', # shipgirl names
-        'name_code', # shipgirl namecodes
-    ]
-    for lang in get_latest('shipnames', ['EN']):
-        folder = '{}/ShareCfg'.format(lang)
-        os.makedirs(folder, exist_ok=True)
-        for file in files:
-            path = '{}/{}.json'.format(folder, file)
-            decontent = get_decontent(path)
-            with open(path, 'wb') as fp:
                 fp.write(decontent)

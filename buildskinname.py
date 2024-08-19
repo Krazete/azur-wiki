@@ -95,7 +95,10 @@ if __name__ == '__main__':
     parser.add_argument('-d', '--download', action='store_true', help='download data files')
     args = parser.parse_args()
     if args.download:
-        from downloader import dl_shipnames
-        dl_shipnames()
+        from downloader import dl_sharecfg
+        dl_sharecfg('shipnames', ['EN'], [
+            'ship_skin_template',
+            'name_code'
+        ])
     init_book()
     build_skinnames()

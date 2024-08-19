@@ -156,6 +156,17 @@ Skill Icon
 Event Buff Icon
     [[Category:Buff icons]]
 
+Backgrounds
+    star_level_bg_<BG ID>.png
+        Skin BG <BG ID>.png
+        [[Category:Skin Backgrounds]]
+Event Point Icon
+    <Name> Pt.png
+    [[Category:Event point icons]]
+Retrofit Material Icon
+    <Name>.png
+    [[Category:Retrofit material icons]]
+
 Event Banner
     <Event Name> Event Banner EN.png
     [[Category:Event banners]]
