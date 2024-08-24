@@ -160,6 +160,12 @@ Backgrounds
     star_level_bg_<BG ID>.png
         Skin BG <BG ID>.png
         [[Category:Skin Backgrounds]]
+    bg_<Event ID>_<#>.png
+        Memory <Event Name> <#>.png
+        [[Category:Memory backgrounds]]
+    bg_<Event ID>_cg<#>.png
+        Memory <Event Name> CG <#>.png
+        [[Category:Memory artwork]]
 Event Point Icon
     <Name> Pt.png
     [[Category:Event point icons]]

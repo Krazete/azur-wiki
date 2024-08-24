@@ -316,6 +316,7 @@ shop_type = { # todo: use buildskinname.py instead
     22: 'Hot Springs',
     23: 'Work',
     24: 'RPG',
+    25: 'Wild West',
     9997: 'Kai',
     9998: 'Wedding',
     9999: 'OTHER', # other
@@ -373,6 +374,17 @@ bgnames = {
     'midgard': 'Tower of Transcendence',
     # Reflections of the Oasis
     'alexandria': 'Reflections of the Oasis',
+    # Windborne / Wild West
+    'tieyiqingfeng': 'Windborne Steel Wings',
+    'westdaily': 'Wild West Vacation Log',
+    'renaya': 'The Flame-Touched Dagger',
+    'banama': 'Microlayer Medley',
+    # 'moran': 'Tranquil Sea, Distant Thunder', # unsure if this event is the first appearance; also weird that only _3 is used
+    'luoxuan': 'Mirror Involution',
+    'story_nagato': 'Ink-Stained Steel Sakura',
+    'firedust': 'Revelations of Dust',
+    'map_tiancheng': 'Crimson Echoes Map',
+    'yunxian': 'Effulgence Before Eclipse',
     # Convergence of Hearts
     'project_tb': 'Project Identity TB',
     '': '',
@@ -384,6 +396,12 @@ ignoredbgnames = [
     'blackbg',
     'star_level_bg_1100',
     'star_level_bg_1104', # white screen???
+    # strategy map plans with markers and stuff
+    'storymap_taipingyang',
+    'storymap_taipingyang_99',
+    'storymap_maliyana',
+    'storymap_maliyana_99',
+    'bg_moran_3' # dead sakura tree
 ]
 
 bannedbanners = [
