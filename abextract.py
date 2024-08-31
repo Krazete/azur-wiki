@@ -87,6 +87,10 @@ shipnames = { # run buildskinname to check what these should be
     'u556': 'U-556',
     'yindianna_2': 'IndianaWild West',
     'yindianna': 'Indiana',
+    # 2024-08-29
+    'lingbo_10': 'AyanamiParty',
+    'ruifeng': 'Zuihou',
+    'ruifeng_2': 'ZuihouPark',
 }
 
 # extract asset types as listed in outpaths
@@ -161,7 +165,7 @@ Backgrounds
         Skin BG <BG ID>.png
         [[Category:Skin Backgrounds]]
     bg_<Event ID>_<#>.png
-        Memory <Event Name> <#>.png
+        Memory <Event Name> Background <#>.png
         [[Category:Memory backgrounds]]
     bg_<Event ID>_cg<#>.png
         Memory <Event Name> CG <#>.png

@@ -10,6 +10,8 @@ if [ -d AssetBundles ]; then
     fi
 fi
 
+adb start-server
+
 read -p "Enter the age (in days) of files to extract."$'\n' days
 if [[ ! $days =~ ^[0-9]+$ ]]; then
     echo "Error: Invalid number of days. Exiting..."
