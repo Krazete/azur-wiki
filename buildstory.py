@@ -191,6 +191,9 @@ def build_memory(gid):
     bgs = set()
     lines = ['<tabber>']
     for lang in langs:
+        if str(gid) not in book['group'][lang]:
+            print('WARNING: Story', gid, 'is not available in', lang, '.')
+            continue
         group = book['group'][lang][str(gid)]
         lines += [
             '{} Story='.format(langs[lang]),
@@ -317,9 +320,10 @@ shop_type = { # todo: use buildskinname.py instead
     23: 'Work',
     24: 'RPG',
     25: 'Wild West',
+    26: 'Theme Park',
     9997: 'Kai',
     9998: 'Wedding',
-    9999: 'OTHER', # other
+    9999: '_OTHER_9999', # other
 }
 
 shop_type_fixer = { # todo: find mislabeled shop_type instances
@@ -385,6 +389,8 @@ bgnames = {
     'firedust': 'Revelations of Dust',
     'map_tiancheng': 'Crimson Echoes Map',
     'yunxian': 'Effulgence Before Eclipse',
+    'story_outdoor': 'Outdoors',
+    'bianzhihua': 'Whence Flowers Bear No Fruit',
     # Convergence of Hearts
     'project_tb': 'Project Identity TB',
     '': '',

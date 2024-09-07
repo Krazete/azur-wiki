@@ -90,7 +90,12 @@ shipnames = { # run buildskinname to check what these should be
     # 2024-08-29
     'lingbo_10': 'AyanamiParty',
     'ruifeng': 'Zuihou',
-    'ruifeng_2': 'ZuihouPark',
+    'ruifeng_2': 'ZuihouTheme Park',
+    # 2024-09-05
+    'changmen_alter': 'Nagato META',
+    'huangjiafangzhou_6': 'Ark RoyalTheme Park',
+    'muyue_5': 'MutsukiTheme Park',
+    'yuekecheng_alter': 'Yorktown META',
 }
 
 # extract asset types as listed in outpaths
