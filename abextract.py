@@ -275,6 +275,9 @@ Portrait Frame
     <Frame ID>.png
     [[Category:Portrait frames]]
 
+Sticker Set Icon
+    Stickers <Prop ID>.png
+
 Research Blueprint
     <Ship Name>SUnit.png
     no category
