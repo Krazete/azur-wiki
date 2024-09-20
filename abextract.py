@@ -96,6 +96,34 @@ shipnames = { # run buildskinname to check what these should be
     'huangjiafangzhou_6': 'Ark RoyalTheme Park',
     'muyue_5': 'MutsukiTheme Park',
     'yuekecheng_alter': 'Yorktown META',
+    # 2024-09-12
+    'beierfasite_9': 'BelfastTheme Park',
+    'birui_alter': 'Hiei META',
+    'chicheng_alter': 'Akagi META',
+    'chuixue_7': 'FubukiSpring',
+    'dulianglai_2': 'WataraseParty',
+    'dulianglai': 'Watarase',
+    'huangjianfangzhou_6': 'Ark RoyalTheme Park', # dupe of huangjiafangzhou_6
+    'liangbo_2': 'SuzunamiTheme Park',
+    'liangbo': 'Suzunami',
+    'linglai_2': 'AyaseHome Relaxation',
+    'linglai': 'Ayase',
+    'malilan_g': 'MarylandKai',
+    'tiancheng_cv_2': 'Amagi(CV)Party',
+    'tiancheng_cv': 'Amagi(CV)',
+    'xiefeierde_6': 'SheffieldTheme Park',
+    'z35_4': 'Z35Theme Park',
+    # 2024-09-19
+    'dingan_3': 'Ting AnTheme Park',
+    'geluosite_2': 'GloucesterSpring',
+    'geluosite_3': 'GloucesterTheme Park',
+    'longxiang_4': 'RyuujouTheme Park',
+    'lupuleixite_3': 'Prinz RupprechtTheme Park',
+    'tianlangxing': 'Sirius',
+    'tianlangxing_5': 'SiriusTheme Park',
+    'wuzang_3': 'MusashiTheme Park',
+    'bulaimodun_6': 'BremertonTheme Park',
+    'jianye_5': 'KashinoTheme Park',
 }
 
 # extract asset types as listed in outpaths
@@ -253,4 +281,7 @@ Research Blueprint
 Research Blueprint (ALL)
     AllSUnit<Series Number>.png
     [[Category:Resource icons]]
+
+META Crystal
+    <Ship Name> METACrystal.png
 '''
