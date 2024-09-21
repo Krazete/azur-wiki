@@ -102,14 +102,14 @@ def parse_scripts(scripts, lang):
             if bgrn.startswith('star_level_bg_'):
                 filename = 'Skin BG {}.png'.format(bgrn[14:])
             else:
-                bgmatch = re.match('^bg_(.+?)(?:_(bg|cg|n|room)?(\d+))?$', bgrn)
+                bgmatch = re.match('^bg_(.+?)(?:_(bg|cg|cut|n|room)?(\d+))?$', bgrn)
                 if bgmatch:
                     bggroups = bgmatch.groups()
                     bgcode = bggroups[0].strip()
                     if bgcode in bgnames:
                         bgtitle = bgnames[bgcode]
                         if bggroups[2]:
-                            bgcg = {'cg': 'CG', 'n': 'Background Part', 'room': 'Room Background'}.get(bggroups[1], 'Background')
+                            bgcg = {'cg': 'CG', 'cut': 'Cut', 'n': 'Background Part', 'room': 'Room Background'}.get(bggroups[1], 'Background')
                             bgn = bggroups[2]
                             if bgcode in ['bsm', 'bsmre'] and bgcg == 'Background':
                                 bgn = int(bgn) + 1
@@ -154,6 +154,19 @@ def parse_scripts(scripts, lang):
             skinnameEN = 'Takao META'
         if 'qiye_dark' in paintingname:
             skinnameEN = 'Enterprise META'
+        if 'jiahezhanlie' in paintingname:
+            if not actorname:
+                actorname = skinnameEN
+            skinnameEN = 'Kaga (Battleship)'
+        if 'chicheng_alter' in paintingname:
+            skinnameEN = 'Akagi META'
+        if paintingname in ['lupuleixite_3', 'longxiang_4', 'npcjianye_5', 'wuzang_3', 'geluosite_3', 'npcbulaimodun_6', 'huangjiafangzhou_6', 'npctianlangxing_5']: # todo: instead, check entirety of ship_skin_template for entries with a matching painting attribute, and prefer whichever entry doesn't have a shop_type_id attribute of 0
+            if not actorname:
+                actorname = skinname
+            skinnameEN += '/Theme Park'
+        if re.search('_\d+', paintingname) and '/' not in skinnameEN: # detect if numbered paintingname tried to call itself the default skin
+            print('WARNING:', skinnameEN, paintingname, 'may have the incorrect skin.')
+        skinnameEN = skinnameEN.replace('μ', 'µ').strip() # for muses
         skinnameEN = skinnameEN.replace(':', '').strip() # for arbiters
         actorname = actorname.replace(':', '').strip() # for arbiters
         actortext = actortext.replace('=', '&#61;') # prevent named parameters
@@ -330,6 +343,9 @@ shop_type_fixer = { # todo: find mislabeled shop_type instances
     'Ayanami': {
         'Casual': 'RaceQueen'
     },
+    'Pamiat\' Merkuria': {
+        'Special Exercise': 'Prison'
+    },
     'Prototype Bulin MKII': {
         'OTHER': 'Event'
     }
@@ -391,6 +407,21 @@ bgnames = {
     'yunxian': 'Effulgence Before Eclipse',
     'story_outdoor': 'Outdoors',
     'bianzhihua': 'Whence Flowers Bear No Fruit',
+    # Ode
+    'canghongzhiyan': 'Ode of Everblooming Crimson',
+    'port_niuyue': 'New York Port',
+    'port_shenbidebao': 'St. Petersburg Port',
+    'port_jier': 'Kiel Port',
+    'port_talantuo': 'Taranto Port',
+    'port_buleisite': 'Brest Port',
+    'port_liwupu': 'Liverpool Port',
+    'port_chuanwu1': 'Outpost Port Background 1',
+    # 'bg_zhuiluo_2': '',
+    'burningsea': 'Burning Sea',
+    # Dream Park
+    'fantasyland': 'Dreamy Day in Dream Park',
+    'hms': 'Aurora Noctis',
+    'zhuguang': 'Light-Chasing Sea of Stars',
     # Convergence of Hearts
     'project_tb': 'Project Identity TB',
     '': '',
