@@ -124,6 +124,14 @@ shipnames = { # run buildskinname to check what these should be
     'wuzang_3': 'MusashiTheme Park',
     'bulaimodun_6': 'BremertonTheme Park',
     'jianye_5': 'KashinoTheme Park',
+    # 2024-09-26 (3D Dorm Update)
+    'xianghe_h': 'ShoukakuWedding',
+    'xufulun_3': 'SuffrenParty',
+    'bisimai_h': 'BismarckWedding',
+    'fengxiang_alter': 'Houshou META',
+    'fusang_h': 'FusouWedding',
+    'bailong_4': 'HakuryuuFestival',
+    'qiye_6': 'EnterpriseParty',
 }
 
 # extract asset types as listed in outpaths
