@@ -132,6 +132,21 @@ shipnames = { # run buildskinname to check what these should be
     'fusang_h': 'FusouWedding',
     'bailong_4': 'HakuryuuFestival',
     'qiye_6': 'EnterpriseParty',
+    # 2024-10-24 (tempesta/halloween)
+    'aidang_6': 'AtagoHalloween',
+    'bulisituoer_3': 'BristolHalloween',
+    'gangyishawa': 'Ganj-i-Sawai',
+    'gangyishawa_2': 'Ganj-i-SawaiHalloween',
+    'gaoxiong_6': 'TakaoNinja',
+    'haitunhao': 'Dolphin',
+    'haitunhao_2': 'DolphinHalloween',
+    'hemuhao': 'Amity',
+    'hemuhao_2': 'AmityHalloween',
+    'huanxianghao': 'Fancy',
+    'huanxianghao_2': 'FancyHalloween',
+    'pucimaosi': 'Portsmouth Adventure',
+    'pucimaosi_2': 'Portsmouth AdventureHalloween',
+    'weizhang_3': 'OwariHalloween',
 }
 
 # extract asset types as listed in outpaths
