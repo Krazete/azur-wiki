@@ -160,12 +160,19 @@ def parse_scripts(scripts, lang):
             skinnameEN = 'Kaga (Battleship)'
         if 'chicheng_alter' in paintingname:
             skinnameEN = 'Akagi META'
-        if paintingname in ['lupuleixite_3', 'longxiang_4', 'npcjianye_5', 'wuzang_3', 'geluosite_3', 'npcbulaimodun_6', 'huangjiafangzhou_6', 'npctianlangxing_5']: # todo: instead, check entirety of ship_skin_template for entries with a matching painting attribute, and prefer whichever entry doesn't have a shop_type_id attribute of 0
+        
+        # todo: instead, check entirety of ship_skin_template for entries with a matching painting attribute, and prefer whichever entry doesn't have a shop_type_id attribute of 0
+        if paintingname in ['lupuleixite_3', 'longxiang_4', 'npcjianye_5', 'wuzang_3', 'geluosite_3', 'npcbulaimodun_6', 'huangjiafangzhou_6', 'npctianlangxing_5']:
             if not actorname:
                 actorname = skinname
             skinnameEN += '/Theme Park'
+        if paintingname in ['npcpucimaosi_2', 'npchaitunhao_2', 'npchuanxianghao_2', 'npcgangyishawa_2', 'npcweizhang_3']:
+            if not actorname:
+                actorname = skinname
+            skinnameEN += '/Halloween'
         if re.search('_\d+', paintingname) and '/' not in skinnameEN: # detect if numbered paintingname tried to call itself the default skin
             print('WARNING:', skinnameEN, paintingname, 'may have the incorrect skin.')
+
         skinnameEN = skinnameEN.replace('μ', 'µ').strip() # for muses
         skinnameEN = skinnameEN.replace(':', '').strip() # for arbiters
         actorname = actorname.replace(':', '').strip() # for arbiters
@@ -422,6 +429,9 @@ bgnames = {
     'fantasyland': 'Dreamy Day in Dream Park',
     'hms': 'Aurora Noctis',
     'zhuguang': 'Light-Chasing Sea of Stars',
+    # Sleeping Sea
+    'jufengv1': 'Tempesta and the Fountain of Youth',
+    'jufengv2': 'Tempesta and the Sleeping Sea',
     # Convergence of Hearts
     'project_tb': 'Project Identity TB',
     '': '',
