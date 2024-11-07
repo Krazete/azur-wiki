@@ -102,7 +102,8 @@ def build_decorset(tid, endbar):
             if item['rarity'] > 0:
                 lines.append(line)
             else:
-                print('UNOBTAINABLE:', line)
+                lines.append('|UNOBTAINABLE?' + line)
+                print('UNOBTAINABLE?:', line)
     lines.append('}}')
 
     os.makedirs('output', exist_ok=True)
