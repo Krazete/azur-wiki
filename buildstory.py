@@ -432,6 +432,8 @@ bgnames = {
     # Sleeping Sea
     'jufengv1': 'Tempesta and the Fountain of Youth',
     'jufengv2': 'Tempesta and the Sleeping Sea',
+    # To LOVE-Ru
+    'tolove': 'Dangerous Inventions Incoming!',
     # Convergence of Hearts
     'project_tb': 'Project Identity TB',
     '': '',

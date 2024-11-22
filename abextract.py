@@ -147,6 +147,28 @@ shipnames = { # run buildskinname to check what these should be
     'pucimaosi': 'Portsmouth Adventure',
     'pucimaosi_2': 'Portsmouth AdventureHalloween',
     'weizhang_3': 'OwariHalloween',
+    # 2024-11-21 (To LOVE-Ru)
+    'aersasi_2': 'AlsaceSummer',
+    'aogusite_3': 'August von ParsevalHome Relaxation',
+    'bisimaiz_2': 'Bismarck ZweiSummer',
+    'bulaimodun_3': 'BremertonSport',
+    'dingan_2': 'Ting AnSpring',
+    'kaisa_alter': 'Giulio Cesare META',
+    'luodeni_alter': 'Rodney META',
+    'weixi_5': 'WeserMaid',
+    'wuerlixi_4': 'Ulrich von HuttenSchool',
+    'lala_tolove': 'Lala Satalin Deviluke',
+    'lala_2_tolove': 'Lala Satalin DevilukeHome Relaxation',
+    'nana_tolove': 'Nana Astar Deviluke',
+    'nana_2_tolove': 'Nana Astar DevilukeHome Relaxation',
+    'mengmeng_tolove': 'Momo Belia Deviluke',
+    'mengmeng_2_tolove': 'Momo Belia DevilukeHome Relaxation',
+    'jinseanying_tolove': 'Golden Darkness',
+    'jinseanying_2_tolove': 'Golden DarknessHome Relaxation',
+    'xiliansi_tolove': 'Haruna Sairenji',
+    'xiliansi_2_tolove': 'Haruna SairenjiHome Relaxation',
+    'gushouchuan_tolove': 'Yui Kotegawa',
+    'gushouchuan_2_tolove': 'Yui KotegawaHome Relaxation',
 }
 
 # extract asset types as listed in outpaths
