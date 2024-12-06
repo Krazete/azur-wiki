@@ -13,6 +13,7 @@ outpaths = {
 }
 
 iconnames = {
+    'collectionfileillustration': 'Collectfile {}',
     'equips': 'EquipSkinIcon {}', # revert for non-skin gear
     'furnitureicon': 'FurnIcon {}',
     'mangapic': 'Manga {}',
