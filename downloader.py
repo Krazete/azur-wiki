@@ -108,3 +108,13 @@ def dl_story():
                     path = '{}/{}jp.json'.format(lang, subpath)
                 decontent = get_decontent(path)
                 fp.write(decontent)
+
+def dl_medal_experimental():
+    '''Download abextract_medal.py stuff.'''
+    for lang in get_latest('medal_experimental', ['EN']):
+        folder = '{}/ShareCfg'.format(lang)
+        os.makedirs(folder, exist_ok=True)
+        path = '{}/ShareCfg/medal_template.json'.format(lang)
+        with open(path, 'wb') as fp:
+            decontent = get_decontent(path)
+            fp.write(decontent)

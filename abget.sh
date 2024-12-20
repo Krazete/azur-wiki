@@ -45,6 +45,5 @@ while IFS=$'\t\r\n' read -r line; do
     fi
 done <<< "$filelist"
 
-echo "Extraction complete. Exiting..."
-sleep 2
-exit 1
+echo "Extraction complete."
+read -p "Press any key to exit." -r -n 1 -s

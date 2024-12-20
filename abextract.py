@@ -14,6 +14,7 @@ outpaths = {
 }
 
 iconnames = {
+    'activitymedal': 'AlbumSticker {}',
     'collectionfileillustration': 'Collectfile {}',
     'equips': 'EquipSkinIcon {}', # revert for non-skin gear
     'furnitureicon': 'FurnIcon {}',
@@ -140,6 +141,12 @@ Hall of Fame Memory Icon
     [[Category:Memory thumbnails]]
 Secret CD
     <Ship Name>Secret.png
+
+Commemorative Album Sticker
+    [[Category:Commemorative Album stickers]]
+Medallions
+    <Medal Name> <Medal Rank>.png
+    [[Category:Medallions]]
 
 Gear / Equipment Skin
     [[Category:Equipment Skins]]

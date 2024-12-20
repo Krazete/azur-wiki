@@ -102,14 +102,14 @@ def parse_scripts(scripts, lang):
             if bgrn.startswith('star_level_bg_'):
                 filename = 'Skin BG {}.png'.format(bgrn[14:])
             else:
-                bgmatch = re.match('^bg_(.+?)(?:_(bg|cg|cut|n|room)?(\d+))?$', bgrn)
+                bgmatch = re.match('^bg_(.+?)(?:_(bg|cg_?|cut|n|room)?(\d+))?$', bgrn)
                 if bgmatch:
                     bggroups = bgmatch.groups()
                     bgcode = bggroups[0].strip()
                     if bgcode in bgnames:
                         bgtitle = bgnames[bgcode]
                         if bggroups[2]:
-                            bgcg = {'cg': 'CG', 'cut': 'Cut', 'n': 'Background Part', 'room': 'Room Background'}.get(bggroups[1], 'Background')
+                            bgcg = {'cg': 'CG', 'cg_': 'CG', 'cut': 'Cut', 'n': 'Background Part', 'room': 'Room Background'}.get(bggroups[1], 'Background')
                             bgn = bggroups[2]
                             if bgcode in ['bsm', 'bsmre'] and bgcg == 'Background':
                                 bgn = int(bgn) + 1
@@ -434,6 +434,8 @@ bgnames = {
     'jufengv2': 'Tempesta and the Sleeping Sea',
     # To LOVE-Ru
     'tolove': 'Dangerous Inventions Incoming!',
+    # Substellar
+    'yuhui': 'Substellar Crepuscule',
     # Convergence of Hearts
     'project_tb': 'Project Identity TB',
     '': '',
