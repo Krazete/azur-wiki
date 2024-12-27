@@ -147,7 +147,7 @@ shipnames = { # run buildskinname to check what these should be
     'xingzuo_2': 'ConstellationBunny',
     'xipeierhaijunshangjiang_alter': 'Admiral Hipper META',
     'yade_2': 'JadeSummer',
-    # 2024-12-19
+    # 2024-12-19 (Substellar)
     'z52_2': 'Z52Bunny',
     'z52': 'Z52',
     'aijier_4': 'ÄgirHome Relaxation',
@@ -162,4 +162,13 @@ shipnames = { # run buildskinname to check what these should be
     'z9': 'Z9',
     'z11_2': 'Z11Bunny',
     'z11': 'Z11',
+    # 2024-12-26 (Substellar Part 2)
+    'beiyade_2': 'BayardBunny',
+    'dashan_2': 'DaisenBunny',
+    'haerfude_2': 'HalfordBunny',
+    'leigensibao_3': 'RegensburgBunny',
+    'nabulesi_2': 'NapoliBunny',
+    'naximofu_2': 'Admiral NakhimovBunny',
+    'xinnong_5': 'ShinanoBunny',
+    'zhumo_2': 'ChikumaBunny',
 }
