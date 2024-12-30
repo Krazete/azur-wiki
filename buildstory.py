@@ -73,10 +73,11 @@ def parse_scripts(scripts, lang):
         skinid = script.get('actor')
         skinnameEN = getwikiname(skinid, 'EN')
         skinname = getwikiname(skinid, lang)
-        actorname = script.get('actorName', '').strip()
+        actorname = 'LEAVEBLANK' if script.get('withoutActorName', False) else script.get('actorName', '').strip()
         if not actorname and skinnameEN != skinname:
             actorname = skinname.split('/')[0]
         actortext = script.get('say', '').strip()
+        actortext = re.sub('\n', '<br>', actortext)
         if tb:
             skinnameEN = skinnameEN.replace('/OTHER', '')
             skinname = skinname.replace('/OTHER', '')
@@ -142,6 +143,8 @@ def parse_scripts(scripts, lang):
                 subactor = re.sub('{{namecode:{}(:.+?)?}}'.format(nc), book['code'][lang][nc]['name'], subactor)
 
         if skinnameEN in bannedbanners:
+            if not actorname:
+                actorname = skinname
             skinname = None
         paintingname = book['skin'][lang].get(str(skinid), {}).get('painting', '')
 
@@ -150,6 +153,8 @@ def parse_scripts(scripts, lang):
             if not actorname:
                 actorname = skinnameEN
             skinnameEN = 'Bon Homme Richard META'
+        if skinnameEN == 'Observer zero':
+            skinnameEN = 'Observer Zero'
         if 'gaoxiong_dark' in paintingname:
             skinnameEN = 'Takao META'
         if 'qiye_dark' in paintingname:
@@ -160,6 +165,8 @@ def parse_scripts(scripts, lang):
             skinnameEN = 'Kaga (Battleship)'
         if 'chicheng_alter' in paintingname:
             skinnameEN = 'Akagi META'
+        if 'moon' in paintingname:
+            skinnameEN = 'Arbiter The Moon XVIII'
         
         # todo: instead, check entirety of ship_skin_template for entries with a matching painting attribute, and prefer whichever entry doesn't have a shop_type_id attribute of 0
         if paintingname in ['lupuleixite_3', 'longxiang_4', 'npcjianye_5', 'wuzang_3', 'geluosite_3', 'npcbulaimodun_6', 'huangjiafangzhou_6', 'npctianlangxing_5']:
@@ -179,7 +186,11 @@ def parse_scripts(scripts, lang):
         actortext = actortext.replace('=', '&#61;') # prevent named parameters
 
         if skinname and not paintingname.endswith('_hei'):
-            if skinnameEN and actorname and skinnameEN.split('/')[0] != actorname:
+            if actorname == 'LEAVEBLANK':
+                lines.append('| []')
+            elif actorname in commander.values():
+                lines.append('| [O:{}]'.format(commander[lang]))
+            elif skinnameEN and actorname and skinnameEN.split('/')[0] != actorname:
                 lines.append('| [S:{}:{}]'.format(skinnameEN, actorname))
             else:
                 lines.append('| [S:{}]'.format(skinnameEN))
@@ -436,6 +447,7 @@ bgnames = {
     'tolove': 'Dangerous Inventions Incoming!',
     # Substellar
     'yuhui': 'Substellar Crepuscule',
+    'daofeng': 'Upon the Shimmering Blue',
     # Convergence of Hearts
     'project_tb': 'Project Identity TB',
     '': '',
@@ -463,6 +475,8 @@ bannedbanners = [
     # 'Yorktown META',
     # 'Arbiter The Devil XV',
     # 'Arbiter The Tower XVI',
+    'Star Beast',
+    'Arbiter The Magician I'
 ]
 
 if 0: # testing
