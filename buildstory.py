@@ -82,8 +82,8 @@ def parse_scripts(scripts, lang):
             skinnameEN = skinnameEN.replace('/OTHER', '')
             skinname = skinname.replace('/OTHER', '')
             actortext = re.sub('\{tb\}|\$\d+', '<{}>'.format(commander[lang]), actortext)
-        actorname = re.sub('\{playername\}', commander[lang], actorname)
-        actortext = re.sub('\{playername\}', commander[lang], actortext)
+        # actorname = re.sub('\{playername\}', commander[lang], actorname)
+        # actortext = re.sub('\{playername\}', commander[lang], actortext)
 
         subactors = []
         if 'subActors' in script: # todo: include subactors in output file
@@ -448,6 +448,8 @@ bgnames = {
     # Substellar
     'yuhui': 'Substellar Crepuscule',
     'daofeng': 'Upon the Shimmering Blue',
+    'underheaven': 'The Fool\'s Scales',
+    'guild_blue_n': 'Guild Blue Background Part 2',
     # Convergence of Hearts
     'project_tb': 'Project Identity TB',
     '': '',
@@ -464,7 +466,8 @@ ignoredbgnames = [
     'storymap_taipingyang_99',
     'storymap_maliyana',
     'storymap_maliyana_99',
-    'bg_moran_3' # dead sakura tree
+    'bg_moran_3', # dead sakura tree
+    'bg_map_northsea',
 ]
 
 bannedbanners = [
