@@ -171,4 +171,8 @@ shipnames = { # run buildskinname to check what these should be
     'naximofu_2': 'Admiral NakhimovBunny',
     'xinnong_5': 'ShinanoBunny',
     'zhumo_2': 'ChikumaBunny',
+    # 2025-01-09 (Superimposition Rerun)
+    'daofeng_6': 'ShimakazeSpring',
+    'xinnong_4': 'ShinanoSummer',
+    'zhenhai_3': 'Chen HaiParty',
 }
