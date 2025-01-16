@@ -23,6 +23,7 @@ python -m builddecor -d # (re)download prerequisite input data
 
 python -m builddecorset # build table of furniture items not part of a set
 python -m builddecorset -s <SET NAME> # build furniture set table
+python -m builddecorset -l <LANGUAGE> -s <SET NAME> # build furniture set table in CN or JP
 python -m builddecorset -i <ITEM NAME> # build furniture item entries
 python -m builddecorset -e # include last `|` in lines with no note
 python -m builddecorset -d # (re)download prerequisite input data

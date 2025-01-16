@@ -6,15 +6,15 @@ from argparse import ArgumentParser
 decorset = {}
 ignorelist = []
 
-def init_decorset():
+def init_decorset(lang):
     '''Initializes `decor` and `decoritem` objects with JSON files downloaded from AzurLaneData repo.'''
-    with open('EN/ShareCfg/backyard_theme_template.json', 'r', encoding='utf-8') as fp:
+    with open('{}/ShareCfg/backyard_theme_template.json'.format(lang), 'r', encoding='utf-8') as fp:
         decorset['theme'] = json.load(fp)
-    with open('EN/ShareCfg/furniture_data_template.json', 'r', encoding='utf-8') as fp:
+    with open('{}/ShareCfg/furniture_data_template.json'.format(lang), 'r', encoding='utf-8') as fp:
         decorset['item'] = json.load(fp)
-    with open('EN/ShareCfg/furniture_shop_template.json', 'r', encoding='utf-8') as fp:
+    with open('{}/ShareCfg/furniture_shop_template.json'.format(lang), 'r', encoding='utf-8') as fp:
         decorset['shop'] = json.load(fp)
-    with open('EN/ShareCfg/shop_furniture_relation.json', 'r', encoding='utf-8') as fp:
+    with open('{}/ShareCfg/shop_furniture_relation.json'.format(lang), 'r', encoding='utf-8') as fp:
         decorset['rel'] = json.load(fp)
 
 def get_themeid(name):
@@ -226,19 +226,20 @@ def build_decoritem(item, endbar):
 if __name__ == '__main__':
     parser = ArgumentParser()
     parser.add_argument('-d', '--download', action='store_true', help='download data files')
+    parser.add_argument('-l', '--lang', default='EN', help='language')
     parser.add_argument('-s', '--setname', help='build decor set table by name')
     parser.add_argument('-e', '--endbar', action='store_true', help='include last `|` in lines with no note')
     parser.add_argument('-i', '--itemname', help='build decor item entries by name')
     args = parser.parse_args()
     if args.download:
         from downloader import dl_sharecfg
-        dl_sharecfg('decorset', ['EN'], [
+        dl_sharecfg('decorset', ['EN', 'CN', 'JP'], [
             'backyard_theme_template',
             'furniture_data_template',
             'furniture_shop_template',
             'shop_furniture_relation'
         ])
-    init_decorset()
+    init_decorset(args.lang)
     if args.setname:
         tid = get_themeid(args.setname)
         build_decorset(tid, args.endbar)

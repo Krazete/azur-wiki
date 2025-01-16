@@ -57,16 +57,20 @@ def get_decontent(path):
         return html.read()
     return content.decoded_content
 
-def dl_sharecfg(id, langs, files):
-    '''Download specific files from the ShareCfg folder(s).'''
+def dl_from(id, langs, parent, files):
+    '''Download specific files from specific parent folder(s).'''
     for lang in get_latest(id, langs):
-        folder = '{}/ShareCfg'.format(lang)
+        folder = '{}/{}'.format(lang, parent)
         os.makedirs(folder, exist_ok=True)
         for file in files:
             path = '{}/{}.json'.format(folder, file)
             decontent = get_decontent(path)
             with open(path, 'wb') as fp:
                 fp.write(decontent)
+
+def dl_sharecfg(id, langs, files):
+    '''Download specific files from the ShareCfg folder(s).'''
+    dl_from(id, langs, 'ShareCfg', files)
 
 def dl_decor():
     '''Download decor data files and List of Furniture Sets wiki page section.'''

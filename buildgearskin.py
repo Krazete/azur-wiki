@@ -11,6 +11,8 @@ def init_skin():
         skinbox['theme'] = json.load(fp)
     with open('EN/ShareCfg/equip_skin_template.json', 'r', encoding='utf-8') as fp:
         skinbox['item'] = json.load(fp)
+    with open('EN/sharecfgdata/item_data_statistics.json', 'r', encoding='utf-8') as fp:
+        skinbox['box'] = json.load(fp)
 
 def get_themeid(name):
     '''Get theme id by set name or name fragment.'''
@@ -55,9 +57,18 @@ def build_skinbox(tid=None):
             print('Item {} does not exist in EN.'.format(iid))
         elif str(item['themeid']) == tid or tid == None:
             line = build_skinitem(item)
+            if tid == None:
+                for thid in skinbox['theme']:
+                    if 'ids' in skinbox['theme'][thid] and int(iid) in skinbox['theme'][thid]['ids']:
+                        line += '|THEME={}'.format(skinbox['theme'][thid]['name'])
+                for bid in skinbox['box']:
+                    if 'display_icon' in skinbox['box'][bid]:
+                        for display in skinbox['box'][bid]['display_icon']:
+                            if int(iid) == display[1]:
+                                line += '|ICON={}'.format(skinbox['box'][bid]['icon'])
             if iid not in themeids:
                 # print('SPECIAL/WRONG:', item['name'])
-                line = '|SPECIAL/WRONG' + line
+                line = '|SPECIAL/WRONG=' + iid + line
             lines.append(line)
     lines.append('}}')
 
@@ -89,10 +100,13 @@ if __name__ == '__main__':
     parser.add_argument('-s', '--setname', help='build equip skin table by name')
     args = parser.parse_args()
     if args.download:
-        from downloader import dl_sharecfg
+        from downloader import dl_from, dl_sharecfg
         dl_sharecfg('gearskin', ['EN'], [
             'equip_skin_theme_template',
             'equip_skin_template'
+        ])
+        dl_from('gearskin2', ['EN'], 'sharecfgdata', [
+            'item_data_statistics'
         ])
     if args.setname:
         init_skin()
