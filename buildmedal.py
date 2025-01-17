@@ -88,7 +88,7 @@ def build_medal():
                 '|{}'.format(re.sub('"(.+?)"', '[[\g<1>]]', medals[icon]['condition'])), # replace quotes with hyperlink to event page
                 '|-'
             ]
-    lines.append('|}')
+    lines[-1] = '|}'
     page = '\n'.join(lines)
     with open('output/medallion.txt', 'w', encoding='utf-8') as fp:
         fp.write(page) # will need revision
