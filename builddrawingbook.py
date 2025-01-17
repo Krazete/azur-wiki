@@ -25,7 +25,7 @@ with open('EN/ShareCfg/activity_coloring_template.json', 'r') as fp:
             name = '[{:04d}] {}'.format(db['id'], db['name'])
             colors = [
                 (0, 0, 0, 0),
-                *(tuple(int(0xff * n) for n in c) for c in db['colors'])
+                *(tuple(round(0x100 * n) for n in c) for c in db['colors'])
             ]
             matrix = [[' ' for x in range(db['theme'][1])] for y in range(db['theme'][0])]
             im = Image.new('RGBA', (db['theme'][1], db['theme'][0]))
@@ -33,17 +33,21 @@ with open('EN/ShareCfg/activity_coloring_template.json', 'r') as fp:
                 matrix[cell[0]][cell[1]] = letters[cell[2] - 1]
                 im.putpixel((cell[1], cell[0]), colors[cell[2]])
             mat = ''.join(''.join(row) for row in matrix)
+            if db['name'] == 'NO.1' and len(txts):
+                txts[-1] += '\n</tabber>\n'
             txts.append('\n'.join([
-                name + (' (DUPLICATE):' if mat in mats else ':'),
+                '<tabber>' if db['name'] == 'NO.1' else '|-|',
+                db['name'].replace('O.', 'º ') + '=',
                 '{{DrawingBook',
                 *('|{}=rgb({}, {}, {})'.format(letters[i], *c) for i, c in enumerate(colors[1:])),
                 *('|' + ''.join(row) for row in matrix),
-                '}}\n'
+                '}}' + (' <!--DUPLICATE-->' if mat in mats else '')
             ]))
             mats.add(mat)
             im.save('output/drawingbook/small/{}.png'.format(name))
             IM = im.resize((20 * n for n in im.size), resample=Image.NEAREST)
             IM.save('output/drawingbook/big/{}.png'.format(name))
+    txts[-1] += '\n</tabber>\n'
 
-with open('output/drawingbook/all.txt', 'w') as fp:
+with open('output/drawingbook/all.txt', 'w', encoding='utf-8') as fp:
     fp.write('\n'.join(txts))
