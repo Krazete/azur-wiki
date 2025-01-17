@@ -25,7 +25,7 @@ with open('EN/ShareCfg/activity_coloring_template.json', 'r') as fp:
             name = '[{:04d}] {}'.format(db['id'], db['name'])
             colors = [
                 (0, 0, 0, 0),
-                *(tuple(round(0x100 * n) for n in c) for c in db['colors'])
+                *(tuple(round(0xff * n) for n in c) for c in db['colors'])
             ]
             matrix = [[' ' for x in range(db['theme'][1])] for y in range(db['theme'][0])]
             im = Image.new('RGBA', (db['theme'][1], db['theme'][0]))
