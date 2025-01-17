@@ -64,6 +64,8 @@ for obj in assetbundles.objects:
         os.makedirs(parent, exist_ok=True)
         if obj.type.name in ['Texture2D', 'Sprite']:
             asset.image.save('{}.png'.format(outpath))
+            if parent.name == 'activitybanner':
+                asset.image.convert('RGB').save('{}.jpg'.format(outpath))
         else:
             with open(outpath, 'wb') as fp:
                 fp.write(asset.script.tobytes())
