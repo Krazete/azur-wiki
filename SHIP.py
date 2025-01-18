@@ -187,7 +187,7 @@ shipnames = { # run buildskinname to check what these should be
     'huajia_g': 'Hwah JahKai',
     'jianwu': 'Chien Wu',
     'jianwu_2': 'Chien WuSpring',
-    'jianwu_3': 'Chien WuSpring2',
+    'jianwu_3': 'Chien WuSpringForm2',
     'qiershazhi_3': 'KearsargeSpring',
     'buleisite_3': 'BrestSpring',
 }

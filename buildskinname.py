@@ -64,6 +64,7 @@ def build_skinnames():
         skin = book['skin'][sid]
         paint = skin['painting']
         stid = skin['shop_type_id']
+        dual = 0 if skin['change_skin'] == '' else skin['change_skin']['index']
         base = book['skin'].get(str(10 * skin['ship_group']))
         if base:
             if skin['skin_type'] < 0: # default
@@ -71,6 +72,8 @@ def build_skinnames():
                 name = get_decoded_name(skin)
             else:
                 name = get_decoded_name(base) + shop_type[stid]
+            if dual > 1:
+                name += 'Form{}'.format(dual)
         else: # likely an enemy or npc
             name = get_decoded_name(skin) + '_NO_BASE'
         wikiname = '{}{}'.format(name, incrementor.get(name, ''))
