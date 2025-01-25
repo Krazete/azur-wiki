@@ -39,11 +39,12 @@ book = {}
 def init_book():
     '''Initializes `child` object with JSON files downloaded from AzurLaneData repo.'''
     files = {
-        'ship_skin_template': 'skin',
-        'name_code': 'code'
+        'ShareCfg/ship_skin_template': 'skin',
+        'ShareCfg/name_code': 'code',
+        'sharecfgdata/gametip': 'tip'
     }
     for file in files:
-        path = 'EN/ShareCfg/{}.json'.format(file)
+        path = 'EN/{}.json'.format(file)
         with open(path, 'r', encoding='utf-8') as fp:
             cat = files[file]
             book[cat] = json.load(fp)
@@ -76,6 +77,11 @@ def build_skinnames():
                 name += 'Form{}'.format(dual)
         else: # likely an enemy or npc
             name = get_decoded_name(skin) + '_NO_BASE'
+        for tid in book['tip']: # detect if skin is in Cruise Pass
+            if 'battlepass_main_help' in tid:
+                for tip in book['tip'][tid].get('tip', []):
+                    if '_' in paint and '"' + skin['name'] in tip['info']:
+                        name += ' (Travel?)'
         wikiname = '{}{}'.format(name, incrementor.get(name, ''))
         incrementor.setdefault(name, 1)
         incrementor[name] += 1
@@ -99,10 +105,13 @@ if __name__ == '__main__':
     parser.add_argument('-d', '--download', action='store_true', help='download data files')
     args = parser.parse_args()
     if args.download:
-        from downloader import dl_sharecfg
+        from downloader import dl_sharecfg, dl_from
         dl_sharecfg('shipnames', ['EN'], [
             'ship_skin_template',
             'name_code'
+        ])
+        dl_from('shipnames2', ['EN'], 'sharecfgdata', [
+            'gametip'
         ])
     init_book()
     build_skinnames()
