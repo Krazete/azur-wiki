@@ -87,7 +87,7 @@ def dl_child():
         os.makedirs(folder, exist_ok=True)
         contents = repo.get_contents(folder)
         for content in contents:
-            if content.name.startswith('child_'):
+            if content.name.startswith('child'):
                 with open(content.path, 'wb') as fp:
                     fp.write(content.decoded_content)
 
