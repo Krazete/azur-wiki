@@ -37,11 +37,13 @@ def init_book():
                     'shop_type_id': 9999
                 }
 
-def get_groupid(title):
+def get_groupid(title, i=0):
     '''Get memory group id by title or title fragment.'''
     for gid in book['group']['EN']:
         if title in book['group']['EN'][gid]['title']:
-            return gid
+            if i < 1:
+                return gid
+            i -= 1
 
 def getwikiname(skinid, lang):
     skin = book['skin'][lang].get(str(skinid))
@@ -581,11 +583,13 @@ if 0: # testing
     get_groupids_by_painting('Hermit')
 
     get_groupids_by_painting('TB')
+    get_groupids_by_painting('linghangyuan')
 
 if __name__ == '__main__':
     parser = ArgumentParser()
     parser.add_argument('-d', '--download', action='store_true', help='download data files')
     parser.add_argument('-t', '--title', default='', help='build story by title')
+    parser.add_argument('-i', '--index', type=int, default=0, help='index of results to output')
     parser.add_argument('-p', '--painting', default='', help='get story ids by sprite name')
     args = parser.parse_args()
     if args.download:
@@ -593,7 +597,7 @@ if __name__ == '__main__':
         dl_story()
     init_book()
     if args.title:
-        gid = get_groupid(args.title)
+        gid = get_groupid(args.title, args.index)
         mid = build_memory(gid)
         with open('output/story.txt', 'w', encoding='utf-8') as fp:
             fp.write(mid)
