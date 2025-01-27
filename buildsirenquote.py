@@ -3,7 +3,11 @@ import json
 import re
 from argparse import ArgumentParser
 
-langs = ['EN', 'CN', 'JP']
+langs = {
+    'EN': 'English',
+    'CN': 'Chinese',
+    'JP': 'Japanese'
+}
 
 data = {}
 
@@ -50,28 +54,59 @@ parametermap = {
     'chime_23': 'Chime23'
 }
 
-skinids = {
-    1000: '',
-    1100: 'Kind',
-    1200: 'Quiet',
-    1300: 'Peppy',
-    
-    2000: '',
-    2100: 'Mild',
-    2200: 'Rebellious',
-    2300: 'Imp of the Bathtub',
-}
-
-titles = {
-    1000: 'Normal',
-    1100: 'Kind',
-    1200: 'Quiet',
-    1300: 'Peppy',
-
-    2000: 'Normal',
-    2100: 'Mild',
-    2200: 'Rebellious',
-    2300: 'Imp of the Bathtub',
+skin = {
+    'tb': {
+        1000: {
+            'skin': '',
+            'EN': 'Normal Personality',
+            'CN': '',
+            'JP': ''
+        },
+        1100: {
+            'skin': 'Kind',
+            'EN': 'Kind Personality',
+            'CN': '温柔',
+            'JP': '優しい'
+        },
+        1200: {
+            'skin': 'Quiet',
+            'EN': 'Quiet Personality',
+            'CN': '安静',
+            'JP': 'クール'
+        },
+        1300: {
+            'skin': 'Peppy',
+            'EN': 'Peppy Personality',
+            'CN': '开朗',
+            'JP': '元気'
+        }
+    },
+    'navi': {
+        2000: {
+            'skin': '',
+            'EN': 'Normal Personality',
+            'CN': '',
+            'JP': ''
+        },
+        2100: {
+            'skin': 'Mild',
+            'EN': 'Mild Personality',
+            'CN': '乖巧',
+            'JP': '大人しい'
+        },
+        2200: {
+            'skin': 'Rebellious',
+            'EN': 'Rebellious Personality',
+            'CN': '叛逆',
+            'JP': 'ワガママ'
+        },
+        2300: {
+            'skin': 'Skin1',
+            'EN': 'Imp of the Bathtub',
+            'CN': '入浴的小恶魔',
+            'JP': '小悪魔inバスタブ'
+        }
+    }
 }
 
 def init_data():
@@ -79,30 +114,62 @@ def init_data():
         with open('{}/ShareCfg/secretary_special_ship.json'.format(lang), 'r', encoding='utf-8') as fp:
             data.setdefault(lang, json.load(fp))
 
-
-def buildshipquote(id, region):
-    shipquote = '==={2} Personality===\n{{{{ShipQuote\n| Region = {0}\n| Skin = {1}\n'.format(region, skinids[id], titles[id])
+def buildshipquote(siren, id, region):
+    title = skin[siren][id][region]
+    if title == '':
+        title = skin[siren][id]['EN']
+    elif region != 'EN':
+        title += ' / ' + skin[siren][id]['EN']
+    shipquote = [
+        '==={}==='.format(title),
+        '{{ShipQuote',
+        '| Region = {}'.format(region),
+        '| Skin = {}'.format(skin[siren][id]['skin'])
+    ]
     for key in parametermap:
         if data[region][str(id)][key] == '':
             continue
         if key == 'chime_0':
-            shipquote += '}}}}\n===Hourly Notifications===\n{{{{ShipQuote\n| Region = {0}\n| Skin = \n'.format(region)
+            shipquote += [
+                '}}',
+                '===Hourly Notifications===',
+                '{{ShipQuote',
+                '| Region = {}'.format(region),
+                '| Skin = '
+            ]
         if key == 'main':
             mainsplit = data[region][str(id)][key].split('|')
             for i, part in enumerate(mainsplit, 1):
-                shipquote += '\n| {0}{2} = {1}\n| {0}{2}Note = \n'.format(parametermap[key], part, i)
+                shipquote += [
+                    '',
+                    '| {}{} = {}'.format(parametermap[key], i, part),
+                    '| {}{}Note = '.format(parametermap[key], i)
+                ]
         else:
-            shipquote += '\n| {0} = {1}\n| {0}Note = \n'.format(parametermap[key], data[region][str(id)][key])
-    shipquote += '}}\n'
+            shipquote += [
+                '',
+                '| {} = {}'.format(parametermap[key], data[region][str(id)][key]),
+                '| {}Note = '.format(parametermap[key])
+            ]
+    shipquote.append('}}')
     return shipquote
 
 def doit():
-    for region in langs:
-        page = ''
-        for id in skinids:
-            page += buildshipquote(id, region)
-        with open('output/{}page.txt'.format(region), 'w', encoding='utf-8') as fp:
-            fp.write(page)
+    os.makedirs('output/quote', exist_ok=True)
+    for siren in skin:
+        page = [
+            '{{ShipTabber}}',
+            '<tabber>'
+        ]
+        for region in langs:
+            if region != 'EN':
+                page.append('|-|')
+            page.append('{} Server='.format(langs[region]))
+            for id in skin[siren]:
+                page += buildshipquote(siren, id, region)
+        page.append('</tabber>')
+        with open('output/quote/{}.wiki'.format(siren), 'w', encoding='utf-8') as fp:
+            fp.write('\n'.join(page))
 
 if __name__ == '__main__':
     parser = ArgumentParser()

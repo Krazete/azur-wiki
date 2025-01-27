@@ -52,4 +52,7 @@ python -m buildmedal -d # (re)download prerequisite input data
 
 python -m builddrawingbook # export drawingbooks (images and Template:DrawingBook wikitext)
 python -m builddrawingbook -d # (re)download prerequisite input data
+
+python -m buildsirenquote # build quote pages for special secretaries
+python -m buildsirenquote -d # (re)download prerequisite input data
 ```
