@@ -452,8 +452,9 @@ bgnames = {
     'daofeng': 'Upon the Shimmering Blue',
     'underheaven': 'The Fool\'s Scales',
     'guild_blue_n': 'Guild Blue Background Part 2',
-    # Convergence of Hearts
+    # Project Identity
     'project_tb': 'Project Identity TB',
+    'project_oceana': 'Project Identity Oceana',
     '': '',
 }
 
