@@ -108,7 +108,7 @@ def build_decorset(tid, endbar):
 
     os.makedirs('output', exist_ok=True)
     page = '\n'.join(lines) + '\n'
-    with open('output/decorset.txt', 'w', encoding='utf-8') as fp:
+    with open('output/decorset.wiki', 'w', encoding='utf-8') as fp:
         fp.write(page)
 
 def get_action(action):
@@ -246,7 +246,7 @@ if __name__ == '__main__':
     elif args.itemname:
         items = get_items(args.itemname)
         lines = [build_decoritem(item, args.endbar) for item in items]
-        with open('output/decoritem.txt', 'w', encoding='utf-8') as fp:
+        with open('output/decoritem.wiki', 'w', encoding='utf-8') as fp:
             fp.write('\n'.join(lines) + '\n')
     else:
         from urllib.request import urlopen

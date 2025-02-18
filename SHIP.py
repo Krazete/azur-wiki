@@ -216,4 +216,9 @@ shipnames = { # run buildskinname to check what these should be
     'lingyangzhe32_3': 'Navi',
     'lingyangzhe3_2': 'NaviHome Relaxation',
     'npclingyangzhe3_2': 'NaviHome RelaxationWithoutBG',
+    # 2025-02-13 (Valentine's)
+    'changbo_5': 'NaganamiCasual',
+    'nubiyaren': 'Nubian',
+    'nubiyaren_2': 'NubianRPG',
+    'nubiyaren_3': 'NubianMaid',
 }

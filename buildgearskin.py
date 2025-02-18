@@ -74,7 +74,7 @@ def build_skinbox(tid=None):
 
     os.makedirs('output', exist_ok=True)
     page = '\n'.join(lines) + '\n'
-    with open('output/skinbox.txt', 'w', encoding='utf-8') as fp:
+    with open('output/skinbox.wiki', 'w', encoding='utf-8') as fp:
         fp.write(page)
 
 def build_skinitem(item):

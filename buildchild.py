@@ -42,7 +42,7 @@ def save_wikitable(name, table):
     lines[-1] = '|}'
 
     wikitable = '\n'.join(table) + '\n'
-    with open('output/{}.txt'.format(name), 'w', encoding='utf-8') as fp:
+    with open('output/{}.wiki'.format(name), 'w', encoding='utf-8') as fp:
         fp.write(wikitable)
     return wikitable
 
@@ -184,7 +184,7 @@ if __name__ == '__main__':
     # lines.append(chart_items())
 
     # page = '\n'.join(line.strip() for line in lines) + '\n'
-    # with open('out/page.txt', 'w', encoding='utf-8') as fp:
+    # with open('out/page.wiki', 'w', encoding='utf-8') as fp:
     #     fp.write(page)
     # chart_endings()
 

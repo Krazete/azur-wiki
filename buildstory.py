@@ -491,7 +491,7 @@ if 0: # testing
     # gid = get_groupid('Peregrination')
     gid = get_groupid('Zero')
     mid = build_memory(gid)
-    with open('output/story.txt', 'w', encoding='utf-8') as fp:
+    with open('output/story.wiki', 'w', encoding='utf-8') as fp:
         fp.write(mid)
 
     # get_groupids_by_painting('anzeel') # anjie
@@ -600,7 +600,7 @@ if __name__ == '__main__':
     if args.title:
         gid = get_groupid(args.title, args.index)
         mid = build_memory(gid)
-        with open('output/story.txt', 'w', encoding='utf-8') as fp:
+        with open('output/story.wiki', 'w', encoding='utf-8') as fp:
             fp.write(mid)
         print('https://azurlane.koumakan.jp/wiki/Memories/{}?action=raw'.format(quote(book['group']['EN'][gid]['title'])))
     if args.painting:

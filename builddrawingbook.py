@@ -49,5 +49,5 @@ with open('EN/ShareCfg/activity_coloring_template.json', 'r') as fp:
             IM.save('output/drawingbook/big/{}.png'.format(name))
     txts[-1] += '\n</tabber>\n'
 
-with open('output/drawingbook/all.txt', 'w', encoding='utf-8') as fp:
+with open('output/drawingbook/all.wiki', 'w', encoding='utf-8') as fp:
     fp.write('\n'.join(txts))

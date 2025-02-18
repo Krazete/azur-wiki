@@ -90,7 +90,7 @@ def build_medal():
             ]
     lines[-1] = '|}'
     page = '\n'.join(lines)
-    with open('output/medallion.txt', 'w', encoding='utf-8') as fp:
+    with open('output/medallion.wiki', 'w', encoding='utf-8') as fp:
         fp.write(page) # will need revision
 
 if __name__ == '__main__':

@@ -77,7 +77,7 @@ def dl_decor():
     dl_sharecfg('decor', ['CN', 'EN', 'JP'], ['backyard_theme_template'])
     os.makedirs('input', exist_ok=True)
     html = urlopen('https://azurlane.koumakan.jp/w/index.php?title=Decorations&action=raw&section=9')
-    with open('input/decornow.txt', 'wb') as fp:
+    with open('input/decornow.wiki', 'wb') as fp:
         fp.write(html.read())
 
 def dl_child():
