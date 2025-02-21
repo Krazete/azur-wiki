@@ -221,4 +221,9 @@ shipnames = { # run buildskinname to check what these should be
     'nubiyaren': 'Nubian',
     'nubiyaren_2': 'NubianRPG',
     'nubiyaren_3': 'NubianMaid',
+    # 2025-02-20
+    'anshan_3': 'An ShanSchool',
+    'longwu_2': 'Lung WuSpring',
+    'npcandelieyaduoliya_alter': 'Andrea Doria META',
+    'youtuobiya': 'Eutopia Savoy',
 }
