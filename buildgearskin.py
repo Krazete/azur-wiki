@@ -4,6 +4,26 @@ import re
 from argparse import ArgumentParser
 
 skinbox = {}
+ignorelist = [
+    'Perfume Shell',
+    'CD Shell',
+    'Key Ring Shell',
+    'Towel Shell',
+    'Handshake Tickets Shell',
+    'Stereo Shell',
+    'Microphone Torpedo',
+    'Paper Fan Torpedo',
+    'Concert Ticket Torpedo',
+    'Chartered Jet (Torpedo)',
+    'Chartered Jet (Fighter)',
+    'Chartered Jet (Bomber)',
+    'Manjuu Balloon (Torpedo)',
+    'Manjuu Balloon (Fighter)',
+    'Manjuu Balloon (Bomber)',
+    'Manjuu Star (Torpedo)',
+    'Manjuu Star (Fighter)',
+    'Manjuu Star (Bomber)',
+]
 
 def init_skin():
     '''Initializes `skinbox` object with JSON files downloaded from AzurLaneData repo.'''
@@ -57,19 +77,24 @@ def build_skinbox(tid=None):
             print('Item {} does not exist in EN.'.format(iid))
         elif str(item['themeid']) == tid or tid == None:
             line = build_skinitem(item)
+            hasTheme = False
+            hasIcon = False
             if tid == None:
                 for thid in skinbox['theme']:
                     if 'ids' in skinbox['theme'][thid] and int(iid) in skinbox['theme'][thid]['ids']:
+                        hasTheme = True
                         line += '|THEME={}'.format(skinbox['theme'][thid]['name'])
                 for bid in skinbox['box']:
                     if 'display_icon' in skinbox['box'][bid]:
                         for display in skinbox['box'][bid]['display_icon']:
                             if int(iid) == display[1]:
+                                hasBox = True
                                 line += '|ICON={}'.format(skinbox['box'][bid]['icon'])
             if iid not in themeids:
                 # print('SPECIAL/WRONG:', item['name'])
                 line = '|SPECIAL/WRONG=' + iid + line
-            lines.append(line)
+            start = '|IGNORE' if hasTheme and hasBox else ''
+            lines.append(start + line)
     lines.append('}}')
 
     os.makedirs('output', exist_ok=True)
@@ -81,13 +106,15 @@ def build_skinitem(item):
     '''Build a wikitable item entry line.'''
     iid = str(item['id'])
     itype = tuple(item['equip_type'])
+    iname = re.sub('(\S)\(', '\g<1> (', item['name']).strip()
     details = [
-        re.sub('(\S)\(', '\g<1> (', item['name']).strip(),
+        iname,
         item['icon'],
         re.sub('\s+', ' ', re.sub('<.+?>', ' ', item['desc'])).strip(),
         equiptype.get(itype, '<EQUIP_TYPE_{}>'.format(itype))
     ]
-    return '|' + '|'.join(details)
+    start = '|IGNORE|' if iname in ignorelist else '|'
+    return start + '|'.join(details)
 
 # {{EquipSkinHeader|ThemeIcon=SET_ICON_GearSkinBox.png|Theme=SET_NAME
 # |NAME|ICON|DESCRIPTION|{{TYPE_ID}} TYPE<br>{{TYPE2_ID}} TYPE2
@@ -108,10 +135,14 @@ if __name__ == '__main__':
         dl_from('gearskin2', ['EN'], 'sharecfgdata', [
             'item_data_statistics'
         ])
+    init_skin()
     if args.setname:
-        init_skin()
         tid = get_themeid(args.setname)
         build_skinbox(tid)
     else:
-        init_skin()
+        from urllib.request import urlopen
+        html = urlopen('https://azurlane.koumakan.jp/wiki/Equipment_Skins?action=raw')
+        whole = html.read().decode()
+        section = whole.split('== Equipment Skins without Box ==')[1].split('== List of Equipment Skin Boxes ==')[0]
+        ignorelist += re.findall('\n\|\s*(.+?)\s*\|', section)
         build_skinbox()

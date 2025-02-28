@@ -354,6 +354,7 @@ shop_type = { # todo: use buildskinname.py instead
     24: 'RPG',
     25: 'Wild West',
     26: 'Theme Park',
+    27: 'Nile Colors',
     9997: 'Kai',
     9998: 'Wedding',
     9999: '_OTHER_9999', # other
@@ -452,6 +453,8 @@ bgnames = {
     'daofeng': 'Upon the Shimmering Blue',
     'underheaven': 'The Fool\'s Scales',
     'guild_blue_n': 'Guild Blue Background Part 2',
+    # Paradiso
+    'shenguang': 'Paradiso of Shackled Light',
     # Project Identity
     'project_tb': 'Project Identity TB',
     'project_oceana': 'Project Identity Oceana',
