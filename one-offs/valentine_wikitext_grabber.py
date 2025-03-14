@@ -12,6 +12,7 @@ try:
 except Exception as e:
     # update letters every year; run the following javascript on https://azurlane.koumakan.jp/wiki/List_of_Ships
     # Array.from(document.querySelectorAll("table")).filter((t, i) => i < 3).map(t => Array.from(t.rows).filter((r, j) => j > 0)).flat().map(r => r.cells[1].textContent);
+    # check for \n in results; replace with <br>
     letters = {
         'Universal Bulin': '',
         'Prototype Bulin MKII': '',
