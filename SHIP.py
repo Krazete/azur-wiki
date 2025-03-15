@@ -243,4 +243,6 @@ shipnames = { # run buildskinname to check what these should be
     'sikula_4': 'ScyllaNile Colors',
     'yulun': 'War Protocol Moon',
     'andelieyaduoliya_alter': 'Andrea Doria META',
+    # 2025-03-13
+    'dahuangfeng_alter': 'Hornet META',
 }
