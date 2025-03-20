@@ -245,4 +245,8 @@ shipnames = { # run buildskinname to check what these should be
     'andelieyaduoliya_alter': 'Andrea Doria META',
     # 2025-03-13
     'dahuangfeng_alter': 'Hornet META',
+    # 2025-03-20 (Virtual Tower Rerun)
+    'dafeng_6': 'TaihouSummer',
+    'haifeng_3': 'UmikazeSchool',
+    'siwanshi_2': 'ShimantoMaid',
 }
