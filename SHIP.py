@@ -249,4 +249,18 @@ shipnames = { # run buildskinname to check what these should be
     'dafeng_6': 'TaihouSummer',
     'haifeng_3': 'UmikazeSchool',
     'siwanshi_2': 'ShimantoMaid',
+    # 2025-03-27 (Valley Hospital)
+    'fulankelin': 'Franklin',
+    'fulankelin_2': 'FranklinHospital',
+    'fuluoxiluofu_3': 'VoroshilovHospital',
+    'huashengdun': 'Washington',
+    'huashengdun_3': 'WashingtonHospital',
+    'linggu_3': 'SuzuyaHospital',
+    'mile': 'Miller',
+    'mile_2': 'MillerHospital',
+    'mojiaduoer_3': 'MogadorHospital',
+    'neihuada_alter': 'Nevada META',
+    'shengtafei': 'Santa Fe',
+    'shengtafei_2': 'Santa FeHospital',
+    'shensu_4': 'StremitelnyTravel',
 }

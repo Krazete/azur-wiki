@@ -455,6 +455,8 @@ bgnames = {
     'guild_blue_n': 'Guild Blue Background Part 2',
     # Paradiso
     'shenguang': 'Paradiso of Shackled Light',
+    # Valley Hospital
+    'deepvalley': 'Letters from Valley Hospital',
     # Project Identity
     'project_tb': 'Project Identity TB',
     'project_oceana': 'Project Identity Oceana',

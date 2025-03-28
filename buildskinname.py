@@ -70,7 +70,8 @@ def build_skinnames():
         base = book['skin'].get(str(10 * skin['ship_group']))
         if base:
             if skin['skin_type'] < 0: # default
-                assert skin == base
+                if skin != base:
+                    print('WARNING: Skin "{}" incorrectly detected as {}\'s default.'.format(skin['name'], base['name']))
                 name = get_decoded_name(skin)
             else:
                 name = get_decoded_name(base) + shop_type[stid]

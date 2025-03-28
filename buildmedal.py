@@ -47,7 +47,8 @@ def build_medal():
         '',
         '== Regular ==',
         '|- (this line will pop)']
-    insertedLimitedHeader = False
+    limited = []
+    # regular medals
     currentname = ''
     for icon in medals:
         name = medals[icon]['name']
@@ -55,13 +56,9 @@ def build_medal():
             lines.pop()
             if currentname:
                 lines.append('|}')
-            limited = 'Event' in [medals[icon]['explain1'], medals[icon]['explain2']]
-            if limited and not insertedLimitedHeader:
-                lines += [
-                    '',
-                    '== Limited ==',
-                ]
-                insertedLimitedHeader = True
+            if 'Event' in [medals[icon]['explain1'], medals[icon]['explain2']]:
+                limited.append(icon)
+                continue
             # explainsAreSwapped = medals[icon]['explain1'].endswith('.') or medals[icon]['explain2'] == 'Event'
             lines += [
                 '',
@@ -84,10 +81,42 @@ def build_medal():
         if medals[icon]['condition'] != 'Coming Soon':
             lines += [
                 '|{}'.format(medals[icon]['rank']),
-                '|[[File:{} {}.png|50px]]'.format(medals[icon]['name'], medals[icon]['rank']),
-                '|{}'.format(re.sub('"(.+?)"', '[[\g<1>]]', medals[icon]['condition'])), # replace quotes with hyperlink to event page
+                '|[[File:{} {}.png|50px]]'.format(name, medals[icon]['rank']),
+                '|{}'.format(medals[icon]['condition']),
                 '|-'
             ]
+    lines[-1] = '|}'
+    # limited medals
+    lines += [
+        '',
+        '== Limited ==',
+        '',
+        '{| class="wikitable"',
+        '!Icon',
+        '!Name',
+        '!Description',
+        '!Requirements',
+        '|-'
+    ]
+    for icon in limited:
+        name = medals[icon]['name']
+        rank = medals[icon]['rank']
+        condition = re.sub(
+            '(stickers from )([\w\s]+)', '\g<1>[[\g<2>]]',
+            re.sub(
+                '"(.+?)"', '[[\g<1>]]',
+                medals[icon]['condition']
+            )
+        )
+        if medals[icon]['rank'] != 1:
+            print('WARNING: Medal {} has a non-unary rank.'.format(rank))
+        lines += [
+            '|[[File:{} {}.png|50px]]'.format(name, rank),
+            '|\'\'\'{}\'\'\''.format(name),
+            '|\'\'{}\'\''.format(re.sub('\n+', '<br>', medals[icon]['desc'])),
+            '|{}'.format(condition), # replace quotes with hyperlink to event page
+            '|-'
+        ]
     lines[-1] = '|}'
     page = '\n'.join(lines)
     with open('output/medallion.wiki', 'w', encoding='utf-8') as fp:

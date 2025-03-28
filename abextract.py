@@ -121,10 +121,10 @@ Retrofit Material Icon
     [[Category:Retrofit material icons]]
 
 Event Banner
-    <Event Name> Event Banner EN.png
+    <Event Name> Event Banner EN.jpg
     [[Category:Event banners]]
 Cruise Mission Menu
-    Cruise Missions Season <Season Number>.jpg
+    Cruise Missions Season <Season Number>.png
     [[Category:Event banners]]
 Loading Screen
     Bg <YYYY>.<MM>.<DD> <Index>.png

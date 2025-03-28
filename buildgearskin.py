@@ -78,7 +78,7 @@ def build_skinbox(tid=None):
         elif str(item['themeid']) == tid or tid == None:
             line = build_skinitem(item)
             hasTheme = False
-            hasIcon = False
+            hasBox = False
             if tid == None:
                 for thid in skinbox['theme']:
                     if 'ids' in skinbox['theme'][thid] and int(iid) in skinbox['theme'][thid]['ids']:
