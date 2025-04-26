@@ -457,6 +457,8 @@ bgnames = {
     'shenguang': 'Paradiso of Shackled Light',
     # Valley Hospital
     'deepvalley': 'Letters from Valley Hospital',
+    # Tulipa
+    'yujin': 'Toward Tulipa\'s Seas',
     # Project Identity
     'project_tb': 'Project Identity TB',
     'project_oceana': 'Project Identity Oceana',

@@ -263,4 +263,25 @@ shipnames = { # run buildskinname to check what these should be
     'shengtafei': 'Santa Fe',
     'shengtafei_2': 'Santa FeHospital',
     'shensu_4': 'StremitelnyTravel',
+    # 2025-04-01 (April Fools)
+    'buli_super_2': 'Specialized Bulin Custom MKIIIEvent',
+    # 2025-04-10
+    'quejie': 'Swiftsure',
+    # 2025-04-17
+    'dujiaoshou_10': 'UnicornRPG',
+    'feiteliekaer_2': 'Friedrich CarlHome Relaxation',
+    'yuanchou_2': 'ImplacableSchool',
+    # 2025-04-24 (Tulipa)
+    'aerbien_4': 'AlbionHome Relaxation',
+    'aifosen': 'Evertsen',
+    'aifosen_2': 'EvertsenHome Relaxation',
+    'ankeleiqi_younv': 'Little Anchorage',
+    'aoliege': 'Oleg',
+    'aoliege_2': 'OlegHome Relaxation',
+    'bailong_5': 'HakuryuuHome Relaxation',
+    'kashan': 'Kazan',
+    'kashan_2': 'KazanHome Relaxation',
+    'qisheng': 'De Zeven Provinciën',
+    'qisheng_2': 'De Zeven ProvinciënHome Relaxation',
+    'taiyuan_3': 'Tai YuanHome Relaxation',
 }

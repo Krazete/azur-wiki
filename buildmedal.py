@@ -102,7 +102,7 @@ def build_medal():
         name = medals[icon]['name']
         rank = medals[icon]['rank']
         condition = re.sub(
-            '(stickers from )([\w\s]+)', '\g<1>[[\g<2>]]',
+            '(stickers (?:from|in) )([\w\s\']+)', '\g<1>[[\g<2>]]',
             re.sub(
                 '"(.+?)"', '[[\g<1>]]',
                 medals[icon]['condition']
