@@ -40,16 +40,16 @@ for obj in assetbundles.objects:
     if obj.type.name in outpaths:
         asset = obj.read()
         parent = Path(obj.type.name, assetfile).parent
-        outpath = Path(parent, asset.name)
+        outpath = Path(parent, asset.m_Name)
         # prepend icon labels in certain folders
         if parent.name in iconnames:
-            outpath = Path(parent, iconnames[parent.name].format(asset.name))
+            outpath = Path(parent, iconnames[parent.name].format(asset.m_Name))
         # move ship assets to special folder
         elif parent.name in shipassets:
             template = shipassets[parent.name]
             parent = Path(parent.parent, 'SHIP')
-            shipname = shipnames.get(asset.name.lower().replace('_hx', ''), asset.name)
-            if '_hx' in asset.name:
+            shipname = shipnames.get(asset.m_Name.lower().replace('_hx', ''), asset.m_Name)
+            if '_hx' in asset.m_Name:
                 shipname += 'CN'
             outpath = Path(parent, template.format(shipname))
         # increment duplicate names

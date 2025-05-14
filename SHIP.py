@@ -284,4 +284,12 @@ shipnames = { # run buildskinname to check what these should be
     'qisheng': 'De Zeven Provinciën',
     'qisheng_2': 'De Zeven ProvinciënHome Relaxation',
     'taiyuan_3': 'Tai YuanHome Relaxation',
+    # 2025-05-14 (Wednesday Update)
+    'aierbin_3': 'ElbingHome Relaxation',
+    'enpuleisi': 'Lady E',
+    'npcgelunweier_alter': 'Grenville META',
+    'npcguangrong_alter': 'Glorious META',
+    'shuixingjinian_6': 'Pamiat\' MerkuriaEvent',
+    'weineituo_2': 'Vittorio VenetoSummer',
+    'z23_12': 'Z23Party2',
 }
