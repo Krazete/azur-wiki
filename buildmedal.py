@@ -30,10 +30,10 @@ def abget_medals():
         if obj.type.name == 'Texture2D':
             asset = obj.read()
             try:
-                int(asset.name)
+                int(asset.m_Name)
             except:
                 continue
-            outname = '{} {}'.format(medals[asset.name]['name'], medals[asset.name]['rank'])
+            outname = '{} {}'.format(medals[asset.m_Name]['name'], medals[asset.m_Name]['rank'])
             os.makedirs('Texture2D/MEDALLION', exist_ok=True)
             asset.image.save('Texture2D/MEDALLION/{}.png'.format(outname))
 
@@ -102,7 +102,7 @@ def build_medal():
         name = medals[icon]['name']
         rank = medals[icon]['rank']
         condition = re.sub(
-            '(stickers (?:from|in) )([\w\s\']+)', '\g<1>[[\g<2>]]',
+            '(stickers (?:from|in) )([\w\s\':]+)', '\g<1>[[\g<2>]]',
             re.sub(
                 '"(.+?)"', '[[\g<1>]]',
                 medals[icon]['condition']

@@ -107,6 +107,25 @@ Skill Icon
 Event Buff Icon
     [[Category:Buff icons]]
 
+Siren Images
+    Key Visual
+        [[Category:Sirens]]
+    Banner
+        [[Category:Siren banner images]]
+    Square Icon
+        [[Category:Siren icons]]
+    Chibi
+        [[Category:Siren Chibi]]
+    Chibi Icon
+        [[Category:Siren Chibi icons]]
+Human Images
+    Key Visual
+        [[Category:Humans]]
+    Banner
+        [[Category:Human banner images]]
+    Square Icon
+        [[Category:Human icons]]
+
 Backgrounds
     star_level_bg_<BG ID>.png
         Skin BG <BG ID>.png

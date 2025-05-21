@@ -1,3 +1,5 @@
+import re
+
 shipnames = { # run buildskinname to check what these should be
     # 2024-07-02
     'aierdeliqi_8': 'EldridgeSchool2',
@@ -72,7 +74,7 @@ shipnames = { # run buildskinname to check what these should be
     'chuixue_7': 'FubukiSpring',
     'dulianglai_2': 'WataraseParty',
     'dulianglai': 'Watarase',
-    'huangjianfangzhou_6': 'Ark RoyalTheme Park', # dupe of huangjiafangzhou_6
+    # 'huangjianfangzhou_6': 'Ark RoyalTheme Park', # typo dupe of huangjiafangzhou_6
     'liangbo_2': 'SuzunamiTheme Park',
     'liangbo': 'Suzunami',
     'linglai_2': 'AyaseHome Relaxation',
@@ -143,7 +145,7 @@ shipnames = { # run buildskinname to check what these should be
     'dafeng_alter': 'Taihou META',
     'lafeiii_3': 'Laffey IIBunny',
     'madamm': 'Madam M',
-    'moon': 'Arbiter The Moon XVIII',
+    'moon': 'Arbiter: The Moon XVIII',
     'xingzuo_2': 'ConstellationBunny',
     'xipeierhaijunshangjiang_alter': 'Admiral Hipper META',
     'yade_2': 'JadeSummer',
@@ -224,14 +226,14 @@ shipnames = { # run buildskinname to check what these should be
     # 2025-02-20
     'anshan_3': 'An ShanSchool',
     'longwu_2': 'Lung WuSpring',
-    'npcandelieyaduoliya_alter': 'Andrea Doria META',
+    'npcandelieyaduoliya_alter': 'NPCAndrea Doria META',
     'youtuobiya': 'Eutopia Savoy',
     # 2025-02-27 (A Day After Kizuna AI Returned)
     'balaka': 'Maggiore Baracca',
     'balaka_2': 'Maggiore BaraccaNile Colors',
     'batuoluomeiao': 'Bartolomeo Colleoni',
     'batuoluomeiao_2': 'Bartolomeo ColleoniNile Colors',
-    'chariot': 'Arbiter The Chariot VII',
+    'chariot': 'Arbiter: The Chariot VII',
     'jian_3': 'Chi AnNile Colors',
     'jiaosuai': 'Giosuè Carducci',
     'jiaosuai_2': 'Giosuè CarducciNile Colors',
@@ -239,7 +241,7 @@ shipnames = { # run buildskinname to check what these should be
     'lafeier_2': 'RaffaelloNile Colors',
     'lianren': 'War Protocol Scythe',
     'missr': 'Bon Homme Richard',
-    'shenpanjizhanche': 'MECHArbiter The Chariot',
+    'shenpanjizhanche': 'MECHArbiter: The Chariot',
     'sikula_4': 'ScyllaNile Colors',
     'yulun': 'War Protocol Moon',
     'andelieyaduoliya_alter': 'Andrea Doria META',
@@ -288,8 +290,43 @@ shipnames = { # run buildskinname to check what these should be
     'aierbin_3': 'ElbingHome Relaxation',
     'enpuleisi': 'Lady E',
     'npcgelunweier_alter': 'Grenville META',
-    'npcguangrong_alter': 'Glorious META',
+    'npcguangrong_alter': 'NPCGlorious META',
     'shuixingjinian_6': 'Pamiat\' MerkuriaEvent',
     'weineituo_2': 'Vittorio VenetoSummer',
     'z23_12': 'Z23Party2',
+    # 2025-05-20 (Tuesday Update)
+    'dafeng_7': 'TaihouBunny',
+    'guanghui_8': 'IllustriousCasual',
+    'guangrong_alter': 'Glorious META',
+    'keliaopeitela': 'Cleopatra',
+    'keliaopeitela_2': 'CleopatraSummer',
+    'magician': 'Arbiter: The Magician I',
+    'npcchuyue_3': 'Hatsuzuki_SKIN3',
+    'npcfeiteliekaer_3': 'Friedrich Carl_SKIN3',
+    'npcheianjie_alter': 'Erebus META',
+    'npcjunzhu_5': 'Monarch_SKIN5',
+    'npckewei_6': 'Formidable_SKIN6',
+    'npclieren_alter': 'Hunter META',
+    'npcmalilan_3': 'Maryland_SKIN3',
+    'shi': 'Lion',
+    'shi_2': 'LionSummer',
+    'siwanshi_3': 'ShimantoSummer',
+    'siwanshi_4': 'ShimantoSummerForm2',
+    'star': 'Star',
+    'telafaerjia': 'Trafalgar',
+    'telafaerjia_2': 'TrafalgarSummer',
+    'telinida': 'Trinidad',
+    'telinida_2': 'TrinidadSummer',
+    'yinghuochong_g': 'GlowwormKai',
+    'yongqi': 'Gallant',
+    'yongqi_2': 'GallantHome Relaxation',
+    'unknownstar': 'Arbiter: The Star XVII',
 }
+
+dupes = set()
+for id in shipnames:
+    shipnames[id] = re.sub(r'[<>:"/\\|?*]+', '', shipnames[id])
+    shipname = shipnames[id]
+    if shipname in dupes:
+        print('WARNING: Duplicate ship name: {}'.format(shipname))
+    dupes.add(shipname)

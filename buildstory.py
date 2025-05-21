@@ -459,6 +459,11 @@ bgnames = {
     'deepvalley': 'Letters from Valley Hospital',
     # Tulipa
     'yujin': 'Toward Tulipa\'s Seas',
+    # Neversetting Sun
+    # 'huiguangzhicheng': '???',
+    # Rose
+    'villaisland': 'Midsummer Returns! The Villa Reconstruction',
+    'gaotaqiangwei': 'A Rose on the High Tower',
     # Project Identity
     'project_tb': 'Project Identity TB',
     'project_oceana': 'Project Identity Oceana',
