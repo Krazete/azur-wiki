@@ -68,6 +68,7 @@ def parse_scripts(scripts, lang):
     bgrn = None
     bgmrn = None
     nobgname = set()
+    mismatches = set()
     for script in scripts:
         if isinstance(script, str):
             print('Not a script:', script)
@@ -164,11 +165,21 @@ def parse_scripts(scripts, lang):
         if 'jiahezhanlie' in paintingname:
             if not actorname:
                 actorname = skinnameEN
-            skinnameEN = 'Kaga (Battleship)'
+            skinnameEN = 'Kaga(BB)'
         if 'chicheng_alter' in paintingname:
             skinnameEN = 'Akagi META'
         if 'moon' in paintingname:
             skinnameEN = 'Arbiter The Moon XVIII'
+        if 'unknown6' in paintingname:
+            if not actorname:
+                actorname = skinnameEN
+            skinnameEN = 'War Protocol Scythe'
+        if 'linghangyuan1_5' in paintingname:
+            if not actorname:
+                actorname = skinnameEN
+            skinnameEN = 'TB'
+        if 'shuixingjinian_6' in paintingname:
+            skinnameEN = 'Pamiat\' Merkuria/Event'
         
         # todo: instead, check entirety of ship_skin_template for entries with a matching painting attribute, and prefer whichever entry doesn't have a shop_type_id attribute of 0
         if paintingname in ['lupuleixite_3', 'longxiang_4', 'npcjianye_5', 'wuzang_3', 'geluosite_3', 'npcbulaimodun_6', 'huangjiafangzhou_6', 'npctianlangxing_5']:
@@ -179,12 +190,19 @@ def parse_scripts(scripts, lang):
             if not actorname:
                 actorname = skinname
             skinnameEN += '/Halloween'
+        if paintingname in ['npckewei_6', 'npcfeiteliekaer_3', 'npcjunzhu_5', 'npcchuyue_3_n']: # todo: check when they're added next week
+            if not actorname:
+                actorname = skinname
+            skinnameEN += '/Summer'
         if re.search('_\d+', paintingname) and '/' not in skinnameEN: # detect if numbered paintingname tried to call itself the default skin
-            print('WARNING:', skinnameEN, paintingname, 'may have the incorrect skin.')
+            if (skinnameEN, paintingname) not in mismatches:
+                mismatches.add((skinnameEN, paintingname))
+                print('WARNING:', skinnameEN, paintingname, 'may have the incorrect skin.')
 
         skinnameEN = skinnameEN.replace('μ', 'µ').strip() # for muses
         skinnameEN = skinnameEN.replace(':', '').strip() # for arbiters
         actorname = actorname.replace(':', '').strip() # for arbiters
+        actorname = re.sub(r'<.+?>', '', actorname) # remove styling
         actortext = actortext.replace('=', '&#61;') # prevent named parameters
 
         if skinname and not paintingname.endswith('_hei'):
@@ -464,6 +482,7 @@ bgnames = {
     # Rose
     'villaisland': 'Midsummer Returns! The Villa Reconstruction',
     'gaotaqiangwei': 'A Rose on the High Tower',
+    'huiguangzhicheng': 'Light of the Martyrium',
     # Project Identity
     'project_tb': 'Project Identity TB',
     'project_oceana': 'Project Identity Oceana',
@@ -498,7 +517,7 @@ bannedbanners = [
     # 'Arbiter The Devil XV',
     # 'Arbiter The Tower XVI',
     'Star Beast',
-    'Arbiter The Magician I'
+    # 'Arbiter The Magician I',
 ]
 
 if 0: # testing
