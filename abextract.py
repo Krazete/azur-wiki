@@ -52,6 +52,11 @@ for obj in assetbundles.objects:
             if '_hx' in asset.m_Name:
                 shipname += 'CN'
             outpath = Path(parent, template.format(shipname))
+        elif parent.name == 'paintingface':
+            if asset.m_Name == '0':
+                print('WARNING: There is a 0-index expression within {}.'.format(assetfile))
+                print('         Inspect the output for this sprite and edit Texture2D/SHIP/azur-paint.txt')
+                print('         by adding "-f {} -t 0" to appropriate lines as necessary.'.format(assetfile.split('/')[-1]))
         # increment duplicate names
         i = 0
         inc = ''
