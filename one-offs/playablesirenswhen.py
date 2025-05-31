@@ -1,4 +1,5 @@
 import json
+from argparse import ArgumentParser
 
 with open('EN\GameCfg\dungeon.json', 'rb') as fp:
     battlesims = json.load(fp)
@@ -9,7 +10,7 @@ with open('EN\ShareCfg\memory_group.json', 'rb') as fp:
 with open('EN\ShareCfg\ship_skin_template.json', 'rb') as fp:
     skins = json.load(fp)
 
-special_skins = [
+special_paintings = [
     'npcchicheng',
     'chicheng_alter',
     'leftchicheng_alter',
@@ -89,13 +90,25 @@ special_skins = [
     'yuekecheng_alter_hei'
 ]
 
-template = '{:12}{:12}{:12}{:24}{:36}{:36}{:12}'
+special_prefabs = [
+    'sairenboss11'
+]
+
+parser = ArgumentParser()
+parser.add_argument('-s', '--skin', help='skin painting or prefab to search for')
+args = parser.parse_args()
+if args.skin:
+    special_paintings.append(args.skin)
+    special_prefabs.append(args.skin)
+
+template = '{:12}{:12}{:12}{:24}{:24}{:36}{:48}{:12}'
 
 print(template.format(
     'Dungeon ID',
     'Position',
     'Skin ID',
     'Painting',
+    'Prefab',
     'Name',
     'Memory',
     'Chapter'
@@ -112,8 +125,8 @@ for bsid in battlesims:
                     yay1 = [bsid, position[0].upper() + position[1:], skid]
                     if skid in skins:
                         skin = skins[skid]
-                        if skin['painting'] in special_skins:
-                            yay2 = yay1 + [skin['painting'], skin['name']]
+                        if skin['painting'] in special_paintings or skin['prefab'] in special_prefabs:
+                            yay2 = yay1 + [skin['painting'], skin['prefab'], skin['name']]
                             nochapters = True
                             for chid in chapters:
                                 if bsid in chapters[chid]['story']:
@@ -126,4 +139,4 @@ for bsid in battlesims:
                             if nochapters:
                                 print(template.format(*(yay2 + ['NOT FOUND', '-'])))
                     else:
-                        print(template.format(*(yay1 + ['NOT FOUND', '-', '-', '-'])))
+                        print(template.format(*(yay1 + ['NOT FOUND', '-', '-', '-', '-'])))
