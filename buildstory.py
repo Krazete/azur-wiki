@@ -190,10 +190,16 @@ def parse_scripts(scripts, lang):
             if not actorname:
                 actorname = skinname
             skinnameEN += '/Halloween'
-        if paintingname in ['npckewei_6', 'npcfeiteliekaer_3', 'npcjunzhu_5', 'npcchuyue_3_n']: # todo: check when they're added next week
+        if paintingname in ['kewei_6']: # todo: fix (duplicates the name for some reason)
+            skinnameEN += '2'
+        if paintingname in ['npcfeiteliekaer_3', 'npcjunzhu_5', 'npcmalilan_3', 'npcmalilan_3_n']:
             if not actorname:
                 actorname = skinname
             skinnameEN += '/Summer'
+        if paintingname in ['npcchuyue_3', 'npcchuyue_3_n']:
+            if not actorname:
+                actorname = skinname
+            skinnameEN += '/Travel'
         if re.search('_\d+', paintingname) and '/' not in skinnameEN: # detect if numbered paintingname tried to call itself the default skin
             if (skinnameEN, paintingname) not in mismatches:
                 mismatches.add((skinnameEN, paintingname))
@@ -331,7 +337,8 @@ def get_groupids_by_painting(name):
 commander = {
     'EN': 'Commander',
     'CN': '指挥官',
-    'JP': '指揮官'
+    'JP': '指揮官',
+    '': '{playername}'
 }
 
 memory_type = {
