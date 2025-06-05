@@ -334,6 +334,16 @@ shipnames = { # run buildskinname to check what these should be
     'suweiaibeilaluosi_3': 'Sovetskaya BelorussiyaSummer',
     'yingrui_4': 'Ying SweiSummer',
     'weiqita_alter': 'Wichita META',
+    # 2025-06-05 (Black Rock Shooter)
+    'heiyansheshou': 'BLACK★ROCK SHOOTER',
+    'heiyansheshou_2': 'BLACK★ROCK SHOOTERSummer',
+    'siwangzhuzai': 'DEAD MASTER',
+    'siwangzhuzai_2': 'DEAD MASTERSummer',
+    'naximofu_3': 'Admiral NakhimovCasual',
+    'baerdimo_h': 'BaltimoreWedding',
+    'chaijun_h': 'CheshireWedding',
+    'yanusi_h': 'JanusWedding',
+    'jiangfeng_alter': 'Kawakaze META',
 }
 
 dupes = set()

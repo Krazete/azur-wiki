@@ -40,6 +40,29 @@ shipassets = {
     'squareicon': '{}Icon'
 }
 
+ignored = [
+    'activityuitable',
+    'aircrafticon',
+    'artresource',
+    'char', # chibi spine models
+    'chargo',
+    'clutter',
+    'cue', # voice audio
+    'dorm3d', # 3d models
+    'effect',
+    'furnitrues',
+    'item',
+    'linkbutton',
+    'linkbutton_mellow',
+    'live2d',
+    'metaship',
+    'metaworldboss',
+    'painting',
+    'paintingface',
+    'sfurniture',
+    'spinepainting'
+]
+
 # extract asset types as listed in outpaths
 for obj in assetbundles.objects:
     if not (obj.assets_file and obj.assets_file.assetbundle and obj.assets_file.assetbundle.m_Name):
@@ -71,6 +94,9 @@ for obj in assetbundles.objects:
                 print('WARNING: There is a 0-index expression within {}.'.format(assetfile))
                 print('         Inspect the output for this sprite and edit Texture2D/SHIP/azur-paint.txt')
                 print('         by adding "-f {} -t 0" to appropriate lines as necessary.'.format(assetfile.split('/')[-1]))
+        # don't save
+        if not parent.parts[1:] or parent.parts[1] in ignored: # also ignores root folder files
+            continue
         # increment duplicate names
         i = 0
         inc = ''
@@ -245,6 +271,10 @@ Research Blueprint (ALL)
 
 META Crystal
     <Ship Name> METACrystal.png
+
+Arcade Games
+    <Game Name> Arcade Banner.png
+    [[Category:Arcade banners]]
 
 Akashi Shop Icons
     [[Category:Shop icons]]
