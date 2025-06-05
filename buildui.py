@@ -36,13 +36,21 @@ def buildui():
     for id in ui:
         if id == 'all':
             continue
-        time = getdates(ui[id]['id'])
+
+        if 'Buy' in ui[id]['unlock']:
+            time = getdates(ui[id]['id'])
+            unlock = '[[Akashi\'s Shop]] ({})'.format(time)
+        elif 'Cruise Mission' in ui[id]['unlock']:
+            unlock = '[[Cruise Missions|{}]]'.format(ui[id]['unlock'])
+        else:
+            unlock = ui[id]['unlock']
+        
         lines.append('| BattleUI {}.png | {}\'\'\'{}\'\'\'<br>\'\'{}\'\'<br>Unlock: {}'.format(
             ui[id]['icon'],
             '' if ui[id]['unlock'] == 'Default' else re.sub('^ui_(\d+)$', '[[File:BattleUIIcon \g<1>.png|50px]]', ui[id]['display_icon']),
             re.sub('Battle UI\W+', '', ui[id]['name']),
             ui[id]['desc'],
-            '[[Akashi\'s Shop]] ({})'.format(time) if 'Buy' in ui[id]['unlock'] else '[[Cruise Missions|{}]]'.format(ui[id]['unlock'])
+            unlock
         ))
     lines.append('}}')
     with open('output/ui.wiki', 'w') as fp:
