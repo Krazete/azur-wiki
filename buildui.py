@@ -1,6 +1,5 @@
 import json
 import re
-from downloader import dl_sharecfg
 from argparse import ArgumentParser
 
 ui = {}
@@ -61,9 +60,10 @@ if __name__ == '__main__':
     parser.add_argument('-d', '--download', action='store_true', help='download data files')
     args = parser.parse_args()
     if args.download:
-        dl_sharecfg('idwontmattersoon', ['EN'], [
-            'item_data_battleui',
-            'pay_data_display'
+        from downloader import update
+        update(['EN'], [
+            'ShareCfg/item_data_battleui',
+            'ShareCfg/pay_data_display'
         ])
     init()
     buildui()

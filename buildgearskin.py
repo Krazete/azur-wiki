@@ -127,13 +127,11 @@ if __name__ == '__main__':
     parser.add_argument('-s', '--setname', help='build equip skin table by name')
     args = parser.parse_args()
     if args.download:
-        from downloader import dl_from, dl_sharecfg
-        dl_sharecfg('gearskin', ['EN'], [
-            'equip_skin_theme_template',
-            'equip_skin_template'
-        ])
-        dl_from('gearskin2', ['EN'], 'sharecfgdata', [
-            'item_data_statistics'
+        from downloader import update
+        update(['EN'], [
+            'ShareCfg/equip_skin_theme_template',
+            'ShareCfg/equip_skin_template',
+            'sharecfgdata/item_data_statistics'
         ])
     init_skin()
     if args.setname:

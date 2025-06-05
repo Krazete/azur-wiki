@@ -232,12 +232,12 @@ if __name__ == '__main__':
     parser.add_argument('-i', '--itemname', help='build decor item entries by name')
     args = parser.parse_args()
     if args.download:
-        from downloader import dl_sharecfg
-        dl_sharecfg('decorset', ['EN', 'CN', 'JP'], [
-            'backyard_theme_template',
-            'furniture_data_template',
-            'furniture_shop_template',
-            'shop_furniture_relation'
+        from downloader import update
+        update(['EN', 'CN', 'JP'], [
+            'ShareCfg/backyard_theme_template',
+            'ShareCfg/furniture_data_template',
+            'ShareCfg/furniture_shop_template',
+            'ShareCfg/shop_furniture_relation'
         ])
     init_decorset(args.lang)
     if args.setname:

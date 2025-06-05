@@ -107,13 +107,11 @@ if __name__ == '__main__':
     parser.add_argument('-d', '--download', action='store_true', help='download data files')
     args = parser.parse_args()
     if args.download:
-        from downloader import dl_sharecfg, dl_from
-        dl_sharecfg('shipnames', ['EN'], [
-            'ship_skin_template',
-            'name_code'
-        ])
-        dl_from('shipnames2', ['EN'], 'sharecfgdata', [
-            'gametip'
+        from downloader import update
+        update(['EN'], [
+            'ShareCfg/ship_skin_template',
+            'ShareCfg/name_code',
+            'sharecfgdata/gametip'
         ])
     init_book()
     build_skinnames()

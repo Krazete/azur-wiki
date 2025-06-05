@@ -8,7 +8,7 @@ story = {}
 def init_story():
     '''Initializes `story` object.'''
     for lang in ['EN', 'CN', 'JP']:
-        with open('{}/GameCfg/story.json'.format(lang), 'r', encoding='utf-8') as fp:
+        with open('{}/GameCfg/story{}.json'.format(lang, 'jp' if lang == 'JP' else ''), 'r', encoding='utf-8') as fp:
             story[lang] = json.load(fp)
 
 def build_voices(lang, format_numbers):

@@ -176,9 +176,7 @@ if __name__ == '__main__':
     parser.add_argument('-d', '--download', action='store_true', help='download data files')
     args = parser.parse_args()
     if args.download:
-        from downloader import dl_from, dl_sharecfg
-        dl_sharecfg('sirenquote', ['EN', 'CN', 'JP'], [
-            'secretary_special_ship'
-        ])
+        from downloader import update
+        update(['CN', 'EN', 'JP'], ['secretary_special_ship'])
     init_data()
     doit()

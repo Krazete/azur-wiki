@@ -26,7 +26,7 @@ def init_book():
     for lang in langs:
         for subpath in subpaths:
             cat = subpaths[subpath]
-            path = '{}/{}.json'.format(lang, subpath)
+            path = '{}/{}{}.json'.format(lang, subpath, 'jp' if subpath == 'story' and lang == 'JP' else '')
             with open(path, 'r', encoding='utf-8') as fp:
                 book.setdefault(cat, {})
                 book[cat][lang] = json.load(fp)

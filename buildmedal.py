@@ -129,8 +129,8 @@ if __name__ == '__main__':
     parser.add_argument('-b', '--build', action='store_true', help='build Medallion page')
     args = parser.parse_args()
     if args.download:
-        from downloader import dl_medal_experimental
-        dl_medal_experimental()
+        from downloader import update
+        update(['EN'], ['ShareCfg/medal_template'])
     init_medals()
     if args.extract:
         abget_medals()

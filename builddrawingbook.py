@@ -7,8 +7,8 @@ parser = ArgumentParser()
 parser.add_argument('-d', '--download', action='store_true', help='download data files')
 args = parser.parse_args()
 if args.download:
-    from downloader import dl_sharecfg
-    dl_sharecfg('drawingbook', ['EN'], ['activity_coloring_template'])
+    from downloader import update
+    update(['EN'], ['ShareCfg/activity_coloring_template'])
 
 os.makedirs('output/drawingbook/small', exist_ok=True)
 os.makedirs('output/drawingbook/big', exist_ok=True)
