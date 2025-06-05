@@ -50,6 +50,9 @@ python -m buildmedal -e # extract and rename medal images from AssetBundles
 python -m buildmedal -b # build Medallion page
 python -m buildmedal -d # (re)download prerequisite input data
 
+python -m buildui # build page for battle ui
+python -m buildui -d # (re)download prerequisite input data
+
 python -m builddrawingbook # export drawingbooks (images and Template:DrawingBook wikitext)
 python -m builddrawingbook -d # (re)download prerequisite input data
 
