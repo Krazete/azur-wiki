@@ -63,11 +63,11 @@ def update(langs, paths):
                 with open(fullpath, 'wb') as fp:
                     fp.write(bcontent)
                 versionlog[fullpath] = gh_version
-                print('Updated:', fullpath)
+                print('UPDATED:', fullpath)
                 with open('versionlog.json', 'w') as fp:
                     json.dump(versionlog, fp, indent=4, sort_keys=True)
             else:
-                print('Skipped:', fullpath)
+                print('SKIPPED:', fullpath)
 
 def dl_decor():
     '''Download decor data files and List of Furniture Sets wiki page section.'''
