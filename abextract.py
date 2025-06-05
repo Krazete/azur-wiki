@@ -16,12 +16,20 @@ outpaths = {
 iconnames = {
     'activitymedal': 'AlbumSticker {}',
     'collectionfileillustration': 'Collectfile {}',
+    'combatuistyle': 'BattleUI {}',
     'equips': 'EquipSkinIcon {}', # revert for non-skin gear
     'furnitureicon': 'FurnIcon {}',
     'mangapic': 'Manga {}',
     'skillicon': 'Skill {}',
     'spweapon': 'Augment {}',
     'strategyicon': 'Buff {}'
+}
+
+regexsubs = {
+    'props': {
+        r'^ui(\d+)$': 'BattleUIPack \g<1>',
+        r'^ui_(\d+)$': 'BattleUIIcon \g<1>'
+    }
 }
 
 shipassets = {
@@ -44,6 +52,12 @@ for obj in assetbundles.objects:
         # prepend icon labels in certain folders
         if parent.name in iconnames:
             outpath = Path(parent, iconnames[parent.name].format(asset.m_Name))
+        elif parent.name in regexsubs:
+            for reg in regexsubs[parent.name]:
+                sub = regexsubs[parent.name][reg]
+                if re.match(reg, asset.m_Name):
+                    outpath = Path(parent, re.sub(reg, sub, asset.m_Name))
+                    continue
         # move ship assets to special folder
         elif parent.name in shipassets:
             template = shipassets[parent.name]
@@ -231,4 +245,10 @@ Research Blueprint (ALL)
 
 META Crystal
     <Ship Name> METACrystal.png
+
+Akashi Shop Icons
+    [[Category:Shop icons]]
+
+Battle UI
+    [[Category:Battle UI previews]]
 '''
