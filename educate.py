@@ -10,10 +10,10 @@ for dirname in os.listdir('input'):
         for obj in educate.objects:
             if obj.type.name == 'Texture2D':
                 texture = obj.read()
-                if texture.name in textures:
-                    if texture.image != textures[texture.name]:
-                        print('DUPLICATE:', texture.name)
+                if texture.m_Name in textures:
+                    if texture.image != textures[texture.m_Name]:
+                        print('DUPLICATE:', texture.m_Name)
                         os.makedirs('output', exist_ok=True)
-                        texture.image.save('output/{} (1).png'.format(texture.name))
-                        textures[texture.name].save('output/{} (2).png'.format(texture.name))
-                textures[texture.name] = texture.image
+                        texture.image.save('output/{} (1).png'.format(texture.m_Name))
+                        textures[texture.m_Name].save('output/{} (2).png'.format(texture.m_Name))
+                textures[texture.m_Name] = texture.image
