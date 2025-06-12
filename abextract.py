@@ -57,8 +57,10 @@ ignored = [
     'live2d',
     'metaship',
     'metaworldboss',
+    'model',
     'painting',
     'paintingface',
+    'scenes',
     'sfurniture',
     'spinepainting'
 ]
