@@ -214,6 +214,9 @@ Hall of Fame Memory Icon
 Secret CD
     <Ship Name>Secret.png
 
+Operation Siren Collection Archives Pictures
+    [[Category:Collection Archives images]]
+
 Commemorative Album Sticker
     [[Category:Commemorative Album stickers]]
 Medallions

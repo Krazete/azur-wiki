@@ -46,6 +46,9 @@ python -m buildstory -d # (re)download prerequisite input data
 python -m buildstoryvoice # build list of voice audio files used within stories
 python -m buildstoryvoice -d # (re)download prerequisite input data
 
+python -m buildcollect # build Collection Archives page
+python -m buildcollect -d # (re)download prerequisite input data
+
 python -m buildmedal -e # extract and rename medal images from AssetBundles
 python -m buildmedal -b # build Medallion page
 python -m buildmedal -d # (re)download prerequisite input data
