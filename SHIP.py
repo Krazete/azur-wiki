@@ -344,6 +344,20 @@ shipnames = { # run buildskinname to check what these should be
     'chaijun_h': 'CheshireWedding',
     'yanusi_h': 'JanusWedding',
     'jiangfeng_alter': 'Kawakaze META',
+    # 2025-06-26 (Neon City Investigator)
+    'bisimai': 'Bismarck',
+    'diguo_3': 'ImperoWork',
+    'feiteliekaer_3': 'Friedrich CarlSummer',
+    'haiwangxing_4': 'NeptuneSpecial Exercise',
+    'keluoladuo_4': 'ColoradoSummer',
+    'u37_3': 'U-37Special Exercise',
+    'u552': 'U-552',
+    'u552_2': 'U-552Special Exercise',
+    'wuqi_3': 'AzumaWork',
+    'z13': 'Z13',
+    'z13_2': 'Z13Work',
+    'zengkehaijunshangjiang': 'Admiral Zenker',
+    'zengkehaijunshangjiang_2': 'Admiral ZenkerSpecial Exercise',
 }
 
 dupes = set()

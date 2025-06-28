@@ -8,6 +8,10 @@ from argparse import ArgumentParser
 
 medals = {}
 
+condition_fixes = {
+    r'Midsummer Returns: The Villa Reconstruction': 'A Rose on the High Tower#Midsummer Returns! The Villa Reconstruction|Midsummer Returns! The Villa Reconstruction',
+}
+
 def init_medals():
     with open('EN/ShareCfg/medal_template.json', 'r', encoding='utf-8') as fp:
         medal_template = json.load(fp)
@@ -108,6 +112,9 @@ def build_medal():
                 medals[icon]['condition']
             )
         )
+        for pattern in condition_fixes:
+            fix = condition_fixes[pattern]
+            condition = re.sub(pattern, fix, condition)
         if medals[icon]['rank'] != 1:
             print('WARNING: Medal {} has a non-unary rank.'.format(rank))
         lines += [

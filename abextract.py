@@ -44,6 +44,7 @@ ignored = [
     'activityuitable',
     'aircrafticon',
     'artresource',
+    'backyardtheme',
     'char', # chibi spine models
     'chargo',
     'clutter',
@@ -55,14 +56,18 @@ ignored = [
     'linkbutton',
     'linkbutton_mellow',
     'live2d',
+    'map',
     'metaship',
     'metaworldboss',
     'model',
+    'orbit',
     'painting',
     'paintingface',
     'scenes',
     'sfurniture',
-    'spinepainting'
+    'shoppainting',
+    'spinepainting',
+    'storyicon'
 ]
 
 # extract asset types as listed in outpaths
@@ -96,6 +101,7 @@ for obj in assetbundles.objects:
                 print('WARNING: There is a 0-index expression within {}.'.format(assetfile))
                 print('         Inspect the output for this sprite and edit Texture2D/SHIP/azur-paint.txt')
                 print('         by adding "-f {} -t 0" to appropriate lines as necessary.'.format(assetfile.split('/')[-1]))
+                # todo: move this detection within the azur-paint repo instead
         # don't save
         if not parent.parts[1:] or parent.parts[1] in ignored: # also ignores root folder files
             continue
