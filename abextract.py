@@ -65,9 +65,11 @@ ignored = [
     'paintingface',
     'scenes',
     'sfurniture',
+    'shipdesignicon',
     'shoppainting',
     'spinepainting',
-    'storyicon'
+    'storyicon',
+    'technologyshipicon',
 ]
 
 # extract asset types as listed in outpaths
