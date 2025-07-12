@@ -158,7 +158,7 @@ Notes on Names, Data Templates, and Categories
 SHIP Images
     {{SkinFileData|<Ship Name>}}
 Skill Icon
-    [[Category:Skill icons]]
+    [[Category:Ship skill icons]]
 Event Buff Icon
     [[Category:Buff icons]]
 
