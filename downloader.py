@@ -4,6 +4,7 @@ from pathlib import Path
 from functools import lru_cache
 from urllib.request import urlopen
 from github import Github
+from uploader import signin
 
 repo = Github().get_repo('AzurLaneTools/AzurLaneData')
 
@@ -73,9 +74,11 @@ def dl_decor():
     '''Download decor data files and List of Furniture Sets wiki page section.'''
     update(0b111, ['ShareCfg/backyard_theme_template'])
     os.makedirs('input', exist_ok=True)
-    html = urlopen('https://azurlane.koumakan.jp/w/index.php?title=Decorations&action=raw&section=9')
-    with open('input/decornow.wiki', 'wb') as fp:
-        fp.write(html.read())
+    alw = signin()
+    html = alw.pages['Decorations'].text()
+    section = html[html.index('== List of Furniture Sets =='):] # https://azurlane.koumakan.jp/w/index.php?title=Decorations&action=raw&section=9
+    with open('input/decornow.wiki', 'w', encoding='utf-8') as fp:
+        fp.write(section)
 
 def dl_child():
     '''Download Project Identity: TB data files.'''

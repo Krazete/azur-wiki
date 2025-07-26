@@ -138,9 +138,9 @@ if __name__ == '__main__':
         tid = get_themeid(args.setname)
         build_skinbox(tid)
     else:
-        from urllib.request import urlopen
-        html = urlopen('https://azurlane.koumakan.jp/wiki/Equipment_Skins?action=raw')
-        whole = html.read().decode()
-        section = whole.split('== Equipment Skins without Box ==')[1].split('== List of Equipment Skin Boxes ==')[0]
+        from uploader import signin
+        alw = signin()
+        html = alw.pages['Equipment Skins'].text()
+        section = html.split('== Equipment Skins without Box ==')[1].split('== List of Equipment Skin Boxes ==')[0]
         ignorelist += re.findall('\n\|\s*(.+?)\s*\|', section)
         build_skinbox()

@@ -249,9 +249,9 @@ if __name__ == '__main__':
         with open('output/decoritem.wiki', 'w', encoding='utf-8') as fp:
             fp.write('\n'.join(lines) + '\n')
     else:
-        from urllib.request import urlopen
-        html = urlopen('https://azurlane.koumakan.jp/wiki/Decorations?action=raw')
-        whole = html.read().decode()
-        section = whole.split('== Furniture without Set ==')[1].split('== List of Furniture Sets ==')[0]
+        from uploader import signin
+        alw = signin()
+        html = alw.pages['Decorations'].text()
+        section = html.split('== Furniture without Set ==')[1].split('== List of Furniture Sets ==')[0]
         ignorelist = re.findall('\n\|\s*(.+?)\s*\|', section)
         build_decorset('0', args.endbar)

@@ -5,12 +5,14 @@ from mwclient import Site
 
 def signin():
     global alw
-    alw = Site('azurlane.koumakan.jp')
-    with open('input/username', 'r') as fp:
-        username = fp.read().strip()
-    with open('input/password', 'r') as fp:
-        password = fp.read().strip()
-    alw.login(username, password)
+    if 'alw' not in globals():
+        alw = Site('azurlane.koumakan.jp')
+    if not alw.logged_in:
+        with open('input/username', 'r') as fp:
+            username = fp.read().strip()
+        with open('input/password', 'r') as fp:
+            password = fp.read().strip()
+        alw.login(username, password)
     return alw
 
 def uploadimage(path, content='', summary='', ignore=False):
