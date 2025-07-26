@@ -137,7 +137,7 @@ if painting.is_dir():
         if Path(painting, fn).is_file() and '_tex' not in fn:
             shipname = shipnames.get(re.sub('_n|_hx|_bj|_rw', '', fn), fn)
             cmds.append('{}{}python -m main2 {}-p {} -o "{}{}{}{}{}"'.format( # warning: often nonstandard
-                'IGNORE: ' if '_bj' in fn or '_rw' in fn else '',
+                'IGNORE: ' if '_bj' in fn or '_rw' in fn or '_wjz' in fn else '',
                 'UNNAMED: ' if shipname == fn else '',
                 '-c ' if '_n' in fn else '',
                 fn,
@@ -145,7 +145,8 @@ if painting.is_dir():
                 'CN' if '_hx' in fn else '',
                 'WithoutBG' if '_n' in fn else '',
                 'WithoutShipgirl' if '_bj' in fn else '',
-                'WithoutRigging' if '_rw' in fn else ''
+                'WithoutRigging' if '_rw' in fn else '',
+                'WithoutRigging' if '_wjz' in fn else ''
             ))
     if len(cmds):
         os.makedirs('Texture2D/SHIP', exist_ok=True)

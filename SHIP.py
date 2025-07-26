@@ -365,12 +365,28 @@ shipnames = { # run buildskinname to check what these should be
     'kunibeierdi': 'Vittorio Cuniberti',
     'liangyue_3': 'SuzutsukiNew Year',
     'meikelunbao': 'Mecklenburg',
-    # 2025-07-17 ()
+    # 2025-07-17
     'aimannuaier_2': 'Emanuele PessagnoDance',
     'bulvxieer_4': 'BlücherSchool',
     'lvzuofu_2': 'LützowVampire',
     'mingyunnvshen_2': 'FortuneParty',
     'tianlangxing_3': 'SiriusSummer',
+    # 2025-07-25 (2nd Atelier Collab)
+    'aila': 'Isla von Duerer',
+    'aila_2': 'Isla von DuererHome Relaxation',
+    'dunkeerke_alter': 'Dunkerque META',
+    'fulami': 'Flammi',
+    'kala_2': 'Kala IdeasHome Relaxation',
+    'laisha_3': 'Reisalin StoutHome Relaxation2',
+    'leiniya': 'Lenja',
+    'leiniya_2': 'LenjaHome Relaxation',
+    'mengbiliai_4': 'MontpelierTravel',
+    'nina': 'Nina Friede',
+    'nina_2': 'Nina FriedeHome Relaxation',
+    'youmiya': 'Yumia Liessfeldt',
+    'youmiya_2': 'Yumia LiessfeldtHome Relaxation',
+    'zhaohe_4': 'Chao HoSummer',
+    'dosair': 'Dosair',
 }
 
 dupes = set()
