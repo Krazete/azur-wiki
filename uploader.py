@@ -17,7 +17,13 @@ def signin():
 
 def uploadimage(path, content='', summary='', ignore=False):
     with open(path, 'rb') as fp:
-        return alw.upload(fp, path.split('/')[-1], content, ignore=ignore, comment=summary)
+        response = alw.upload(fp, path.split('/')[-1], content, ignore=ignore, comment=summary)
+        result = response.get('result', 'Unknown')
+        if result == 'Unknown':
+            result = response.get('upload', {}).get('result', 'Unknown')
+        print(result)
+        if result != 'Success':
+            print(response)
     sleep(0.5)
 
 def updateimage(path, summary='update'):

@@ -142,5 +142,5 @@ if __name__ == '__main__':
         alw = signin()
         html = alw.pages['Equipment Skins'].text()
         section = html.split('== Equipment Skins without Box ==')[1].split('== List of Equipment Skin Boxes ==')[0]
-        ignorelist += re.findall('\n\|\s*(.+?)\s*\|', section)
+        ignorelist += re.findall('\n\|\s*(.+?)\s*\|', section) # todo: fix this (or other IGNORE flaggers elsewhere)
         build_skinbox()
