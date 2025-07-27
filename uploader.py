@@ -37,8 +37,8 @@ patterns = {
     r'/memoryicon/': '[[Category:Memory thumbnails]]',
     r'/props/BattleUIIcon': '[[Category:Shop icons]]',
     r'/props/.+ Pt\.png': '[[Category:Event point icons]]',
-    r'/props/.+ GearSkinBox\.png': '{{ItemData|Props/FILENAME|BOXID|Gear Skin Box (BOXNAME)}}\n[[Category:Equipment skin boxes]]',
-    r'/props/.+ SelectionSkinBox\.png': '{{ItemData|Props/FILENAME|BOXID|Selection Gear Skin Box (BOXNAME)}}\n[[Category:Equipment skin boxes]]',
+    r'/props/.+ GearSkinBox\.png': '{{ItemData|Props/FILENAME|BOXID|Gear Skin Box (BOXNAME)}}\\n[[Category:Equipment skin boxes]]',
+    r'/props/.+ SelectionSkinBox\.png': '{{ItemData|Props/FILENAME|BOXID|Selection Gear Skin Box (BOXNAME)}}\\n[[Category:Equipment skin boxes]]',
     r'/SHIP/': '{{SkinFileData|SHIPGIRLNAME}}',
     r'/skillicon/': '[[Category:Ship skill icons]]',
     r'/spweapon/': '[[Category:Augment Module]]',
@@ -46,15 +46,16 @@ patterns = {
 }
 
 if __name__ == '__main__':
-    py = 'from upload import signin, uploadimage\nsignin()\n'
+    py = 'from uploader import signin, uploadimage, updateimage\nsignin()\n'
     for root, dirs, files in os.walk('Texture2D'):
         for file in files:
-            path = '{}/{}'.format(root.replace('\\', '/'), file)
-            content = ''
-            for pattern in patterns:
-                if re.search(pattern, path):
-                    content = patterns[pattern]
-                    break
-            py += 'uploadimage(\'{}\', \'{}\')\n'.format(path, content).replace(', \'\'', '')
+            if file.endswith('.jpg') or file.endswith('.png'):
+                path = '{}/{}'.format(root.replace('\\', '/'), file)
+                content = ''
+                for pattern in patterns:
+                    if re.search(pattern, path):
+                        content = patterns[pattern]
+                        break
+                py += 'uploadimage(\'{}\', \'{}\')\n'.format(path, content).replace(', \'\'', '')
     with open('output/UPLOADING.py', 'w') as fp:
         fp.write(py)
