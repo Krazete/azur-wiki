@@ -9,6 +9,8 @@ with open('EN\ShareCfg\memory_group.json', 'rb') as fp:
     memories = json.load(fp)
 with open('EN\ShareCfg\ship_skin_template.json', 'rb') as fp:
     skins = json.load(fp)
+# with open('EN\ShareCfg\enemy_data_statistics.json', 'rb') as fp: # non-playable enemies
+#     enemies = json.load(fp)
 
 special_paintings = [
     'npcchicheng',
