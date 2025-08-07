@@ -371,7 +371,7 @@ shipnames = { # run buildskinname to check what these should be
     'lvzuofu_2': 'LützowVampire',
     'mingyunnvshen_2': 'FortuneParty',
     'tianlangxing_3': 'SiriusSummer',
-    # 2025-07-25 (2nd Atelier Collab)
+    # 2025-07-25 (Atelier Lumia Collab)
     'aila': 'Isla von Duerer',
     'aila_2': 'Isla von DuererHome Relaxation',
     'dunkeerke_alter': 'Dunkerque META',
@@ -387,6 +387,10 @@ shipnames = { # run buildskinname to check what these should be
     'youmiya_2': 'Yumia LiessfeldtHome Relaxation',
     'zhaohe_4': 'Chao HoSummer',
     'dosair': 'Dosair',
+    # 2025-08-07 (Post-Atelier)
+    'niaohai': 'Choukai',
+    'salatuojia': 'Saratoga',
+    'sikula': 'Scylla',
 }
 
 dupes = set()

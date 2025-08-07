@@ -38,6 +38,7 @@ patterns = {
     # r'/crusingwindow/': '[[Category:Event banners]]', # discontinued after Season 23
     r'/equips/EquipSkinIcon': '[[Category:Equipment Skins]]',
     r'/equips/\d+\.png': '[[Category:EQUIPMENTTYPE]]',
+    r'/iconframe': '[[Category:Portrait frames]]',
     r'/loadingbg/': '[[Category:Loading Screens]]',
     r'/mangapic/': '[[Category:Comics]]',
     r'/memoryicon/': '[[Category:Memory thumbnails]]',
@@ -63,7 +64,7 @@ if __name__ == '__main__':
                         content = patterns[pattern]
                         break
                 py += 'uploadimage(\'{}\', \'{}\')\n'.format(path, content).replace(', \'\'', '')
-    with open('output/UPLOADING.py', 'w') as fp:
+    with open('UPLOADING.py', 'w') as fp:
         fp.write(py)
 
 '''
