@@ -386,7 +386,7 @@ shipnames = { # run buildskinname to check what these should be
     'youmiya': 'Yumia Liessfeldt',
     'youmiya_2': 'Yumia LiessfeldtHome Relaxation',
     'zhaohe_4': 'Chao HoSummer',
-    'dosair': 'Dosair',
+    'dosair': 'DOS',
     # 2025-08-07 (Post-Atelier)
     'niaohai': 'Choukai',
     'salatuojia': 'Saratoga',

@@ -31,6 +31,7 @@ def updateimage(path, summary='update'):
 
 patterns = {
     r'/activitybanner/': '[[Category:Event banners]]',
+    r'/activitymedal/': '[[Category:Commemorative Album stickers]]',
     r'/bg/Skin BG': '[[Category:Skin Backgrounds]]',
     r'/bg/Memory .+ Background \d+\.png': '[[Category:Memory backgrounds]]',
     r'/bg/Memory .+ CG \d+\.png': '[[Category:Memory artwork]]',
@@ -41,6 +42,7 @@ patterns = {
     r'/iconframe': '[[Category:Portrait frames]]',
     r'/loadingbg/': '[[Category:Loading Screens]]',
     r'/mangapic/': '[[Category:Comics]]',
+    r'/MEDALLION/': '[[Category:Medallions]]',
     r'/memoryicon/': '[[Category:Memory thumbnails]]',
     r'/props/BattleUIIcon': '[[Category:Shop icons]]',
     r'/props/.+ Pt\.png': '[[Category:Event point icons]]',
@@ -64,7 +66,7 @@ if __name__ == '__main__':
                         content = patterns[pattern]
                         break
                 py += 'uploadimage(\'{}\', \'{}\')\n'.format(path, content).replace(', \'\'', '')
-    with open('UPLOADING.py', 'w') as fp:
+    with open('UPLOADING.py', 'w', encoding='utf-8') as fp:
         fp.write(py)
 
 '''

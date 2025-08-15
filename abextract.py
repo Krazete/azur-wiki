@@ -45,14 +45,17 @@ ignored = [
     'aircrafticon',
     'artresource',
     'backyardtheme',
+    'chapter', # battle bg objects
     'char', # chibi spine models
     'chargo',
     'clutter',
     'cue', # voice audio
     'dorm3d', # 3d models
     'effect',
+    'extra_page',
     'furnitrues',
     'item',
+    'levelmap',
     'linkbutton',
     'linkbutton_mellow',
     'live2d',

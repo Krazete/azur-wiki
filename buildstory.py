@@ -490,8 +490,10 @@ bgnames = {
     'villaisland': 'Midsummer Returns! The Villa Reconstruction',
     'gaotaqiangwei': 'A Rose on the High Tower',
     'huiguangzhicheng': 'Light of the Martyrium',
-    # Neon City
+    # 
     'spycity': 'The Neon City Investigator',
+    'yumia': 'The Alchemist and the Tower of Horizons',
+    'qiyuan': 'Secrets of the Abyss',
     # Project Identity
     'project_tb': 'Project Identity TB',
     'project_oceana': 'Project Identity Oceana',
