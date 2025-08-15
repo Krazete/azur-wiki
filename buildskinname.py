@@ -1,6 +1,5 @@
 import json
 import re
-from argparse import ArgumentParser
 
 shop_type = { # inconsistent (e.g. luoma_4 should be Summer, not RaceQueen; Bluray is unaccounted for)
     0: '_OTHER_0000',
@@ -102,16 +101,15 @@ def build_skinnames():
     with open('output/skinname.json', 'w', encoding='utf-8') as fp:
         json.dump(jsonfile, fp, ensure_ascii=False, indent=4)
 
-if __name__ == '__main__':
-    parser = ArgumentParser()
-    parser.add_argument('-d', '--download', action='store_true', help='download data files')
-    args = parser.parse_args()
-    if args.download:
-        from downloader import update
-        update(['EN'], [
-            'ShareCfg/ship_skin_template',
-            'ShareCfg/name_code',
-            'sharecfgdata/gametip'
-        ])
+def main():
+    from downloader import update
+    update(['EN'], [
+        'ShareCfg/ship_skin_template',
+        'ShareCfg/name_code',
+        'sharecfgdata/gametip'
+    ])
     init_book()
     build_skinnames()
+
+if __name__ == '__main__':
+    main()

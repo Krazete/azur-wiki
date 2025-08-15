@@ -391,6 +391,24 @@ shipnames = { # run buildskinname to check what these should be
     'niaohai': 'Choukai',
     'salatuojia': 'Saratoga',
     'sikula': 'Scylla',
+    # 2025-08-14 (7th Anniversary)
+    'aisaikesi_g': 'EssexKai',
+    'ankeleiqi_4': 'AnchorageHome Relaxation',
+    'beilaosenlin': 'Bois Belleau',
+    'beilaosenlin_2': 'Bois BelleauHot Springs',
+    'dadan': 'Le Hardi',
+    'dadan_2': 'Le HardiHot Springs',
+    'danfo_2': 'DenverHot Springs',
+    'digaiteluyin': 'Duguay-Trouin',
+    'digaiteluyin_2': 'Duguay-TrouinHot Springs',
+    'dikaina': 'Duquesne',
+    'dikaina_2': 'DuquesneHot Springs',
+    'hailunna_5': 'HelenaHot Springs',
+    'luoen_h': 'RoonWedding',
+    'masaina': 'Masséna',
+    'masaina_2': 'MassénaHot Springs',
+    'nengdai_9': 'NoshiroHot Springs',
+    'qiye_10': 'EnterpriseHot Springs',
 }
 
 dupes = set()

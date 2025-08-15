@@ -12,6 +12,7 @@ pip install -r requirements.txt
 
 ## Scripts
 ```sh
+python -m preabextract # update SHIP.py for abextract to use in azur-paint command list
 python -m abextract # extract files from AssetBundles and build command list for azur-paint
 # execute abget.sh first to extract latest AssetBundles files from phone (adb required)
 
@@ -35,8 +36,7 @@ python -m buildgearskin -d # (re)download prerequisite input data
 python -m buildjuustagram # (not yet implemented)
 python -m buildjuustagram -d # (re)download prerequisite input data
 
-python -m buildskinname # build list of ship skin names
-python -m buildskinname -d # (re)download prerequisite input data
+python -m buildskinname # build list of ship skin names (always tries to download prerequisite input data)
 
 python -m buildstory -t <TITLE> # build story tables for matching title
 python -m buildstory -t <TITLE> -i 1 # build story tables for matching title and result index
