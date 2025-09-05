@@ -409,6 +409,12 @@ shipnames = { # run buildskinname to check what these should be
     'masaina_2': 'MassénaHot Springs',
     'nengdai_9': 'NoshiroHot Springs',
     'qiye_10': 'EnterpriseHot Springs',
+    # 2025-09-04 (Call to Arms: Amahara)
+    'hailunna_4': 'HelenaSummer',
+    'qiye_9': 'EnterpriseSummer',
+    'weiershiqinwang_5': 'Prince of WalesParty',
+    'xili_alter': 'Yuudachi META',
+    'ryouko_shallow': 'RyoukoShadow', # ???
 }
 
 dupes = set()

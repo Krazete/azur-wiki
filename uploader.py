@@ -21,7 +21,7 @@ def uploadimage(path, content='', summary='', ignore=False):
         result = response.get('result', 'Unknown')
         if result == 'Unknown':
             result = response.get('upload', {}).get('result', 'Unknown')
-        print(result)
+        print('{}: {}'.format(result, path.split('/')[-1]))
         if result != 'Success':
             print(response)
     sleep(0.5)

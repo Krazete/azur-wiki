@@ -13,11 +13,15 @@ for root, dirs, files in os.walk(os.path.join('AssetBundles')):
 buildskinname.main()
 with open('output/skinname.json', 'r', encoding='utf-8') as fp:
     skinname = json.load(fp)
+    skinnamelower = {painting.lower(): skinname[painting] for painting in skinname}
 
 with open('SHIP.py', 'r', encoding='utf-8') as fp:
     SHIP = fp.read()
 with open('SHIP.py', 'w', encoding='utf-8') as fp:
     comment = '\n    # {} ()\n'.format(date.today().isoformat())
-    content = '\n'.join('    \'{}\': \'{}\','.format(painting, skinname.get(painting, 'UNKNOWN')) for painting in sorted(paintings))
+    content = '\n'.join('    \'{}\': \'{}\','.format(
+        painting,
+        re.sub(r'\'', '\\\'', skinnamelower.get(painting.lower(), 'UNKNOWN'))
+    ) for painting in sorted(paintings))
     closure = '\n}\n'
     fp.write(re.sub(closure, comment + content + closure, SHIP))
