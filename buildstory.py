@@ -380,6 +380,7 @@ shop_type = { # todo: use buildskinname.py instead
     25: 'Wild West',
     26: 'Theme Park',
     27: 'Nile Colors',
+    28: 'Ninja',
     9997: 'Kai',
     9998: 'Wedding',
     9999: '_OTHER_9999', # other

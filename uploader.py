@@ -44,7 +44,7 @@ patterns = {
     r'/mangapic/': '[[Category:Comics]]',
     r'/MEDALLION/': '[[Category:Medallions]]',
     r'/memoryicon/': '[[Category:Memory thumbnails]]',
-    r'/props/BattleUIIcon': '[[Category:Shop icons]]',
+    r'/props/BattleUI': '[[Category:Shop icons]]',
     r'/props/.+ Pt\.png': '[[Category:Event point icons]]',
     r'/props/.+ GearSkinBox\.png': '{{ItemData|Props/FILENAME|BOXID|Gear Skin Box (BOXNAME)}}\\n[[Category:Equipment skin boxes]]',
     r'/props/.+ SelectionSkinBox\.png': '{{ItemData|Props/FILENAME|BOXID|Selection Gear Skin Box (BOXNAME)}}\\n[[Category:Equipment skin boxes]]',
@@ -65,7 +65,7 @@ if __name__ == '__main__':
                     if re.search(pattern, path):
                         content = patterns[pattern]
                         break
-                py += 'uploadimage(\'{}\', \'{}\')\n'.format(path, content).replace(', \'\'', '')
+                py += 'uploadimage(\'{}\', \'{}\')\n'.format(path.replace('\'', '\\\''), content).replace(', \'\'', '')
     with open('UPLOADING.py', 'w', encoding='utf-8') as fp:
         fp.write(py)
 
