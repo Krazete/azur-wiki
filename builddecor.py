@@ -4,6 +4,7 @@ import re
 from argparse import ArgumentParser
 
 decor = {}
+decorshop = {}
 
 def init_decor():
     '''Initializes `decor` object with JSON files downloaded from AzurLaneData repo.'''
@@ -13,6 +14,9 @@ def init_decor():
     
     # pocky theme has no icon
     decor['EN']['54']['icon'] = 'pockyheziicon'
+
+    with open('EN/ShareCfg/furniture_shop_template.json', 'r', encoding='utf-8') as fp:
+        decorshop['EN'] = json.load(fp)
 
 def get_current_info():
     '''Get supplementary data from the List of Furniture Sets section on the wiki Decorations page.'''
@@ -25,6 +29,17 @@ def get_current_info():
             assert match[0] not in info
             info.setdefault(match[0], match[1])
     return info
+
+def formatTime(year, month, day):
+    months = ['', 'Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec']
+    return '{:02d} {} {}'.format(day, months[month], year)
+
+def formatTimes(time0, time1):
+    ft0 = formatTime(*time0)
+    ft1 = formatTime(*time1)
+    if ft0[-4:] == ft1[-4:]:
+        ft0 = ft0[:-5]
+    return '{} - {}'.format(ft0, ft1)
 
 def build_decor():
     '''Build a wikitable from AzurLaneData files and current wiki page info.'''
@@ -56,11 +71,20 @@ def build_decor():
             names[lang][key] = decor[lang][key]
         keys += decor[lang]['all']
     for key in set(keys):
+        if key == 126: # skip atelier yumia trio
+            continue
         id = str(key)
         themeCN = decor['CN'].get(id, {})
         themeEN = decor['EN'].get(id, {})
         themeJP = decor['JP'].get(id, {})
         icon = themeCN.get('icon') or themeEN.get('icon') or themeJP.get('icon')
+        times = '--'
+        if themeEN:
+            decortime = decorshop['EN'].get(str(themeEN['ids'][0]), {}).get('time', '--')
+            if decortime == 'always':
+                times == 'Permanent'
+            elif isinstance(decortime, list):
+                times = formatTimes(decortime[0][0], decortime[1][0])
         lines += [
             '|-',
             '| {}'.format(id),
@@ -68,7 +92,7 @@ def build_decor():
             ('| [[Furniture Sets/{0}|{0}]]' if themeEN.get('is_view') else '| {}').format(themeEN.get('name', '--').strip()),
             '| {}'.format(themeCN.get('name', '--').strip()),
             '| {}'.format(themeJP.get('name', '--').strip()),
-            info.get(id, '| colspan="3" | --\n| --').strip()
+            info.get(id, '| colspan="3" | {}\n| [[{}]]'.format(times, 'EVENT')).strip()
         ]
     lines.append('|}')
     
