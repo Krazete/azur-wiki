@@ -3,7 +3,7 @@ import re
 from time import sleep
 from mwclient import Site
 
-def signin():
+def signin(): # use https://azurlane.koumakan.jp/wiki/Special:BotPasswords
     global alw
     if 'alw' not in globals():
         alw = Site('azurlane.koumakan.jp')

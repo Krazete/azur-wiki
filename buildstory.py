@@ -495,6 +495,8 @@ bgnames = {
     'spycity': 'The Neon City Investigator',
     'yumia': 'The Alchemist and the Tower of Horizons',
     'qiyuan': 'Secrets of the Abyss',
+    'ninjacity': 'Turmoil in the Ninja Castle',
+    'amahara': 'A Dance for Amahara Above',
     # Project Identity
     'project_tb': 'Project Identity TB',
     'project_oceana': 'Project Identity Oceana',
