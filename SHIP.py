@@ -452,6 +452,13 @@ shipnames = { # run buildskinname to check what these should be
     'talin_4': 'TallinnSpring',
     'yanzhan_4': 'WarspiteNinja',
     'yunxian_3': 'UnzenNinja',
+    # 2025-09-25 (Amahara Week 3)
+    'duwei_alter': 'Dewey META',
+    'heitaizi_h': 'Black PrinceWedding',
+    'jiangfeng_3': 'KawakazeNinjaTravel',
+    'tiancheng_cv_h': 'Amagi(CV)Wedding',
+    'tiancheng_h': 'AmagiWedding',
+    'wuerlixi_h': 'Ulrich von HuttenWedding',
 }
 
 dupes = set()

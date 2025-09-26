@@ -46,6 +46,7 @@ ignored = [
     'artresource',
     'backyardtheme',
     'buildpainting',
+    'bulletall',
     'chapter', # battle bg objects
     'char', # chibi spine models
     'chargo',
@@ -77,6 +78,7 @@ ignored = [
     'spinepainting',
     'storyicon',
     'technologyshipicon',
+    'template',
 ]
 
 # extract asset types as listed in outpaths
