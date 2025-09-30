@@ -40,7 +40,7 @@ shipassets = {
     'squareicon': '{}Icon'
 }
 
-ignored = [
+ignored = [ # only directories of depth 1-2
     'activityuitable',
     'aircrafticon',
     'artresource',
@@ -57,6 +57,13 @@ ignored = [
     'extra_page',
     'furnitrues',
     'guildpainting',
+    'island/atlas',
+    'island/character', # 3d models
+    'island/effect',
+    'island/item', # 3d models
+    'island/scenesres',
+    'island/timeline_scene',
+    'island/unit_item',
     'item',
     'levelmap',
     'linkbutton',
@@ -108,7 +115,7 @@ for obj in assetbundles.objects:
                 shipname += 'CN'
             outpath = Path(parent, template.format(shipname))
         # don't save
-        if not parent.parts[1:] or parent.parts[1] in ignored: # also ignores root folder files
+        if not parent.parts[1:] or parent.parts[1] in ignored or '/'.join(parent.parts[1:3]) in ignored: # also ignores root folder files
             continue
         # increment duplicate names
         i = 0
