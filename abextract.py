@@ -55,6 +55,7 @@ ignored = [ # only directories of depth 1-2
     'dorm3d', # 3d models
     'effect',
     'extra_page',
+    'font',
     'furnitrues',
     'guildpainting',
     'island/atlas',
@@ -82,10 +83,12 @@ ignored = [ # only directories of depth 1-2
     'shipdesignicon',
     'shopbanner',
     'shoppainting',
+    'spineitem',
     'spinepainting',
     'storyicon',
     'technologyshipicon',
     'template',
+    'xunzhang',
 ]
 
 # extract asset types as listed in outpaths

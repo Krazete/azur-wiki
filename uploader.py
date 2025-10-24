@@ -2,6 +2,7 @@ import os
 import re
 from time import sleep
 from mwclient import Site
+from SHIP import shipnames
 
 def signin(): # use https://azurlane.koumakan.jp/wiki/Special:BotPasswords
     global alw
@@ -29,6 +30,12 @@ def uploadimage(path, content='', summary='', ignore=False):
 def updateimage(path, summary='update'):
     uploadimage(path, '', summary, True)
 
+ships = []
+for paintingname in shipnames:
+    if '_' not in paintingname:
+        ships.append(shipnames[paintingname])
+ships.sort(key=lambda ship: -len(ship))
+
 patterns = {
     r'/activitybanner/': '[[Category:Event banners]]',
     r'/activitymedal/': '[[Category:Commemorative Album stickers]]',
@@ -36,6 +43,7 @@ patterns = {
     r'/bg/Memory .+ Background \d+\.png': '[[Category:Memory backgrounds]]',
     r'/bg/Memory .+ CG \d+\.png': '[[Category:Memory artwork]]',
     r'/combatuistyle/': '[[Category:Battle UI previews]]',
+    r'/commanderskillicon/': '[[Category:Meowfficer skill icons]]',
     # r'/crusingwindow/': '[[Category:Event banners]]', # discontinued after Season 23
     r'/equips/EquipSkinIcon': '[[Category:Equipment Skins]]',
     r'/equips/\d+\.png': '[[Category:EQUIPMENTTYPE]]',
@@ -48,7 +56,7 @@ patterns = {
     r'/props/.+ Pt\.png': '[[Category:Event point icons]]',
     r'/props/.+ GearSkinBox\.png': '{{ItemData|Props/FILENAME|BOXID|Gear Skin Box (BOXNAME)}}\\n[[Category:Equipment skin boxes]]',
     r'/props/.+ SelectionSkinBox\.png': '{{ItemData|Props/FILENAME|BOXID|Selection Gear Skin Box (BOXNAME)}}\\n[[Category:Equipment skin boxes]]',
-    r'/SHIP/': '{{SkinFileData|SHIPGIRLNAME}}',
+    # r'/SHIP/': '{{SkinFileData|SHIPGIRLNAME}}', # handled separately
     r'/skillicon/': '[[Category:Ship skill icons]]',
     r'/spweapon/': '[[Category:Augment Module]]',
     r'/strategyicon/': '[[Category:Buff icons]]',
@@ -61,11 +69,21 @@ if __name__ == '__main__':
             if file.endswith('.jpg') or file.endswith('.png'):
                 path = '{}/{}'.format(root.replace('\\', '/'), file)
                 content = ''
-                for pattern in patterns:
-                    if re.search(pattern, path):
-                        content = patterns[pattern]
-                        break
-                py += 'uploadimage(\'{}\', \'{}\')\n'.format(path.replace('\'', '\\\''), content).replace(', \'\'', '')
+                if re.search(r'/SHIP/', path):
+                    content = '{{SkinFileData|SHIPGIRLNAME}}'
+                    for ship in ships:
+                        if re.search(r'/SHIP/{}'.format(ship), path):
+                            content = '{{{{SkinFileData|{}}}}}'.format(ship)
+                            break
+                else:
+                    for pattern in patterns:
+                        if re.search(pattern, path):
+                            content = patterns[pattern]
+                            break
+                py += 'uploadimage(\'{}\', \'{}\')\n'.format(
+                    path.replace('\'', '\\\''),
+                    content.replace('\'', '\\\'')
+                ).replace(', \'\'', '')
     with open('UPLOADING.py', 'w', encoding='utf-8') as fp:
         fp.write(py)
 

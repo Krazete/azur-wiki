@@ -459,6 +459,25 @@ shipnames = { # run buildskinname to check what these should be
     'tiancheng_cv_h': 'Amagi(CV)Wedding',
     'tiancheng_h': 'AmagiWedding',
     'wuerlixi_h': 'Ulrich von HuttenWedding',
+    # 2025-10-09 (Danmachi)
+    'hesitiya': 'Hestia',
+    'hesitiya_2': 'HestiaSummer',
+    'liuliang': 'Ryu Lion',
+    'liuliang_2': 'Ryu LionMaid',
+    # 2025-10-23 (Tempesta 4)
+    'anninvwang': 'Queen Anne\'s Revenge',
+    'anninvwang_2': 'Queen Anne\'s RevengeRPG',
+    'chunyue_3': 'HarutsukiRPG',
+    'chuyun_3': 'IzumoRPG',
+    'huangjiazhanmusi': 'Royal James',
+    'huangjiazhanmusi_2': 'Royal JamesRPG',
+    'kalangshitade_3': 'KronshtadtRPG',
+    'laimuhao': 'Lyme',
+    'laimuhao_2': 'LymeRPG',
+    'maoxianhao': 'Adventure',
+    'maoxianhao_2': 'AdventureRPG',
+    'zhenzhuhao': 'Pearl',
+    'zhenzhuhao_2': 'PearlRPG',
 }
 
 dupes = set()
