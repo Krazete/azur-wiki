@@ -10,6 +10,7 @@ medals = {}
 
 condition_fixes = {
     r'Midsummer Returns: The Villa Reconstruction': 'A Rose on the High Tower#Midsummer Returns! The Villa Reconstruction|Midsummer Returns! The Villa Reconstruction',
+    r'The Secrets of the Abyss': 'Secrets of the Abyss',
 }
 
 def init_medals():
