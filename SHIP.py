@@ -334,7 +334,7 @@ shipnames = { # run buildskinname to check what these should be
     'suweiaibeilaluosi_3': 'Sovetskaya BelorussiyaSummer',
     'yingrui_4': 'Ying SweiSummer',
     'weiqita_alter': 'Wichita META',
-    # 2025-06-05 (Black Rock Shooter)
+    # 2025-06-05 (Black Rock Shooter Collab)
     'heiyansheshou': 'BLACK★ROCK SHOOTER',
     'heiyansheshou_2': 'BLACK★ROCK SHOOTERSummer',
     'siwangzhuzai': 'DEAD MASTER',
@@ -487,6 +487,21 @@ shipnames = { # run buildskinname to check what these should be
     'tierbici_6': 'TirpitzRaceQueen',
     'xinzexi_5': 'New JerseyRaceQueen',
     'yunxian_2': 'UnzenSummer',
+    # 2025-11-20 (Date A Live Collab)
+    'bawu': 'Kaguya Yamai・Yuzuru Yamai',
+    'bawu_2': 'Kaguya Yamai・Yuzuru YamaiSummer',
+    'kuangsan': 'Kurumi Tokisaki',
+    'kuangsan_2': 'Kurumi TokisakiSummer',
+    'qinli': 'Kotori Itsuka',
+    'qinli_2': 'Kotori ItsukaSummer',
+    'shixiang': 'Tohka Yatogami',
+    'shixiang_2': 'Tohka YatogamiSummer',
+    'sisinai': 'Yoshino',
+    'sisinai_2': 'YoshinoSummer',
+    'zhezhi': 'Origami Tobiichi',
+    'zhezhi_2': 'Origami TobiichiSummer',
+    'boyixi_alter': 'Boise META',
+    'i13_3': 'I-13Travel',
 }
 
 dupes = set()
