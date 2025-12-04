@@ -19,7 +19,12 @@ def init_data():
 
 def build_tasklist():
     lines = []
-    for taskid in [50112, 50136]:
+    for taskid in data['activity_template']:
+        if taskid == 'all':
+            continue
+        time = data['activity_template'][taskid].get('time', [0, [[0, 0, 0]]])
+        if not (isinstance(time, list) and time[1][0][0] == 2025 and time[1][0][1] == 11):
+            continue
         lines += [
             '{| class="wikitable"',
             '! Task Description',
@@ -27,9 +32,9 @@ def build_tasklist():
             '|-'
         ]
         for id in data['activity_template'][str(taskid)]['config_data']:
-            task = data['task_data_template'][str(id)]
+            task = data['task_data_template'].get(str(id), {})
             imgs = []
-            for awards in task['award_display']:
+            for awards in task.get('award_display', []):
                 for datatype in ['item_data_statistics', 'item_virtual_data_statistics', None]:
                     if datatype and str(awards[1]) in data[datatype]:
                         break
@@ -44,12 +49,12 @@ def build_tasklist():
                 else:
                     print('Unknown datatype for awards:', awards)
             lines += [
-                '| {}'.format(task['desc']),
+                '| {}'.format(task.get('desc', 'NULL')),
                 '| {}'.format('; '.join(imgs)),
                 '|-'
             ]
         lines[-1] = '|}'
-    with open('output/tasks.txt', 'w') as fp:
+    with open('output/tasks.txt', 'w', encoding='utf-8') as fp:
         fp.write('\n'.join(lines))
 
 if __name__ == '__main__':
