@@ -502,6 +502,9 @@ shipnames = { # run buildskinname to check what these should be
     'zhezhi_2': 'Origami TobiichiSummer',
     'boyixi_alter': 'Boise META',
     'i13_3': 'I-13Travel',
+    # 2025-12-04 (Popularity Vote start)
+    'midchicheng_alter': 'Akagi META (Akagi)',
+    'missd': 'Miss D',
 }
 
 dupes = set()

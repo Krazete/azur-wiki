@@ -42,6 +42,7 @@ patterns = {
     r'/bg/Skin BG': '[[Category:Skin Backgrounds]]',
     r'/bg/Memory .+ Background \d+\.png': '[[Category:Memory backgrounds]]',
     r'/bg/Memory .+ CG \d+\.png': '[[Category:Memory artwork]]',
+    r'/collectionfileillustration': '[[Category:Collection Archives images]]',
     r'/combatuistyle/': '[[Category:Battle UI previews]]',
     r'/commanderskillicon/': '[[Category:Meowfficer skill icons]]',
     # r'/crusingwindow/': '[[Category:Event banners]]', # discontinued after Season 23
