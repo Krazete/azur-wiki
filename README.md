@@ -46,7 +46,9 @@ python -m buildcollect # build Collection Archives page
 python -m buildmedal -e # extract and rename medal images from AssetBundles
 python -m buildmedal -b # build Medallion page
 
-python -m buildui # build page for battle ui
+python -m buildui # build page for Battle UI
+
+python -m buildhall # build Hall of Fame section for Memories page
 
 python -m buildtask # build event missions tables
 
