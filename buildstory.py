@@ -498,6 +498,12 @@ bgnames = {
     'ninjacity': 'Turmoil in the Ninja Castle',
     'amahara': 'A Dance for Amahara Above',
     'helena': 'Memories in Echo',
+    'jufengv3': 'Tempesta and Islas de Libertád',
+    'dal1': 'DATE A LANE Background 1',
+    'dal2': 'DATE A LANE Background 2',
+    'dal3': 'DATE A LANE Background 3',
+    'dal4': 'DATE A LANE Background 4',
+    'blackfriday': 'The New Sales Campaign Just Dropped!',
     # Project Identity
     'project_tb': 'Project Identity TB',
     'project_oceana': 'Project Identity Oceana',
