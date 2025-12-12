@@ -504,6 +504,7 @@ bgnames = {
     'dal3': 'DATE A LANE Background 3',
     'dal4': 'DATE A LANE Background 4',
     'blackfriday': 'The New Sales Campaign Just Dropped!',
+    'tianqiong': 'To a Brighter World',
     # Project Identity
     'project_tb': 'Project Identity TB',
     'project_oceana': 'Project Identity Oceana',

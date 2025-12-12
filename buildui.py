@@ -61,7 +61,7 @@ if __name__ == '__main__':
     args = parser.parse_args()
     if args.download:
         from downloader import update
-        update(['EN'], [
+        update(['CN', 'EN', 'JP'], [ # todo: separate region-specific uis
             'ShareCfg/item_data_battleui',
             'ShareCfg/pay_data_display'
         ])

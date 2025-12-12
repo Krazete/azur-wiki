@@ -137,6 +137,9 @@ Retrofit Material Icon
 Event Banner
     <Event Name> Event Banner EN.jpg
     [[Category:Event banners]]
+Blueprint Completion Plan
+    PR<Season Number> Catchup <Ship Name> Event Banner EN.jpg
+    [[Category:Event banners]]
 Cruise Mission Menu
     Cruise Missions Season <Season Number>.png
     [[Category:Event banners]]
