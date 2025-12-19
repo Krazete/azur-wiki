@@ -54,6 +54,7 @@ patterns = {
     r'/MEDALLION/': '[[Category:Medallions]]',
     r'/memoryicon/': '[[Category:Memory thumbnails]]',
     r'/props/BattleUI': '[[Category:Shop icons]]',
+    r'/props/UR Voucher .+\.png': '[[Category:Event point icons]]',
     r'/props/.+ Pt\.png': '[[Category:Event point icons]]',
     r'/props/.+ GearSkinBox\.png': '{{ItemData|Props/FILENAME|BOXID|Gear Skin Box (BOXNAME)}}\\n[[Category:Equipment skin boxes]]',
     r'/props/.+ SelectionSkinBox\.png': '{{ItemData|Props/FILENAME|BOXID|Selection Gear Skin Box (BOXNAME)}}\\n[[Category:Equipment skin boxes]]',
@@ -223,6 +224,9 @@ Research Blueprint (ALL)
 
 META Crystal
     <Ship Name> METACrystal.png
+UR Voucher
+    UR Voucher <Ship Name>.png
+    [[Category:Event point icons]]
 
 Arcade Games
     <Game Name> Arcade Banner.png

@@ -644,12 +644,37 @@ if 0: # testing
     get_groupids_by_painting('TB')
     get_groupids_by_painting('linghangyuan')
 
+def get_story_by_bg(bgName):
+    sids = []
+    for sid in book['story']['EN']:
+        story = book['story']['EN'][sid]
+        if 'scripts' in story:
+            for chapter in story['scripts']:
+                if 'bgName' in chapter:
+                    bg = chapter['bgName']
+                    if bgName in bg:
+                        sids.append(story['id'])
+                        break
+    mids = []
+    for mid in book['memory']['EN']:
+        if book['memory']['EN'][mid]['story'] in sids:
+            mids.append(int(mid))
+    titles = set()
+    for gid in book['group']['EN']:
+        for mid in mids:
+            if mid in book['group']['EN'][gid]['memories']:
+                titles.add(book['group']['EN'][gid]['title'])
+    for title in titles:
+        print(title)
+# get_story_by_bg('tianqiong')
+
 if __name__ == '__main__':
     parser = ArgumentParser()
     parser.add_argument('-d', '--download', action='store_true', help='download data files')
     parser.add_argument('-t', '--title', default='', help='build story by title')
     parser.add_argument('-i', '--index', type=int, default=0, help='index of results to output')
     parser.add_argument('-p', '--painting', default='', help='get story ids by sprite name')
+    parser.add_argument('-b', '--background', default='', help='get story titles by background name')
     args = parser.parse_args()
     if args.download:
         from downloader import dl_story
@@ -663,3 +688,5 @@ if __name__ == '__main__':
         print('https://azurlane.koumakan.jp/wiki/Memories/{}?action=raw'.format(quote(book['group']['EN'][gid]['title'])))
     if args.painting:
         get_groupids_by_painting(args.painting)
+    if args.background:
+        get_story_by_bg(args.background)

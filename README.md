@@ -38,6 +38,7 @@ python -m buildskinname # build list of ship skin names (always tries to downloa
 python -m buildstory -t <TITLE> # build story tables for matching title
 python -m buildstory -t <TITLE> -i 1 # build story tables for matching title and result index
 python -m buildstory -p <CHARACTER> # get story titles containing sprites of matching characters
+python -m buildstory -p <BGNAME> # get story titles containing specified backgrounds
 
 python -m buildstoryvoice # build list of voice audio files used within stories
 

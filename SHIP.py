@@ -240,7 +240,7 @@ shipnames = { # run buildskinname to check what these should be
     'lafeier': 'Raffaello',
     'lafeier_2': 'RaffaelloNile Colors',
     'lianren': 'War Protocol Scythe',
-    'missr': 'Bon Homme Richard',
+    'missr': 'Bon Homme RichardSchool',
     'shenpanjizhanche': 'MECHArbiter: The Chariot',
     'sikula_4': 'ScyllaNile Colors',
     'yulun': 'War Protocol Moon',
@@ -505,6 +505,29 @@ shipnames = { # run buildskinname to check what these should be
     # 2025-12-04 (Popularity Vote start)
     'midchicheng_alter': 'Akagi META (Akagi)',
     'missd': 'Miss D',
+    # 2025-12-18 (Firmament)
+    'bisimaiz_3': 'Bismarck ZweiCasual',
+    'bominghan_5': 'BirminghamMaid',
+    'bote': 'William D. Porter',
+    'bote_2': 'William D. PorterMaid',
+    'hamanii_3': 'Hammann IIMaid',
+    'kebensi': 'Cowpens',
+    'kebensi_2': 'CowpensMaid',
+    'kelalunsi': 'Clarence K. Bronson',
+    'kelalunsi_2': 'Clarence K. BronsonMaid',
+    'kelifulan_alter': 'Cleveland META',
+    'liekexingdunii': 'Lexington II',
+    'liekexingdunii_2': 'Lexington IIMaid',
+    'moli_g': 'MauryKai',
+    'pasadina': 'Pasadena',
+    'pasadina_2': 'PasadenaMaid',
+    'shi_2': 'LionSummer',
+    'yuekechengii_3': 'Yorktown IIBunnyForm2',
+    'yuekechengii_4': 'Yorktown IIBunny',
+    'maria': 'Maria',
+    'richard_white': 'Bon Homme Richard',
+    'ryouko': 'Ryouko Amahara',
+    'silverfox': 'Silver Fox',
 }
 
 dupes = set()

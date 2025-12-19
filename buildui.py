@@ -2,20 +2,23 @@ import json
 import re
 from argparse import ArgumentParser
 
-ui = {}
-shop = {}
+langs = ['CN', 'EN', 'JP']
+uis = {}
+shops = {}
 
 months = ['', 'Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec']
 
 def init():
-    global ui
-    global shop
-    with open('EN/ShareCfg/item_data_battleui.json', 'rb') as fp:
-        ui = json.load(fp)
-    with open('EN/ShareCfg/pay_data_display.json', 'rb') as fp:
-        shop = json.load(fp)
+    for lang in langs:
+        uis.setdefault(lang, {})
+        with open('{}/ShareCfg/item_data_battleui.json'.format(lang), 'rb') as fp:
+            uis[lang] = json.load(fp)
+        shops.setdefault(lang, {})
+        with open('{}/ShareCfg/pay_data_display.json'.format(lang), 'rb') as fp:
+            shops[lang] = json.load(fp)
 
-def getdates(uiid):
+def getdates(uiid, lang):
+    shop = shops[lang]
     for id in shop:
         if id == 'all':
             continue
@@ -31,16 +34,24 @@ def getdates(uiid):
                 )
 
 def buildui():
-    lines = ['{{Image Gallery | width = 384']
-    for id in ui:
-        if id == 'all':
-            continue
+    uikeys = {lang: set(uis[lang].keys()) for lang in uis}
+    universalkeys = uikeys['EN'].intersection(uikeys['CN'], uikeys['JP'])
 
+    lines = ['{{Image Gallery | width = 384']
+
+    def addcell(id, lang):
+        ui = uis[lang]
         if 'Buy' in ui[id]['unlock']:
-            time = getdates(ui[id]['id'])
+            time = getdates(ui[id]['id'], lang)
             unlock = '[[Akashi\'s Shop]] ({})'.format(time)
         elif 'Cruise Mission' in ui[id]['unlock']:
             unlock = '[[Cruise Missions|{}]]'.format(ui[id]['unlock'])
+        elif 'Black Friday Cruise Pass' in ui[id]['unlock']:
+            unlock = re.sub(
+                'Black Friday Cruise Pass',
+                '[[Black Friday Akashi\'s Fire Sale#Black Friday Cruise Missions|{}]]'.format('Black Friday Cruise Pass'),
+                ui[id]['unlock']
+            )
         else:
             unlock = ui[id]['unlock']
         
@@ -51,8 +62,34 @@ def buildui():
             ui[id]['desc'],
             unlock
         ))
+
+    for id in sorted(universalkeys):
+        if id == 'all':
+            continue
+        addcell(id, 'EN')
     lines.append('}}')
-    with open('output/ui.wiki', 'w') as fp:
+
+    regionalkeys = {
+        'EN/CN Only': uikeys['EN'].intersection(uikeys['CN']).difference(uikeys['JP']),
+        'EN/JP Only': uikeys['EN'].intersection(uikeys['JP']).difference(uikeys['CN']),
+        'CN/JP Only': uikeys['CN'].intersection(uikeys['JP']).difference(uikeys['EN']),
+        'EN Only': uikeys['EN'].difference(uikeys['CN'].union(uikeys['JP'])),
+        'CN Only': uikeys['CN'].difference(uikeys['EN'].union(uikeys['JP'])),
+        'JP Only': uikeys['JP'].difference(uikeys['EN'].union(uikeys['CN'])),
+    }
+
+    for region in regionalkeys:
+        if len(regionalkeys[region]):
+            lines.append('== {} =='.format(region))
+            lines.append(lines[0])
+            for id in regionalkeys[region]:
+                ui = uis[region[:2]]
+                if id == 'all':
+                    continue
+                addcell(id, region[:2])
+            lines.append('}}')
+
+    with open('output/ui.wiki', 'w', encoding='utf-8') as fp:
         fp.write('\n'.join(lines))
 
 if __name__ == '__main__':
@@ -61,7 +98,7 @@ if __name__ == '__main__':
     args = parser.parse_args()
     if args.download:
         from downloader import update
-        update(['CN', 'EN', 'JP'], [ # todo: separate region-specific uis
+        update(langs, [
             'ShareCfg/item_data_battleui',
             'ShareCfg/pay_data_display'
         ])
