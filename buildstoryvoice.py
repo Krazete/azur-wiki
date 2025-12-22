@@ -15,6 +15,9 @@ def build_voices(lang, format_numbers):
     '''Build a wikitable from AzurLaneData files and current wiki page info.'''
     voice = {}
     for key in story[lang]:
+        if isinstance(story[lang][key], list):
+            print('Skipping:', key)
+            continue
         for line in story[lang][key].get('scripts', []):
             audio = 'voice' # or 'soundeffect'
             if audio in line:
