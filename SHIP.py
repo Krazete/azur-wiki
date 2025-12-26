@@ -386,7 +386,7 @@ shipnames = { # run buildskinname to check what these should be
     'youmiya': 'Yumia Liessfeldt',
     'youmiya_2': 'Yumia LiessfeldtHome Relaxation',
     'zhaohe_4': 'Chao HoSummer',
-    'dosair': 'DOS',
+    'dosair': 'Ordainer El',
     # 2025-08-07 (Post-Atelier)
     'niaohai': 'Choukai',
     'salatuojia': 'Saratoga',
@@ -414,7 +414,7 @@ shipnames = { # run buildskinname to check what these should be
     'qiye_9': 'EnterpriseSummer',
     'weiershiqinwang_5': 'Prince of WalesParty',
     'xili_alter': 'Yuudachi META',
-    'ryouko_shallow': 'RyoukoShadow', # ???
+    'ryouko_shallow': 'Ryouko AmaharaShadow',
     # 2025-09-12 (Amahara)
     'aersasi_2': 'AlsaceSummer',
     'baifeng': 'Hakuhou',
@@ -528,6 +528,18 @@ shipnames = { # run buildskinname to check what these should be
     'richard_white': 'Bon Homme Richard',
     'ryouko': 'Ryouko Amahara',
     'silverfox': 'Silver Fox',
+    # 2025-12-25 (Firmament Part 2)
+    'aotuo_3': 'Otto von AlvenslebenMaid',
+    'dimiteli_2': 'Dmitri DonskoiBunny',
+    'gubixuefu_3': 'KuybyshevBunny',
+    'jinshi_2': 'Gouden LeeuwMaid',
+    'jishang_3': 'GuichenMaid',
+    # 'jishang_3_asmr': 'GuichenMaid', # dupe of jishang_3
+    'kansasi_2': 'KansasBunny',
+    'kunibeierdi_2': 'Vittorio CunibertiMaid',
+    'meikelunbao_2': 'MecklenburgMaid',
+    'moli': 'Maury',
+    'ougen_8': 'Prinz EugenBunny',
 }
 
 dupes = set()

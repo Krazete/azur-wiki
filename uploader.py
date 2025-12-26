@@ -1,4 +1,5 @@
 import os
+import shutil
 import re
 from time import sleep
 from mwclient import Site
@@ -18,12 +19,16 @@ def signin(): # use https://azurlane.koumakan.jp/wiki/Special:BotPasswords
 
 def uploadimage(path, content='', summary='', ignore=False):
     with open(path, 'rb') as fp:
-        response = alw.upload(fp, path.split('/')[-1], content, ignore=ignore, comment=summary)
+        pathsplit = path.split('/')
+        response = alw.upload(fp, pathsplit[-1], content, ignore=ignore, comment=summary)
         result = response.get('result', 'Unknown')
         if result == 'Unknown':
             result = response.get('upload', {}).get('result', 'Unknown')
-        print('{}: {}'.format(result, path.split('/')[-1]))
-        if result != 'Success':
+        print('{}: {}'.format(result, pathsplit[-1]))
+        if result == 'Success':
+            os.makedirs('Texture2D/_UPLOADED_/{}'.format('/'.join(pathsplit[1:-1])), exist_ok=True)
+            shutil.move(path, 'Texture2D/_UPLOADED_/{}'.format('/'.join(pathsplit[1:])))
+        else:
             print(response)
     sleep(0.5)
 
@@ -67,6 +72,8 @@ patterns = {
 if __name__ == '__main__':
     py = 'from uploader import signin, uploadimage, updateimage\nsignin()\n'
     for root, dirs, files in os.walk('Texture2D'):
+        if '_UPLOADED_' in root:
+            continue
         for file in files:
             if file.endswith('.jpg') or file.endswith('.png'):
                 path = '{}/{}'.format(root.replace('\\', '/'), file)
