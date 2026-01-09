@@ -35,6 +35,11 @@ def uploadimage(path, content='', summary='', ignore=False):
 def updateimage(path, summary='update'):
     uploadimage(path, '', summary, True)
 
+def cleanup():
+    for root, dirs, files in os.walk('Texture2D'):
+        if len(dirs) + len(files) <= 0:
+            os.rmdir(root)
+
 ships = []
 for paintingname in shipnames:
     if '_' not in paintingname:
@@ -70,7 +75,7 @@ patterns = {
 }
 
 if __name__ == '__main__':
-    py = 'from uploader import signin, uploadimage, updateimage\nsignin()\n'
+    py = 'from uploader import signin, uploadimage, updateimage, cleanup\nsignin()\n\n'
     for root, dirs, files in os.walk('Texture2D'):
         if '_UPLOADED_' in root:
             continue
@@ -93,6 +98,7 @@ if __name__ == '__main__':
                     path.replace('\'', '\\\''),
                     content.replace('\'', '\\\'')
                 ).replace(', \'\'', '')
+    py += '\ncleanup()\n'
     with open('UPLOADING.py', 'w', encoding='utf-8') as fp:
         fp.write(py)
 

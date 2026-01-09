@@ -540,6 +540,8 @@ shipnames = { # run buildskinname to check what these should be
     'meikelunbao_2': 'MecklenburgMaid',
     'moli': 'Maury',
     'ougen_8': 'Prinz EugenBunny',
+    # 2026-01-08 (Chapter 16)
+    'tengbo': 'Fujinami',
 }
 
 dupes = set()
