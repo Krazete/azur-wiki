@@ -59,6 +59,7 @@ patterns = {
     r'/equips/EquipSkinIcon': '[[Category:Equipment Skins]]',
     r'/equips/\d+\.png': '[[Category:EQUIPMENTTYPE]]',
     r'/iconframe': '[[Category:Portrait frames]]',
+    r'/levelmap/': '[[Category:Campaign]]',
     r'/loadingbg/': '[[Category:Loading Screens]]',
     r'/mangapic/': '[[Category:Comics]]',
     r'/MEDALLION/': '[[Category:Medallions]]',

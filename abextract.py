@@ -26,6 +26,9 @@ iconnames = {
 }
 
 regexsubs = {
+    'levelmap': {
+        r'^map_(\d+)$': 'Chapter \g<1>'
+    },
     'props': {
         r'^ui(\d+)$': 'BattleUIPack \g<1>',
         r'^ui_(\d+)$': 'BattleUIIcon \g<1>'
