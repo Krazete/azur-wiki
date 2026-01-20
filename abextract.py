@@ -66,7 +66,6 @@ ignored = [ # only directories of depth 1-2
     'island/timeline_scene',
     'island/unit_item',
     'item',
-    'levelmap',
     'linkbutton',
     'linkbutton_mellow',
     'live2d',
