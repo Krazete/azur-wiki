@@ -11,6 +11,7 @@ medals = {}
 condition_fixes = {
     r'Midsummer Returns: The Villa Reconstruction': 'A Rose on the High Tower#Midsummer Returns! The Villa Reconstruction|Midsummer Returns! The Villa Reconstruction',
     r'The Secrets of the Abyss': 'Secrets of the Abyss',
+    r'the Light & Shadow Fashion Shoot! event': 'Light & Shadow Fashion Shoot!',
 }
 
 def init_medals():
@@ -107,7 +108,7 @@ def build_medal():
         name = medals[icon]['name']
         rank = medals[icon]['rank']
         condition = re.sub(
-            '(stickers (?:from|in) )([\w\s\':]+)', '\g<1>[[\g<2>]]',
+            '(stickers (?:from|in) )([\w\s\':&!]+)', '\g<1>[[\g<2>]]',
             re.sub(
                 '"(.+?)"', '[[\g<1>]]',
                 medals[icon]['condition']

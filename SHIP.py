@@ -542,6 +542,19 @@ shipnames = { # run buildskinname to check what these should be
     'ougen_8': 'Prinz EugenBunny',
     # 2026-01-08 (Chapter 16)
     'tengbo': 'Fujinami',
+    # 2026-01-22 (Light & Shadow)
+    'aerbeituo': 'Alberto di Giussano',
+    'aerbeituo_2': 'Alberto di GiussanoHome Relaxation',
+    'alabama_3': 'AlabamaHome Relaxation',
+    'daofeng_7': 'ShimakazeHome Relaxation',
+    'fulangxisike': 'Francesco Caracciolo',
+    'fulangxisike_2': 'Francesco CaraccioloHome Relaxation',
+    'gaoxiong': 'Takao',
+    'gaoxiong_7': 'TakaoHome Relaxation',
+    'jianwu_4': 'Chien WuHome Relaxation',
+    'tengbo_2': 'FujinamiHome Relaxation',
+    'wugelini': 'Ugolino Vivaldi',
+    'wugelini_2': 'Ugolino VivaldiHome Relaxation',
 }
 
 dupes = set()
