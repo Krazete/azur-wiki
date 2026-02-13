@@ -555,6 +555,30 @@ shipnames = { # run buildskinname to check what these should be
     'tengbo_2': 'FujinamiHome Relaxation',
     'wugelini': 'Ugolino Vivaldi',
     'wugelini_2': 'Ugolino VivaldiHome Relaxation',
+    # 2026-01-29
+    'longqibing_alter': 'Carabiniere META',
+    'z47_3': 'Z47Travel',
+    # 2026-02-05 (From Zero to Hero Rerun)
+    'dewenjun_2': 'DevonshireRPG',
+    # 2026-02-12 (Valentine's)
+    'changdao_5': 'Long IslandSpring',
+    'feiteliedadi': 'Friedrich der Große',
+    'feiteliedadi_4': 'Friedrich der GroßeSpring',
+    'feiteliedadi_5': 'Friedrich der GroßeSpringForm2',
+    'feiyun_3': 'Fei YuenSpring2',
+    'gaoxiong': 'Takao',
+    'haichou': 'Hai Chou',
+    'haichou_2': 'Hai ChouSpring',
+    # 'haichou_2_asmr': 'Hai ChouSpring', # dupe of haichou_2
+    'lingbo': 'Ayanami',
+    'qibolin': 'Graf Zeppelin',
+    'qibolin_3': 'Graf ZeppelinSpring',
+    'xinnong_6': 'ShinanoSpring',
+    'yingrui_g': 'Ying SweiKai',
+    'z23_13': 'Z23Spring',
+    'zhangwu': 'Chang Wu',
+    'zhangwu_2': 'Chang WuSpring',
+    'zhaohe_g': 'Chao HoKai',
 }
 
 dupes = set()
