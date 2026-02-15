@@ -17,13 +17,13 @@ def init_data():
         with open('EN/{}.json'.format(file), 'rb') as fp:
             data[file.split('/')[-1]] = json.load(fp)
 
-def build_tasklist():
+def build_tasklist(year, month):
     lines = []
     for taskid in data['activity_template']:
         if taskid == 'all':
             continue
         time = data['activity_template'][taskid].get('time', [0, [[0, 0, 0]]])
-        if not (isinstance(time, list) and time[1][0][0] == 2025 and time[1][0][1] == 11):
+        if not (isinstance(time, list) and time[1][0][0] == year and time[1][0][1] == month):
             continue
         lines += [
             '{| class="wikitable"',
@@ -60,9 +60,11 @@ def build_tasklist():
 if __name__ == '__main__':
     parser = ArgumentParser()
     parser.add_argument('-d', '--download', action='store_true', help='download data files')
+    parser.add_argument('-y', '--year', type=int, default='2026', help='year')
+    parser.add_argument('-m', '--month', type=int, default='1',help='month')
     args = parser.parse_args()
     if args.download:
         from downloader import update
         update(['EN'], filelist)
     init_data()
-    build_tasklist()
+    build_tasklist(args.year, args.month)

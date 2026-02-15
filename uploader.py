@@ -63,6 +63,8 @@ patterns = {
     r'/loadingbg/': '[[Category:Loading Screens]]',
     r'/mangapic/': '[[Category:Comics]]',
     r'/MEDALLION/': '[[Category:Medallions]]',
+    r'/medalalbum/': '[[Category:Commemorative Album thumbnails]]',
+    r'/memoryicon/.+Memory\.png': '[[Category:Character Memory folders]]',
     r'/memoryicon/': '[[Category:Memory thumbnails]]',
     r'/props/BattleUI': '[[Category:Shop icons]]',
     r'/props/UR Voucher .+\.png': '[[Category:Event point icons]]',
@@ -175,6 +177,9 @@ Hall of Fame Memory Icon
     [[Category:Memory thumbnails]]
 Secret CD
     <Ship Name>Secret.png
+Commemorative Album Icon
+    Album <Event Name>.png
+    [[Category:Character Memory folders]]
 
 Operation Siren Collection Archives Pictures
     [[Category:Collection Archives images]]
@@ -251,4 +256,7 @@ Akashi Shop Icons
 
 Battle UI
     [[Category:Battle UI previews]]
+
+Miscellaneous
+    [[Category:Resource icons]]
 '''
