@@ -11,7 +11,6 @@ medals = {}
 condition_fixes = {
     r'Midsummer Returns: The Villa Reconstruction': 'A Rose on the High Tower#Midsummer Returns! The Villa Reconstruction|Midsummer Returns! The Villa Reconstruction',
     r'The Secrets of the Abyss': 'Secrets of the Abyss',
-    r'the Light & Shadow Fashion Shoot! event': 'Light & Shadow Fashion Shoot!',
 }
 
 def init_medals():
@@ -52,7 +51,8 @@ def build_medal():
         'Each Medal has multiple Ranks, and Rank 5 is the highest Medal rank possible currently.',
         '',
         '== Regular ==',
-        '|- (this line will pop)']
+        '|- (this line will pop)'
+    ]
     limited = []
     # regular medals
     currentname = ''
@@ -107,13 +107,10 @@ def build_medal():
     for icon in limited:
         name = medals[icon]['name']
         rank = medals[icon]['rank']
-        condition = re.sub(
-            '(stickers (?:from|in) )([\w\s\':&!]+)', '\g<1>[[\g<2>]]',
-            re.sub(
-                '"(.+?)"', '[[\g<1>]]',
-                medals[icon]['condition']
-            )
-        )
+        condition = medals[icon]['condition']
+        condition = re.sub('"(.+?)"', '[[\g<1>]]', condition)
+        condition = re.sub('(stickers (?:from|in) )([\w\s\':&!]+)', '\g<1>[[\g<2>]]', condition)
+        condition = re.sub('the (.+?) event', '\g<1>', condition)
         for pattern in condition_fixes:
             fix = condition_fixes[pattern]
             condition = re.sub(pattern, fix, condition)
@@ -127,6 +124,42 @@ def build_medal():
             '|-'
         ]
     lines[-1] = '|}'
+    lines += [
+        '',
+        '== Roster ==',
+        '',
+        'These medals are unlocked in [[Operation Valentine]] by raising the Sweet Memories Level for chosen shipgirls. A new medal rank is unlocked every 10 levels.',
+        '',
+        '{| class="wikitable"',
+        '!Rank',
+        '!Frame',
+        '!Requirements',
+        '|-',
+        '|1',
+        '|[[File:Sweet Memories Medal 1.png|50px]]',
+        '|200 {{Point|Sweet Memories Pt}} Sweet Memories (Level 1)',
+        '|-',
+        '|2',
+        '|[[File:Sweet Memories Medal 2.png|50px]]',
+        '|2000 {{Point|Sweet Memories Pt}} Sweet Memories (Level 10)',
+        '|-',
+        '|3',
+        '|[[File:Sweet Memories Medal 3.png|50px]]',
+        '|4000 {{Point|Sweet Memories Pt}} Sweet Memories (Level 20)',
+        '|-',
+        '|4',
+        '|[[File:Sweet Memories Medal 4.png|50px]]',
+        '|6000 {{Point|Sweet Memories Pt}} Sweet Memories (Level 30)',
+        '|-',
+        '|5',
+        '|[[File:Sweet Memories Medal 5.png|50px]]',
+        '|8000 {{Point|Sweet Memories Pt}} Sweet Memories (Level 40)',
+        '|-',
+        '|6',
+        '|[[File:Sweet Memories Medal 6.png|50px]]',
+        '|10000 {{Point|Sweet Memories Pt}} Sweet Memories (Level 50)',
+        '|}'
+    ]
     page = '\n'.join(lines)
     with open('output/medallion.wiki', 'w', encoding='utf-8') as fp:
         fp.write(page) # will need revision
