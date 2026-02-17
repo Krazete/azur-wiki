@@ -244,6 +244,11 @@ def parse_scripts(scripts, lang):
                 lines.append('| [] {}'.format(seqlistall))
     return lines, nobgname
 
+def denamecode(line, lang):
+    for nc in book['code'][lang]:
+        line = re.sub('{{namecode:{}(:.+?)?}}'.format(nc), book['code'][lang][nc]['name'], line)
+    return line
+
 def build_memory(gid):
     bgs = set()
     lines = ['<tabber>']
@@ -263,7 +268,7 @@ def build_memory(gid):
                 'Chapter {}='.format(i + 1),
                 '{{Story',
                 '| Title = {}'.format(memory['title'].strip()),
-                '| Unlock = {}'.format(memory['condition'].strip()),
+                '| Unlock = {}'.format(denamecode(memory['condition'], lang).strip()),
                 '| Language = {}'.format(lang)
             ]
             sid = memory['story']
@@ -505,6 +510,8 @@ bgnames = {
     'dal4': 'DATE A LANE Background 4',
     'blackfriday': 'The New Sales Campaign Just Dropped!',
     'tianqiong': 'To a Brighter World',
+    'guangying': 'Light & Shadow Fashion Shoot!',
+    'chunyan': 'Spring Auction Adventure',
     # Project Identity
     'project_tb': 'Project Identity TB',
     'project_oceana': 'Project Identity Oceana',
