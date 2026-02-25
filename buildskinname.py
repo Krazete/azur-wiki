@@ -57,6 +57,11 @@ ship_class = {
 }
 
 base_fixes = {
+    # base name fix
+    'HDN101': 'Neptune (Neptunia)',
+    'xia_DOA': 'Kasumi (Venus Vacation)',
+    'xuebugui': 'Fubuki (Senran Kagura)',
+    # skin name fix
     'hierophant': 'Arbiter: The Hierophant V',
     'lingyangzhe3_2': 'Navi',
 }
@@ -116,9 +121,12 @@ def build_skinnames():
         l2d = skin['ship_l2d_id']
         dyn = skin['shop_dynamic_hx']
 
-        base = book['skin'].get(str(skin['ship_group'] * 10))
+        soup = skin['ship_group']
+        base = book['skin'].get(str(soup * 10))
         if base:
             basename = get_decoded_name(base)
+            if base['painting'] in base_fixes:
+                basename = base_fixes[base['painting']]
             if skin['skin_type'] < 0: # default
                 if skin != base:
                     print('WARNING: Skin "{}" incorrectly detected as {}\'s default.'.format(skin['name'], base['name']))
@@ -136,11 +144,13 @@ def build_skinnames():
                 elif form > 1:
                     suffix += 'Form{}'.format(form)
                     dual = True
+                elif skin['change_skin'].get('action') != 'changeAsmr':
+                    dual = True
         else: # likely an enemy or npc
             npc = True
+            if paint in base_fixes:
+                basename = base_fixes[paint]
 
-        if paint in base_fixes:
-            basename = base_fixes[paint]
         if paint in type_fixes:
             if isinstance(type_fixes[paint], int):
                 suffix = shop_type[type_fixes[paint]]
@@ -155,14 +165,24 @@ def build_skinnames():
             suffix_incrementor[basename + suffix] += 1
 
         classification = ''
-        rarities = set()
+        rarities = {} # histogram of rarities; lower count = npc (usually)
         for stid in book['stat']:
-            if int(stid) // 10 == int(skid) // 10:
+            stskid = book['stat'][stid]['skin_id']
+            if stskid == int(skid) or stskid // 10 == soup:
                 classification = ship_class[book['stat'][stid]['type']]
-                rarities.add(book['stat'][stid]['rarity'])
-        rarity = rarities if rarities else 0
+                r = str(book['stat'][stid]['rarity'])
+                rarities.setdefault(r, 0)
+                rarities[r] += 1
+        rarity = ''
+        if not npc and len(rarities) > 0:
+            maxrcount = max(rarities.values())
+            maxr = [r for r in rarities if rarities[r] == maxrcount] # prefers first recorded rarity
+            rarity = maxr[0]
+            if len(maxr) > 1:
+                print('WARNING: Skin {} ({}) has multiple rarities ({})'.format(skid, wikiname, ', '.join(maxr)))
 
         listing = book['shop'].get(str(skin['shop_id']), {})
+        price = listing.get('resource_num', 0)
 
         txtfile.append('{:8d} {:4d} {:4d} {:4s} {:32s} {}'.format(
             int(skid),
@@ -176,17 +196,17 @@ def build_skinnames():
             if jsonfile[paint][0]:
                 jsonfile[paint] = (npc, wikiname)
             elif jsonfile[paint][1] != wikiname and not npc:
-                print('WARNING: Painting file {} has extra name {}'.format(paint, wikiname))
+                print('WARNING: Skin {} ({}) has extra name ({})'.format(skid, jsonfile[paint][1], wikiname))
         else:
             jsonfile[paint] = (npc, wikiname)
         wikifile.append('{{{{{}}}}}'.format('|'.join([
             'ShipDisplay',
-            ','.join([str(r) for r in rarities]),
+            rarity,
             basename,
             classification,
             suffix,
             skinname,
-            '{{{{Gem}}}} {} {{{{Skin ticket}}}}'.format(listing.get('resource_num', 0)), # notes
+            '-' if price else '{{{{Gem}}}} {}'.format(price), # notes
             '' if listing.get('time') == 'always' else '1', # limited
             'DUAL' if dual else 'L2D' if l2d else 'DYN' if dyn else '', # live2d
             str(bg) if bg else ''
