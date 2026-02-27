@@ -70,11 +70,11 @@ def buildui():
     lines.append('}}')
 
     regionalkeys = {
+        'EN Only': uikeys['EN'].difference(uikeys['CN'].union(uikeys['JP'])),
         'EN/CN Only': uikeys['EN'].intersection(uikeys['CN']).difference(uikeys['JP']),
         'EN/JP Only': uikeys['EN'].intersection(uikeys['JP']).difference(uikeys['CN']),
-        'CN/JP Only': uikeys['CN'].intersection(uikeys['JP']).difference(uikeys['EN']),
-        'EN Only': uikeys['EN'].difference(uikeys['CN'].union(uikeys['JP'])),
         'CN Only': uikeys['CN'].difference(uikeys['EN'].union(uikeys['JP'])),
+        'CN/JP Only': uikeys['CN'].intersection(uikeys['JP']).difference(uikeys['EN']),
         'JP Only': uikeys['JP'].difference(uikeys['EN'].union(uikeys['CN'])),
     }
 
