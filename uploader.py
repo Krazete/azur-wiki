@@ -1,9 +1,12 @@
 import os
 import shutil
 import re
+import json
 from time import sleep
 from mwclient import Site
-from SHIP import shipnames
+
+with open('output/skinname.json', 'r', encoding='utf-8') as fp:
+    shipnames = json.load(fp)
 
 def signin(): # use https://azurlane.koumakan.jp/wiki/Special:BotPasswords
     global alw
@@ -89,7 +92,7 @@ if __name__ == '__main__':
                 if re.search(r'/SHIP/', path):
                     content = '{{SkinFileData|SHIPGIRLNAME}}'
                     for ship in ships:
-                        if re.search(r'/SHIP/{}'.format(ship), path):
+                        if re.search(r'/SHIP/{}'.format(re.escape(ship)), path):
                             content = '{{{{SkinFileData|{}}}}}'.format(ship)
                             break
                 else:

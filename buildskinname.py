@@ -57,11 +57,11 @@ ship_class = {
 }
 
 base_fixes = {
-    # base name fix
+    # painting: base name
     'HDN101': 'Neptune (Neptunia)',
     'xia_DOA': 'Kasumi (Venus Vacation)',
     'xuebugui': 'Fubuki (Senran Kagura)',
-    # skin name fix
+    # skins without a base
     'hierophant': 'Arbiter: The Hierophant V',
     'lingyangzhe3_2': 'Navi',
 }
@@ -74,6 +74,8 @@ type_fixes = {
     'lingyangzhe3_2': 20,
     'luoma_4': 6,
     'yuekecheng_hei': 'Shadow',
+    'gangute_2': 'Prison',
+    'gangute_3': 9,
 }
 
 book = {}
@@ -98,7 +100,11 @@ def get_decoded_name(skin):
         matches = re.match('{namecode:(\d+)}', skin['name'])
         cid = matches[1]
         return book['code'][cid]['name'].strip()
-    return skin['name'].strip()
+    name = re.sub(r'\s+', ' ', skin['name']) # only affects Reisalin Stout
+    return name.strip()
+
+def get_painting_lower(skin):
+    return skin['painting'].lower()
 
 def build_skinnames():
     txtfile = ['{:>8s} {:>4s} {:>4s} {:>4s} {:32s} {}'.format('SkinID', 'Shop', 'BG', 'NPC', 'Painting', 'Filename / Title')]
@@ -108,7 +114,7 @@ def build_skinnames():
     suffix_incrementor = {}
     for skid in book['skin']:
         skin = book['skin'][skid]
-        paint = skin['painting']
+        paint = get_painting_lower(skin)
         tyid = skin['shop_type_id']
         bg = skin['bg'] or 0
 
@@ -119,14 +125,15 @@ def build_skinnames():
 
         dual = False
         l2d = skin['ship_l2d_id']
-        dyn = skin['shop_dynamic_hx']
+        dyn = skin['spine_offset']
 
         soup = skin['ship_group']
         base = book['skin'].get(str(soup * 10))
         if base:
             basename = get_decoded_name(base)
-            if base['painting'] in base_fixes:
-                basename = base_fixes[base['painting']]
+            basepaint = get_painting_lower(base)
+            if basepaint in base_fixes:
+                basename = base_fixes[basepaint]
             if skin['skin_type'] < 0: # default
                 if skin != base:
                     print('WARNING: Skin "{}" incorrectly detected as {}\'s default.'.format(skin['name'], base['name']))
@@ -157,12 +164,12 @@ def build_skinnames():
             else:
                 suffix = type_fixes[paint]
 
-        if npc:
-            wikiname = '{}{}'.format(basename, suffix)
-        else:
-            wikiname = '{}{}{}'.format(basename, suffix, suffix_incrementor.get(basename + suffix, ''))
-            suffix_incrementor.setdefault(basename + suffix, 1)
+        if not npc:
+            suffix_incrementor.setdefault(basename + suffix, 0)
             suffix_incrementor[basename + suffix] += 1
+        n = suffix_incrementor.get(basename + suffix, 0)
+        suffix_n = '{}{}'.format(suffix, n) if n > 1 else suffix
+        wikiname = '{}{}'.format(basename, suffix_n)
 
         classification = ''
         rarities = {} # histogram of rarities; lower count = npc (usually)
@@ -199,18 +206,28 @@ def build_skinnames():
                 print('WARNING: Skin {} ({}) has extra name ({})'.format(skid, jsonfile[paint][1], wikiname))
         else:
             jsonfile[paint] = (npc, wikiname)
-        wikifile.append('{{{{{}}}}}'.format('|'.join([
-            'ShipDisplay',
-            rarity,
-            basename,
-            classification,
-            suffix,
-            skinname,
-            '-' if price else '{{{{Gem}}}} {}'.format(price), # notes
-            '' if listing.get('time') == 'always' else '1', # limited
-            'DUAL' if dual else 'L2D' if l2d else 'DYN' if dyn else '', # live2d
-            str(bg) if bg else ''
-        ])))
+        if suffix == '' and basename == skinname:
+            wikifile.append('{{{{{}}}}}'.format('|'.join([
+                'ShipDisplay',
+                rarity,
+                basename,
+                classification,
+                suffix,
+                '\'\'\'Construction\'\'\''
+            ])))
+        else:
+            wikifile.append('{{{{{}}}}}'.format('|'.join([
+                'ShipDisplay',
+                rarity,
+                basename,
+                classification,
+                suffix_n,
+                skinname,
+                '{{{{Gem}}}} {}'.format(price) if price else '', # notes
+                '' if listing.get('time') == 'always' else '1', # limited
+                'DUAL' if dual else 'L2D' if l2d else 'DYN' if dyn else '', # live2d
+                str(bg) if bg else ''
+            ])))
     with open('output/skinname.txt', 'w', encoding='utf-8') as fp:
         fp.write('\n'.join(txtfile))
     with open('output/skinname.json', 'w', encoding='utf-8') as fp:

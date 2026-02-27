@@ -12,7 +12,7 @@ pip install -r requirements.txt
 
 ## Scripts
 ```sh
-python -m preabextract # update SHIP.py for abextract to use in azur-paint command list
+python -m preabextract # update output/skinname.json for abextract to use in azur-paint command list
 python -m abextract # extract files from AssetBundles and build command list for azur-paint
 # execute abget.sh first to extract latest AssetBundles files from phone (adb required)
 

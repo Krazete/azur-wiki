@@ -1,9 +1,12 @@
 import os
 import re
+import json
 import UnityPy
 from UnityPy.files import BundleFile
 from pathlib import Path
-from SHIP import shipnames
+
+with open('output/skinname.json', 'r', encoding='utf-8') as fp:
+    shipnames = json.load(fp)
 
 assetbundles = UnityPy.load('AssetBundles')
 
