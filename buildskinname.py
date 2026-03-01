@@ -1,5 +1,6 @@
 import json
 import re
+from argparse import ArgumentParser
 
 shop_type = { # inconsistent (e.g. luoma_4 should be Summer, not RaceQueen; Bluray is unaccounted for)
     0: '_OTHER_0000',
@@ -34,19 +35,24 @@ shop_type = { # inconsistent (e.g. luoma_4 should be Summer, not RaceQueen; Blur
     9998: 'Wedding',
     9999: '_OTHER_9999', # other
 }
-ship_class = {
+ship_class = { # from SharedCfg/ship_data_by_type.json and SharedCfg/enemy_data_by_type.json
     1: 'DD', # Destroyer
     2: 'CL', # Light Cruiser
     3: 'CA', # Heavy Cruiser
     4: 'BC', # Battlecruiser
     5: 'BB', # Battleship
-    6: 'CVL', # Light Aircraft Carrier
+    6: 'CVL', # Light Carrier
     7: 'CV', # Aircraft Carrier
     8: 'SS', # Submarine
+    9: 'Aviation Cruiser',
     10: 'BBV', # Aviation Battleship
+    11: 'Torpedo Cruiser',
     12: 'AR', # Repair Ship
     13: 'BM', # Monitor
-    17: 'SSV', # Submarine Aircraft Carrier
+    14: 'Torpedo Ship',
+    15: 'Cargo Ship',
+    16: 'Bombing Ship',
+    17: 'SSV', # Aviation Submarine
     18: 'CB', # Large Cruiser
     19: 'AE', # Munition Ship
     20: 'DD', # Guided-Missile Destroyer (Vanguard)
@@ -54,6 +60,7 @@ ship_class = {
     22: 'IXs', # Sailing Frigate (Submarine)
     23: 'IXv', # Sailing Frigate (Vanguard)
     24: 'IXm', # Sailing Frigate (Main)
+    25: 'Unknown',
 }
 
 base_fixes = {
@@ -76,6 +83,7 @@ type_fixes = {
     'yuekecheng_hei': 'Shadow',
     'gangute_2': 'Prison',
     'gangute_3': 9,
+    'linghangyuan1_1': 'Baby',
 }
 
 book = {}
@@ -185,8 +193,8 @@ def build_skinnames():
             maxrcount = max(rarities.values())
             maxr = [r for r in rarities if rarities[r] == maxrcount] # prefers first recorded rarity
             rarity = maxr[0]
-            if len(maxr) > 1:
-                print('WARNING: Skin {} ({}) has multiple rarities ({})'.format(skid, wikiname, ', '.join(maxr)))
+            # if len(maxr) > 1: # note if tiebreaker was used
+            #     print('WARNING: Skin {} ({}) has multiple rarities ({})'.format(skid, wikiname, ', '.join(maxr)))
 
         listing = book['shop'].get(str(skin['shop_id']), {})
         price = listing.get('resource_num', 0)
@@ -235,17 +243,21 @@ def build_skinnames():
     with open('output/skintemplate.wiki', 'w', encoding='utf-8') as fp:
         fp.write('\n'.join(wikifile))
 
-def main():
-    from downloader import update
-    update(['EN'], [
-        'ShareCfg/ship_skin_template',
-        'ShareCfg/name_code',
-        'sharecfgdata/ship_data_statistics',
-        'sharecfgdata/shop_template',
-        'sharecfgdata/gametip'
-    ])
+def main(dl):
+    if dl:
+        from downloader import update
+        update(['EN'], [
+            'ShareCfg/ship_skin_template',
+            'ShareCfg/name_code',
+            'sharecfgdata/ship_data_statistics',
+            'sharecfgdata/shop_template',
+            'sharecfgdata/gametip'
+        ])
     init_book()
     build_skinnames()
 
 if __name__ == '__main__':
-    main()
+    parser = ArgumentParser()
+    parser.add_argument('-d', '--download', action='store_true', help='download data files')
+    args = parser.parse_args()
+    main(args.download)

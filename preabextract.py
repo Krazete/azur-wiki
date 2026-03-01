@@ -12,12 +12,12 @@ for root, dirs, files in os.walk(os.path.join('AssetBundles')):
             assert paint == paint.lower()
             paintings.add(paint)
 
-buildskinname.main()
+buildskinname.main(True)
 with open('output/skinname.json', 'r', encoding='utf-8') as fp:
     skinname = json.load(fp)
 
 print('Paintings Found:')
-for paint in paintings:
+for paint in sorted(paintings):
     status = ''
     if paint in buildskinname.base_fixes:
         status = '[OK] Base Manually Fixed'
