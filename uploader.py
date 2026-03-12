@@ -45,9 +45,9 @@ def cleanup():
 
 ships = []
 for paintingname in shipnames:
-    if '_' not in paintingname:
+    if '_' not in paintingname or '_alter' in paintingname:
         ships.append(shipnames[paintingname])
-ships.sort(key=lambda ship: -len(ship))
+ships.sort(key=lambda ship: len(ship), reverse=True)
 
 patterns = {
     r'/activitybanner/': '[[Category:Event banners]]',
