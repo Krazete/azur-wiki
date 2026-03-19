@@ -44,8 +44,11 @@ def cleanup():
             os.rmdir(root)
 
 ships = []
-for paintingname in shipnames:
-    if '_' not in paintingname or '_alter' in paintingname:
+for paintingname in shipnames: # base names only
+    if '_' not in paintingname or re.match(
+        r'vtuber_\w+?|\w+?_(alter|younv|idol|super|ger|cv|jp|doa|shanluan|tolove)',
+        paintingname
+    ): # hololive|meta|child|muse|bulin|yorck|amagi|niizuki|collabs
         ships.append(shipnames[paintingname])
 ships.sort(key=lambda ship: len(ship), reverse=True)
 
