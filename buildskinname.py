@@ -246,7 +246,7 @@ def build_skinnames():
             r'^\w+?_n$': ('WithoutBG', 1),
         }
         for cat in extra_fixes:
-            if re.match(cat, paint) and not basename.endswith(extra_fixes[cat][0]):
+            if re.match(cat, paint) and extra_fixes[cat][0] not in basename:
                 miscat.append(extra_fixes[cat])
         for cat in miscat:
             if cat[1] == 0:
