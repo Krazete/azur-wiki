@@ -110,11 +110,9 @@ fixes = {
     'i404_3': {'type': 'NinjaEX'},
     'luoen_3': {'type': 'Crosswave'},
     'aijiang': {'type': 'WithoutRigging'},
-    'npcchuyue_3': {'type': 'Travel'}, # Hatsuzuki
     'npcfeiteliekaer_3': {'type': 6}, # Friedrich Carl
     'npcjunzhu_5': {'type': 6}, # Monarch
     'npckewei_6': {'type': 'Party2'}, # Formidable
-    'npcmalilan_3': {'type': 6}, # Maryland
     'npcaersasi_3': {'type': 28}, # Alsace
     'npcbulunnusi_3': {'type': 10}, # Brennus
     'npcguandao_3': {'type': 28}, # Guam
@@ -123,6 +121,8 @@ fixes = {
     'npcyanzhan_4': {'type': 28}, # Warspite
     'npcyunxian_3': {'type': 28}, # Unzen
     # base and type
+    'npcchuyue_3': {'base': 'Hatsuzuki', 'type': 'Travel'},
+    'npcmalilan_3': {'base': 'Maryland', 'type': 6},
     'linghangyuan1_5': {'base': 'TB', 'type': 'BabyPlushie'},
     'linghangyuan3_2': {'base': 'TB', 'type': 'Misc'},
     'lingyangzhe1_1': {'base': 'Navi', 'type': 'Baby'},
@@ -135,16 +135,16 @@ fixes = {
     'lingyangzhe32_1': {'base': 'Navi', 'type': 'Rebellious'},
     'lingyangzhe32_2': {'base': 'Navi', 'type': 'RebelliousCasual'},
     'npclingyangzhe3_2': {'base': 'Navi', 'type': 'Home RelaxationWithoutBG'},
-    'tansuozhe1_1': {'base': 'Lora', 'Type': 'Baby'},
-    'tansuozhe1_2': {'base': 'Lora', 'Type': 'BabyCasual'},
-    'tansuozhe21_1': {'base': 'Lora', 'Type': 'ShyTeen'},
-    'tansuozhe21_2': {'base': 'Lora', 'Type': 'ShyTeenSchool'},
-    'tansuozhe22_1': {'base': 'Lora', 'Type': 'OutgoingTeen'},
-    'tansuozhe22_2': {'base': 'Lora', 'Type': 'OutgoingTeenSchool'},
-    'tansuozhe31_1': {'base': 'Lora', 'Type': 'Shy'},
-    'tansuozhe31_2': {'base': 'Lora', 'Type': 'ShySchool'},
-    'tansuozhe32_1': {'base': 'Lora', 'Type': 'Outgoing'},
-    'tansuozhe32_2': {'base': 'Lora', 'Type': 'OutgoingSchool'},
+    'tansuozhe1_1': {'base': 'Lora', 'type': 'Baby'},
+    'tansuozhe1_2': {'base': 'Lora', 'type': 'BabyCasual'},
+    'tansuozhe21_1': {'base': 'Lora', 'type': 'ShyTeen'},
+    'tansuozhe21_2': {'base': 'Lora', 'type': 'ShyTeenSchool'},
+    'tansuozhe22_1': {'base': 'Lora', 'type': 'OutgoingTeen'},
+    'tansuozhe22_2': {'base': 'Lora', 'type': 'OutgoingTeenSchool'},
+    'tansuozhe31_1': {'base': 'Lora', 'type': 'Shy'},
+    'tansuozhe31_2': {'base': 'Lora', 'type': 'ShySchool'},
+    'tansuozhe32_1': {'base': 'Lora', 'type': 'Outgoing'},
+    'tansuozhe32_2': {'base': 'Lora', 'type': 'OutgoingSchool'},
     # shadows
     'qiye_dark': {'base': 'Enterprise META'}, # not shadow
     'qiye_dark_shadow': {'base': 'Enterprise META'},
@@ -344,6 +344,15 @@ def build_skinnames():
                 str(bg) if bg else ''
             ])))
         wikifile[-1] = re.sub(r'\|+?\}\}$', '}}', wikifile[-1]) # strip end
+    for paint in fixes: # add missing name fixes for abextract
+        if paint not in jsonfile:
+            fixbase = fixes[paint].get('base', 'UNKNOWN')
+            fixtype = fixes[paint].get('type', '')
+            if isinstance(fixtype, int):
+                fixtype = shop_type.get(fixtype, '_UNKNOWN')
+            if 'npc' in paint:
+                fixtype += ' NPC'
+            jsonfile[paint] = (True, '{}{}'.format(fixbase, fixtype))
     with open('output/skinname.txt', 'w', encoding='utf-8') as fp:
         fp.write('\n'.join(txtfile))
     with open('output/skinname.json', 'w', encoding='utf-8') as fp:
