@@ -70,7 +70,10 @@ fixes = {
     'xia_doa': {'base': 'Kasumi (Venus Vacation)'},
     'xuebugui': {'base': 'Fubuki (Senran Kagura)'},
     'tbniang_hei': {'base': 'TB'},
+    'lingyangzhe3_2': {'base': 'Navi'},
     'lingyangzhe32_3': {'base': 'Navi'},
+    'tansuozhe_2': {'base': 'Lora'},
+    'tansuozhe32_3': {'base': 'Lora'},
     'unknown1': {'base': 'Tester'},
     'unknown1_xinshou': {'base': 'Tester'},
     'unknown2_memory': {'base': 'Observer'},
@@ -121,6 +124,7 @@ fixes = {
     'npcyunxian_3': {'type': 28}, # Unzen
     # base and type
     'linghangyuan1_5': {'base': 'TB', 'type': 'BabyPlushie'},
+    'linghangyuan3_2': {'base': 'TB', 'type': 'Misc'},
     'lingyangzhe1_1': {'base': 'Navi', 'type': 'Baby'},
     'lingyangzhe1_2': {'base': 'Navi', 'type': 'BabySchool'},
     'lingyangzhe21_1': {'base': 'Navi', 'type': 'MildTeen'},
@@ -130,8 +134,17 @@ fixes = {
     'lingyangzhe31_2': {'base': 'Navi', 'type': 'MildCasual'},
     'lingyangzhe32_1': {'base': 'Navi', 'type': 'Rebellious'},
     'lingyangzhe32_2': {'base': 'Navi', 'type': 'RebelliousCasual'},
-    'lingyangzhe3_2': {'base': 'Navi', 'type': 20},
     'npclingyangzhe3_2': {'base': 'Navi', 'type': 'Home RelaxationWithoutBG'},
+    'tansuozhe1_1': {'base': 'Lora', 'Type': 'Baby'},
+    'tansuozhe1_2': {'base': 'Lora', 'Type': 'BabyCasual'},
+    'tansuozhe21_1': {'base': 'Lora', 'Type': 'ShyTeen'},
+    'tansuozhe21_2': {'base': 'Lora', 'Type': 'ShyTeenSchool'},
+    'tansuozhe22_1': {'base': 'Lora', 'Type': 'OutgoingTeen'},
+    'tansuozhe22_2': {'base': 'Lora', 'Type': 'OutgoingTeenSchool'},
+    'tansuozhe31_1': {'base': 'Lora', 'Type': 'Shy'},
+    'tansuozhe31_2': {'base': 'Lora', 'Type': 'ShySchool'},
+    'tansuozhe32_1': {'base': 'Lora', 'Type': 'Outgoing'},
+    'tansuozhe32_2': {'base': 'Lora', 'Type': 'OutgoingSchool'},
     # shadows
     'qiye_dark': {'base': 'Enterprise META'}, # not shadow
     'qiye_dark_shadow': {'base': 'Enterprise META'},
@@ -229,6 +242,7 @@ def build_skinnames():
             npc = True
             if paint in fixes and fixes[paint].get('base'):
                 basename = fixes[paint]['base']
+            suffix = shop_type[tyid]
 
         miscat = []
         extra_fixes = {

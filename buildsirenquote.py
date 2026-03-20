@@ -79,6 +79,12 @@ skin = {
             'EN': 'Peppy Personality',
             'CN': '开朗',
             'JP': '元気'
+        },
+        1310: {
+            'skin': 'Skin1',
+            'EN': 'Data Set: My Countless Selves',
+            'CN': '数据集：无数的我',
+            'JP': 'データセット：無数の自己'
         }
     },
     'navi': {
@@ -105,6 +111,32 @@ skin = {
             'EN': 'Imp of the Bathtub',
             'CN': '入浴的小恶魔',
             'JP': '小悪魔inバスタブ'
+        }
+    },
+    'lora': {
+        3000: {
+            'skin': '',
+            'EN': 'Normal Personality',
+            'CN': '',
+            'JP': ''
+        },
+        3100: {
+            'skin': 'Shy',
+            'EN': 'Shy Personality',
+            'CN': '内向',
+            'JP': '内気'
+        },
+        3200: {
+            'skin': 'Outgoing',
+            'EN': 'Outgoing Personality',
+            'CN': '外向',
+            'JP': '陽気'
+        },
+        3300: {
+            'skin': 'Skin1',
+            'EN': 'Closeness on a Holiday',
+            'CN': '悠悠假日私语时',
+            'JP': '休日、睦まじいひととき'
         }
     }
 }
@@ -177,6 +209,11 @@ if __name__ == '__main__':
     args = parser.parse_args()
     if args.download:
         from downloader import update
-        update(['CN', 'EN', 'JP'], ['secretary_special_ship'])
+        update(['CN', 'EN', 'JP'], [
+            'ShareCfg/secretary_special_ship', # (to check unlock requirements, search for "unlock_desc")
+            # 'ShareCfg/ship_skin_template', # for checking special skin names (run buildskinname instead)
+            'ShareCfg/child2_data', # for checking nicknames in CN/JP (search for "name2" but take "name")
+            'sharecfgdata/gametip' # for checking personality labels (search for "child2_personal_id")
+        ])
     init_data()
     doit()

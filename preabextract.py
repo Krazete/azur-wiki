@@ -19,12 +19,10 @@ with open('output/skinname.json', 'r', encoding='utf-8') as fp:
 print('Paintings Found:')
 for paint in sorted(paintings):
     status = ''
-    if paint in buildskinname.base_fixes:
-        status = '[OK] Base Manually Fixed'
-    elif paint in buildskinname.type_fixes:
-        status = '[OK] Type Manually Fixed'
+    if paint in buildskinname.fixes:
+        status = '[OK] Manually Fixed'
     elif paint in skinname:
-        status = '[??] Automatically Named'
+        status = '[??] Automatic Name'
     else:
-        status = '[!!] Skin Name Not Found'
+        status = '[!!] Name Not Found'
     print('{}: {} ({})'.format(status, skinname.get(paint, 'UNDEFINED'), paint))
