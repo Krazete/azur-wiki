@@ -77,8 +77,11 @@ fixes = {
     'unknown1': {'base': 'Tester'},
     'unknown1_xinshou': {'base': 'Tester'},
     'unknown2_memory': {'base': 'Observer'},
+    'unknown2_memory': {'base': 'Observer'},
+    'unknown4': {'base': 'Observer Zero'},
     'unknown5': {'base': 'Compiler'},
     'unknown5_shadow': {'base': 'Compiler'},
+    'unknown6': {'base': 'War Protocol Scythe'}, # originally Death's Shadow
     'hierophant': {'base': 'Arbiter: The Hierophant V'},
     'moon': {'base': 'Arbiter: The Moon XVIII'},
     'unknownstar': {'base': 'Arbiter: The Star XVII'},
@@ -99,6 +102,12 @@ fixes = {
     'luoma_4': {'type': 6},
     'gangute_2': {'type': 'Prison'},
     'gangute_3': {'type': 9},
+    'shuixingjinian_2': {'type': 'Prison'},
+    'lingbo_4': {'type': 'Rock'},
+    'lingbo_6': {'type': 'CoCo'},
+    'lingbo_9': {'type': 'Bluray'},
+    'lingbo_11': {'type': 'Bluray2'},
+    'lingbo_14': {'type': 'KFC'},
     'linghangyuan1_1': {'type': 'Baby'},
     'npcaersasi_3': {'type': 28},
     'xufulun_3': {'type': 7},
@@ -302,6 +311,7 @@ def build_skinnames():
         n = suffix_incrementor.get(basename + suffix, 0)
         suffix_n = '{}{}'.format(suffix, n) if n > 1 else suffix
         wikiname = '{}{}'.format(basename, suffix_n)
+        slashname = '{}/{}'.format(basename, suffix_n) if suffix_n else basename
 
         classification = ''
         rarities = {} # histogram of rarities; lower count = npc (usually)
@@ -333,11 +343,11 @@ def build_skinnames():
         ))
         if paint in jsonfile:
             if jsonfile[paint][0]:
-                jsonfile[paint] = (npc, wikiname)
+                jsonfile[paint] = (npc, wikiname, slashname)
             elif jsonfile[paint][1] != wikiname and not npc:
                 print('WARNING: Skin {} ({}) has extra name ({})'.format(skid, jsonfile[paint][1], wikiname))
         else:
-            jsonfile[paint] = (npc, wikiname)
+            jsonfile[paint] = (npc, wikiname, slashname)
         if suffix == '' and basename == skinname:
             wikifile.append('{{{{{}}}}}'.format('|'.join([
                 'ShipDisplay',
@@ -369,11 +379,17 @@ def build_skinnames():
                 fixtype = shop_type.get(fixtype, '_UNKNOWN')
             if 'npc' in paint:
                 fixtype += ' NPC'
-            jsonfile[paint] = (True, '{}{}'.format(fixbase, fixtype))
+            jsonfile[paint] = (
+                True,
+                '{}{}'.format(fixbase, fixtype),
+                '{}/{}'.format(fixbase, fixtype) if fixtype else fixbase
+            )
     with open('output/skinname.txt', 'w', encoding='utf-8') as fp:
         fp.write('\n'.join(txtfile))
     with open('output/skinname.json', 'w', encoding='utf-8') as fp:
         json.dump({x: jsonfile[x][1] for x in jsonfile}, fp, ensure_ascii=False, indent=4)
+    with open('output/slashname.json', 'w', encoding='utf-8') as fp:
+        json.dump({x: jsonfile[x][2] for x in jsonfile}, fp, ensure_ascii=False, indent=4)
     with open('output/skintemplate.wiki', 'w', encoding='utf-8') as fp:
         fp.write('\n'.join(wikifile))
 

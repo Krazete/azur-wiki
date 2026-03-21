@@ -94,6 +94,7 @@ def dl_story():
     paths = [
         'ShareCfg/memory_group', # memory groups
         'ShareCfg/memory_template', # memories
+        'ShareCfg/secretary_special_ship', # special secretary names
         'ShareCfg/ship_skin_template', # shipgirl names
         'ShareCfg/name_code', # shipgirl namecodes
         # 'GameCfg/story', # memory text

@@ -1,8 +1,10 @@
-import os
 import re
 import json
 from urllib.parse import quote
 from argparse import ArgumentParser
+
+with open('output/slashname.json', 'r', encoding='utf-8') as fp:
+    wikinames = json.load(fp)
 
 langs = {
     'EN': 'English',
@@ -11,13 +13,14 @@ langs = {
 }
 book = {}
 
-tb = False # set True to quick fix Project Identity: TB issues
+tb = False # set True to quick fix Project Identity issues
 
 def init_book():
     '''Initializes `child` object with JSON files downloaded from AzurLaneData repo.'''
     subpaths = {
         'ShareCfg/memory_group': 'group',
         'ShareCfg/memory_template': 'memory',
+        'ShareCfg/secretary_special_ship': 'siren',
         'ShareCfg/ship_skin_template': 'skin',
         'ShareCfg/name_code': 'code',
         'GameCfg/story': 'story',
@@ -46,24 +49,23 @@ def get_groupid(title, i=0):
             i -= 1
 
 def getwikiname(skinid, lang):
-    skin = book['skin'][lang].get(str(skinid))
+    skin = book['siren'][lang].get(str(skinid), book['skin'][lang].get(str(skinid)))
     if not skin:
         return ''
-    sgid = skin['ship_group']
-    stid = skin['shop_type_id']
+    paint = skin.get('painting', '')
+    if lang == 'EN':
+        return wikinames.get(paint, '')
+    sgid = skin.get('ship_group')
+    stid = skin.get('shop_type_id')
     if not stid:
         return skin['name']
     for skid in book['skin'][lang]:
         skin2 = book['skin'][lang][skid]
         if skin2['ship_group'] == sgid and skin2['group_index'] == 0:
             skname = skin2['name'].strip()
-            shtype = shop_type[stid]
-            if skname in shop_type_fixer:
-                if shtype in shop_type_fixer[skname]:
-                    shtype = shop_type_fixer[skname][shtype]
-            return '{}/{}'.format(skname, shtype)
+            return '{}'.format(skname)
 
-def parse_scripts(scripts, lang):
+def parse_scripts(scripts, lang, defaultTb):
     lines = []
     bgrn = None
     bgmrn = None
@@ -74,6 +76,8 @@ def parse_scripts(scripts, lang):
             print('Not a script:', script)
             continue
         skinid = script.get('actor')
+        if skinid and skinid < 0: # specifically, -2
+            skinid = defaultTb
         skinnameEN = getwikiname(skinid, 'EN')
         skinname = getwikiname(skinid, lang)
         actorname = 'LEAVEBLANK' if script.get('withoutActorName', False) else script.get('actorName', '').strip()
@@ -156,33 +160,14 @@ def parse_scripts(scripts, lang):
             if not actorname:
                 actorname = skinnameEN
             skinnameEN = 'Bon Homme Richard META'
-        if skinnameEN == 'Observer zero':
-            skinnameEN = 'Observer Zero'
-        if 'gaoxiong_dark' in paintingname:
-            skinnameEN = 'Takao META'
-        if 'qiye_dark' in paintingname:
-            skinnameEN = 'Enterprise META'
-        if 'jiahezhanlie' in paintingname:
-            if not actorname:
-                actorname = skinnameEN
-            skinnameEN = 'Kaga(BB)'
-        if 'chicheng_alter' in paintingname:
-            skinnameEN = 'Akagi META'
-        if 'moon' in paintingname:
-            skinnameEN = 'Arbiter The Moon XVIII'
-        if 'unknown6' in paintingname:
-            if not actorname:
-                actorname = skinnameEN
-            skinnameEN = 'War Protocol Scythe'
-        if 'linghangyuan1_5' in paintingname:
-            if not actorname:
-                actorname = skinnameEN
+        if 'TB/' in skinnameEN and skinnameEN != 'TB/Misc':
             skinnameEN = 'TB'
-        if 'shuixingjinian_6' in paintingname:
-            skinnameEN = 'Pamiat\' Merkuria/Event'
+        if 'Navi/' in skinnameEN and skinnameEN != 'Navi/Home Relaxation':
+            skinnameEN = 'Navi'
+        # why did lora get all the necessary banners???
         
         # todo: instead, check entirety of ship_skin_template for entries with a matching painting attribute, and prefer whichever entry doesn't have a shop_type_id attribute of 0
-        if paintingname in ['lupuleixite_3', 'longxiang_4', 'npcjianye_5', 'wuzang_3', 'geluosite_3', 'npcbulaimodun_6', 'huangjiafangzhou_6', 'npctianlangxing_5']:
+        if paintingname in ['npcjianye_5', 'npcbulaimodun_6', 'npctianlangxing_5']:
             if not actorname:
                 actorname = skinname
             skinnameEN += '/Theme Park'
@@ -190,8 +175,6 @@ def parse_scripts(scripts, lang):
             if not actorname:
                 actorname = skinname
             skinnameEN += '/Halloween'
-        if paintingname in ['kewei_6']: # todo: fix (duplicates the name for some reason)
-            skinnameEN += '2'
         if paintingname in ['npcfeiteliekaer_3', 'npcjunzhu_5', 'npcmalilan_3', 'npcmalilan_3_n']:
             if not actorname:
                 actorname = skinname
@@ -233,7 +216,7 @@ def parse_scripts(scripts, lang):
                 optcon = option['content']
                 for nc in book['code'][lang]:
                     optcon = re.sub('{{namecode:{}(:.+?)?}}'.format(nc), book['code'][lang][nc]['name'], optcon)
-                lines.append('| [{}] \'\'\'Option {}\'\'\'<br>{}'.format('O:Commander' if tb else '', option['flag'], optcon)) # usually Commander
+                lines.append('| [] \'\'\'Option {}\'\'\'<br>{}'.format(option['flag'], optcon)) # usually Commander
 
         if 'sequence' in script:
             seqlist = []
@@ -286,7 +269,7 @@ def build_memory(gid):
                     story['scripts'] = story['scripts'] + book['story'][lang][trigger.lower()]['scripts']
 
             if 'scripts' in story:
-                scriptlines, nobgname = parse_scripts(story['scripts'], lang)
+                scriptlines, nobgname = parse_scripts(story['scripts'], lang, story.get('defaultTb'))
                 lines += scriptlines
                 bgs = bgs.union(nobgname)
             lines += ['}}', '{{!}}-{{!}}']
@@ -354,53 +337,6 @@ memory_type = {
         3: 'Permanent'
     },
     3: {0: 'Character'}
-}
-
-# from skin_page_template.json
-shop_type = { # todo: use buildskinname.py instead
-    # 0: 'Original', # on wiki, this is alpha art
-    1: 'Christmas',
-    2: 'New Year',
-    3: 'Spring',
-    4: 'School',
-    6: 'Summer',
-    7: 'Party',
-    8: 'Halloween',
-    9: 'Casual',
-    10: 'Festival',
-    11: 'Idol',
-    12: 'Special Exercise',
-    13: 'Sport',
-    14: 'RaceQueen',
-    15: 'Hospital',
-    16: 'Bunny',
-    17: 'Maid',
-    18: 'Vampire',
-    19: 'Fairy Tale',
-    20: 'Home Relaxation',
-    21: 'Dance',
-    22: 'Hot Springs',
-    23: 'Work',
-    24: 'RPG',
-    25: 'Wild West',
-    26: 'Theme Park',
-    27: 'Nile Colors',
-    28: 'Ninja',
-    9997: 'Kai',
-    9998: 'Wedding',
-    9999: '_OTHER_9999', # other
-}
-
-shop_type_fixer = { # todo: find mislabeled shop_type instances
-    'Ayanami': {
-        'Casual': 'RaceQueen'
-    },
-    'Pamiat\' Merkuria': {
-        'Special Exercise': 'Prison'
-    },
-    'Prototype Bulin MKII': {
-        'OTHER': 'Event'
-    }
 }
 
 bgnames = {
@@ -685,7 +621,9 @@ if __name__ == '__main__':
     parser.add_argument('-b', '--background', default='', help='get story titles by background name')
     args = parser.parse_args()
     if args.download:
+        import buildskinname
         from downloader import dl_story
+        buildskinname.main(True)
         dl_story()
     init_book()
     if args.title:
