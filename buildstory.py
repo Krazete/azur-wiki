@@ -515,6 +515,7 @@ bgnames = {
     # Project Identity
     'project_tb': 'Project Identity TB',
     'project_oceana': 'Project Identity Oceana',
+    'project_explorer': 'Project Identity Explorer',
     # Port Backgrounds / Other
     # 'bg_main_day': 'MainDayBG',
     # 'bg_main_twilight': 'MainTwilightBG',
