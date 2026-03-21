@@ -258,7 +258,8 @@ def build_skinnames():
             npc = True
             if paint in fixes and fixes[paint].get('base'):
                 basename = fixes[paint]['base']
-            suffix = shop_type[tyid]
+                if tyid > 0:
+                    suffix = shop_type[tyid]
 
         miscat = []
         extra_fixes = {
