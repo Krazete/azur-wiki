@@ -52,7 +52,7 @@ def getwikiname(skinid, lang):
     skin = book['siren'][lang].get(str(skinid), book['skin'][lang].get(str(skinid)))
     if not skin:
         return ''
-    paint = skin.get('painting', '')
+    paint = skin.get('painting', '').lower()
     paint = re.sub(r'^npc|_(wjz|idolns|s|n)$', '', paint) # force standard sprite; may fail if nonexistent (e.g. new unreleased skin in Port Fashion Collection preview)
     if lang == 'EN':
         return wikinames.get(paint, '')
@@ -186,6 +186,8 @@ def parse_scripts(scripts, lang, defaultTb):
             elif skinnameEN and actorname and skinnameEN.split('/')[0] != actorname:
                 lines.append('| [S:{}:{}]'.format(skinnameEN, actorname))
             else:
+                if skinnameEN == '':
+                    print('WARNING: Null sprite called for actor {} with id {}.'.format(actorname, skinid))
                 lines.append('| [S:{}]'.format(skinnameEN))
             for subactor in subactors:
                 lines[-1] += '[S:{}]'.format(subactor)

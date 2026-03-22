@@ -153,7 +153,7 @@ if painting.is_dir():
     cmds = []
     for fn in os.listdir(painting):
         if Path(painting, fn).is_file() and '_tex' not in fn:
-            shipname = shipnames.get(re.sub('_n|_hx|_bj|_rw', '', fn), fn)
+            shipname = shipnames.get(re.sub('_n|_hx|_bj|_rw', '', fn.lower()), fn)
             cmds.append('{}{}python -m main2 {}-p {} -o "{}{}{}{}{}"'.format( # warning: often nonstandard
                 'IGNORE: ' if '_bj' in fn or '_rw' in fn or '_wjz' in fn else '',
                 'UNNAMED: ' if shipname == fn else '',

@@ -28,7 +28,7 @@ def build_halloffame():
             template = data[lang]['template'][str(tid)]
             shipid = re.sub(r'^memory_renqi', '', template['icon'])
 
-            ship = data['ships'][shipid].strip()
+            ship = data['ships'][shipid.lower()].strip()
             title = template['title'].strip()
             hall.setdefault(ship, {'langs': []})
             hall[ship]['langs'].append(lang)
