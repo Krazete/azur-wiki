@@ -53,6 +53,7 @@ def getwikiname(skinid, lang):
     if not skin:
         return ''
     paint = skin.get('painting', '')
+    paint = re.sub(r'^npc|_(wjz|idolns|s|n)$', '', paint) # force standard sprite; may fail if nonexistent (e.g. new unreleased skin in Port Fashion Collection preview)
     if lang == 'EN':
         return wikinames.get(paint, '')
     sgid = skin.get('ship_group')
@@ -166,23 +167,6 @@ def parse_scripts(scripts, lang, defaultTb):
             skinnameEN = 'Navi'
         # why did lora get all the necessary banners???
         
-        # todo: instead, check entirety of ship_skin_template for entries with a matching painting attribute, and prefer whichever entry doesn't have a shop_type_id attribute of 0
-        if paintingname in ['npcjianye_5', 'npcbulaimodun_6', 'npctianlangxing_5']:
-            if not actorname:
-                actorname = skinname
-            skinnameEN += '/Theme Park'
-        if paintingname in ['npcpucimaosi_2', 'npchaitunhao_2', 'npchuanxianghao_2', 'npcgangyishawa_2', 'npcweizhang_3']:
-            if not actorname:
-                actorname = skinname
-            skinnameEN += '/Halloween'
-        if paintingname in ['npcfeiteliekaer_3', 'npcjunzhu_5', 'npcmalilan_3', 'npcmalilan_3_n']:
-            if not actorname:
-                actorname = skinname
-            skinnameEN += '/Summer'
-        if paintingname in ['npcchuyue_3', 'npcchuyue_3_n']:
-            if not actorname:
-                actorname = skinname
-            skinnameEN += '/Travel'
         if re.search('_\d+', paintingname) and '/' not in skinnameEN: # detect if numbered paintingname tried to call itself the default skin
             if (skinnameEN, paintingname) not in mismatches:
                 mismatches.add((skinnameEN, paintingname))

@@ -224,7 +224,7 @@ def build_skinnames():
     suffix_incrementor = {}
     for skid in book['skin']:
         skin = book['skin'][skid]
-        paint = get_painting_lower(skin)
+        paint = get_painting_lower(skin) # todo: skip paintings starting with 'npc'; afterwards, use non-npc names to fill in npc data
         tyid = skin['shop_type_id']
         bg = skin['bg'] or 0
 
