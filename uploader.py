@@ -84,10 +84,15 @@ patterns = {
 }
 
 if __name__ == '__main__':
-    py = 'from uploader import signin, uploadimage, updateimage, cleanup\nsignin()\n\n'
+    py = 'from uploader import signin, uploadimage, updateimage, cleanup\nsignin()'
+    lastroot = None
+    lastship = None
     for root, dirs, files in os.walk('Texture2D'):
         if '_UPLOADED_' in root:
             continue
+        if root != lastroot:
+            py += '\n'
+            lastroot = root
         for file in files:
             if file.endswith('.jpg') or file.endswith('.png'):
                 path = '{}/{}'.format(root.replace('\\', '/'), file)
@@ -98,6 +103,10 @@ if __name__ == '__main__':
                         if re.search(r'/SHIP/{}'.format(re.escape(ship)), path):
                             content = '{{{{SkinFileData|{}}}}}'.format(ship)
                             break
+                    if ship != lastship:
+                        if lastship:
+                            py += '\n'
+                        lastship = ship
                 else:
                     for pattern in patterns:
                         if re.search(pattern, path):
@@ -185,7 +194,7 @@ Secret CD
     <Ship Name>Secret.png
 Commemorative Album Icon
     Album <Event Name>.png
-    [[Category:Character Memory folders]]
+    [[Category:Commemorative Album thumbnails]]
 
 Operation Siren Collection Archives Pictures
     [[Category:Collection Archives images]]

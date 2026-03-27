@@ -198,11 +198,11 @@ def parse_scripts(scripts, lang, defaultTb):
             lines.append('| [] {}'.format(actortext))
         
         if 'options' in script:
-            for option in script['options']:
+            for opti, option in enumerate(script['options']):
                 optcon = option['content']
                 for nc in book['code'][lang]:
                     optcon = re.sub('{{namecode:{}(:.+?)?}}'.format(nc), book['code'][lang][nc]['name'], optcon)
-                lines.append('| [] \'\'\'Option {}\'\'\'<br>{}'.format(option['flag'], optcon)) # usually Commander
+                lines.append('| [] \'\'\'Option {}\'\'\'<br>{}'.format(option.get('flag', opti + 1), optcon)) # usually Commander
 
         if 'sequence' in script:
             seqlist = []
@@ -434,6 +434,8 @@ bgnames = {
     'tianqiong': 'To a Brighter World',
     'guangying': 'Light & Shadow Fashion Shoot!',
     'chunyan': 'Spring Auction Adventure',
+    'italyv2': 'Daedalian Hymn',
+    'manyouzhe': 'The Vagabond\'s Recruitment Plan',
     # Project Identity
     'project_tb': 'Project Identity TB',
     'project_oceana': 'Project Identity Oceana',

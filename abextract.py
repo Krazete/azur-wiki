@@ -23,6 +23,7 @@ iconnames = {
     'equips': 'EquipSkinIcon {}', # revert for non-skin gear
     'furnitureicon': 'FurnIcon {}',
     'mangapic': 'Manga {}',
+    'medalalbum': 'Album {} (EVENT)',
     'skillicon': 'Skill {}',
     'spweapon': 'Augment {}',
     'strategyicon': 'Buff {}'

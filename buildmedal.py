@@ -108,9 +108,9 @@ def build_medal():
         name = medals[icon]['name']
         rank = medals[icon]['rank']
         condition = medals[icon]['condition']
-        condition = re.sub('"(.+?)"', '[[\g<1>]]', condition)
-        condition = re.sub('(stickers (?:from|in) )([\w\s\':&!]+)', '\g<1>[[\g<2>]]', condition)
-        condition = re.sub('the (.+?) event', '\g<1>', condition)
+        condition = re.sub(r'"(.+?)"', '[[\g<1>]]', condition)
+        condition = re.sub(r'(stickers (?:from|in) )([\w\s\':&!]+)', '\g<1>[[\g<2>]]', condition)
+        condition = re.sub(r'\[\[(?:the )?(.+?) event\]\]', '[[\g<1>]]', condition)
         for pattern in condition_fixes:
             fix = condition_fixes[pattern]
             condition = re.sub(pattern, fix, condition)
