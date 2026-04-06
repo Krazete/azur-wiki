@@ -23,6 +23,7 @@ ignorelist = [
     'Manjuu Star (Torpedo)',
     'Manjuu Star (Fighter)',
     'Manjuu Star (Bomber)',
+    '优米雅设备芙米拉占坑',
 ]
 
 def init_skin():
@@ -88,8 +89,9 @@ def build_skinbox(tid=None):
                     if 'display_icon' in skinbox['box'][bid]:
                         for display in skinbox['box'][bid]['display_icon']:
                             if int(iid) == display[1]:
-                                hasBox = True
-                                line += '|ICON={}'.format(skinbox['box'][bid]['icon'])
+                                icon = skinbox['box'][bid]['icon']
+                                hasBox = icon != 'Props/appearanceboxshijiexunyou'
+                                line += '|ICON={}'.format(icon)
             if iid not in themeids:
                 # print('SPECIAL/WRONG:', item['name'])
                 line = '|SPECIAL/WRONG=' + iid + line
