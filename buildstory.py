@@ -435,6 +435,8 @@ bgnames = {
     'guangying': 'Light & Shadow Fashion Shoot!',
     'chunyan': 'Spring Auction Adventure',
     'italyv2': 'Daedalian Hymn',
+    'logo_oxs': 'OXS',
+    'port_NY_future': 'New York Port Future',
     'manyouzhe': 'The Vagabond\'s Recruitment Plan',
     # Project Identity
     'project_tb': 'Project Identity TB',
