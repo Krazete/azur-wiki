@@ -45,8 +45,9 @@ def cleanup():
 
 ships = []
 for paintingname in shipnames: # base names only
-    if '_' not in paintingname or re.match(
-        r'vtuber_\w+?|\w+?_(alter|younv|idol|super|ger|cv|jp|doa|shanluan|tolove)',
+    if '_' not in re.sub(
+        r'^vtuber_|_(alter|younv|idol|super|ger|cv|jp|doa|shanluan|tolove)$',
+        '',
         paintingname
     ): # hololive|meta|child|muse|bulin|yorck|amagi|niizuki|collabs
         ships.append(shipnames[paintingname])
@@ -161,6 +162,9 @@ Backgrounds
         [[Category:Memory artwork]]
 Event Point Icon
     <Name> Pt.png
+    [[Category:Event point icons]]
+Trust Point Icon
+    <Ship Name> Pt.png
     [[Category:Event point icons]]
 Retrofit Material Icon
     <Name>.png

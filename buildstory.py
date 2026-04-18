@@ -438,15 +438,17 @@ bgnames = {
     'logo_oxs': 'OXS',
     'port_NY_future': 'New York Port Future',
     'manyouzhe': 'The Vagabond\'s Recruitment Plan',
+    'doav3': 'Beachside Brilliance',
+    'map_doa': 'Vacation Lane Map',
     # Project Identity
     'project_tb': 'Project Identity TB',
     'project_oceana': 'Project Identity Oceana',
     'project_explorer': 'Project Identity Explorer',
-    # Port Backgrounds / Other
-    # 'bg_main_day': 'MainDayBG',
-    # 'bg_main_twilight': 'MainTwilightBG',
-    # 'bg_main_night': 'MainNightBG',
-    # 'bg_story_mikasa': 'Bg mikasa 1',
+    # Port Backgrounds / Other # need to remove "Memory" prefix and "Background" suffix
+    'main_day': 'MainDayBG',
+    'main_twilight': 'MainTwilightBG',
+    'main_night': 'MainNightBG',
+    'story_mikasa': 'Bg mikasa 1',
     '': '',
 }
 
