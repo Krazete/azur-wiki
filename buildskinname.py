@@ -93,6 +93,7 @@ fixes = {
     'ryouko_shallow': {'base': 'Ryouko Amahara'},
     'gaoxiong_dark': {'base': 'Takao META'},
     'gaoxiong_dark_shadow': {'base': 'Takao META'},
+    'wuzang_younv': {'base': 'Musashi-chan'},
     # type only
     'gin_2': {'type': 'Event'},
     'kin_2': {'type': 'Event'},
