@@ -94,6 +94,8 @@ fixes = {
     'gaoxiong_dark': {'base': 'Takao META'},
     'gaoxiong_dark_shadow': {'base': 'Takao META'},
     'wuzang_younv': {'base': 'Musashi-chan'},
+    'npckenisibao_alter': {'base': 'Königsberg META'},
+    'npcyibei_alter': {'base': 'Elbe META'},
     # type only
     'gin_2': {'type': 'Event'},
     'kin_2': {'type': 'Event'},
@@ -133,6 +135,7 @@ fixes = {
     # base and type
     'npcchuyue_3': {'base': 'Hatsuzuki', 'type': 'Travel'},
     'npcmalilan_3': {'base': 'Maryland', 'type': 6},
+    'z52_3': {'base': 'Z52', 'type': 6},
     'linghangyuan1_1': {'base': 'TB', 'type': 'Baby'},
     'linghangyuan1_2': {'base': 'TB', 'type': 'BabyCasual'},
     'linghangyuan1_3': {'base': 'TB', 'type': 'BabySport'},
