@@ -96,6 +96,13 @@ fixes = {
     'wuzang_younv': {'base': 'Musashi-chan'},
     'npckenisibao_alter': {'base': 'Königsberg META'},
     'npcyibei_alter': {'base': 'Elbe META'},
+    'emperor': {'base': 'Arbiter: The Emperor IV'},
+    'gezi': {'base': 'Götz von Berlichingen'},
+    'molici': {'base': 'Prinz Moritz'},
+    'u2501': {'base': 'U-2501'},
+    'yibei_alter': {'base': 'Elbe META'},
+    'z14': {'base': 'Z14'},
+    'z15': {'base': 'Z15'},
     # type only
     'gin_2': {'type': 'Event'},
     'kin_2': {'type': 'Event'},
@@ -133,9 +140,6 @@ fixes = {
     'npcyanzhan_4': {'type': 28}, # Warspite
     'npcyunxian_3': {'type': 28}, # Unzen
     # base and type
-    'npcchuyue_3': {'base': 'Hatsuzuki', 'type': 'Travel'},
-    'npcmalilan_3': {'base': 'Maryland', 'type': 6},
-    'z52_3': {'base': 'Z52', 'type': 6},
     'linghangyuan1_1': {'base': 'TB', 'type': 'Baby'},
     'linghangyuan1_2': {'base': 'TB', 'type': 'BabyCasual'},
     'linghangyuan1_3': {'base': 'TB', 'type': 'BabySport'},
@@ -174,6 +178,24 @@ fixes = {
     'tansuozhe31_2': {'base': 'Lora', 'type': 'ShySchool'},
     'tansuozhe32_1': {'base': 'Lora', 'type': 'Outgoing'},
     'tansuozhe32_2': {'base': 'Lora', 'type': 'OutgoingSchool'},
+    'npcchuyue_3': {'base': 'Hatsuzuki', 'type': 'Travel'},
+    'npcmalilan_3': {'base': 'Maryland', 'type': 6},
+    'z52_3': {'base': 'Z52', 'type': 6},
+    'gezi_2': {'base': 'Götz von Berlichingen', 'type': 6},
+    'luoen_5': {'base': 'Roon', 'type': 9},
+    'mojiaduoer_4': {'base': 'Mogador', 'type': 'Summer2'},
+    'mojiaduoer_5': {'base': 'Mogador', 'type': 'Summer2Form2'},
+    'molici_2': {'base': 'Prinz Moritz', 'type': 6},
+    'hude_6': {'base': 'Hood', 'type': 'Party2'},
+    'tiancheng_cv_3': {'base': 'Amagi(CV)', 'type': 6},
+    'u2501_2': {'base': 'U-2501', 'type': 6},
+    'xipeierhaijunshangjiang_g': {'base': 'Admiral Hipper', 'type': 9997},
+    'z14_2': {'base': 'Z14', 'type': 6},
+    'z15_2': {'base': 'Z15', 'type': 6},
+    'npcaimudeng_5': {'base': 'Emden', 'type': 6}, # guess; future skin
+    'npcaogusite_4': {'base': 'August von Parseval', 'type': 7}, # guess; future skin
+    'npcluyijiushi_4': {'base': 'Saint Louis', 'type': 6}, # guess; future skin
+    'npcyanusi_7': {'base': 'Janus', 'type': 6}, # guess; future skin
     # shadows
     'qiye_dark': {'base': 'Enterprise META'}, # not shadow
     'qiye_dark_shadow': {'base': 'Enterprise META'},
