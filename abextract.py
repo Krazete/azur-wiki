@@ -119,7 +119,7 @@ for obj in assetbundles.objects:
         elif parent.name in shipassets:
             template = shipassets[parent.name]
             parent = Path(parent.parent, 'SHIP')
-            shipname = shipnames.get(asset.m_Name.lower().replace('_hx', ''), asset.m_Name)
+            shipname = re.sub(':', '', shipnames.get(asset.m_Name.lower().replace('_hx', ''), asset.m_Name))
             if '_hx' in asset.m_Name:
                 shipname += 'CN'
             outpath = Path(parent, template.format(shipname))
@@ -154,7 +154,7 @@ if painting.is_dir():
     cmds = []
     for fn in os.listdir(painting):
         if Path(painting, fn).is_file() and '_tex' not in fn:
-            shipname = shipnames.get(re.sub('_n|_hx|_bj|_rw', '', fn.lower()), fn)
+            shipname = re.sub(':', '', shipnames.get(re.sub('_n|_hx|_bj|_rw', '', fn.lower()), fn))
             cmds.append('{}{}python -m main2 {}-p {} -o "{}{}{}{}{}"'.format( # warning: often nonstandard
                 'IGNORE: ' if '_bj' in fn or '_rw' in fn or '_wjz' in fn else '',
                 'UNNAMED: ' if shipname == fn else '',
