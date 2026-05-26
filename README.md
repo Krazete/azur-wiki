@@ -2,6 +2,8 @@
 
 Tools I made to help me edit pages on the [Azur Lane Wiki](https://azurlane.koumakan.jp).
 
+Uses data from [AzurLaneLuaScripts](https://github.com/AzurLaneTools/AzurLaneLuaScripts).
+
 ## Setup
 ```sh
 python -m venv venv

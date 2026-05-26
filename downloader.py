@@ -6,7 +6,7 @@ from urllib.request import urlopen
 from github import Github
 from uploader import signin
 
-repo = Github().get_repo('AzurLaneTools/AzurLaneData')
+repo = Github().get_repo('AzurLaneTools/AzurLaneLuaScripts')
 
 versionlog = {}
 if os.path.exists('versionlog.json'):
@@ -72,7 +72,7 @@ def update(langs, paths):
 
 def dl_decor():
     '''Download decor data files and List of Furniture Sets wiki page section.'''
-    update(0b111, ['ShareCfg/backyard_theme_template'])
+    update(0b111, ['sharecfg/backyard_theme_template'])
     os.makedirs('input', exist_ok=True)
     alw = signin()
     html = alw.pages['Decorations'].text()
@@ -82,24 +82,24 @@ def dl_decor():
 
 def dl_child():
     '''Download Project Identity: TB data files.'''
-    contents = repo.get_contents('EN/ShareCfg')
+    contents = repo.get_contents('EN/sharecfg')
     paths = []
     for content in contents:
         if content.name.startswith('child'):
-            paths.append('ShareCfg/{}'.format(content.name[:-5])) # trim '.json'
+            paths.append('sharecfg/{}'.format(content.name[:-5])) # trim '.json'
     update(0b010, paths)
 
 def dl_story():
     '''Download story data files.'''
     paths = [
-        'ShareCfg/memory_group', # memory groups
-        'ShareCfg/memory_template', # memories
-        'ShareCfg/secretary_special_ship', # special secretary names
-        'ShareCfg/ship_skin_template', # shipgirl names
-        'ShareCfg/name_code', # shipgirl namecodes
-        # 'GameCfg/story', # memory text
-        'GameCfg/dungeon' # battle sim info
+        'sharecfg/memory_group', # memory groups
+        'sharecfg/memory_template', # memories
+        'sharecfg/secretary_special_ship', # special secretary names
+        'sharecfg/ship_skin_template', # shipgirl names
+        'sharecfg/name_code', # shipgirl namecodes
+        # 'gamecfg/story', # memory text
+        'gamecfg/dungeon' # battle sim info
     ]
     update(0b111, paths)
-    update(0b110, ['GameCfg/story'])
-    update(0b001, ['GameCfg/storyjp']) # nonstandard naming
+    update(0b110, ['gamecfg/story'])
+    update(0b001, ['gamecfg/storyjp']) # nonstandard naming
