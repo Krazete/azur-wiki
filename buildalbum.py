@@ -16,6 +16,7 @@ fix_event = {
 }
 fix_page = {
     'Midsummer Returns! The Villa Reconstruction': 'A Rose on the High Tower',
+    'The Opulent! The Glamorous! Luxury Bay!': 'Alliance Before the Hagiobull',
 }
 fix_section = {
     'Substellar Crepuscule': 'One-Time Missions',
@@ -24,6 +25,7 @@ fix_section = {
     'Toward Tulipa\'s Seas': 'One-Time Missions',
     'A Rose on the High Tower': 'One-Time Missions',
     'Tempesta and Islas de Libertád': 'Commemorative Album Missions',
+    'Alliance Before the Hagiobull': 'One-Time Missions',
 }
 
 def build_page():
