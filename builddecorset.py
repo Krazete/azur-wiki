@@ -91,7 +91,7 @@ def build_decorset(tid, endbar):
     iids = themeids + list(decorset['item'])
     visited = set()
     for iid in iids:
-        if iid in visited:
+        if iid in visited or not iid.isdigit():
             continue
         visited.add(iid)
         item = decorset['item'][iid]
@@ -154,6 +154,8 @@ def build_decoritem(item, endbar):
     notes = []
 
     for rid in decorset['rel']:
+        if not rid.isdigit():
+            continue
         rel = decorset['rel'][rid]
         if rel['fur_id'] == item['id']:
             matches = re.match('(.+)——(.+)', rel['desc'])

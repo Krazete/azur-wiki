@@ -249,6 +249,8 @@ def build_skinnames():
 
     suffix_incrementor = {}
     for skid in book['skin']:
+        if not skid.isdigit():
+            continue
         skin = book['skin'][skid]
         paint = get_painting_lower(skin) # todo: skip paintings starting with 'npc'; afterwards, use non-npc names to fill in npc data
         tyid = skin['shop_type_id']
@@ -342,6 +344,8 @@ def build_skinnames():
         classification = ''
         rarities = {} # histogram of rarities; lower count = npc (usually)
         for stid in book['stat']:
+            if not stid.isdigit():
+                continue
             stskid = book['stat'][stid]['skin_id']
             if stskid == int(skid) or stskid // 10 == soup:
                 classification = ship_class[book['stat'][stid]['type']]

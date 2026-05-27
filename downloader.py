@@ -51,6 +51,7 @@ def int_to_langs(n):
 
 def update(langs, paths):
     '''Download files of the specified languages and paths if they are outdated.'''
+    # return # uncomment to disable downloading
     if isinstance(langs, int):
         langs = int_to_langs(langs)
     for lang in langs:
@@ -96,6 +97,7 @@ def dl_story():
         'ShareCfg/memory_template', # memories
         'ShareCfg/secretary_special_ship', # special secretary names
         'ShareCfg/ship_skin_template', # shipgirl names
+        'sharecfgdata/ship_skin_template', # more shipgirl names
         'ShareCfg/name_code', # shipgirl namecodes
         # 'GameCfg/story', # memory text
         'GameCfg/dungeon' # battle sim info

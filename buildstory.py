@@ -22,6 +22,7 @@ def init_book():
         'ShareCfg/memory_template': 'memory',
         'ShareCfg/secretary_special_ship': 'siren',
         'ShareCfg/ship_skin_template': 'skin',
+        'sharecfgdata/ship_skin_template': 'skin2',
         'ShareCfg/name_code': 'code',
         'GameCfg/story': 'story',
         'GameCfg/dungeon': 'battle'
@@ -49,11 +50,18 @@ def get_groupid(title, i=0):
             i -= 1
 
 def getwikiname(skinid, lang):
-    skin = book['siren'][lang].get(str(skinid), book['skin'][lang].get(str(skinid)))
+    skin = book['siren'][lang].get(
+        str(skinid),
+        book['skin2'][lang].get(
+            str(skinid),
+            book['skin'][lang].get(str(skinid))
+        )
+    )
     if not skin:
         return ''
     paint = skin.get('painting', '').lower()
-    paint = re.sub(r'^npc|_(wjz|idolns|s|n)$', '', paint) # force standard sprite; may fail if nonexistent (e.g. new unreleased skin in Port Fashion Collection preview)
+    if paint not in ['npckenisibao_alter']: # failure cases
+        paint = re.sub(r'^npc|_(wjz|idolns|s|n)$', '', paint) # force standard sprite; may fail if nonexistent (e.g. new unreleased skin in Port Fashion Collection preview)
     if lang == 'EN':
         return wikinames.get(paint, '')
     sgid = skin.get('ship_group')
@@ -143,6 +151,8 @@ def parse_scripts(scripts, lang, defaultTb):
             actortext = 'Option {}<br>{}'.format(script['optionFlag'], actortext)
 
         for nc in book['code'][lang]:
+            if not nc.isdigit():
+                continue
             skinnameEN = re.sub('{{namecode:{}(:.+?)?}}'.format(nc), book['code']['EN'][nc]['name'], skinnameEN)
             skinname = re.sub('{{namecode:{}(:.+?)?}}'.format(nc), book['code'][lang][nc]['name'], skinname)
             actorname = re.sub('{{namecode:{}(:.+?)?}}'.format(nc), book['code'][lang][nc]['name'], actorname)
@@ -201,6 +211,8 @@ def parse_scripts(scripts, lang, defaultTb):
             for opti, option in enumerate(script['options']):
                 optcon = option['content']
                 for nc in book['code'][lang]:
+                    if not nc.isdigit():
+                        continue
                     optcon = re.sub('{{namecode:{}(:.+?)?}}'.format(nc), book['code'][lang][nc]['name'], optcon)
                 lines.append('| [] \'\'\'Option {}\'\'\'<br>{}'.format(option.get('flag', opti + 1), optcon)) # usually Commander
 
@@ -215,6 +227,8 @@ def parse_scripts(scripts, lang, defaultTb):
 
 def denamecode(line, lang):
     for nc in book['code'][lang]:
+        if not nc.isdigit():
+            continue
         line = re.sub('{{namecode:{}(:.+?)?}}'.format(nc), book['code'][lang][nc]['name'], line)
     return line
 
