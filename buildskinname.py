@@ -1,5 +1,6 @@
 import json
 import re
+import lupa
 from argparse import ArgumentParser
 
 shop_type = { # inconsistent (e.g. luoma_4 should be Summer, not RaceQueen; Bluray is unaccounted for)
@@ -219,17 +220,22 @@ book = {}
 def init_book():
     '''Initializes `child` object with JSON files downloaded from AzurLaneData repo.'''
     files = {
-        'ShareCfg/ship_skin_template': 'skin',
-        'ShareCfg/name_code': 'code',
+        'sharecfg/ship_skin_template': 'skin',
+        'sharecfg/name_code': 'code',
         'sharecfgdata/ship_data_statistics': 'stat',
         'sharecfgdata/shop_template': 'shop',
         'sharecfgdata/gametip': 'tip'
     }
+    lua = lupa.LuaRuntime()
     for file in files:
-        path = 'EN/{}.json'.format(file)
+        path = 'EN/{}.lua'.format(file)
         with open(path, 'r', encoding='utf-8') as fp:
+            print(path)
+            luacoderaw = fp.read()
+            luacode = re.sub(r'end\)\(\)\n\(function \(\)\n', '', luacoderaw)
+            lua.execute(luacode)
             cat = files[file]
-            book[cat] = json.load(fp)
+            # book[cat] = json.load(fp)
 
 def get_decoded_name(skin):
     if 'namecode' in skin['name']:
@@ -433,8 +439,8 @@ def main(dl):
     if dl:
         from downloader import update
         update(['EN'], [
-            'ShareCfg/ship_skin_template',
-            'ShareCfg/name_code',
+            'sharecfg/ship_skin_template',
+            'sharecfg/name_code',
             'sharecfgdata/ship_data_statistics',
             'sharecfgdata/shop_template',
             'sharecfgdata/gametip'

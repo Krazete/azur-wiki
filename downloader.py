@@ -56,7 +56,7 @@ def update(langs, paths):
     for lang in langs:
         gh_version = get_gh_version(lang)
         for path in paths:
-            fullpath = '{}/{}.json'.format(lang, path)
+            fullpath = '{}/{}.lua'.format(lang, path)
             vl_version = versionlog.get(fullpath, '')
             if vl_version != gh_version:
                 os.makedirs(Path(fullpath).parent, exist_ok=True)
