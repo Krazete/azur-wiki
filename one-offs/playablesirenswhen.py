@@ -9,6 +9,10 @@ with open('EN\ShareCfg\memory_group.json', 'rb') as fp:
     memories = json.load(fp)
 with open('EN\ShareCfg\ship_skin_template.json', 'rb') as fp:
     skins = json.load(fp)
+with open('EN\sharecfgdata\ship_skin_template.json', 'rb') as fp:
+    skins2 = json.load(fp)
+    for sid in skins2:
+        skins[sid] = skins2[sid]
 # with open('EN\ShareCfg\enemy_data_statistics.json', 'rb') as fp: # non-playable enemies
 #     enemies = json.load(fp)
 
@@ -131,8 +135,14 @@ for bsid in battlesims:
                             yay2 = yay1 + [skin['painting'], skin['prefab'], skin['name']]
                             nochapters = True
                             for chid in chapters:
+                                if not chid.isdigit():
+                                    continue
                                 if bsid in chapters[chid]['story']:
+                                    if not bsid.isdigit():
+                                        continue
                                     for mid in memories:
+                                        if not mid.isdigit():
+                                            continue
                                         memory = memories[mid]
                                         if int(chid) in memory['memories']:
                                             yay3 = yay2 + [memory['title'], str(memory['memories'].index(int(chid)) + 1)]

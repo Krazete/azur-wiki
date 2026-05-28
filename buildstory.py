@@ -69,10 +69,13 @@ def getwikiname(skinid, lang):
     if not stid:
         return skin['name']
     for skid in book['skin'][lang]:
+        if not skid.isdigit():
+            continue
         skin2 = book['skin'][lang][skid]
         if skin2['ship_group'] == sgid and skin2['group_index'] == 0:
             skname = skin2['name'].strip()
             return '{}'.format(skname)
+    return '{}/UNKNOWN'.format(skinid)
 
 def parse_scripts(scripts, lang, defaultTb):
     lines = []
@@ -89,7 +92,13 @@ def parse_scripts(scripts, lang, defaultTb):
             skinid = defaultTb
         skinnameEN = getwikiname(skinid, 'EN')
         skinname = getwikiname(skinid, lang)
-        actorname = 'LEAVEBLANK' if script.get('withoutActorName', False) else script.get('actorName', '').strip()
+        if script.get('withoutActorName', False):
+            actorname = 'LEAVEBLANK'
+        else:
+            actorname = script.get('actorName', '')
+            if isinstance(actorname, int):
+                actorname = getwikiname(actorname, lang)
+            actorname = actorname.strip()
         if not actorname and skinnameEN != skinname:
             actorname = skinname.split('/')[0]
         actortext = script.get('say', '').strip()
@@ -296,6 +305,8 @@ def build_memory(gid):
 def get_groupids_by_painting(name):
     '''Find stories that include the specified shipgirl by name, skin name, or skin id.'''
     for skid in book['skin']['EN']:
+        if not skid.isdigit():
+            continue
         skin = book['skin']['EN'][skid]
         if name.lower() in skin.get('name').lower() or name.lower() in skin.get('painting').lower():
             # skid = skin['ship_group'] # should be the same already
@@ -308,11 +319,15 @@ def get_groupids_by_painting(name):
                     stids.append(story['id']) # capitalization difference between stid and story['id']
             mids = []
             for mid in book['memory']['EN']:
+                if not mid.isdigit():
+                    continue
                 memory = book['memory']['EN'][mid]
                 if memory.get('story') in stids:
                     mids.append(memory['id']) # mid is str, memory['id'] is int
             titles = set()
             for gid in book['group']['EN']:
+                if not gid.isdigit():
+                    continue
                 group = book['group']['EN'][gid]
                 for gmid in group.get('memories', []):
                     if gmid in mids:

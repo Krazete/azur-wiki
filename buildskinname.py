@@ -221,6 +221,7 @@ def init_book():
     files = {
         'ShareCfg/ship_skin_template': 'skin',
         'ShareCfg/name_code': 'code',
+        'sharecfgdata/ship_skin_template': 'skin2',
         'sharecfgdata/ship_data_statistics': 'stat',
         'sharecfgdata/shop_template': 'shop',
         'sharecfgdata/gametip': 'tip'
@@ -230,6 +231,8 @@ def init_book():
         with open(path, 'r', encoding='utf-8') as fp:
             cat = files[file]
             book[cat] = json.load(fp)
+    for key in book['skin2']: # seems like skin2 is updated while skin is not
+        book['skin'][key] = book['skin2'][key]
 
 def get_decoded_name(skin):
     if 'namecode' in skin['name']:
