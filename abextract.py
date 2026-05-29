@@ -170,4 +170,4 @@ if painting.is_dir():
     if len(cmds):
         os.makedirs('Texture2D/SHIP', exist_ok=True)
         with open('Texture2D/SHIP/azur-paint.txt', 'wb') as fp:
-            fp.write(bytes('\n'.join(cmds), 'utf-8'))
+            fp.write(bytes('\n'.join(cmds) + '\n', 'utf-8'))
