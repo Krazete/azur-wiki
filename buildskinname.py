@@ -66,6 +66,7 @@ ship_class = { # from SharedCfg/ship_data_by_type.json and SharedCfg/enemy_data_
 fixes = {
     # painting: {'base': base name, 'type': suffix or shop type id}
     # base only
+	"jinqu": {'base': 'Enterprise (Royal Navy)'},
     'hdn101': {'base': 'Neptune (Neptunia)'},
     'xia_doa': {'base': 'Kasumi (Venus Vacation)'},
     'xuebugui': {'base': 'Fubuki (Senran Kagura)'},
