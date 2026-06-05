@@ -98,7 +98,6 @@ fixes = {
     'npckenisibao_alter': {'base': 'Königsberg META'},
     'npcyibei_alter': {'base': 'Elbe META'},
     'emperor': {'base': 'Arbiter: The Emperor IV'},
-    'gezi': {'base': 'Götz von Berlichingen'},
     'molici': {'base': 'Prinz Moritz'},
     'u2501': {'base': 'U-2501'},
     'yibei_alter': {'base': 'Elbe META'},
