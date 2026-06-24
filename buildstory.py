@@ -24,6 +24,7 @@ def init_book():
         'ShareCfg/ship_skin_template': 'skin',
         'sharecfgdata/ship_skin_template': 'skin2',
         'ShareCfg/name_code': 'code',
+        'sharecfgdata/ship_data_statistics': 'stat',
         'GameCfg/story': 'story',
         'GameCfg/dungeon': 'battle'
     }
@@ -50,6 +51,10 @@ def get_groupid(title, i=0):
             i -= 1
 
 def getwikiname(skinid, lang):
+    stat = book['stat'][lang].get(str(skinid)) # TODO: dunno where, but there's a big problem with CN and JP names (like mistakenly calling random ships Enterprise or Little Cheshire)
+    if stat and lang != 'EN':
+        print(stat.get('name'))
+        return stat.get('name')
     skin = book['siren'][lang].get(
         str(skinid),
         book['skin2'][lang].get(
@@ -102,13 +107,16 @@ def parse_scripts(scripts, lang, defaultTb):
         if not actorname and skinnameEN != skinname:
             actorname = skinname.split('/')[0]
         actortext = script.get('say', '').strip()
+        actortext = re.sub('\[', '【', actortext)
+        actortext = re.sub('\]', '】', actortext)
+        actortext = re.sub('\|', '', actortext)
         actortext = re.sub('\n', '<br>', actortext)
         if tb:
             skinnameEN = skinnameEN.replace('/OTHER', '')
             skinname = skinname.replace('/OTHER', '')
             actortext = re.sub('\{tb\}|\$\d+', '<{}>'.format(commander[lang]), actortext)
-        # actorname = re.sub('\{playername\}', commander[lang], actorname)
-        # actortext = re.sub('\{playername\}', commander[lang], actortext)
+        actorname = re.sub('\{playername\}', commander[lang], actorname)
+        actortext = re.sub('\{playername\}', commander[lang], actortext)
 
         subactors = []
         if 'subActors' in script: # todo: include subactors in output file

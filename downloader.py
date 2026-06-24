@@ -99,6 +99,7 @@ def dl_story():
         'ShareCfg/ship_skin_template', # shipgirl names
         'sharecfgdata/ship_skin_template', # more shipgirl names
         'ShareCfg/name_code', # shipgirl namecodes
+        'sharecfgdata/ship_data_statistics', # shipgirl stats by id
         # 'GameCfg/story', # memory text
         'GameCfg/dungeon' # battle sim info
     ]

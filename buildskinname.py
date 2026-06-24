@@ -139,6 +139,8 @@ fixes = {
     'npclafeiii_4': {'type': 10}, # Laffey II
     'npcyanzhan_4': {'type': 28}, # Warspite
     'npcyunxian_3': {'type': 28}, # Unzen
+    'adiliao_3': {'type': 7}, # Attilio Regolo
+    'biaoqiang_4': {'type': 'CoCo'}, # Javelin
     # base and type
     'linghangyuan1_1': {'base': 'TB', 'type': 'Baby'},
     'linghangyuan1_2': {'base': 'TB', 'type': 'BabyCasual'},
