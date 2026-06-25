@@ -5,6 +5,7 @@ from functools import lru_cache
 from urllib.request import urlopen
 from github import Github
 from uploader import signin
+from root import root
 
 repo = Github().get_repo('AzurLaneTools/AzurLaneData')
 
@@ -16,7 +17,11 @@ if os.path.exists('versionlog.json'):
 def get_gh_file(path, decode=False):
     '''Returns decoded content of path or retrieves HTML if content is empty.
     Set decode to True to return the content as a string instead of bytes.'''
-    content = repo.get_contents(path)
+    try:
+        content = repo.get_contents(path)
+    except Exception as e:
+        print('WARNING:', path, 'could not be retrieved.')
+        return b'{}'
     if isinstance(content, list):
         print('ERROR:', path, 'is a folder, not a file.')
     elif content.content == '':
@@ -62,7 +67,7 @@ def update(langs, paths):
             if vl_version != gh_version:
                 os.makedirs(Path(fullpath).parent, exist_ok=True)
                 bcontent = get_gh_file(fullpath)
-                with open(fullpath, 'wb') as fp:
+                with open(root + fullpath, 'wb') as fp:
                     fp.write(bcontent)
                 versionlog[fullpath] = gh_version
                 print('UPDATED:', fullpath)
@@ -100,7 +105,7 @@ def dl_story():
         'sharecfgdata/ship_skin_template', # more shipgirl names
         'ShareCfg/name_code', # shipgirl namecodes
         'sharecfgdata/ship_data_statistics', # shipgirl stats by id
-        # 'GameCfg/story', # memory text
+        'GameCfg/story', # memory text
         'GameCfg/dungeon' # battle sim info
     ]
     update(0b111, paths)

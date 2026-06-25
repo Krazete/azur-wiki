@@ -2,6 +2,7 @@ import os
 import re
 import json
 from argparse import ArgumentParser
+from root import root
 
 collection = {}
 
@@ -35,7 +36,7 @@ hardsubs = {
 
 def init_collection():
     for suffix in ['group', 'template']:
-        with open('EN/ShareCfg/world_collection_file_{}.json'.format(suffix), 'r', encoding='utf-8') as fp:
+        with open(root + 'EN/ShareCfg/world_collection_file_{}.json'.format(suffix), 'r', encoding='utf-8') as fp:
             collection[suffix] = json.load(fp)
 
 def build_page():

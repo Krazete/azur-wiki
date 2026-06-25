@@ -5,6 +5,7 @@ import UnityPy
 from UnityPy.files import BundleFile
 from pathlib import Path
 from argparse import ArgumentParser
+from root import root
 
 medals = {}
 
@@ -15,7 +16,7 @@ condition_fixes = {
 }
 
 def init_medals():
-    with open('EN/ShareCfg/medal_template.json', 'r', encoding='utf-8') as fp:
+    with open(root + 'EN/ShareCfg/medal_template.json', 'r', encoding='utf-8') as fp:
         medal_template = json.load(fp)
         for id in medal_template:
             if id != 'all':

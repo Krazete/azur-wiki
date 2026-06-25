@@ -2,6 +2,7 @@ import re
 import json
 from urllib.parse import quote
 from argparse import ArgumentParser
+from root import root
 
 with open('output/slashname.json', 'r', encoding='utf-8') as fp:
     wikinames = json.load(fp)
@@ -32,7 +33,7 @@ def init_book():
         for subpath in subpaths:
             cat = subpaths[subpath]
             path = '{}/{}{}.json'.format(lang, subpath, 'jp' if cat == 'story' and lang == 'JP' else '')
-            with open(path, 'r', encoding='utf-8') as fp:
+            with open(root + path, 'r', encoding='utf-8') as fp:
                 book.setdefault(cat, {})
                 book[cat][lang] = json.load(fp)
         if tb:

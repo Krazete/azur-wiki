@@ -3,6 +3,7 @@ import json
 from argparse import ArgumentParser
 from github import Github
 from educate import textures
+from root import root
 
 # Initialize
 
@@ -14,7 +15,7 @@ def init_child():
     for filename in os.listdir(folder):
         if filename.startswith('child_') and filename.endswith('.json'):
             suffix = filename[6:-5]
-            with open('{}/{}'.format(folder, filename), 'r', encoding='utf-8') as fp:
+            with open(root + '{}/{}'.format(folder, filename), 'r', encoding='utf-8') as fp:
                 child[suffix] = json.load(fp)
 
 # Save

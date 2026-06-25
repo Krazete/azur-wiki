@@ -2,6 +2,7 @@ import os
 import json
 import re
 from argparse import ArgumentParser
+from root import root
 
 filelist = [
     'ShareCfg/activity_template',
@@ -14,7 +15,7 @@ data = {}
 
 def init_data():
     for file in filelist:
-        with open('EN/{}.json'.format(file), 'rb') as fp:
+        with open(root + 'EN/{}.json'.format(file), 'rb') as fp:
             data[file.split('/')[-1]] = json.load(fp)
 
 def build_tasklist(year, month):

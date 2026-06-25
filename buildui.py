@@ -1,6 +1,7 @@
 import json
 import re
 from argparse import ArgumentParser
+from root import root
 
 langs = ['CN', 'EN', 'JP']
 uis = {}
@@ -11,10 +12,10 @@ months = ['', 'Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oc
 def init():
     for lang in langs:
         uis.setdefault(lang, {})
-        with open('{}/ShareCfg/item_data_battleui.json'.format(lang), 'rb') as fp:
+        with open(root + '{}/ShareCfg/item_data_battleui.json'.format(lang), 'rb') as fp:
             uis[lang] = json.load(fp)
         shops.setdefault(lang, {})
-        with open('{}/ShareCfg/pay_data_display.json'.format(lang), 'rb') as fp:
+        with open(root + '{}/ShareCfg/pay_data_display.json'.format(lang), 'rb') as fp:
             shops[lang] = json.load(fp)
 
 def getdates(uiid, lang):

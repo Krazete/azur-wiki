@@ -1,12 +1,13 @@
 import re
 import json
 from argparse import ArgumentParser
+from root import root
 
 data = {}
 hall = {}
 
 def init_data():
-    with open('EN/ShareCfg/activity_medal_group.json', 'r', encoding='utf-8') as fp:
+    with open(root + 'EN/ShareCfg/activity_medal_group.json', 'r', encoding='utf-8') as fp:
         global data
         data = json.load(fp)
 

@@ -2,6 +2,7 @@ import os
 import json
 from PIL import Image
 from argparse import ArgumentParser
+from root import root
 
 parser = ArgumentParser()
 parser.add_argument('-d', '--download', action='store_true', help='download data files')
@@ -17,7 +18,7 @@ letters = 'abcdefghijklmnopqrstuvwxyz'
 txts = []
 mats = set()
 
-with open('EN/ShareCfg/activity_coloring_template.json', 'r') as fp:
+with open(root + 'EN/ShareCfg/activity_coloring_template.json', 'r') as fp:
     dbs = json.load(fp)
     for id in dbs:
         if id != 'all':

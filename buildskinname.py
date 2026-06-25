@@ -1,6 +1,7 @@
 import json
 import re
 from argparse import ArgumentParser
+from root import root
 
 shop_type = { # inconsistent (e.g. luoma_4 should be Summer, not RaceQueen; Bluray is unaccounted for)
     0: '_OTHER_0000',
@@ -230,7 +231,7 @@ def init_book():
     }
     for file in files:
         path = 'EN/{}.json'.format(file)
-        with open(path, 'r', encoding='utf-8') as fp:
+        with open(root + path, 'r', encoding='utf-8') as fp:
             cat = files[file]
             book[cat] = json.load(fp)
     for key in book['skin2']: # seems like skin2 is updated while skin is not
@@ -444,6 +445,7 @@ def main(dl):
         update(['EN'], [
             'ShareCfg/ship_skin_template',
             'ShareCfg/name_code',
+            'sharecfgdata/ship_skin_template',
             'sharecfgdata/ship_data_statistics',
             'sharecfgdata/shop_template',
             'sharecfgdata/gametip'

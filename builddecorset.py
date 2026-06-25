@@ -2,19 +2,20 @@ import os
 import json
 import re
 from argparse import ArgumentParser
+from root import root
 
 decorset = {}
 ignorelist = []
 
 def init_decorset(lang):
     '''Initializes `decor` and `decoritem` objects with JSON files downloaded from AzurLaneData repo.'''
-    with open('{}/ShareCfg/backyard_theme_template.json'.format(lang), 'r', encoding='utf-8') as fp:
+    with open(root + '{}/ShareCfg/backyard_theme_template.json'.format(lang), 'r', encoding='utf-8') as fp:
         decorset['theme'] = json.load(fp)
-    with open('{}/ShareCfg/furniture_data_template.json'.format(lang), 'r', encoding='utf-8') as fp:
+    with open(root + '{}/ShareCfg/furniture_data_template.json'.format(lang), 'r', encoding='utf-8') as fp:
         decorset['item'] = json.load(fp)
-    with open('{}/ShareCfg/furniture_shop_template.json'.format(lang), 'r', encoding='utf-8') as fp:
+    with open(root + '{}/ShareCfg/furniture_shop_template.json'.format(lang), 'r', encoding='utf-8') as fp:
         decorset['shop'] = json.load(fp)
-    with open('{}/ShareCfg/shop_furniture_relation.json'.format(lang), 'r', encoding='utf-8') as fp:
+    with open(root + '{}/ShareCfg/shop_furniture_relation.json'.format(lang), 'r', encoding='utf-8') as fp:
         decorset['rel'] = json.load(fp)
 
 def get_themeid(name):

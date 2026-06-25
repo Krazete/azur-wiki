@@ -1,6 +1,7 @@
 import re
 import json
 from argparse import ArgumentParser
+from root import root
 
 langs = ['EN', 'CN', 'JP']
 suffixes = ['group', 'template']
@@ -12,7 +13,7 @@ def init_data():
     for lang in langs:
         data.setdefault(lang, {})
         for suffix in suffixes:
-            with open('{}/ShareCfg/memory_{}.json'.format(lang, suffix), 'r', encoding='utf-8') as fp:
+            with open(root + '{}/ShareCfg/memory_{}.json'.format(lang, suffix), 'r', encoding='utf-8') as fp:
                 data[lang].setdefault(suffix, json.load(fp))
 
     with open('output/skinname.json', 'r', encoding='utf-8') as fp:

@@ -2,6 +2,7 @@ import os
 import json
 import re
 from argparse import ArgumentParser
+from root import root
 
 langs = {
     'EN': 'English',
@@ -143,7 +144,7 @@ skin = {
 
 def init_data():
     for lang in langs:
-        with open('{}/ShareCfg/secretary_special_ship.json'.format(lang), 'r', encoding='utf-8') as fp:
+        with open(root + '{}/ShareCfg/secretary_special_ship.json'.format(lang), 'r', encoding='utf-8') as fp:
             data.setdefault(lang, json.load(fp))
 
 def buildshipquote(siren, id, region):

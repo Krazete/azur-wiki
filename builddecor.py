@@ -2,6 +2,7 @@ import os
 import json
 import re
 from argparse import ArgumentParser
+from root import root
 
 decor = {}
 decorshop = {}
@@ -9,13 +10,13 @@ decorshop = {}
 def init_decor():
     '''Initializes `decor` object with JSON files downloaded from AzurLaneData repo.'''
     for lang in ['CN', 'EN', 'JP']:
-        with open('{}/ShareCfg/backyard_theme_template.json'.format(lang), 'r', encoding='utf-8') as fp:
+        with open(root + '{}/ShareCfg/backyard_theme_template.json'.format(lang), 'r', encoding='utf-8') as fp:
             decor[lang] = json.load(fp)
     
     # pocky theme has no icon
     decor['EN']['54']['icon'] = 'pockyheziicon'
 
-    with open('EN/ShareCfg/furniture_shop_template.json', 'r', encoding='utf-8') as fp:
+    with open(root + 'EN/ShareCfg/furniture_shop_template.json', 'r', encoding='utf-8') as fp:
         decorshop['EN'] = json.load(fp)
 
 def get_current_info():

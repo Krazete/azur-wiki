@@ -2,6 +2,7 @@ import os
 import json
 import re
 from argparse import ArgumentParser
+from root import root
 
 skinbox = {}
 ignorelist = [
@@ -28,11 +29,11 @@ ignorelist = [
 
 def init_skin():
     '''Initializes `skinbox` object with JSON files downloaded from AzurLaneData repo.'''
-    with open('EN/ShareCfg/equip_skin_theme_template.json', 'r', encoding='utf-8') as fp:
+    with open(root + 'EN/ShareCfg/equip_skin_theme_template.json', 'r', encoding='utf-8') as fp:
         skinbox['theme'] = json.load(fp)
-    with open('EN/ShareCfg/equip_skin_template.json', 'r', encoding='utf-8') as fp:
+    with open(root + 'EN/ShareCfg/equip_skin_template.json', 'r', encoding='utf-8') as fp:
         skinbox['item'] = json.load(fp)
-    with open('EN/sharecfgdata/item_data_statistics.json', 'r', encoding='utf-8') as fp:
+    with open(root + 'EN/sharecfgdata/item_data_statistics.json', 'r', encoding='utf-8') as fp:
         skinbox['box'] = json.load(fp)
 
 def get_themeid(name):
