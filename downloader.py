@@ -76,9 +76,10 @@ def update(langs, paths):
             else:
                 print('SKIPPED:', fullpath)
 
-def dl_decor():
+def dl_decor(getrepo=True):
     '''Download decor data files and List of Furniture Sets wiki page section.'''
-    update(0b111, ['ShareCfg/backyard_theme_template'])
+    if getrepo:
+        update(0b111, ['ShareCfg/backyard_theme_template'])
     os.makedirs('input', exist_ok=True)
     alw = signin()
     html = alw.pages['Decorations'].text()

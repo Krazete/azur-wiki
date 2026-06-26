@@ -106,8 +106,7 @@ if __name__ == '__main__':
     parser = ArgumentParser()
     parser.add_argument('-d', '--download', action='store_true', help='download data files')
     args = parser.parse_args()
-    if args.download:
-        from downloader import dl_decor
-        dl_decor()
+    from downloader import dl_decor
+    dl_decor(args.download)
     init_decor()
     build_decor()

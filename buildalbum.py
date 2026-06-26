@@ -27,6 +27,7 @@ fix_section = {
     'A Rose on the High Tower': 'One-Time Missions',
     'Tempesta and Islas de Libertád': 'Commemorative Album Missions',
     'Alliance Before the Hagiobull': 'One-Time Missions',
+    'Miracle by Midnight': 'One-Time Missions',
 }
 
 def build_page():

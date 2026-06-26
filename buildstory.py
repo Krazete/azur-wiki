@@ -480,6 +480,7 @@ bgnames = {
     'map_doa': 'Vacation Lane Map',
     'hrr': 'Alliance Before the Hagiobull',
     'fujinwan': 'The Opulent! The Glamorous! Luxury Bay!',
+    'qimiaoye': 'Miracle by Midnight',
     # Project Identity
     'project_tb': 'Project Identity TB',
     'project_oceana': 'Project Identity Oceana',
