@@ -74,7 +74,9 @@ patterns = {
     r'/medalalbum/': '[[Category:Commemorative Album thumbnails]]',
     r'/memoryicon/.+Memory\.png': '[[Category:Character Memory folders]]',
     r'/memoryicon/': '[[Category:Memory thumbnails]]',
+    r'/props/All(EQ)?SUnit\d*\.png': '[[Category:Resource icons]]',
     r'/props/BattleUI': '[[Category:Shop icons]]',
+    r'/props/CombatDataPack\d*\.png': '[[Category:Resource icons]]',
     r'/props/UR Voucher .+\.png': '[[Category:Event point icons]]',
     r'/props/.+ Pt\.png': '[[Category:Event point icons]]',
     r'/props/.+ GearSkinBox\.png': '{{ItemData|Props/FILENAME|BOXID|Gear Skin Box (BOXNAME)}}\\n[[Category:Equipment skin boxes]]',
@@ -259,6 +261,12 @@ Research Blueprint
     no category
 Research Blueprint (ALL)
     AllSUnit<Series Number>.png
+    [[Category:Resource icons]]
+Research Equipment Blueprint
+    AllEQSUnit<Series Number>.png
+    [[Category:Resource icons]]
+Research Combat Data Packs
+    CombatDataPack<Series Number>.png
     [[Category:Resource icons]]
 
 META Crystal
