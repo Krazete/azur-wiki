@@ -63,6 +63,7 @@ patterns = {
     r'/combatuistyle/': '[[Category:Battle UI previews]]',
     r'/commanderskillicon/': '[[Category:Meowfficer skill icons]]',
     # r'/crusingwindow/': '[[Category:Event banners]]', # discontinued after Season 23
+    r'/emoji': '[[Category:Chat stickers]]',
     r'/equips/EquipSkinIcon': '[[Category:Equipment Skins]]',
     r'/equips/\d+\.png': '[[Category:EQUIPMENTTYPE]]',
     r'/gamehallicon/': '[[Category:Arcade banners]]',
@@ -77,6 +78,7 @@ patterns = {
     r'/props/All(EQ)?SUnit\d*\.png': '[[Category:Resource icons]]',
     r'/props/BattleUI': '[[Category:Shop icons]]',
     r'/props/CombatDataPack\d*\.png': '[[Category:Resource icons]]',
+    r'/props/Stickers \d+\.png': '[[Category:Chat stickers]]',
     r'/props/UR Voucher .+\.png': '[[Category:Event point icons]]',
     r'/props/.+ Pt\.png': '[[Category:Event point icons]]',
     r'/props/.+ GearSkinBox\.png': '{{ItemData|Props/FILENAME|BOXID|Gear Skin Box (BOXNAME)}}\\n[[Category:Equipment skin boxes]]',

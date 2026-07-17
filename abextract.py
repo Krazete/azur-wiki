@@ -5,6 +5,8 @@ import UnityPy
 from UnityPy.files import BundleFile
 from pathlib import Path
 
+UnityPy.config.FALLBACK_UNITY_VERSION = "2022.3.62f3"
+
 with open('output/skinname.json', 'r', encoding='utf-8') as fp:
     shipnames = json.load(fp)
 
