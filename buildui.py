@@ -56,11 +56,21 @@ def buildui():
         else:
             unlock = ui[id]['unlock']
         
-        lines.append('| BattleUI {}.png | {}\'\'\'{}\'\'\'<br>\'\'{}\'\'<br>Unlock: {}'.format(
+        pack = 0
+        for shid in shops[lang]:
+            if shid == 'all':
+                continue
+            for item in shops[lang][shid].get('display', []):
+                if item and item[1] == int(id):
+                    pack = re.sub(r'^ui(\d+)$', '\g<1>', shops[lang][shid].get('picture', ''))
+                    break
+        
+        lines.append('| BattleUI {}.png | {}\'\'\'{}\'\'\'<br>\'\'{}\'\'<br>Unlock: {}{}'.format(
             ui[id]['icon'],
             '' if ui[id]['unlock'] == 'Default' else re.sub('^ui_(\d+)$', '[[File:BattleUIIcon \g<1>.png|50px]]', ui[id]['display_icon']),
             re.sub('Battle UI\W+', '', ui[id]['name']),
             ui[id]['desc'],
+            '[[File:BattleUIPack {}.png|50px]]'.format(pack) if pack else '',
             unlock
         ))
 
