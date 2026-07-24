@@ -481,6 +481,8 @@ bgnames = {
     'hrr': 'Alliance Before the Hagiobull',
     'fujinwan': 'The Opulent! The Glamorous! Luxury Bay!',
     'qimiaoye': 'Miracle by Midnight',
+    'baiye': 'Authentic Horror Story Escape from White Night Manor!',
+    'escape_manor': 'Authentic Horror Story Escape from White Night Manor! Map',
     # Project Identity
     'project_tb': 'Project Identity TB',
     'project_oceana': 'Project Identity Oceana',

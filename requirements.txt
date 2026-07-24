@@ -1,3 +1,4 @@
 mwclient==0.10.1
+cryptography==3.3.2 # fixes installation problems for PyGithub on mac
 PyGithub==2.2.0
 UnityPy==1.22.2

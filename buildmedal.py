@@ -7,6 +7,8 @@ from pathlib import Path
 from argparse import ArgumentParser
 from root import root
 
+UnityPy.config.FALLBACK_UNITY_VERSION = "2022.3.62f3"
+
 medals = {}
 
 condition_fixes = {

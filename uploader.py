@@ -40,6 +40,9 @@ def updateimage(path, summary='update'):
 
 def cleanup():
     for root, dirs, files in os.walk('Texture2D'):
+        if root != 'Texture2D' and '.DS_Store' in files: # for mac
+            os.remove('{}/.DS_Store'.format(root))
+            files.remove('.DS_Store')
         if len(dirs) + len(files) <= 0:
             os.rmdir(root)
 
@@ -99,6 +102,7 @@ if __name__ == '__main__':
         if root != lastroot:
             py += '\n'
             lastroot = root
+        files.sort() # for mac
         for file in files:
             if file.endswith('.jpg') or file.endswith('.png'):
                 path = '{}/{}'.format(root.replace('\\', '/'), file)
