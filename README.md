@@ -36,6 +36,7 @@ python -m buildgearskin -s <SET NAME> # build gear skin box table
 python -m buildjuustagram # (not yet implemented)
 
 python -m buildskinname # build list of ship skin names
+python -m buildskinname -l <LANGUAGE> # build list in CN or JP (kinda janky; used for reference only)
 
 python -m buildstory -t <TITLE> # build story tables for matching title
 python -m buildstory -t <TITLE> -i 1 # build story tables for matching title and result index

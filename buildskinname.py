@@ -219,7 +219,7 @@ fixes = {
 
 book = {}
 
-def init_book():
+def init_book(lang='EN'):
     '''Initializes `child` object with JSON files downloaded from AzurLaneData repo.'''
     files = {
         'ShareCfg/ship_skin_template': 'skin',
@@ -230,7 +230,7 @@ def init_book():
         'sharecfgdata/gametip': 'tip'
     }
     for file in files:
-        path = 'EN/{}.json'.format(file)
+        path = '{}/{}.json'.format(lang, file)
         with open(root + path, 'r', encoding='utf-8') as fp:
             cat = files[file]
             book[cat] = json.load(fp)
@@ -240,6 +240,8 @@ def init_book():
 def get_decoded_name(skin):
     if 'namecode' in skin['name']:
         matches = re.match('{namecode:(\d+)}', skin['name'])
+        if matches == None: # for non-EN
+            return 'NAME_ERROR'
         cid = matches[1]
         return book['code'][cid]['name'].strip()
     name = re.sub(r'\s+', ' ', skin['name']) # only affects Reisalin Stout
@@ -439,10 +441,10 @@ def build_skinnames():
             print('WARNING: Duplicate ship name: {}'.format(shipname))
         dupes.add(shipname)
 
-def main(dl):
+def main(dl, lang='EN'):
     if dl:
         from downloader import update
-        update(['EN'], [
+        update([lang], [
             'ShareCfg/ship_skin_template',
             'ShareCfg/name_code',
             'sharecfgdata/ship_skin_template',
@@ -450,11 +452,12 @@ def main(dl):
             'sharecfgdata/shop_template',
             'sharecfgdata/gametip'
         ])
-    init_book()
+    init_book(lang)
     build_skinnames()
 
 if __name__ == '__main__':
     parser = ArgumentParser()
     parser.add_argument('-d', '--download', action='store_true', help='download data files')
+    parser.add_argument('-l', '--lang', default='EN', help='language code: EN, CN, JP')
     args = parser.parse_args()
-    main(args.download)
+    main(args.download, args.lang)
