@@ -54,7 +54,7 @@ def get_groupid(title, i=0):
 def getwikiname(skinid, lang):
     stat = book['stat'][lang].get(str(skinid)) # TODO: dunno where, but there's a big problem with CN and JP names (like mistakenly calling random ships Enterprise or Little Cheshire)
     if stat and lang != 'EN':
-        print(stat.get('name'))
+        # print(stat.get('name'))
         return stat.get('name')
     skin = book['siren'][lang].get(
         str(skinid),
