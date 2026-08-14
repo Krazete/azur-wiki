@@ -483,6 +483,10 @@ bgnames = {
     'qimiaoye': 'Miracle by Midnight',
     'baiye': 'Authentic Horror Story Escape from White Night Manor!',
     'escape_manor': 'Authentic Horror Story Escape from White Night Manor! Map',
+    'binhaijisu': 'Scorching Summer Wavechasers',
+    'xingguangcheng': 'Depths of the Astrarium',
+    'logo_croweheed': 'Croweheed',
+    'logo_rotwolf': 'Rotwolf',
     # Project Identity
     'project_tb': 'Project Identity TB',
     'project_oceana': 'Project Identity Oceana',
@@ -636,10 +640,14 @@ def get_story_by_bg(bgName):
                         break
     mids = []
     for mid in book['memory']['EN']:
+        if not mid.isdigit():
+            continue
         if book['memory']['EN'][mid]['story'] in sids:
             mids.append(int(mid))
     titles = set()
     for gid in book['group']['EN']:
+        if not gid.isdigit():
+            continue
         for mid in mids:
             if mid in book['group']['EN'][gid]['memories']:
                 titles.add(book['group']['EN'][gid]['title'])

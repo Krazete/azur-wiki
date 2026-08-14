@@ -84,8 +84,8 @@ patterns = {
     r'/props/Stickers \d+\.png': '[[Category:Chat stickers]]',
     r'/props/UR Voucher .+\.png': '[[Category:Event point icons]]',
     r'/props/.+ Pt\.png': '[[Category:Event point icons]]',
-    r'/props/.+ GearSkinBox\.png': '{{ItemData|Props/FILENAME|BOXID|Gear Skin Box (BOXNAME)}}\\n[[Category:Equipment skin boxes]]',
-    r'/props/.+ SelectionSkinBox\.png': '{{ItemData|Props/FILENAME|BOXID|Selection Gear Skin Box (BOXNAME)}}\\n[[Category:Equipment skin boxes]]',
+    r'/props/.+ GearSkinBox\.png': '[[Category:Equipment skin boxes]]',
+    r'/props/.+ SelectionSkinBox\.png': '[[Category:Equipment skin boxes]]',
     # r'/SHIP/': '{{SkinFileData|SHIPGIRLNAME}}', # handled separately
     r'/skillicon/': '[[Category:Ship skill icons]]',
     r'/spweapon/': '[[Category:Augment Module]]',

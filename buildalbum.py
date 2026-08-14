@@ -14,10 +14,12 @@ def init_data():
 fix_event = {
     '星光下的余晖（占坑配置）': 'Substellar Crepuscule',
     'Villa Resort': 'Midsummer Returns! The Villa Reconstruction',
+    'Seaside Speedstars': 'Scorching Summer Wavechasers',
 }
 fix_page = {
     'Midsummer Returns! The Villa Reconstruction': 'A Rose on the High Tower',
     'The Opulent! The Glamorous! Luxury Bay!': 'Alliance Before the Hagiobull',
+    'Scorching Summer Wavechasers': 'Depths of the Astrarium',
 }
 fix_section = {
     'Substellar Crepuscule': 'One-Time Missions',
@@ -28,6 +30,7 @@ fix_section = {
     'Tempesta and Islas de Libertád': 'Commemorative Album Missions',
     'Alliance Before the Hagiobull': 'One-Time Missions',
     'Miracle by Midnight': 'One-Time Missions',
+    'Scorching Summer Wavechasers': 'Scorching Summer Wavechasers',
 }
 
 def build_page():

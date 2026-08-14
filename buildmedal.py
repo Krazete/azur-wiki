@@ -15,6 +15,7 @@ condition_fixes = {
     r'Midsummer Returns: The Villa Reconstruction': 'A Rose on the High Tower#Midsummer Returns! The Villa Reconstruction|Midsummer Returns! The Villa Reconstruction',
     r'The Secrets of the Abyss': 'Secrets of the Abyss',
     r'The Opulent! The Glamorous! Luxury Bay!': 'Alliance Before the Hagiobull#The Opulent! The Glamorous! Luxury Bay!|The Opulent! The Glamorous! Luxury Bay!',
+    r'Scorching Summer Wavechasers': 'Depths of the Astrarium#Scorching Summer Wavechasers|Scorching Summer Wavechasers',
 }
 
 def init_medals():
