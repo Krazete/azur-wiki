@@ -182,6 +182,9 @@ Retrofit Material Icon
 Event Banner
     <Event Name> Event Banner EN.jpg
     [[Category:Event banners]]
+Permanent Event Banner
+    <Event Name> Permanent Event Banner.jpg
+    [[Category:Permanent event banners]]
 Blueprint Completion Plan
     PR<Season Number> Catchup <Ship Name> Event Banner EN.jpg
     [[Category:Event banners]]
