@@ -32,6 +32,7 @@ shop_type = { # inconsistent (e.g. luoma_4 should be Summer, not RaceQueen; Blur
     26: 'Theme Park',
     27: 'Nile Colors',
     28: 'Ninja',
+    29: 'Spooky',
     9997: 'Kai',
     9998: 'Wedding',
     9999: '_OTHER_9999', # other
