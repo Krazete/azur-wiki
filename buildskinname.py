@@ -109,6 +109,55 @@ fixes = {
     'gin_2': {'type': 'Event'},
     'kin_2': {'type': 'Event'},
     'buli_super_2': {'type': 'Event'},
+    'aierdeliqi_7': {'type': 10},
+    'aisaikesi_6': {'type': 'Detective'}, # Essex
+    'bushi_2': {'type': 9}, #Bush
+    'salatuojia_3': {'type': 'Hanbok'}, #Saratoga
+    'salatuojia_4': {'type': 'Kizuna'}, #Saratoga
+    'salatuojia_5': {'type': 'Event'}, #Saratoga
+    'salatuojia_9': {'type': 'Food'}, #Saratoga
+    'qiye_5': {'type': 'Bluray'}, #Enterprise
+    'dahuangfeng_3': {'type': 'Pizza'}, #Hornet
+    'lafei_5': {'type': 'CoCo'}, # Laffey
+    'lafei_11': {'type': 'KFC'}, #Laffey
+    'akasita_3': {'type': 'Misc'}, #Acasta
+    'xiefeierde_2': {'type': 'Misc'}, #Sheffield
+    'beierfasite_5': {'type': 'Bluray'}, #Belfast
+    'beierfasite_7': {'type': 'Pizza'}, #Belfast
+    'niukasier_2': {'type': 'Flower'}, #Newcastle
+    'dujiaoshou_2': {'type': 'Event'}, #Unicorn
+    'guanghui_2': {'type': 'Tea Party'}, #Illustrious
+    'guanghui_4': {'type': 'Hanbok'}, #Illustrious
+    'heianjie_2': {'type': 10}, #Erebus
+    'chuixue_4': {'type': 'Atre'}, #Fubuki
+    'chuixue_6': {'type': 'Pizza'}, #Fubuki
+    'xiao_2': {'type': 'Camp'}, #Akatsuki
+    'xiao_5': {'type': 'Travel'}, #Akatsuki
+    'lei_2': {'type': 'Tea Party'}, #Ikazuchi
+    'dian_2': {'type': 'Tea Party'}, #Inazuma
+    'xuefeng_2': {'type': 'Event'}, #Yukikaze
+    'chuchun_2': {'type': 'Snow'}, #Hatsuharu
+    'jiangfeng_2': {'type': 'Event'}, #Kawakaze
+    'gufeng_2': {'type': 'Misc'}, #Tanikaze
+    'pubo_2': {'type': 'Misc'}, #Uranami
+    'shancheng_7': {'type': 'Atre'}, #Yamashiro
+    'luao_2': {'type': 'Event'}, #Mutsu
+    'sanli_2': {'type': 4}, #Mikasa
+    'sanli_4': {'type': 2}, #Mikasa
+    'fengxiang_2': {'type': 10}, #Houshou
+    'mingshi_4': {'type': 'Event'}, #Akashi
+    'mingshi_5': {'type': 'Sofmap'}, #Akashi
+    'z23_2': {'type': 'Bilibili'}, #Z23
+    'z23_4': {'type': 'CoCo'}, #Z23
+    'z23_8': {'type': 'Bluray'}, #Z23
+    'z23_6': {'type': 'Kinokuniya'}, #Z23
+    'ninghai_3': {'type': 10}, # Ning Hai
+    'pinghai_3': {'type': 10}, # Ping Hai
+    'haitian_3': {'type': 'Goddess'}, # Hai Tien
+    'hdn102_2': {'type': 'Collab'}, # Purple Heart
+    'hdn202_2': {'type': 'Collab'}, # Black Heart
+    'hdn302_2': {'type': 'Collab'}, # White Heart
+    'hdn402_2': {'type': 'Collab'}, # Green Heart
     'suweiaitongmeng': {'type': 'Original2'},
     'dahuangfeng_dark_shadow': {'type': 'OriginalShadow'},
     'luoma_4': {'type': 6},
