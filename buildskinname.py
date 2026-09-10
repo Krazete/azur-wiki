@@ -105,6 +105,7 @@ fixes = {
     'yibei_alter': {'base': 'Elbe META'},
     'z14': {'base': 'Z14'},
     'z15': {'base': 'Z15'},
+    'npclingmin_alter': {'base': 'Soobrazitelny META'},
     # type only
     'gin_2': {'type': 'Event'},
     'kin_2': {'type': 'Event'},
@@ -112,6 +113,7 @@ fixes = {
     'aierdeliqi_7': {'type': 10},
     'aisaikesi_6': {'type': 'Detective'}, # Essex
     'bushi_2': {'type': 9}, #Bush
+    'afuleer_2': {'type': 'Prison'}, # Avrora
     'salatuojia_3': {'type': 'Hanbok'}, #Saratoga
     'salatuojia_4': {'type': 'Kizuna'}, #Saratoga
     'salatuojia_5': {'type': 'Event'}, #Saratoga
@@ -158,6 +160,7 @@ fixes = {
     'hdn202_2': {'type': 'Collab'}, # Black Heart
     'hdn302_2': {'type': 'Collab'}, # White Heart
     'hdn402_2': {'type': 'Collab'}, # Green Heart
+    'shuixingjinian_4': {'type': 9}, # Pamiat' Merkuria
     'suweiaitongmeng': {'type': 'Original2'},
     'dahuangfeng_dark_shadow': {'type': 'OriginalShadow'},
     'luoma_4': {'type': 6},

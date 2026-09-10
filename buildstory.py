@@ -52,10 +52,10 @@ def get_groupid(title, i=0):
             i -= 1
 
 def getwikiname(skinid, lang):
-    stat = book['stat'][lang].get(str(skinid)) # TODO: dunno where, but there's a big problem with CN and JP names (like mistakenly calling random ships Enterprise or Little Cheshire)
-    if stat and lang != 'EN':
-        # print(stat.get('name'))
-        return stat.get('name')
+    # stat = book['stat'][lang].get(str(skinid)) # TODO: dunno where, but there's a big problem with CN and JP names (like mistakenly calling random ships Enterprise or Little Cheshire)
+    # if stat and lang != 'EN':
+    #     # print(stat.get('name'))
+    #     return stat.get('name')
     skin = book['siren'][lang].get(
         str(skinid),
         book['skin2'][lang].get(
@@ -66,7 +66,10 @@ def getwikiname(skinid, lang):
     if not skin:
         return ''
     paint = skin.get('painting', '').lower()
-    if paint not in ['npckenisibao_alter']: # failure cases
+    if paint not in [ # failure cases
+        # 'npckenisibao_alter', # released
+        'npclingmin_alter',
+    ]:
         paint = re.sub(r'^npc|_(wjz|idolns|s|n)$', '', paint) # force standard sprite; may fail if nonexistent (e.g. new unreleased skin in Port Fashion Collection preview)
     if lang == 'EN':
         return wikinames.get(paint, '')
@@ -185,10 +188,6 @@ def parse_scripts(scripts, lang, defaultTb):
         paintingname = book['skin'][lang].get(str(skinid), {}).get('painting', '')
 
         # name quickfixes
-        if skinnameEN == 'Bon Homme Richard':
-            if not actorname:
-                actorname = skinnameEN
-            skinnameEN = 'Bon Homme Richard META'
         if 'TB/' in skinnameEN and skinnameEN != 'TB/Misc':
             skinnameEN = 'TB'
         if 'Navi/' in skinnameEN and skinnameEN != 'Navi/Home Relaxation':
@@ -526,6 +525,8 @@ bannedbanners = [
     # 'Arbiter The Tower XVI',
     'Star Beast',
     # 'Arbiter The Magician I',
+    'Flammi',
+    'Error XIII',
 ]
 
 if 0: # testing
