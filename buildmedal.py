@@ -16,6 +16,7 @@ condition_fixes = {
     r'The Secrets of the Abyss': 'Secrets of the Abyss',
     r'The Opulent! The Glamorous! Luxury Bay!': 'Alliance Before the Hagiobull#The Opulent! The Glamorous! Luxury Bay!|The Opulent! The Glamorous! Luxury Bay!',
     r'Scorching Summer Wavechasers': 'Depths of the Astrarium#Scorching Summer Wavechasers|Scorching Summer Wavechasers',
+    r'A Slightly Paranormal State of Affairs': 'Tales of the Paranormal#A Slightly Paranormal State of Affairs|A Slightly Paranormal State of Affairs',
 }
 
 def init_medals():

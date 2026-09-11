@@ -20,6 +20,7 @@ fix_page = {
     'Midsummer Returns! The Villa Reconstruction': 'A Rose on the High Tower',
     'The Opulent! The Glamorous! Luxury Bay!': 'Alliance Before the Hagiobull',
     'Scorching Summer Wavechasers': 'Depths of the Astrarium',
+    'A Slightly Paranormal State of Affairs': 'Tales of the Paranormal',
 }
 fix_section = {
     'Substellar Crepuscule': 'One-Time Missions',
@@ -31,6 +32,8 @@ fix_section = {
     'Alliance Before the Hagiobull': 'One-Time Missions',
     'Miracle by Midnight': 'One-Time Missions',
     'Scorching Summer Wavechasers': 'Scorching Summer Wavechasers',
+    'Tales of the Paranormal': 'One-Time Missions',
+    'A Slightly Paranormal State of Affairs': 'A Slightly Paranormal State of Affairs',
 }
 
 def build_page():
