@@ -1,0 +1,2845 @@
+{{ShipDisplay|4|Universal Bulin|DD||'''Construction'''}}
+{{ShipDisplay|4|Universal Bulin|DD|Event|Universal Enhanced Rigging (Experimental) +α||1}}
+{{ShipDisplay|4|Universal Bulin|DD|Fairy Tale|Transform! Magical Girl ★ Bulin!||1||611}}
+{{ShipDisplay|5|Prototype Bulin MKII|DD||'''Construction'''}}
+{{ShipDisplay|5|Prototype Bulin MKII|DD|Event|Prototype Advanced Weaponry (Prop)||1||176}}
+{{ShipDisplay|6|Specialized Bulin Custom MKIII|DD||'''Construction'''}}
+{{ShipDisplay|6|Specialized Bulin Custom MKIII|DD|Event|The Bulin Bringer of Justice||1|DYN|529}}
+{{ShipDisplay|3|Dewey|DD||'''Construction'''}}
+{{ShipDisplay|3|Dewey|DD|Summer|Summer Longing|{{Gem}} 780|||106}}
+{{ShipDisplay|3|Dewey|DD|Christmas|A Christmas Thank-You|{{Gem}} 800|||125}}
+{{ShipDisplay|2|Cassin|DD||'''Construction'''}}
+{{ShipDisplay|2|Cassin|DD|School|Shopping Carte Blanche|{{Gem}} 780|||103}}
+{{ShipDisplay|2|Cassin|DD|Kai|Cassin (Retrofit)||1}}
+{{ShipDisplay|2|Downes|DD||'''Construction'''}}
+{{ShipDisplay|2|Downes|DD|School|Part-Time Bomber|{{Gem}} 780|||103}}
+{{ShipDisplay|2|Downes|DD|Kai|Downes (Retrofit)||1}}
+{{ShipDisplay|3|Gridley|DD||'''Construction'''}}
+{{ShipDisplay|3|Gridley|DD|Christmas|Christmas Photoshoot||1||100}}
+{{ShipDisplay|2|Craven|DD||'''Construction'''}}
+{{ShipDisplay|2|Craven|DD|School|Cheerleader On The Playground||1||103}}
+{{ShipDisplay|2|McCall|DD||'''Construction'''}}
+{{ShipDisplay|4|Maury|DD||'''Construction'''}}
+{{ShipDisplay|4|Maury|DD|Kai|Maury (Retrofit)||1}}
+{{ShipDisplay|3|Fletcher|DD||'''Construction'''}}
+{{ShipDisplay|6|William D. Porter|DD||'''Construction'''}}
+{{ShipDisplay|6|William D. Porter|DD|Maid|The Daredevil's Maidly Service|{{Gem}} 1030|1|DYN|529}}
+{{ShipDisplay|4|Charles Ausburne|DD||'''Construction'''}}
+{{ShipDisplay|4|Charles Ausburne|DD|Kai|Charles Ausburne (Retrofit)||1}}
+{{ShipDisplay|3|Thatcher|DD||'''Construction'''}}
+{{ShipDisplay|2|Aulick|DD||'''Construction'''}}
+{{ShipDisplay|2|Foote|DD||'''Construction'''}}
+{{ShipDisplay|2|Spence|DD||'''Construction'''}}
+{{ShipDisplay|3|Benson|DD||'''Construction'''}}
+{{ShipDisplay|3|Benson|DD|Halloween|Cutie Pumpkin Pie|{{Gem}} 780|1||119}}
+{{ShipDisplay|4|Laffey|BB||'''Construction'''}}
+{{ShipDisplay|4|Laffey|BB|New Year|Snow Rabbit and Candy Apple|{{Gem}} 680|||101}}
+{{ShipDisplay|4|Laffey|BB|Spring|White Rabbit Welcomes the Spring|{{Gem}} 1080|||102}}
+{{ShipDisplay|4|Laffey|BB|CoCo|Bunny Clerk?|{{Gem}} 700}}
+{{ShipDisplay|4|Laffey|BB|Casual|Picnic Adventure?||1||113}}
+{{ShipDisplay|4|Laffey|BB|Idol|Bunny Idol @Unmotivated|{{Gem}} 800|||120}}
+{{ShipDisplay|4|Laffey|BB|Home Relaxation|Sleep to Clean Another Day||1||109}}
+{{ShipDisplay|4|Laffey|BB|Wedding|White Rabbit's Oath||1}}
+{{ShipDisplay|4|Laffey|BB|Kai|Laffey (Retrofit)||1}}
+{{ShipDisplay|3|Sims|DD||'''Construction'''}}
+{{ShipDisplay|3|Sims|DD|Kai|Sims (Retrofit)||1}}
+{{ShipDisplay|3|Hammann|DD||'''Construction'''}}
+{{ShipDisplay|3|Hammann|DD|Summer|Rebellious Summer|{{Gem}} 600|||106}}
+{{ShipDisplay|3|Hammann|DD|Party|Prideful Fairy of the Ballroom|{{Gem}} 800|||135}}
+{{ShipDisplay|3|Hammann|DD|Idol|Hammanyan Pawnch!|{{Gem}} 800|||120}}
+{{ShipDisplay|3|Hammann|DD|Christmas|Holy Night Surprise!|{{Gem}} 800|||125}}
+{{ShipDisplay|3|Hammann|DD|RaceQueen|Blushing Fellow|{{Gem}} 780|||186}}
+{{ShipDisplay|3|Hammann|DD|Kai|Hammann (Retrofit)||1}}
+{{ShipDisplay|5|Eldridge|DD||'''Construction'''}}
+{{ShipDisplay|5|Eldridge|DD|Christmas|Holy Night's Embrace|{{Gem}} 780|||100}}
+{{ShipDisplay|5|Eldridge|DD|School|The Inquisitive Recluse|{{Gem}} 880|||103}}
+{{ShipDisplay|5|Eldridge|DD|New Year|New Year's Outing|{{Gem}} 1180|||101}}
+{{ShipDisplay|5|Eldridge|DD|Idol|Kitty Idol|{{Gem}} 1100|||120}}
+{{ShipDisplay|5|Eldridge|DD|Festival|Moon Festival Spacewalk|{{Gem}} 800}}
+{{ShipDisplay|5|Eldridge|DD|School2|After-School Good Girl|{{Gem}} 880|||509}}
+{{ShipDisplay|5|Eldridge|DD|Wedding|Afternoon Worship in the Woods||1}}
+{{ShipDisplay|5|Eldridge|DD|Kai|Eldridge (Retrofit)||1|DYN}}
+{{ShipDisplay|3|Bailey|DD||'''Construction'''}}
+{{ShipDisplay|3|Bailey|DD|Halloween|Trickster Black Rabbit||1}}
+{{ShipDisplay|3|Bailey|DD|Christmas|Jolly Saint Bunnylass!|{{Gem}} 800|||125}}
+{{ShipDisplay|3|Bailey|DD|Kai|Bailey (Retrofit)||1}}
+{{ShipDisplay|3|Radford|DD||'''Construction'''}}
+{{ShipDisplay|3|Radford|DD|Halloween|Sweet Magic!||1||119}}
+{{ShipDisplay|3|Jenkins|DD||'''Construction'''}}
+{{ShipDisplay|3|Jenkins|DD|Christmas|Light of the Holiest Star|{{Gem}} 800|||125}}
+{{ShipDisplay|4|Nicholas|DD||'''Construction'''}}
+{{ShipDisplay|4|Nicholas|DD|Hospital|Nurse Nicholas|{{Gem}} 700}}
+{{ShipDisplay|4|Nicholas|DD|Christmas|Surprise!?|{{Gem}} 780|||100}}
+{{ShipDisplay|4|Nicholas|DD|Summer|Summer Cleaning "Volunteer"|{{Gem}} 780|||133}}
+{{ShipDisplay|4|Nicholas|DD|School|After-School Promise|{{Gem}} 780|||103}}
+{{ShipDisplay|4|Nicholas|DD|Kai|Nicholas (Retrofit)||1}}
+{{ShipDisplay|3|Bush|DD||'''Construction'''}}
+{{ShipDisplay|3|Bush|DD|Casual|Budding Painter|{{Gem}} 700|1}}
+{{ShipDisplay|3|Hazelwood|DD||'''Construction'''}}
+{{ShipDisplay|3|Bache|DD||'''Construction'''}}
+{{ShipDisplay|3|Bache|DD|Casual|Gorgeous Speed-star|{{Gem}} 780|||118}}
+{{ShipDisplay|3|Bache|DD|Sport|Showy Sports Star|{{Gem}} 800|||132}}
+{{ShipDisplay|3|Hobby|DD||'''Construction'''}}
+{{ShipDisplay|3|Hobby|DD|School|Little Idol Schoolgirl|{{Gem}} 780|||103}}
+{{ShipDisplay|3|Kalk|DD||'''Construction'''}}
+{{ShipDisplay|3|Kalk|DD|School|Snow Fairy Schoolgirl|{{Gem}} 780|||103}}
+{{ShipDisplay|3|Kimberly|DD||'''Construction'''}}
+{{ShipDisplay|3|Kimberly|DD|Spring|Style of the East||1||102}}
+{{ShipDisplay|4|Mullany|DD||'''Construction'''}}
+{{ShipDisplay|4|Mullany|DD|Spring|Eastern Etiquette|{{Gem}} 780|||102}}
+{{ShipDisplay|3|Aylwin|DD||'''Construction'''}}
+{{ShipDisplay|3|Aylwin|DD|Casual|Sunday Aquarium Visit|{{Gem}} 700}}
+{{ShipDisplay|3|Stanly|DD||'''Construction'''}}
+{{ShipDisplay|3|Smalley|DD||'''Construction'''}}
+{{ShipDisplay|3|Smalley|DD|Halloween|Candy Courier|{{Gem}} 780|||119}}
+{{ShipDisplay|3|Halsey Powell|DD||'''Construction'''}}
+{{ShipDisplay|3|Halsey Powell|DD|Spring|Spring's Lucky Star|{{Gem}} 800|||127}}
+{{ShipDisplay|4|Cooper|DD||'''Construction'''}}
+{{ShipDisplay|4|Cooper|DD|Sport|Blazing Tennis Battle|{{Gem}} 1100|||132}}
+{{ShipDisplay|4|Cooper|DD|Christmas|Heartwarming Holiday Hearth|{{Gem}} 780|||100}}
+{{ShipDisplay|5|Allen M. Sumner|DD||'''Construction'''}}
+{{ShipDisplay|5|Allen M. Sumner|DD|Bunny|Charming Rabbit|{{Gem}} 1180|||145}}
+{{ShipDisplay|5|Allen M. Sumner|DD|Special Exercise|Two Faces of Justice|{{Gem}} 980|1|L2D|154}}
+{{ShipDisplay|4|Stephen Potter|DD||'''Construction'''}}
+{{ShipDisplay|4|Stephen Potter|DD|Bunny|Chillaxation Station|{{Gem}} 780|||145}}
+{{ShipDisplay|4|Morrison|DD||'''Construction'''}}
+{{ShipDisplay|4|Morrison|DD|Bunny|Sleeping Bunny|{{Gem}} 780|||145}}
+{{ShipDisplay|4|Morrison|DD|Ninja|Technology or Ninjutsu?|{{Gem}} 930|1|DYN|320}}
+{{ShipDisplay|5|Ingraham|DD||'''Construction'''}}
+{{ShipDisplay|5|Ingraham|DD|Bunny|Fixin' for a Mixin'|{{Gem}} 880|1||145}}
+{{ShipDisplay|5|Bristol|DD||'''Construction'''}}
+{{ShipDisplay|5|Bristol|DD|Spring|Tales from the Empery|{{Gem}} 900|||144}}
+{{ShipDisplay|5|Bristol|DD|Halloween|"Head" Investigator|{{Gem}} 880|1||174}}
+{{ShipDisplay|4|Hammann II|DD||'''Construction'''}}
+{{ShipDisplay|4|Hammann II|DD|Summer|Another Rebellious Summer|{{Gem}} 780|||106}}
+{{ShipDisplay|4|Hammann II|DD|Maid|Hammann's Scrumptious Spells||1||185}}
+{{ShipDisplay|6|Laffey II|DD||'''Construction'''}}
+{{ShipDisplay|6|Laffey II|DD|Bunny|Sleepy on a Busy Day|{{Gem}} 1180|1|L2D|145}}
+{{ShipDisplay|6|Laffey II|DD|Festival|Lady Laffey's Languid Tour|{{Gem}} 980|1|L2D|552}}
+{{ShipDisplay|4|Bell|DD||'''Construction'''}}
+{{ShipDisplay|4|Bell|DD|Wild West|Saloon Mishaps|{{Gem}} 780|||176}}
+{{ShipDisplay|4|Miller|DD||'''Construction'''}}
+{{ShipDisplay|4|Miller|DD|Hospital|Monster Experiment M-01|{{Gem}} 780|1||130}}
+{{ShipDisplay|4|Clarence K. Bronson|DD||'''Construction'''}}
+{{ShipDisplay|4|Clarence K. Bronson|DD|Maid|Special Functional Testing|{{Gem}} 780|1||185}}
+{{ShipDisplay|2|Omaha|CL||'''Construction'''}}
+{{ShipDisplay|2|Raleigh|CL||'''Construction'''}}
+{{ShipDisplay|3|Brooklyn|CL||'''Construction'''}}
+{{ShipDisplay|3|Phoenix|CL||'''Construction'''}}
+{{ShipDisplay|4|Helena|CL||'''Construction'''}}
+{{ShipDisplay|4|Helena|CL|New Year|New Year's Bluebird|{{Gem}} 780|||101}}
+{{ShipDisplay|4|Helena|CL|Party|May I Have this Dance?|{{Gem}} 780|||115}}
+{{ShipDisplay|4|Helena|CL|Summer|Shimmering Triangle Wave|{{Gem}} 1080||L2D|133}}
+{{ShipDisplay|4|Helena|CL|Hot Springs|Basking in the Cypress' Warmth|{{Gem}} 880|1|L2D|109}}
+{{ShipDisplay|4|Helena|CL|Wedding|Miracle in White||1}}
+{{ShipDisplay|4|Helena|CL|Kai|Helena (Retrofit)||1}}
+{{ShipDisplay|3|Atlanta|CL||'''Construction'''}}
+{{ShipDisplay|3|Juneau|CL||'''Construction'''}}
+{{ShipDisplay|3|Juneau|CL|Party|In the Swan Garden|{{Gem}} 800|||161}}
+{{ShipDisplay|3|Juneau|CL|Kai|Juneau (Retrofit)||1}}
+{{ShipDisplay|5|San Diego|CL||'''Construction'''}}
+{{ShipDisplay|5|San Diego|CL|Christmas|Sandy Claus|{{Gem}} 680|||100}}
+{{ShipDisplay|5|San Diego|CL|Wedding|No. 1 June Bride!||1}}
+{{ShipDisplay|5|San Diego|CL|Kai|San Diego (Retrofit)||1|DYN}}
+{{ShipDisplay|4|Cleveland|CL||'''Construction'''}}
+{{ShipDisplay|4|Cleveland|CL|Halloween|Reaper Fever|{{Gem}} 800}}
+{{ShipDisplay|4|Cleveland|CL|Party|Gentry Knight|{{Gem}} 1080|||107}}
+{{ShipDisplay|4|Cleveland|CL|Casual|Road Trip!|{{Gem}} 780|||118}}
+{{ShipDisplay|4|Cleveland|CL|New Year|New Year's Challenge!|{{Gem}} 780|||126}}
+{{ShipDisplay|4|Cleveland|CL|Travel|Southbound Journey||1||149}}
+{{ShipDisplay|4|Cleveland|CL|Party2|Golden Conductor||1||146}}
+{{ShipDisplay|4|Cleveland|CL|Bunny|Knight of the Pop-Up Shop|{{Gem}} 1080|1|L2D|145}}
+{{ShipDisplay|4|Cleveland|CL|Wedding|Heartfelt Moment||1}}
+{{ShipDisplay|4|Columbia|CL||'''Construction'''}}
+{{ShipDisplay|4|Columbia|CL|School|After-School Odette|{{Gem}} 780|||103}}
+{{ShipDisplay|4|Columbia|CL|Travel|Across the Vast Prairies||1||118}}
+{{ShipDisplay|2|Richmond|CL||'''Construction'''}}
+{{ShipDisplay|3|Honolulu|DD||'''Construction'''}}
+{{ShipDisplay|3|Honolulu|DD|School|Umbrella Girl|{{Gem}} 880|||103}}
+{{ShipDisplay|3|Honolulu|DD|Summer|Summer Accident?!|{{Gem}} 1080|||106}}
+{{ShipDisplay|3|Honolulu|DD|Christmas|Manjuu Mischief|{{Gem}} 780|||100}}
+{{ShipDisplay|3|Honolulu|DD|Festival|Among the Stalls|{{Gem}} 1080|1||114}}
+{{ShipDisplay|4|St. Louis|DD||'''Construction'''}}
+{{ShipDisplay|4|St. Louis|DD|Spring|Blue and White Pottery|{{Gem}} 880|||102}}
+{{ShipDisplay|4|St. Louis|DD|New Year|Spirits in the Snow|{{Gem}} 1080|||101}}
+{{ShipDisplay|4|St. Louis|DD|Party|Luxurious Wheels|{{Gem}} 1080|||137}}
+{{ShipDisplay|4|St. Louis|DD|Summer|An Afternoon on the Lido Deck|{{Gem}} 1080|1|L2D|539}}
+{{ShipDisplay|5|Montpelier|CL||'''Construction'''}}
+{{ShipDisplay|5|Montpelier|CL|New Year|Flower of the Snowy Night|{{Gem}} 880|||101}}
+{{ShipDisplay|5|Montpelier|CL|Party|Persephone's Throne|{{Gem}} 880|||146}}
+{{ShipDisplay|5|Montpelier|CL|Travel|Heat Relief for the Tipsy||1||191}}
+{{ShipDisplay|4|Denver|CL||'''Construction'''}}
+{{ShipDisplay|4|Denver|CL|Hot Springs|Steam Dream|{{Gem}} 700|1}}
+{{ShipDisplay|3|Memphis|CL||'''Construction'''}}
+{{ShipDisplay|3|Memphis|CL|Casual|Casual Vacation|{{Gem}} 700|1}}
+{{ShipDisplay|3|Memphis|CL|Halloween|Mystical Night||1||119}}
+{{ShipDisplay|3|Memphis|CL|School|A Breath of Fresh Air|{{Gem}} 780|||103}}
+{{ShipDisplay|3|Concord|CL||'''Construction'''}}
+{{ShipDisplay|3|Concord|CL|New Year|Red Apple Candy|{{Gem}} 780|||101}}
+{{ShipDisplay|3|Concord|CL|Christmas|Sweet☆Christmas|{{Gem}} 800|||125}}
+{{ShipDisplay|4|Lena|CL||'''Construction'''}}
+{{ShipDisplay|4|Clevelad|CL||'''Construction'''}}
+{{ShipDisplay|4|Li'l Sandy|CL||'''Construction'''}}
+{{ShipDisplay|3|San Juan|CL||'''Construction'''}}
+{{ShipDisplay|3|San Juan|CL|Party|The Longing Princess|{{Gem}} 780|||146}}
+{{ShipDisplay|4|Birmingham|CL||'''Construction'''}}
+{{ShipDisplay|4|Birmingham|CL|School|Rider of Red|{{Gem}} 780|||103}}
+{{ShipDisplay|4|Birmingham|CL|Spring|Fruitful Snow of an Auspicious Year|{{Gem}} 800|||144}}
+{{ShipDisplay|4|Birmingham|CL|Summer|To Where the Wind Blows||1||133}}
+{{ShipDisplay|4|Birmingham|CL|Maid|Briar Maid|{{Gem}} 780|1||321}}
+{{ShipDisplay|4|Cleveland μ|CL||'''Construction'''}}
+{{ShipDisplay|4|Biloxi|CL||'''Construction'''}}
+{{ShipDisplay|4|Biloxi|CL|Spring|Dapper Gangstress|{{Gem}} 800|||128}}
+{{ShipDisplay|4|Biloxi|CL|Party|Empress in the Silk Seat|{{Gem}} 800|||135}}
+{{ShipDisplay|4|Biloxi|CL|New Year|Night Sky's Brilliant Blue Blossoms|{{Gem}} 800|||143}}
+{{ShipDisplay|4|Biloxi|CL|Fairy Tale|Romeo or Juliet?|{{Gem}} 780|1||158}}
+{{ShipDisplay|5|Reno|CL||'''Construction'''}}
+{{ShipDisplay|5|Reno|CL|Sport|Biggest Little Cheerleader|{{Gem}} 900|||132}}
+{{ShipDisplay|5|Reno|CL|Summer|Summer Spin-off|{{Gem}} 880|||106}}
+{{ShipDisplay|5|Reno|CL|Bunny|Reno Bunnino|{{Gem}} 1180|1||145}}
+{{ShipDisplay|5|Reno|CL|Spring|Spring's Inspiration|{{Gem}} 900|||152}}
+{{ShipDisplay|3|Marblehead|CL||'''Construction'''}}
+{{ShipDisplay|3|Marblehead|CL|Sport|Boxing Girl!|{{Gem}} 700}}
+{{ShipDisplay|3|Marblehead|CL|Christmas|Charmer in the Snowy Reflection||1||1102}}
+{{ShipDisplay|3|Marblehead|CL|Spring|Moongazing on the 29½th|{{Gem}} 800|||144}}
+{{ShipDisplay|3|Marblehead|CL|School|Not-So-Serendipitous Rain|{{Gem}} 880||DYN|147}}
+{{ShipDisplay|4|Boise|CL||'''Construction'''}}
+{{ShipDisplay|4|Boise|CL|Bunny|Sheepish Sapphire|{{Gem}} 1080|||145}}
+{{ShipDisplay|4|Boise|CL|Halloween|Castle Tales|{{Gem}} 780|||119}}
+{{ShipDisplay|4|Boise|CL|Spring|Jade Mermaid|{{Gem}} 780|||157}}
+{{ShipDisplay|4|Boise|CL|Maid|Flawed but Delectable|{{Gem}} 780|1||150}}
+{{ShipDisplay|5|Houston II|CL||'''Construction'''}}
+{{ShipDisplay|5|Houston II|CL|Bunny|Ready to Serve!|{{Gem}} 880|1||145}}
+{{ShipDisplay|4|Boise μ|CL||'''Construction'''}}
+{{ShipDisplay|5|Fargo|CL||'''Construction'''}}
+{{ShipDisplay|5|Fargo|CL|Wild West|Dairy in the Dreary Sun|{{Gem}} 980||DYN|176}}
+{{ShipDisplay|5|Santa Fe|CL||'''Construction'''}}
+{{ShipDisplay|5|Santa Fe|CL|Hospital|The Rumor Mill Never Sleeps|{{Gem}} 880|1|DYN|309}}
+{{ShipDisplay|4|Pasadena|CL||'''Construction'''}}
+{{ShipDisplay|4|Pasadena|CL|Maid|Surprising Game|{{Gem}} 880|1|DYN|572}}
+{{ShipDisplay|2|Pensacola|CA||'''Construction'''}}
+{{ShipDisplay|2|Salt Lake City|CA||'''Construction'''}}
+{{ShipDisplay|3|Northampton|CA||'''Construction'''}}
+{{ShipDisplay|3|Chicago|CA||'''Construction'''}}
+{{ShipDisplay|4|Houston|CA||'''Construction'''}}
+{{ShipDisplay|3|Portland|CA||'''Construction'''}}
+{{ShipDisplay|3|Portland|CA|School|At School With Indy!|{{Gem}} 780|||103}}
+{{ShipDisplay|3|Portland|CA|Kai|Portland (Retrofit)||1}}
+{{ShipDisplay|4|Indianapolis|CA||'''Construction'''}}
+{{ShipDisplay|4|Indianapolis|CA|School|At School With My Sister...|{{Gem}} 780|||103}}
+{{ShipDisplay|4|Indianapolis|CA|Party|The Light of Circle City||1||135}}
+{{ShipDisplay|4|Astoria|CA||'''Construction'''}}
+{{ShipDisplay|4|Astoria|CA|School|Pure "Gurl?"|{{Gem}} 780|||103}}
+{{ShipDisplay|4|Astoria|CA|Bunny|Black Bunny Carnival|{{Gem}} 780|1||104}}
+{{ShipDisplay|4|Quincy|CA||'''Construction'''}}
+{{ShipDisplay|4|Quincy|CA|Summer|Sizzling Summer, Brisk Breeze|{{Gem}} 780|||106}}
+{{ShipDisplay|4|Vincennes|CA||'''Construction'''}}
+{{ShipDisplay|4|Vincennes|CA|Home Relaxation|Sweet Dreams|{{Gem}} 700}}
+{{ShipDisplay|4|Vincennes|CA|School|Leisurely ABC's|{{Gem}} 780|||103}}
+{{ShipDisplay|4|Wichita|CA||'''Construction'''}}
+{{ShipDisplay|4|Wichita|CA|Party|The General's Banquet|{{Gem}} 800|||135}}
+{{ShipDisplay|4|Wichita|CA|Halloween|Domineering Witchita|{{Gem}} 780|1||119}}
+{{ShipDisplay|5|New Orleans|CA||'''Construction'''}}
+{{ShipDisplay|5|New Orleans|CA|Bunny|Evening Agricole|{{Gem}} 880|1||145}}
+{{ShipDisplay|5|Minneapolis|CA||'''Construction'''}}
+{{ShipDisplay|5|Minneapolis|CA|School|Wild Huntress Schoolgirl|{{Gem}} 880|||103}}
+{{ShipDisplay|5|Minneapolis|CA|Sport|eXtreme Games|{{Gem}} 900|||132}}
+{{ShipDisplay|5|Minneapolis|CA|Christmas|Holy Night Ride|{{Gem}} 900|||125}}
+{{ShipDisplay|5|Minneapolis|CA|Wedding|Trapper White||1}}
+{{ShipDisplay|5|San Francisco|CA||'''Construction'''}}
+{{ShipDisplay|5|San Francisco|CA|Bunny|Funny Bunny!|{{Gem}} 880|||145}}
+{{ShipDisplay|5|San Francisco|CA|Dance|It's Showtime!|{{Gem}} 900|||159}}
+{{ShipDisplay|5|Baltimore|CA||'''Construction'''}}
+{{ShipDisplay|5|Baltimore|CA|School|After-School Ace|{{Gem}} 880|||103}}
+{{ShipDisplay|5|Baltimore|CA|Sport|Black Ace|{{Gem}} 900|||132}}
+{{ShipDisplay|5|Baltimore|CA|Party|Evening Breeze Minuet|{{Gem}} 1200|||135}}
+{{ShipDisplay|5|Baltimore|CA|New Year|Ace's Travel Journal|{{Gem}} 880|||142}}
+{{ShipDisplay|5|Baltimore|CA|RaceQueen|Finish Line Flagbearer|{{Gem}} 1200||L2D|132}}
+{{ShipDisplay|5|Baltimore|CA|Wedding|When the Breeze Blows||1|L2D|530}}
+{{ShipDisplay|5|Bremerton|CA||'''Construction'''}}
+{{ShipDisplay|5|Bremerton|CA|Sport|Scorching-Hot Training|{{Gem}} 880|||112}}
+{{ShipDisplay|5|Bremerton|CA|Spring|Kung Fu Cruiser|{{Gem}} 1200|||144}}
+{{ShipDisplay|5|Bremerton|CA|Casual|Day-Off Date|{{Gem}} 1180|||108}}
+{{ShipDisplay|5|Bremerton|CA|Home Relaxation|Relaxation Consultation|{{Gem}} 1180|1||109}}
+{{ShipDisplay|5|Bremerton|CA|Theme Park|Pillowed Counseling|{{Gem}} 980||DYN|180}}
+{{ShipDisplay|5|Bremerton|CA|Wedding|Joyride of Love||1}}
+{{ShipDisplay|4|Baltimore μ|CA||'''Construction'''}}
+{{ShipDisplay|5|Northampton II|CA||'''Construction'''}}
+{{ShipDisplay|5|Northampton II|CA|Summer|Swimming Star|{{Gem}} 1180||L2D|133}}
+{{ShipDisplay|5|Northampton II|CA|Spring|Comfy Crane Amidst the Clouds|{{Gem}} 880|||157}}
+{{ShipDisplay|4|Louisville|CA||'''Construction'''}}
+{{ShipDisplay|4|Louisville|CA|Bunny|An Order of Dreams|{{Gem}} 880|1|DYN|145}}
+{{ShipDisplay|5|Pittsburgh|CA||'''Construction'''}}
+{{ShipDisplay|5|Pittsburgh|CA|Wild West|The Bartender's Gambit|{{Gem}} 1180||L2D|176}}
+{{ShipDisplay|4|Little Anchorage|CA||'''Construction'''}}
+{{ShipDisplay|5|Constellation|BC||'''Construction'''}}
+{{ShipDisplay|5|Constellation|BC|Bunny|Galaxy's Finest|{{Gem}} 980|1|DYN|145}}
+{{ShipDisplay|2|Nevada|BB||'''Construction'''}}
+{{ShipDisplay|2|Nevada|BB|Party|A Magnificent Banquet||1||161}}
+{{ShipDisplay|2|Nevada|BB|Kai|Nevada (Retrofit)||1}}
+{{ShipDisplay|2|Oklahoma|BB||'''Construction'''}}
+{{ShipDisplay|2|Oklahoma|BB|Halloween|Piratey Transformation!|{{Gem}} 780|||162}}
+{{ShipDisplay|2|Oklahoma|BB|Kai|Oklahoma (Retrofit)||1}}
+{{ShipDisplay|3|Pennsylvania|BB||'''Construction'''}}
+{{ShipDisplay|3|Pennsylvania|BB|Spring|The Keystone General|{{Gem}} 780|||153}}
+{{ShipDisplay|4|Arizona|BB||'''Construction'''}}
+{{ShipDisplay|4|Arizona|BB|Spring|Enchantress from Afar|{{Gem}} 800|||144}}
+{{ShipDisplay|3|Tennessee|BB||'''Construction'''}}
+{{ShipDisplay|3|California|BB||'''Construction'''}}
+{{ShipDisplay|4|Colorado|BB||'''Construction'''}}
+{{ShipDisplay|4|Colorado|BB|Travel|Traveling Melody||1||149}}
+{{ShipDisplay|4|Colorado|BB|Summer|Sunset Cavatina|{{Gem}} 780|1||179}}
+{{ShipDisplay|4|Colorado|BB|Kai|Colorado (Retrofit)||1}}
+{{ShipDisplay|4|Maryland|BB||'''Construction'''}}
+{{ShipDisplay|4|Maryland|BB|Summer|Red-Hot Drummer|{{Gem}} 780|1||149}}
+{{ShipDisplay|4|Maryland|BB|Kai|Maryland (Retrofit)||1}}
+{{ShipDisplay|4|West Virginia|BB||'''Construction'''}}
+{{ShipDisplay|4|West Virginia|BB|Sport|Scenic Rhapsody|{{Gem}} 780|||133}}
+{{ShipDisplay|4|West Virginia|BB|Kai|West Virginia (Retrofit)||1}}
+{{ShipDisplay|5|North Carolina|BB||'''Construction'''}}
+{{ShipDisplay|5|North Carolina|BB|Bunny|The Heart's Desire|{{Gem}} 1180|1||145}}
+{{ShipDisplay|5|North Carolina|BB|Summer|Unique Sunshine|{{Gem}} 980|1|DYN|701}}
+{{ShipDisplay|5|Washington|BB||'''Construction'''}}
+{{ShipDisplay|5|Washington|BB|Spring|Jubilant Smile|{{Gem}} 880|||157}}
+{{ShipDisplay|5|Washington|BB|Hospital|Making the Rounds|{{Gem}} 980|1|DYN|309}}
+{{ShipDisplay|5|South Dakota|BB||'''Construction'''}}
+{{ShipDisplay|5|South Dakota|BB|Party|Solo Concert|{{Gem}} 880|||107}}
+{{ShipDisplay|5|Indiana|BB||'''Construction'''}}
+{{ShipDisplay|5|Indiana|BB|Wild West|High Noon Arrest|{{Gem}} 980||DYN|176}}
+{{ShipDisplay|6|New Jersey|BB||'''Construction'''}}
+{{ShipDisplay|6|New Jersey|BB|Bunny|Exhilarating Steps!|{{Gem}} 880|||145}}
+{{ShipDisplay|6|New Jersey|BB|Summer|Midsummer Leisure|{{Gem}} 1180||L2D|168}}
+{{ShipDisplay|6|New Jersey|BB|Spring|Dancing in the Moonlight|{{Gem}} 980|1|DYN|302}}
+{{ShipDisplay|6|New Jersey|BB|RaceQueen|Black Blur Prelude|{{Gem}} 1260|1|L2D|132}}
+{{ShipDisplay|6|New Jersey|BB|Wedding|Snow-White Ceremony||1}}
+{{ShipDisplay|5|Massachusetts|BB||'''Construction'''}}
+{{ShipDisplay|5|Massachusetts|BB|Party|Dressed to Impress|{{Gem}} 900|||135}}
+{{ShipDisplay|5|Alabama|BB||'''Construction'''}}
+{{ShipDisplay|5|Alabama|BB|Spring|Untarnished Silver, Silken Gold|{{Gem}} 880|||165}}
+{{ShipDisplay|5|Alabama|BB|Home Relaxation|Through Your Lens, My Everything|{{Gem}} 980|1|DYN|319}}
+{{ShipDisplay|3|Long Island|CVL||'''Construction'''}}
+{{ShipDisplay|3|Long Island|CVL|Home Relaxation|Long Island - Indoor Slacker||1}}
+{{ShipDisplay|3|Long Island|CVL|Halloween|Long Island's Spooky Stream|{{Gem}} 780|1||119}}
+{{ShipDisplay|3|Long Island|CVL|Work|Ghostly Receptionist||1||169}}
+{{ShipDisplay|3|Long Island|CVL|Spring|Bring On the Red Envelopes!||1||152}}
+{{ShipDisplay|3|Long Island|CVL|Kai|Long Island (Retrofit)||1}}
+{{ShipDisplay|2|Bogue|CVL||'''Construction'''}}
+{{ShipDisplay|2|Bogue|CVL|Kai|Bogue (Retrofit)||1}}
+{{ShipDisplay|3|Casablanca|CVL||'''Construction'''}}
+{{ShipDisplay|3|Casablanca|CVL|Sport|Cheer Squad on Break|{{Gem}} 800|||132}}
+{{ShipDisplay|2|Langley|CVL||'''Construction'''}}
+{{ShipDisplay|2|Langley|CVL|Kai|Langley (Retrofit)||1}}
+{{ShipDisplay|4|Lexington|DD||'''Construction'''}}
+{{ShipDisplay|4|Lexington|DD|Spring|The Beauty of Spring|{{Gem}} 780|||102}}
+{{ShipDisplay|4|Saratoga|CV||'''Construction'''}}
+{{ShipDisplay|4|Saratoga|CV|Summer|Seven Seas of Rest|{{Gem}} 600|||106}}
+{{ShipDisplay|4|Saratoga|CV|Hanbok|Hibiscus-scented Idol||1}}
+{{ShipDisplay|4|Saratoga|CV|Kizuna|Virtual Idol|{{Gem}} 700|1||210}}
+{{ShipDisplay|4|Saratoga|CV|Event|Superstar of the Blue Seas||1}}
+{{ShipDisplay|4|Saratoga|CV|Christmas|Silent Night Songstress|{{Gem}} 800|||125}}
+{{ShipDisplay|4|Saratoga|CV|Spring|Spring's Opening Act!|{{Gem}} 800|||144}}
+{{ShipDisplay|4|Saratoga|CV|Casual|The Sweetest Picnic!||1||103}}
+{{ShipDisplay|4|Saratoga|CV|Wedding|Ring the Bell of Joy||1}}
+{{ShipDisplay|4|Saratoga|CV|Kai|Saratoga (Retrofit)||1}}
+{{ShipDisplay|2|Ranger|CVL||'''Construction'''}}
+{{ShipDisplay|2|Ranger|CVL|Kai|Ranger (Retrofit)||1}}
+{{ShipDisplay|4|Yorktown|CV||'''Construction'''}}
+{{ShipDisplay|4|Yorktown|CV|Party|Evening I Can't Remember|{{Gem}} 780|||115}}
+{{ShipDisplay|4|Yorktown|CV|Travel|Saintly Wings||1}}
+{{ShipDisplay|4|Yorktown|CV|Wedding|Towards Tomorrow's Brilliant Breeze||1}}
+{{ShipDisplay|5|Enterprise|CV||'''Construction'''}}
+{{ShipDisplay|5|Enterprise|CV|Christmas|Reindeer Master|{{Gem}} 880|||100}}
+{{ShipDisplay|5|Enterprise|CV|Spring|Blooming Peony|{{Gem}} 880|||102}}
+{{ShipDisplay|5|Enterprise|CV|Casual|Anniversary Ride|{{Gem}} 880|||118}}
+{{ShipDisplay|5|Enterprise|CV|Bluray|Soaring Wings of Freedom||1}}
+{{ShipDisplay|5|Enterprise|CV|Party|Heroic Finery|{{Gem}} 900|||135}}
+{{ShipDisplay|5|Enterprise|CV|RaceQueen|Wind Catcher|{{Gem}} 1200|||132}}
+{{ShipDisplay|5|Enterprise|CV|Travel|Bon Voyage||1||155}}
+{{ShipDisplay|5|Enterprise|CV|Wedding|Starlight Oath||1}}
+{{ShipDisplay|4|Hornet|CV||'''Construction'''}}
+{{ShipDisplay|4|Hornet|CV|Party|Bubbly Anniversary!|{{Gem}} 780|||115}}
+{{ShipDisplay|4|Hornet|CV|Pizza|Freshly-Baked Bonding!|{{Gem}} 700|1}}
+{{ShipDisplay|4|Hornet|CV|Sport|Cheering Justice!|{{Gem}} 800|||132}}
+{{ShipDisplay|3|Wasp|CV||'''Construction'''}}
+{{ShipDisplay|5|Essex|CV||'''Construction'''}}
+{{ShipDisplay|5|Essex|CV|Casual|A Trip Down Route 66|{{Gem}} 880|1||118}}
+{{ShipDisplay|5|Essex|CV|Party|Craft Fairytail|{{Gem}} 1200|||135}}
+{{ShipDisplay|5|Essex|CV|Spring|Brush and Ink|{{Gem}} 900|||144}}
+{{ShipDisplay|5|Essex|CV|Detective|Detective Essex|{{Gem}} 880|||154}}
+{{ShipDisplay|5|Essex|CV|Work|Crossbones Especial|{{Gem}} 980||DYN|169}}
+{{ShipDisplay|5|Essex|CV|RaceQueen|The Gale of Course 88|{{Gem}} 800|1}}
+{{ShipDisplay|5|Essex|CV|RaceQueen2|Start Line Splash|{{Gem}} 980|1|DYN|186}}
+{{ShipDisplay|5|Essex|CV|Kai|Essex (Retrofit)||1|DYN}}
+{{ShipDisplay|6|Yorktown II|CV||'''Construction'''}}
+{{ShipDisplay|6|Yorktown II|CV|Summer|Bright-Sky Mermaid|{{Gem}} 980||DYN|164}}
+{{ShipDisplay|6|Yorktown II|CV|BunnyForm2|An Evening's Companionship||1|DUAL|145}}
+{{ShipDisplay|6|Yorktown II|CV|Bunny|An Evening's Companionship|{{Gem}} 1680|1|DUAL|145}}
+{{ShipDisplay|5|Intrepid|CV||'''Construction'''}}
+{{ShipDisplay|5|Intrepid|CV|Sport|One Intrepid Pitch|{{Gem}} 900|||132}}
+{{ShipDisplay|5|Hornet II|CV||'''Construction'''}}
+{{ShipDisplay|5|Hornet II|CV|Summer|Racing Across the Waves!|{{Gem}} 980||DYN|133}}
+{{ShipDisplay|5|Franklin|CV||'''Construction'''}}
+{{ShipDisplay|5|Franklin|CV|Hospital|Heart-Throbbing Records|{{Gem}} 980|1|DYN|308}}
+{{ShipDisplay|5|Ticonderoga|CV||'''Construction'''}}
+{{ShipDisplay|5|Ticonderoga|CV|Bunny|Show Stopper!|{{Gem}} 880|||145}}
+{{ShipDisplay|5|Ticonderoga|CV|Summer|Sunshine Princess|{{Gem}} 880|||168}}
+{{ShipDisplay|6|Lexington II|CV||'''Construction'''}}
+{{ShipDisplay|6|Lexington II|CV|Maid|The Fluffiest of Maids|{{Gem}} 1180|1|L2D|109}}
+{{ShipDisplay|5|Bunker Hill|CV||'''Construction'''}}
+{{ShipDisplay|5|Bunker Hill|CV|Home Relaxation|Mission Relaxation|{{Gem}} 880|1||109}}
+{{ShipDisplay|4|Independence|CVL||'''Construction'''}}
+{{ShipDisplay|4|Independence|CVL|School|Transfer Student From Afar|{{Gem}} 780|1||103}}
+{{ShipDisplay|4|Independence|CVL|Party|The Independent Line|{{Gem}} 800|||135}}
+{{ShipDisplay|4|Independence|CVL|Home Relaxation|Liberty and Leisure|{{Gem}} 780|||109}}
+{{ShipDisplay|4|Independence|CVL|Casual|The Tailwind of Opportunity|{{Gem}} 780|||108}}
+{{ShipDisplay|4|Independence|CVL|Kai|Independence (Retrofit)||1}}
+{{ShipDisplay|4|Princeton|CVL||'''Construction'''}}
+{{ShipDisplay|4|Princeton|CVL|Summer|Seaside Training|{{Gem}} 780|1||106}}
+{{ShipDisplay|4|Princeton|CVL|School|Lolipop Paradise|{{Gem}} 780|||108}}
+{{ShipDisplay|4|Princeton|CVL|Christmas|Gift-Wrapped Reindeer|{{Gem}} 800|||125}}
+{{ShipDisplay|5|Cowpens|CVL||'''Construction'''}}
+{{ShipDisplay|5|Cowpens|CVL|Maid|Milky Ministrations|{{Gem}} 1180|1|L2D|185}}
+{{ShipDisplay|4|Langley II|CVL||'''Construction'''}}
+{{ShipDisplay|4|Langley II|CVL|Summer|On-the-Clock Vacation|{{Gem}} 780|||164}}
+{{ShipDisplay|4|Bataan|CVL||'''Construction'''}}
+{{ShipDisplay|4|Bataan|CVL|Home Relaxation|Comfy Cotton Jammies|{{Gem}} 780|||109}}
+{{ShipDisplay|4|San Jacinto|CVL||'''Construction'''}}
+{{ShipDisplay|4|San Jacinto|CVL|Bunny|Flavor of the Day|{{Gem}} 780|1||145}}
+{{ShipDisplay|5|Shangri-La|CV||'''Construction'''}}
+{{ShipDisplay|5|Shangri-La|CV|Casual|Utopia's Collector|{{Gem}} 880|1||110}}
+{{ShipDisplay|5|Shangri-La|CV|Casual2|Explorer of the Lost World|{{Gem}} 800|1}}
+{{ShipDisplay|4|Little Enterprise|CV||'''Construction'''}}
+{{ShipDisplay|4|Dace|SS||'''Construction'''}}
+{{ShipDisplay|5|Albacore|SS||'''Construction'''}}
+{{ShipDisplay|5|Albacore|SS|Party|Beneath the Black Dress|{{Gem}} 900|||135}}
+{{ShipDisplay|5|Albacore|SS|Maid|A Catty Surprise!|{{Gem}} 880|||150}}
+{{ShipDisplay|5|Cavalla|SS||'''Construction'''}}
+{{ShipDisplay|5|Cavalla|SS|School|Convenience Store Raid!|{{Gem}} 880|||103}}
+{{ShipDisplay|5|Cavalla|SS|Party|Colorful Ceremony||1||135}}
+{{ShipDisplay|4|Bluegill|SS||'''Construction'''}}
+{{ShipDisplay|4|Bluegill|SS|Sport|Up-And-Coming Infielder|{{Gem}} 800|||132}}
+{{ShipDisplay|4|Albacore μ|SS||'''Construction'''}}
+{{ShipDisplay|5|Archerfish|SS||'''Construction'''}}
+{{ShipDisplay|5|Archerfish|SS|Bunny|Coquettish Bunny|{{Gem}} 880|||145}}
+{{ShipDisplay|5|Archerfish|SS|School|The Devil Next Door|{{Gem}} 880|||147}}
+{{ShipDisplay|4|Nautilus|SS||'''Construction'''}}
+{{ShipDisplay|4|Nautilus|SS|Bunny|Afternoon Stretches|{{Gem}} 780|1||145}}
+{{ShipDisplay|4|Nautilus|SS|Summer|Shining Blossom in the Deep Blue|{{Gem}} 780|||173}}
+{{ShipDisplay|5|Flasher|SS||'''Construction'''}}
+{{ShipDisplay|5|Flasher|SS|Maid|Tearjerking Service|{{Gem}} 880|1||166}}
+{{ShipDisplay|4|Herring|SS||'''Construction'''}}
+{{ShipDisplay|4|Herring|SS|Wild West|The Town With No Shade|{{Gem}} 780|||176}}
+{{ShipDisplay|4|Vestal|AR||'''Construction'''}}
+{{ShipDisplay|4|Vestal|AR|Summer|Revigorating Hestia|{{Gem}} 780|||106}}
+{{ShipDisplay|6|Guam|CB||'''Construction'''}}
+{{ShipDisplay|6|Guam|CB|Bunny|Stage-Setting Charmer|{{Gem}} 1180|1|L2D|145}}
+{{ShipDisplay|6|Guam|CB|Ninja|The Kunoichi's Dangerous Variety Show|{{Gem}} 1180|1|L2D|191}}
+{{ShipDisplay|4|Laffey|BB|KFC|Sleepy Teriyaki Twister|{{Gem}} 700|1}}
+{{ShipDisplay|4|Laffey|BB|RPG|Sleepageddon|{{Gem}} 780|1||158}}
+{{ShipDisplay|4|Laffey|BB|Party|Lazy Days|{{Gem}} 800||DYN}}
+{{ShipDisplay|4|Saratoga|CV|Food|Cup Ramen Ambassador?|{{Gem}} 700|1}}
+{{ShipDisplay|4|Saratoga|CV|Party|Morning Sun Over Azure Skies|{{Gem}} 700}}
+{{ShipDisplay|5|Enterprise|CV|Summer|Diving Under Blue Skies|{{Gem}} 1180||L2D|133}}
+{{ShipDisplay|5|Enterprise|CV|Hot Springs|Bathing Under Sunny Skies|{{Gem}} 1100|1|L2D}}
+{{ShipDisplay|5|Seattle|CL||'''Construction'''}}
+{{ShipDisplay|5|Seattle|CL|Party|Gorgeous Party|{{Gem}} 880|||115}}
+{{ShipDisplay|5|Seattle|CL|Christmas|Christmas Party Prep!|{{Gem}} 900|||125}}
+{{ShipDisplay|5|Seattle|CL|Summer|Sunfish Spell!|{{Gem}} 880|1||134}}
+{{ShipDisplay|5|Georgia|BB||'''Construction'''}}
+{{ShipDisplay|5|Georgia|BB|Party|South Town Pearl|{{Gem}} 800}}
+{{ShipDisplay|5|Georgia|BB|Summer|Lanier Swan|{{Gem}} 880|||106}}
+{{ShipDisplay|5|Georgia|BB|New Year|Exalted Vibrance|{{Gem}} 880|||101}}
+{{ShipDisplay|5|Anchorage|CA||'''Construction'''}}
+{{ShipDisplay|5|Anchorage|CA|Summer|Dolphins and Swim Lessons|{{Gem}} 1180||L2D|168}}
+{{ShipDisplay|5|Anchorage|CA|Spring|Moonlit Boat Ride|{{Gem}} 1200||L2D|152}}
+{{ShipDisplay|5|Anchorage|CA|Home Relaxation|Sweet Evening Milk|{{Gem}} 1260|1|L2D|185}}
+{{ShipDisplay|5|Anchorage|CA|Wedding|Oath of Sunsets and Fireworks||1}}
+{{ShipDisplay|6|Kearsarge|BBV||'''Construction'''}}
+{{ShipDisplay|6|Kearsarge|BBV|Bunny|All-Night Charge|{{Gem}} 1180||L2D|145}}
+{{ShipDisplay|6|Kearsarge|BBV|Spring|Springtime Monitoring|{{Gem}} 980|1|DYN|302}}
+{{ShipDisplay|5|Halford|DD||'''Construction'''}}
+{{ShipDisplay|5|Halford|DD|Bunny|A Special Day with the Bunny Lord|{{Gem}} 980|1|DYN|150}}
+{{ShipDisplay|5|Kansas|BB||'''Construction'''}}
+{{ShipDisplay|5|Kansas|BB|Bunny|Late-Night Leisure|{{Gem}} 1000|1|DYN|161}}
+{{ShipDisplay|3|Amazon|DD||'''Construction'''}}
+{{ShipDisplay|3|Amazon|DD|Party|Little Orchestra|{{Gem}} 780|||107}}
+{{ShipDisplay|3|Amazon|DD|Kai|Amazon (Retrofit)||1}}
+{{ShipDisplay|3|Acasta|DD||'''Construction'''}}
+{{ShipDisplay|3|Acasta|DD|Casual|Fashionable Outing|{{Gem}} 700}}
+{{ShipDisplay|3|Acasta|DD|Misc|Lights of the Lantern Festival|{{Gem}} 780|||102}}
+{{ShipDisplay|3|Acasta|DD|Bunny|Monochromatic Marvel|{{Gem}} 780|||145}}
+{{ShipDisplay|3|Acasta|DD|Kai|Acasta (Retrofit)||1}}
+{{ShipDisplay|3|Ardent|DD||'''Construction'''}}
+{{ShipDisplay|3|Ardent|DD|School|Ardent Valentine|{{Gem}} 780|||103}}
+{{ShipDisplay|3|Ardent|DD|Bunny|Master Ardent?|{{Gem}} 780|1||145}}
+{{ShipDisplay|3|Ardent|DD|Kai|Ardent (Retrofit)||1}}
+{{ShipDisplay|2|Beagle|DD||'''Construction'''}}
+{{ShipDisplay|2|Bulldog|DD||'''Construction'''}}
+{{ShipDisplay|2|Comet|DD||'''Construction'''}}
+{{ShipDisplay|2|Comet|DD|Kai|Comet (Retrofit)||1}}
+{{ShipDisplay|2|Crescent|DD||'''Construction'''}}
+{{ShipDisplay|2|Crescent|DD|Kai|Crescent (Retrofit)||1}}
+{{ShipDisplay|2|Cygnet|DD||'''Construction'''}}
+{{ShipDisplay|2|Cygnet|DD|Summer|Sea Star on Shore||1||106}}
+{{ShipDisplay|2|Cygnet|DD|Christmas|Holy Night's Hymn|{{Gem}} 680|||100}}
+{{ShipDisplay|2|Cygnet|DD|New Year|Winter Date||1||101}}
+{{ShipDisplay|2|Cygnet|DD|Maid|An Offer To Be Maid|{{Gem}} 780|1||104}}
+{{ShipDisplay|2|Cygnet|DD|Sport|Royal Fanfare|{{Gem}} 780|||112}}
+{{ShipDisplay|2|Cygnet|DD|Kai|Cygnet (Retrofit)||1}}
+{{ShipDisplay|2|Foxhound|DD||'''Construction'''}}
+{{ShipDisplay|2|Foxhound|DD|Kai|Foxhound (Retrofit)||1}}
+{{ShipDisplay|3|Fortune|DD||'''Construction'''}}
+{{ShipDisplay|3|Fortune|DD|Party|Seraphic Sunshine|{{Gem}} 700}}
+{{ShipDisplay|3|Fortune|DD|Kai|Fortune (Retrofit)||1}}
+{{ShipDisplay|4|Grenville|DD||'''Construction'''}}
+{{ShipDisplay|4|Glowworm|DD||'''Construction'''}}
+{{ShipDisplay|4|Glowworm|DD|Spring|Jokey Adjudicator|{{Gem}} 800|||144}}
+{{ShipDisplay|4|Glowworm|DD|Kai|Glowworm (Retrofit)||1}}
+{{ShipDisplay|4|Hardy|DD||'''Construction'''}}
+{{ShipDisplay|3|Hunter|DD||'''Construction'''}}
+{{ShipDisplay|4|Javelin|DD||'''Construction'''}}
+{{ShipDisplay|4|Javelin|DD|Summer|Beach Picnic!|{{Gem}} 1080|||106}}
+{{ShipDisplay|4|Javelin|DD|CoCo|Let's Become Waitresses!|{{Gem}} 700}}
+{{ShipDisplay|4|Javelin|DD|School|Slow Ahead!||1||103}}
+{{ShipDisplay|4|Javelin|DD|Home Relaxation|Operation: Pillow Fight!||1||109}}
+{{ShipDisplay|4|Javelin|DD|Idol|Energetic Idol @120% Motivation!||1||120}}
+{{ShipDisplay|4|Javelin|DD|RPG|A Legend is Born?!|{{Gem}} 780|1||158}}
+{{ShipDisplay|4|Javelin|DD|Wedding|Blissful Purity||1}}
+{{ShipDisplay|4|Javelin|DD|Kai|Javelin (Retrofit)||1}}
+{{ShipDisplay|3|Juno|DD||'''Construction'''}}
+{{ShipDisplay|3|Juno|DD|Festival|Fairly Flavourful Festival||1||114}}
+{{ShipDisplay|4|Vampire|DD||'''Construction'''}}
+{{ShipDisplay|4|Vampire|DD|Spring|The Breath of Spring|{{Gem}} 880|||102}}
+{{ShipDisplay|4|Vampire|DD|Hospital|Little Devil in White||1}}
+{{ShipDisplay|4|Vampire|DD|Festival|Night Princess's Regalia|{{Gem}} 1080|1||114}}
+{{ShipDisplay|4|Vampire|DD|Idol|Night Princess Idol|{{Gem}} 800|||120}}
+{{ShipDisplay|4|Vampire|DD|Christmas|Night Princess's Festive Feast||1||125}}
+{{ShipDisplay|4|Vampire|DD|Wedding|Eloi's Blessing||1}}
+{{ShipDisplay|3|Jupiter|DD||'''Construction'''}}
+{{ShipDisplay|3|Jupiter|DD|Home Relaxation|Fanclub Sleepover||1||109}}
+{{ShipDisplay|3|Jersey|DD||'''Construction'''}}
+{{ShipDisplay|4|Matchless|DD||'''Construction'''}}
+{{ShipDisplay|4|Matchless|DD|Casual|Escort Me Please!|{{Gem}} 780|||113}}
+{{ShipDisplay|4|Musketeer|DD||'''Construction'''}}
+{{ShipDisplay|3|Echo|DD||'''Construction'''}}
+{{ShipDisplay|4|Eskimo|DD||'''Construction'''}}
+{{ShipDisplay|4|Eskimo|DD|Summer|Parkaless Prankster|{{Gem}} 780|||106}}
+{{ShipDisplay|4|Icarus|DD||'''Construction'''}}
+{{ShipDisplay|4|Icarus|DD|Hospital|One-Week Medical Experience?|{{Gem}} 700|||1101}}
+{{ShipDisplay|4|Icarus|DD|Summer|Nereid's Discovery|{{Gem}} 780|||134}}
+{{ShipDisplay|4|Icarus|DD|Maid|At Your Service|{{Gem}} 780|||150}}
+{{ShipDisplay|5|Jervis|DD||'''Construction'''}}
+{{ShipDisplay|5|Jervis|DD|Maid|Fluttering in the Fair Breeze|{{Gem}} 800}}
+{{ShipDisplay|5|Janus|DD||'''Construction'''}}
+{{ShipDisplay|5|Janus|DD|Halloween|Fright-Night Scaredy-Cat|{{Gem}} 1180|||156}}
+{{ShipDisplay|5|Janus|DD|School|Fear of Changing... Clothes|{{Gem}} 980||DYN|109}}
+{{ShipDisplay|5|Janus|DD|Maid|Don't Turn Off the Lights!|{{Gem}} 880||DYN|174}}
+{{ShipDisplay|5|Janus|DD|Bunny|A Lesson in Billiards|{{Gem}} 880|1||608}}
+{{ShipDisplay|5|Janus|DD|Wedding|Oath under the Morning Sun||1||530}}
+{{ShipDisplay|4|Hero|DD||'''Construction'''}}
+{{ShipDisplay|4|Hero|DD|School|The Devil Wears Knee-Highs|{{Gem}} 780|||147}}
+{{ShipDisplay|5|Nubian|DD||'''Construction'''}}
+{{ShipDisplay|5|Nubian|DD|RPG|Normal Potion Maker|{{Gem}} 880|1||500}}
+{{ShipDisplay|5|Nubian|DD|Maid|The Modern-Day Clumsy Maid Escapade||1||166}}
+{{ShipDisplay|6|Trafalgar|DD||'''Construction'''}}
+{{ShipDisplay|6|Trafalgar|DD|Summer|Sea Breeze, Moonlit Talks|{{Gem}} 1180|1|L2D|164}}
+{{ShipDisplay|4|Gallant|DD||'''Construction'''}}
+{{ShipDisplay|4|Gallant|DD|Home Relaxation|Express-ive Delivery|{{Gem}} 880|1|DYN|168}}
+{{ShipDisplay|2|Leander|CL||'''Construction'''}}
+{{ShipDisplay|2|Leander|CL|Kai|Leander (Retrofit)||1}}
+{{ShipDisplay|3|Achilles|CL||'''Construction'''}}
+{{ShipDisplay|3|Achilles|CL|Kai|Achilles (Retrofit)||1}}
+{{ShipDisplay|3|Ajax|CL||'''Construction'''}}
+{{ShipDisplay|3|Ajax|CL|Party|Party Queen|{{Gem}} 780|||107}}
+{{ShipDisplay|3|Ajax|CL|School|Valentine's Reward?|{{Gem}} 780|||108}}
+{{ShipDisplay|3|Ajax|CL|Kai|Ajax (Retrofit)||1}}
+{{ShipDisplay|5|Dido|CL||'''Construction'''}}
+{{ShipDisplay|5|Dido|CL|Party|Anxious Bisque Doll|{{Gem}} 900|||135}}
+{{ShipDisplay|3|Southampton|CL||'''Construction'''}}
+{{ShipDisplay|3|Southampton|CL|New Year|New Year's Little Knight|{{Gem}} 780|||126}}
+{{ShipDisplay|3|Southampton|CL|Maid|Afternoon Impromptu||1||150}}
+{{ShipDisplay|3|Southampton|CL|Wedding|A Dazzling Departure||1}}
+{{ShipDisplay|4|Sheffield|CL||'''Construction'''}}
+{{ShipDisplay|4|Sheffield|CL|Misc|Cloak and Dagger|{{Gem}} 700}}
+{{ShipDisplay|4|Sheffield|CL|Festival|A Moment's Respite|{{Gem}} 780|1||114}}
+{{ShipDisplay|4|Sheffield|CL|Party|Black Crow's Finery|{{Gem}} 800|||135}}
+{{ShipDisplay|4|Sheffield|CL|Vampire|Bulletborne|{{Gem}} 780|||156}}
+{{ShipDisplay|4|Sheffield|CL|Theme Park|Occult Clash|{{Gem}} 780|||177}}
+{{ShipDisplay|4|Manchester|CL||'''Construction'''}}
+{{ShipDisplay|4|Manchester|CL|Halloween|Midnight Devil in White|{{Gem}} 780|||156}}
+{{ShipDisplay|4|Manchester|CL|Summer|A Moment in the Shade|{{Gem}} 780|||168}}
+{{ShipDisplay|4|Gloucester|CL||'''Construction'''}}
+{{ShipDisplay|4|Gloucester|CL|Spring|Brilliance in Purple|{{Gem}} 800|||127}}
+{{ShipDisplay|4|Gloucester|CL|Theme Park|Violet Enrapturement|{{Gem}} 900||DYN|182}}
+{{ShipDisplay|4|Edinburgh|CL||'''Construction'''}}
+{{ShipDisplay|4|Edinburgh|CL|School|The Library Fairy|{{Gem}} 780|||103}}
+{{ShipDisplay|4|Edinburgh|CL|Halloween|Candy Maid|{{Gem}} 780|||119}}
+{{ShipDisplay|5|Belfast|CL||'''Construction'''}}
+{{ShipDisplay|5|Belfast|CL|Spring|Iridescent Rosa|{{Gem}} 1180|||102}}
+{{ShipDisplay|5|Belfast|CL|Bluray|Serene Steel|{{Gem}} 1180}}
+{{ShipDisplay|5|Belfast|CL|Party|The Noble Attendant|{{Gem}} 880|||115}}
+{{ShipDisplay|5|Belfast|CL|Casual|Shopping with the Head Maid||1||104}}
+{{ShipDisplay|5|Belfast|CL|Pizza|Piping-Hot Perfection|{{Gem}} 800|1}}
+{{ShipDisplay|5|Belfast|CL|New Year|Folded Fascination|{{Gem}} 880|||136}}
+{{ShipDisplay|5|Belfast|CL|Theme Park|Blissful Service|{{Gem}} 980||DYN|150}}
+{{ShipDisplay|5|Belfast|CL|Wedding|The Pledge of Claddagh||1}}
+{{ShipDisplay|3|Arethusa|CL||'''Construction'''}}
+{{ShipDisplay|3|Galatea|CL||'''Construction'''}}
+{{ShipDisplay|4|Aurora|CL||'''Construction'''}}
+{{ShipDisplay|4|Aurora|CL|Spring|The Tale of Spring|{{Gem}} 880|||102}}
+{{ShipDisplay|4|Aurora|CL|Party|Dawn's Paean|{{Gem}} 780|||107}}
+{{ShipDisplay|4|Aurora|CL|Spring2|Heritage of Yu City|{{Gem}} 1100|1||128}}
+{{ShipDisplay|4|Aurora|CL|Wedding|Garb of Eternal Prosperity||1}}
+{{ShipDisplay|3|Fiji|CL||'''Construction'''}}
+{{ShipDisplay|3|Fiji|CL|Casual|Trendy and Vogue?|{{Gem}} 700}}
+{{ShipDisplay|3|Jamaica|CL||'''Construction'''}}
+{{ShipDisplay|3|Jamaica|CL|Casual|Dark Bolt|{{Gem}} 780|||105}}
+{{ShipDisplay|3|Jamaica|CL|Casual2|Highway Star||1||118}}
+{{ShipDisplay|4|Little Bel|CL||'''Construction'''}}
+{{ShipDisplay|3|Newcastle|CL||'''Construction'''}}
+{{ShipDisplay|3|Newcastle|CL|Flower|Hibiscus Garments|{{Gem}} 700}}
+{{ShipDisplay|3|Newcastle|CL|Kai|Newcastle (Retrofit)||1}}
+{{ShipDisplay|5|Sirius|CL||'''Construction'''}}
+{{ShipDisplay|5|Sirius|CL|Party|White Rose|{{Gem}} 880|||107}}
+{{ShipDisplay|5|Sirius|CL|Summer|Scorching-Hot Seirios|{{Gem}} 1180|||106}}
+{{ShipDisplay|5|Sirius|CL|Spring|Azure Horizons|{{Gem}} 900|||128}}
+{{ShipDisplay|5|Sirius|CL|Theme Park|Rabbit of Paradise|{{Gem}} 1200||L2D|159}}
+{{ShipDisplay|3|Curacoa|DD||'''Construction'''}}
+{{ShipDisplay|3|Curacoa|DD|Spring|Eastern Grace|{{Gem}} 780|||102}}
+{{ShipDisplay|3|Curacoa|DD|Kai|Curacoa (Retrofit)||1}}
+{{ShipDisplay|3|Curlew|DD||'''Construction'''}}
+{{ShipDisplay|3|Curlew|DD|Spring|Rhythm of the Dragon Empery|{{Gem}} 780|||102}}
+{{ShipDisplay|3|Curlew|DD|Kai|Curlew (Retrofit)||1}}
+{{ShipDisplay|5|Swiftsure|CL||'''Construction'''}}
+{{ShipDisplay|5|Swiftsure|CL|School|Study Hall Cyclamen|{{Gem}} 880|||103}}
+{{ShipDisplay|5|Swiftsure|CL|Spring|Beauty of White Jade|{{Gem}} 900|||128}}
+{{ShipDisplay|5|Swiftsure|CL|Summer|Midsummer Special Service|{{Gem}} 880|||133}}
+{{ShipDisplay|4|Black Prince|CL||'''Construction'''}}
+{{ShipDisplay|4|Black Prince|CL|Summer|White Princess|{{Gem}} 1080|||106}}
+{{ShipDisplay|4|Black Prince|CL|Spring|Fair Maid Spring|{{Gem}} 800|||128}}
+{{ShipDisplay|4|Black Prince|CL|Party|Pop the Cork|{{Gem}} 780|||146}}
+{{ShipDisplay|4|Black Prince|CL|Bunny|Addled Attendant?|{{Gem}} 780|||145}}
+{{ShipDisplay|4|Black Prince|CL|Wedding|Love's Greeting||1||161}}
+{{ShipDisplay|4|Sheffield μ|CL||'''Construction'''}}
+{{ShipDisplay|3|Glasgow|CL||'''Construction'''}}
+{{ShipDisplay|3|Glasgow|CL|School|A Maid in Class|{{Gem}} 780|1||103}}
+{{ShipDisplay|5|Hermione|CL||'''Construction'''}}
+{{ShipDisplay|5|Hermione|CL|Hospital|Pure White Angel|{{Gem}} 1180|||138}}
+{{ShipDisplay|5|Hermione|CL|Summer|Pure White Holiday|{{Gem}} 1180|||133}}
+{{ShipDisplay|5|Hermione|CL|Party|Graceful Afternoon Tea|{{Gem}} 880|||146}}
+{{ShipDisplay|5|Hermione|CL|Spring|Pristine Herbalist|{{Gem}} 900|||152}}
+{{ShipDisplay|5|Hermione|CL|Casual|Winter Dearest|{{Gem}} 880|1||108}}
+{{ShipDisplay|5|Hermione|CL|Wedding|Dawn's Oath||1}}
+{{ShipDisplay|5|Dido µ|CL||'''Construction'''}}
+{{ShipDisplay|4|Penelope|CL||'''Construction'''}}
+{{ShipDisplay|4|Penelope|CL|Spring|Ruby-Red Boudoir|{{Gem}} 800|||144}}
+{{ShipDisplay|4|Penelope|CL|Maid|Salty Maid|{{Gem}} 700|||150}}
+{{ShipDisplay|5|Charybdis|CL||'''Construction'''}}
+{{ShipDisplay|5|Charybdis|CL|Spring|Red Chamber of Healing|{{Gem}} 1200|||144}}
+{{ShipDisplay|5|Charybdis|CL|Party|Brilliant Belle|{{Gem}} 880|||155}}
+{{ShipDisplay|5|Charybdis|CL|Summer|Prim Sea Breeze|{{Gem}} 880|||133}}
+{{ShipDisplay|4|Bellona|CL||'''Construction'''}}
+{{ShipDisplay|4|Bellona|CL|Maid|Armed to Clean|{{Gem}} 780|||150}}
+{{ShipDisplay|4|Enterprise (Royal Navy)|CL||Enterprise||1}}
+{{ShipDisplay|5|Scylla|CL||'''Construction'''}}
+{{ShipDisplay|5|Scylla|CL|School|Femme Fatale Fresher|{{Gem}} 800}}
+{{ShipDisplay|5|Scylla|CL|Party|Bathed in the Limelight|{{Gem}} 900|||135}}
+{{ShipDisplay|5|Scylla|CL|Nile Colors|A Maid's Judgment|{{Gem}} 980|1|DYN|304}}
+{{ShipDisplay|4|Liverpool|CL||'''Construction'''}}
+{{ShipDisplay|4|Liverpool|CL|RPG|Breeze of Blessings|{{Gem}} 780|1||177}}
+{{ShipDisplay|5|Cleopatra|CL||'''Construction'''}}
+{{ShipDisplay|5|Cleopatra|CL|Summer|Stars and Roses|{{Gem}} 880|1||106}}
+{{ShipDisplay|4|Trinidad|CL||'''Construction'''}}
+{{ShipDisplay|4|Trinidad|CL|Summer|Trapper in the Changing Room|{{Gem}} 800|1|DYN}}
+{{ShipDisplay|4|London|CA||'''Construction'''}}
+{{ShipDisplay|4|London|CA|Work|The Sterling Secretary|{{Gem}} 880||DYN|169}}
+{{ShipDisplay|4|London|CA|Wedding|Platinum Ceremony||1}}
+{{ShipDisplay|4|London|CA|Kai|London (Retrofit)||1}}
+{{ShipDisplay|3|Shropshire|CA||'''Construction'''}}
+{{ShipDisplay|3|Shropshire|CA|Kai|Shropshire (Retrofit)||1}}
+{{ShipDisplay|3|Kent|CA||'''Construction'''}}
+{{ShipDisplay|3|Suffolk|CA||'''Construction'''}}
+{{ShipDisplay|3|Suffolk|CA|Kai|Suffolk (Retrofit)||1}}
+{{ShipDisplay|3|Norfolk|CA||'''Construction'''}}
+{{ShipDisplay|4|Dorsetshire|CA||'''Construction'''}}
+{{ShipDisplay|4|York|CA||'''Construction'''}}
+{{ShipDisplay|4|York|CA|School|Truth Seeker|{{Gem}} 780|1||103}}
+{{ShipDisplay|4|York|CA|Summer|Summoner from the Azure Depths|{{Gem}} 780|1||133}}
+{{ShipDisplay|4|York|CA|Wedding|Oath of Purity||1}}
+{{ShipDisplay|4|York|CA|Kai|York (Retrofit)||1}}
+{{ShipDisplay|4|Exeter|CA||'''Construction'''}}
+{{ShipDisplay|4|Exeter|CA|Party|A Glorious Toast|{{Gem}} 780|||146}}
+{{ShipDisplay|4|Exeter|CA|Kai|Exeter (Retrofit)||1}}
+{{ShipDisplay|3|Sussex|CA||'''Construction'''}}
+{{ShipDisplay|3|Sussex|CA|Summer|Sunlit Tulips|{{Gem}} 780|||106}}
+{{ShipDisplay|3|Sussex|CA|Party|Wine and Red Roses|{{Gem}} 800|||135}}
+{{ShipDisplay|4|Little Cheshire|CA||'''Construction'''}}
+{{ShipDisplay|4|Devonshire|CA||'''Construction'''}}
+{{ShipDisplay|4|Devonshire|CA|RPG|Sadistic Demon|{{Gem}} 1080|1|L2D|156}}
+{{ShipDisplay|4|Renown|BC||'''Construction'''}}
+{{ShipDisplay|4|Renown|BC|Spring|Graceful Royal Pride|{{Gem}} 780|||175}}
+{{ShipDisplay|3|Repulse|BC||'''Construction'''}}
+{{ShipDisplay|3|Repulse|BC|Travel|Dance of Spring Blooms||1||157}}
+{{ShipDisplay|5|Hood|BC||'''Construction'''}}
+{{ShipDisplay|5|Hood|BC|Summer|Lady of the Shining Sun|{{Gem}} 800|||106}}
+{{ShipDisplay|5|Hood|BC|New Year|Porcelain Grace|{{Gem}} 880|1||142}}
+{{ShipDisplay|5|Hood|BC|Party|Dawnlight's Dame|{{Gem}} 880|||146}}
+{{ShipDisplay|5|Hood|BC|Work|Gentlewoman and Stallion|{{Gem}} 880|||155}}
+{{ShipDisplay|5|Hood|BC|Wedding|Rosey Love Poem||1}}
+{{ShipDisplay|4|Little Renown|BC||'''Construction'''}}
+{{ShipDisplay|4|Queen Elizabeth|BB||'''Construction'''}}
+{{ShipDisplay|4|Queen Elizabeth|BB|Party|The Queen's Ball|{{Gem}} 780|||107}}
+{{ShipDisplay|4|Queen Elizabeth|BB|Idol|One Night of the Queen|{{Gem}} 800|||120}}
+{{ShipDisplay|4|Queen Elizabeth|BB|School|Queen of the Campus||1||103}}
+{{ShipDisplay|4|Queen Elizabeth|BB|Spring|Crown Jewel of the Royal Navy|{{Gem}} 800|||144}}
+{{ShipDisplay|4|Queen Elizabeth|BB|Maid|Yes, Your Maidness!|{{Gem}} 1080||L2D|150}}
+{{ShipDisplay|4|Queen Elizabeth|BB|Summer|Seaside Orders||1||117}}
+{{ShipDisplay|5|Warspite|BB||'''Construction'''}}
+{{ShipDisplay|5|Warspite|BB|Christmas|Christmas Warrior|{{Gem}} 880|||100}}
+{{ShipDisplay|5|Warspite|BB|Idol|Under Pleasure|{{Gem}} 900|||120}}
+{{ShipDisplay|5|Warspite|BB|Ninja|The Grand Old Lady Sunders All|{{Gem}} 880|1||531}}
+{{ShipDisplay|5|Warspite|BB|Kai|Warspite (Retrofit)||1|DYN}}
+{{ShipDisplay|4|Nelson|DD||'''Construction'''}}
+{{ShipDisplay|4|Nelson|DD|Halloween|Luna Witch|{{Gem}} 700}}
+{{ShipDisplay|4|Nelson|DD|Festival|Azure & Gold Summer Night|{{Gem}} 780|1||114}}
+{{ShipDisplay|4|Nelson|DD|Kai|Nelson (Retrofit)||1}}
+{{ShipDisplay|4|Rodney|BB||'''Construction'''}}
+{{ShipDisplay|4|Rodney|BB|Summer|Future Seaside Admiral|{{Gem}} 800|||106}}
+{{ShipDisplay|4|Rodney|BB|Spring|Immaculate Beauty|{{Gem}} 800|||152}}
+{{ShipDisplay|4|Rodney|BB|Wedding|Palace of Blessings||1}}
+{{ShipDisplay|5|King George V|BB||'''Construction'''}}
+{{ShipDisplay|5|King George V|BB|Party|Rose's Regalia|{{Gem}} 880|||115}}
+{{ShipDisplay|5|Prince of Wales|DD||'''Construction'''}}
+{{ShipDisplay|5|Prince of Wales|DD|Summer|Sun Shining Upon Windsor|{{Gem}} 700|||106}}
+{{ShipDisplay|5|Prince of Wales|DD|New Year|Sakura Elegance|{{Gem}} 880|||101}}
+{{ShipDisplay|5|Prince of Wales|DD|RaceQueen|The Laureate's Victory Lap|{{Gem}} 900|||132}}
+{{ShipDisplay|5|Prince of Wales|DD|Party|A Knight's Song, a Lady's Night|{{Gem}} 900|||161}}
+{{ShipDisplay|5|Duke of York|BB||'''Construction'''}}
+{{ShipDisplay|5|Duke of York|BB|Party|Eternal Night's Carola|{{Gem}} 880|||107}}
+{{ShipDisplay|5|Duke of York|BB|RaceQueen|Prestige of the Glorious Formula|{{Gem}} 900|||132}}
+{{ShipDisplay|5|Duke of York|BB|Work|The Chic Counselor|{{Gem}} 980||DYN|169}}
+{{ShipDisplay|5|Howe|BB||'''Construction'''}}
+{{ShipDisplay|5|Howe|BB|Casual|Noble Rouge|{{Gem}} 880|||115}}
+{{ShipDisplay|5|Howe|BB|Maid|Pastry Princess|{{Gem}} 880|||150}}
+{{ShipDisplay|5|Howe|BB|Spring|Evening Marvels|{{Gem}} 880|||157}}
+{{ShipDisplay|4|Valiant|BB||'''Construction'''}}
+{{ShipDisplay|4|Valiant|BB|Hospital|Mischievous Little Nurse|{{Gem}} 780|||138}}
+{{ShipDisplay|4|Valiant|BB|Party|Queen Valiant I|{{Gem}} 780|||146}}
+{{ShipDisplay|4|Revenge|BB||'''Construction'''}}
+{{ShipDisplay|4|Revenge|BB|Maid|The Maid-Knight Charges Forth!|{{Gem}} 780|||150}}
+{{ShipDisplay|6|Vanguard|BB||'''Construction'''}}
+{{ShipDisplay|6|Vanguard|BB|Maid|Half-Hearted Masquerade|{{Gem}} 1180||L2D|150}}
+{{ShipDisplay|5|Royal Oak|BB||'''Construction'''}}
+{{ShipDisplay|5|Royal Oak|BB|School|Bashful Oak|{{Gem}} 880|||150}}
+{{ShipDisplay|6|Lion|BB||'''Construction'''}}
+{{ShipDisplay|6|Lion|BB|Summer|The Reclining Dandelion|{{Gem}} 1180|1|L2D|106}}
+{{ShipDisplay|2|Hermes|CVL||'''Construction'''}}
+{{ShipDisplay|2|Hermes|CVL|Kai|Hermes (Retrofit)||1}}
+{{ShipDisplay|4|Argus|CVL||'''Construction'''}}
+{{ShipDisplay|4|Argus|CVL|School|A Hundred Sleepless Eyes|{{Gem}} 780|||150}}
+{{ShipDisplay|4|Argus|CVL|Party|Cerulean Enthrallment|{{Gem}} 780|||146}}
+{{ShipDisplay|4|Argus|CVL|Summer|Dignified Swimsuit Training|{{Gem}} 1180|1|L2D|539}}
+{{ShipDisplay|4|Unicorn|CVL||'''Construction'''}}
+{{ShipDisplay|4|Unicorn|CVL|Event|Little Star Songstress||1}}
+{{ShipDisplay|4|Unicorn|CVL|Spring|The Gift of Spring|{{Gem}} 780|||102}}
+{{ShipDisplay|4|Unicorn|CVL|Casual|Long-Awaited Date|{{Gem}} 1080|||108}}
+{{ShipDisplay|4|Unicorn|CVL|New Year|Prayer of Plum and Snow|{{Gem}} 780|||126}}
+{{ShipDisplay|4|Unicorn|CVL|Idol|Angelic Night|{{Gem}} 1100|||120}}
+{{ShipDisplay|4|Unicorn|CVL|Home Relaxation|Icy-Sweet Storytime|{{Gem}} 780|||109}}
+{{ShipDisplay|4|Unicorn|CVL|Hospital|Angelic Nurse||1||138}}
+{{ShipDisplay|4|Unicorn|CVL|Wedding|A Dream of Pure Vows||1}}
+{{ShipDisplay|4|Unicorn|CVL|Kai|Unicorn (Retrofit)||1}}
+{{ShipDisplay|5|Centaur|DD||'''Construction'''}}
+{{ShipDisplay|5|Centaur|DD|Summer|Beachside Undine|{{Gem}} 1180|||106}}
+{{ShipDisplay|5|Centaur|DD|Spring|Sprightly Spring Wind|{{Gem}} 880|||102}}
+{{ShipDisplay|4|Chaser|DD||'''Construction'''}}
+{{ShipDisplay|4|Chaser|DD|Spring|The Way of the Dragon Empery|{{Gem}} 780|||102}}
+{{ShipDisplay|4|Chaser|DD|Casual|Gamer Style|{{Gem}} 780|||105}}
+{{ShipDisplay|5|Perseus|CVL||'''Construction'''}}
+{{ShipDisplay|5|Perseus|CVL|Hospital|Unfamiliar Duties|{{Gem}} 880|||138}}
+{{ShipDisplay|5|Perseus|CVL|Spring|Spring's Lackadaisical Leisure|{{Gem}} 1180||L2D|175}}
+{{ShipDisplay|5|Albion|CVL||'''Construction'''}}
+{{ShipDisplay|5|Albion|CVL|Halloween|Silvermoon Faerie Princess|{{Gem}} 880|||156}}
+{{ShipDisplay|5|Albion|CVL|Spring|Scent of Spring in the Red Pavilion|{{Gem}} 1200||L2D|152}}
+{{ShipDisplay|5|Albion|CVL|Home Relaxation|A Fairy-Tale Breakfast|{{Gem}} 980|1|DYN|109}}
+{{ShipDisplay|5|Theseus|CVL||'''Construction'''}}
+{{ShipDisplay|5|Theseus|CVL|Spring|New Year's White Plumage|{{Gem}} 880|||165}}
+{{ShipDisplay|4|Eagle|CV||'''Construction'''}}
+{{ShipDisplay|4|Eagle|CV|Hospital|Eagle's Clinic|{{Gem}} 780|||138}}
+{{ShipDisplay|4|Ark Royal|CV||'''Construction'''}}
+{{ShipDisplay|4|Ark Royal|CV|Summer|Coast Watcher|{{Gem}} 780|||106}}
+{{ShipDisplay|4|Ark Royal|CV|Party|Guardian of the Ball|{{Gem}} 1080|||115}}
+{{ShipDisplay|4|Ark Royal|CV|New Year|New Year's Protectress|{{Gem}} 780|||126}}
+{{ShipDisplay|4|Ark Royal|CV|Maid|Café Lookout|{{Gem}} 780|||155}}
+{{ShipDisplay|4|Ark Royal|CV|Theme Park|Order Amidst Amusement|{{Gem}} 800|||181}}
+{{ShipDisplay|4|Ark Royal|CV|Wedding|Pure-White Protector||1}}
+{{ShipDisplay|4|Ark Royal|CV|Kai|Ark Royal (Retrofit)||1}}
+{{ShipDisplay|5|Illustrious|CV||'''Construction'''}}
+{{ShipDisplay|5|Illustrious|CV|Tea Party|Never-Ending Tea Party|{{Gem}} 800}}
+{{ShipDisplay|5|Illustrious|CV|Party|Illustrious Ball|{{Gem}} 880|||107}}
+{{ShipDisplay|5|Illustrious|CV|Hanbok|Resplendent Hibiscus|{{Gem}} 800|1}}
+{{ShipDisplay|5|Illustrious|CV|Spring|Maiden Lily's Radiance|{{Gem}} 900|||128}}
+{{ShipDisplay|5|Illustrious|CV|Party2|Lambent Melody|{{Gem}} 900|||159}}
+{{ShipDisplay|5|Illustrious|CV|Work|Our Private "Study" Session|{{Gem}} 1180||L2D|109}}
+{{ShipDisplay|5|Illustrious|CV|Wedding|Morning Star of Love and Hope||1}}
+{{ShipDisplay|5|Victorious|CV||'''Construction'''}}
+{{ShipDisplay|5|Victorious|CV|Casual|The Goddess' Day Off|{{Gem}} 880|||105}}
+{{ShipDisplay|5|Victorious|CV|Spring|Guidance of the Spring Goddess|{{Gem}} 900|||144}}
+{{ShipDisplay|5|Victorious|CV|Festival|Upon Nights Brisk and Beautiful|{{Gem}} 880|1||172}}
+{{ShipDisplay|5|Formidable|CV||'''Construction'''}}
+{{ShipDisplay|5|Formidable|CV|Summer|The Lady of the Beach|{{Gem}} 880|||106}}
+{{ShipDisplay|5|Formidable|CV|Party|Timeless Classics|{{Gem}} 880|||146}}
+{{ShipDisplay|5|Formidable|CV|School|The Lover's Heart Flutters On Duty|{{Gem}} 1180|1|L2D|519}}
+{{ShipDisplay|5|Formidable|CV|Bunny|Rockin' Encore|{{Gem}} 980|1|DYN|145}}
+{{ShipDisplay|5|Formidable|CV|Party2|Anniversary Memories|{{Gem}} 1180|1|L2D|107}}
+{{ShipDisplay|4|Glorious|CV||'''Construction'''}}
+{{ShipDisplay|4|Glorious|CV|School|Glorious School Life|{{Gem}} 780|||103}}
+{{ShipDisplay|4|Glorious|CV|Spring|Pungent Plum|{{Gem}} 1100|||144}}
+{{ShipDisplay|6|Implacable|CV||'''Construction'''}}
+{{ShipDisplay|6|Implacable|CV|School|Shepherd of the "Lost"|{{Gem}} 980||DYN|150}}
+{{ShipDisplay|6|Implacable|CV|Spring|Her Beauty Runneth Over|{{Gem}} 1200|1|L2D|152}}
+{{ShipDisplay|4|Little Illustrious|CV||'''Construction'''}}
+{{ShipDisplay|5|Illustrious μ|CV||'''Construction'''}}
+{{ShipDisplay|5|Indomitable|CV||'''Construction'''}}
+{{ShipDisplay|5|Indomitable|CV|Maid|Ms. Motivationless Maid|{{Gem}} 880|||150}}
+{{ShipDisplay|4|Little Formidable|CV||'''Construction'''}}
+{{ShipDisplay|5|Formidable μ|CV||'''Construction'''}}
+{{ShipDisplay|4|Erebus|BM||'''Construction'''}}
+{{ShipDisplay|4|Erebus|BM|Festival|Illusory Happiness|{{Gem}} 800|1}}
+{{ShipDisplay|4|Erebus|BM|Halloween|Wardrobe Witchery|{{Gem}} 780|||119}}
+{{ShipDisplay|4|Terror|DD||'''Construction'''}}
+{{ShipDisplay|4|Terror|DD|Halloween|Halloween Terror|{{Gem}} 700}}
+{{ShipDisplay|4|Abercrombie|BM||'''Construction'''}}
+{{ShipDisplay|4|Abercrombie|BM|Halloween|Pumpkin Blast!|{{Gem}} 780|||119}}
+{{ShipDisplay|4|Abercrombie|BM|Bunny|Mischief on the Rocks|{{Gem}} 1080|1||145}}
+{{ShipDisplay|4|Abercrombie|BM|Special Exercise|Hot on Your Trail|{{Gem}} 780|1||154}}
+{{ShipDisplay|4|Javelin|DD|Party|A Different Dance||1||161}}
+{{ShipDisplay|4|Unicorn|CVL|Party|Blissful Movement|{{Gem}} 800|||159}}
+{{ShipDisplay|4|Unicorn|CVL|RPG|Snow White Guardian Angel|{{Gem}} 780|1||177}}
+{{ShipDisplay|4|Unicorn|CVL|Sport|Champion of Unicorn|{{Gem}} 780|||112}}
+{{ShipDisplay|5|Illustrious|CV|Casual|Sweet Afternoon Teatime|{{Gem}} 980|1|DYN|109}}
+{{ShipDisplay|5|Neptune|CL||'''Construction'''}}
+{{ShipDisplay|5|Neptune|CL|Christmas|Princess of the Reindeers|{{Gem}} 900|||125}}
+{{ShipDisplay|5|Neptune|CL|Party|Nereid's Invitation|{{Gem}} 900|||161}}
+{{ShipDisplay|5|Neptune|CL|Special Exercise|Officer Bunneptune Is on the Case!|{{Gem}} 880|1||154}}
+{{ShipDisplay|5|Monarch|BB||'''Construction'''}}
+{{ShipDisplay|5|Monarch|BB|Party|White Warrick|{{Gem}} 800|||107}}
+{{ShipDisplay|5|Monarch|BB|Spring|Black Gerard|{{Gem}} 880|||102}}
+{{ShipDisplay|5|Monarch|BB|Special Exercise|Detective Arriving on the Scene|{{Gem}} 880|1||154}}
+{{ShipDisplay|5|Monarch|BB|Summer|Sovereign of the Beach|{{Gem}} 1080|1|L2D|106}}
+{{ShipDisplay|5|Cheshire|CA||'''Construction'''}}
+{{ShipDisplay|5|Cheshire|CA|Summer|Summery Date!|{{Gem}} 880|1||133}}
+{{ShipDisplay|5|Cheshire|CA|Spring|Cait Sith Crooner|{{Gem}} 1200|||144}}
+{{ShipDisplay|5|Cheshire|CA|Party|The Cat and the White Steed|{{Gem}} 1100}}
+{{ShipDisplay|5|Cheshire|CA|Party2|The Cat in the Magic Hat|{{Gem}} 1200||L2D|161}}
+{{ShipDisplay|5|Cheshire|CA|Wedding|White Seaside Melody||1||530}}
+{{ShipDisplay|6|Drake|CA||'''Construction'''}}
+{{ShipDisplay|6|Drake|CA|Summer|The Golden Hind's Respite|{{Gem}} 880|1||133}}
+{{ShipDisplay|6|Plymouth|CL||'''Construction'''}}
+{{ShipDisplay|6|Plymouth|CL|Summer|Heart-Throbbing Refreshment|{{Gem}} 880|||133}}
+{{ShipDisplay|4|Fubuki|DD||'''Construction'''}}
+{{ShipDisplay|4|Fubuki|DD|School|5 Minutes Till I'm Late|{{Gem}} 780|||103}}
+{{ShipDisplay|4|Fubuki|DD|Atre|Mascot Bucky||1}}
+{{ShipDisplay|4|Fubuki|DD|Party|Music Pixy|{{Gem}} 1080|||107}}
+{{ShipDisplay|4|Fubuki|DD|Idol|Fubuki Halation!||1||120}}
+{{ShipDisplay|4|Fubuki|DD|Pizza|Stormy Waitress-in-Training!||1}}
+{{ShipDisplay|4|Fubuki|DD|Spring|Caught Under the Lights|{{Gem}} 700}}
+{{ShipDisplay|4|Shirayuki|DD||'''Construction'''}}
+{{ShipDisplay|4|Shirayuki|DD|School|Bunny Breeder|{{Gem}} 780|||103}}
+{{ShipDisplay|4|Miyuki|DD||'''Construction'''}}
+{{ShipDisplay|4|Miyuki|DD|Maid|Shopping Rendezvous|{{Gem}} 780|||160}}
+{{ShipDisplay|4|Miyuki|DD|Travel|Clear Skies and Crepes||1||529}}
+{{ShipDisplay|4|Ayanami|DD||'''Construction'''}}
+{{ShipDisplay|4|Ayanami|DD|Halloween|Witch in Ambush|{{Gem}} 700}}
+{{ShipDisplay|4|Ayanami|DD|Rock|Rock 'n' Demon|{{Gem}} 800}}
+{{ShipDisplay|4|Ayanami|DD|Spring|Lunar Demon|{{Gem}} 780|||102}}
+{{ShipDisplay|4|Ayanami|DD|CoCo|Grade A Sailor Uniform|{{Gem}} 700}}
+{{ShipDisplay|4|Ayanami|DD|Bluray|Covert Ops Cloak||1}}
+{{ShipDisplay|4|Ayanami|DD|Idol|Low-Key Idol @Confused|{{Gem}} 800|||120}}
+{{ShipDisplay|4|Ayanami|DD|Wedding|Demon's Finest Dress||1}}
+{{ShipDisplay|4|Ayanami|DD|Kai|Ayanami (Retrofit)||1}}
+{{ShipDisplay|3|Akatsuki|DD||'''Construction'''}}
+{{ShipDisplay|3|Akatsuki|DD|Camp|Akatsuki Goes North|{{Gem}} 700|1}}
+{{ShipDisplay|3|Akatsuki|DD|Casual|Motoninja Akatsuki|{{Gem}} 780|1||118}}
+{{ShipDisplay|3|Akatsuki|DD|Christmas|Santa's Lost Helper!|{{Gem}} 800|||125}}
+{{ShipDisplay|3|Akatsuki|DD|Travel|Cirque de Ninjutsu!||1||108}}
+{{ShipDisplay|4|Hibiki|DD||'''Construction'''}}
+{{ShipDisplay|4|Hibiki|DD|New Year|New Year's Little Imp|{{Gem}} 780|||126}}
+{{ShipDisplay|3|Ikazuchi|DD||'''Construction'''}}
+{{ShipDisplay|3|Ikazuchi|DD|Tea Party|Sakura Tea|{{Gem}} 650}}
+{{ShipDisplay|3|Ikazuchi|DD|Festival|Thunderous Festival|{{Gem}} 780|1||114}}
+{{ShipDisplay|3|Ikazuchi|DD|Party|Dawn's Thunder|{{Gem}} 800|||135}}
+{{ShipDisplay|3|Ikazuchi|DD|Maid|Courtyard Maid Ikazuchi|{{Gem}} 780|1||142}}
+{{ShipDisplay|3|Inazuma|DD||'''Construction'''}}
+{{ShipDisplay|3|Inazuma|DD|Tea Party|Vanilla Pudding|{{Gem}} 650}}
+{{ShipDisplay|3|Inazuma|DD|Festival|Flash of Fireworks|{{Gem}} 780|1||114}}
+{{ShipDisplay|3|Inazuma|DD|Party|Dusk's Lightning|{{Gem}} 800|||135}}
+{{ShipDisplay|3|Inazuma|DD|Travel|Maid's Flower Offering||1||172}}
+{{ShipDisplay|3|Shiratsuyu|DD||'''Construction'''}}
+{{ShipDisplay|3|Shiratsuyu|DD|Maid|Is The Order A Torpedo?|{{Gem}} 780|1||104}}
+{{ShipDisplay|3|Shiratsuyu|DD|Spring|Thawing Snow, Fireworks Alight|{{Gem}} 800|1||152}}
+{{ShipDisplay|3|Shiratsuyu|DD|Kai|Shiratsuyu (Retrofit)||1}}
+{{ShipDisplay|5|Yuudachi|DD||'''Construction'''}}
+{{ShipDisplay|5|Yuudachi|DD|New Year|Shogun of Snowballs|{{Gem}} 780|||101}}
+{{ShipDisplay|5|Yuudachi|DD|Party|Carnivore Carnival!|{{Gem}} 880|||115}}
+{{ShipDisplay|5|Yuudachi|DD|Christmas|Woofy Floofy Christmas Night|{{Gem}} 900|||125}}
+{{ShipDisplay|5|Yuudachi|DD|Wedding|The Bride of Solomon||1}}
+{{ShipDisplay|5|Yuudachi|DD|Kai|Yuudachi (Retrofit)||1|DYN}}
+{{ShipDisplay|4|Shigure|DD||'''Construction'''}}
+{{ShipDisplay|4|Shigure|DD|Summer|Attack, I-490!|{{Gem}} 500|||106}}
+{{ShipDisplay|4|Shigure|DD|Party|The Ballroom's Lucky Star|{{Gem}} 780|||115}}
+{{ShipDisplay|4|Shigure|DD|School|Lucky Chocolate|{{Gem}} 780|||104}}
+{{ShipDisplay|4|Shigure|DD|Kai|Shigure (Retrofit)||1}}
+{{ShipDisplay|5|Yukikaze|DD||'''Construction'''}}
+{{ShipDisplay|5|Yukikaze|DD|Event|Sovereign of the Swing|{{Gem}} 700}}
+{{ShipDisplay|5|Yukikaze|DD|Spring|Winter's Snowy Wind|{{Gem}} 1200|||127}}
+{{ShipDisplay|5|Yukikaze|DD|Wedding|The Warmth of Spring||1}}
+{{ShipDisplay|3|Kagerou|DD||'''Construction'''}}
+{{ShipDisplay|3|Kagerou|DD|Halloween|Pumpkins and Festivities!|{{Gem}} 600}}
+{{ShipDisplay|3|Kagerou|DD|Kai|Kagerou (Retrofit)||1}}
+{{ShipDisplay|2|Shiranui|DD||'''Construction'''}}
+{{ShipDisplay|2|Shiranui|DD|Party|Mooncake Merchant||1||115}}
+{{ShipDisplay|2|Shiranui|DD|Kai|Shiranui (Retrofit)||1}}
+{{ShipDisplay|4|Nowaki|DD||'''Construction'''}}
+{{ShipDisplay|3|Hatsuharu|DD||'''Construction'''}}
+{{ShipDisplay|3|Hatsuharu|DD|Snow|Snow Day Hatsuharu|{{Gem}} 700}}
+{{ShipDisplay|3|Hatsuharu|DD|Party|Hatsuharu in the Limelight||1||146}}
+{{ShipDisplay|3|Hatsuharu|DD|Travel|Hatsuharu's Cat Café Caper||1||160}}
+{{ShipDisplay|3|Hatsuharu|DD|Kai|Hatsuharu (Retrofit)||1}}
+{{ShipDisplay|3|Wakaba|DD||'''Construction'''}}
+{{ShipDisplay|3|Wakaba|DD|Christmas|Holiday Special Wakaba!||1||125}}
+{{ShipDisplay|3|Wakaba|DD|School|A Healthy Dose of Sunshine!|{{Gem}} 780|||103}}
+{{ShipDisplay|3|Hatsushimo|DD||'''Construction'''}}
+{{ShipDisplay|3|Hatsushimo|DD|Party|Perennial Joy|{{Gem}} 800|||135}}
+{{ShipDisplay|3|Hatsushimo|DD|Kai|Hatsushimo (Retrofit)||1}}
+{{ShipDisplay|3|Ariake|DD||'''Construction'''}}
+{{ShipDisplay|3|Ariake|DD|Party|Unending Friendship|{{Gem}} 800|||135}}
+{{ShipDisplay|3|Ariake|DD|Kai|Ariake (Retrofit)||1}}
+{{ShipDisplay|3|Yuugure|DD||'''Construction'''}}
+{{ShipDisplay|3|Yuugure|DD|Maid|Maid-In-Training!|{{Gem}} 780|1||104}}
+{{ShipDisplay|3|Yuugure|DD|Spring|Twilight Blossom|{{Gem}} 780|||102}}
+{{ShipDisplay|3|Yuugure|DD|Party|Evening Flower||1||115}}
+{{ShipDisplay|3|Yuugure|DD|Festival|Summer Festival Shopping|{{Gem}} 780|1||114}}
+{{ShipDisplay|3|Yuugure|DD|Travel|Fun in the Sun||1||106}}
+{{ShipDisplay|3|Yuugure|DD|Kai|Yuugure (Retrofit)||1}}
+{{ShipDisplay|3|Kuroshio|DD||'''Construction'''}}
+{{ShipDisplay|3|Oyashio|DD||'''Construction'''}}
+{{ShipDisplay|6|Shimakaze|DD||'''Construction'''}}
+{{ShipDisplay|6|Shimakaze|DD|Bunny|World's Speediest Bunny Waitress|{{Gem}} 1180|||145}}
+{{ShipDisplay|6|Shimakaze|DD|Fairy Tale|The White Rabbit of Wonderland|{{Gem}} 1180||L2D|158}}
+{{ShipDisplay|6|Shimakaze|DD|Summer|The Island Wind Rests|{{Gem}} 880|||164}}
+{{ShipDisplay|6|Shimakaze|DD|Spring|Clumsy Moon Rabbit|{{Gem}} 880|||165}}
+{{ShipDisplay|6|Shimakaze|DD|Home Relaxation|The Unmoving Rabbit|{{Gem}} 880|1||319}}
+{{ShipDisplay|3|Kamikaze|DD||'''Construction'''}}
+{{ShipDisplay|3|Kamikaze|DD|Kai|Kamikaze (Retrofit)||1}}
+{{ShipDisplay|3|Matsukaze|DD||'''Construction'''}}
+{{ShipDisplay|3|Matsukaze|DD|Kai|Matsukaze (Retrofit)||1}}
+{{ShipDisplay|2|Mutsuki|DD||'''Construction'''}}
+{{ShipDisplay|2|Mutsuki|DD|Christmas|Mr. Reindeer, Depart!|{{Gem}} 600|||100}}
+{{ShipDisplay|2|Mutsuki|DD|Festival|Candy Festival!|{{Gem}} 780|1||114}}
+{{ShipDisplay|2|Mutsuki|DD|Spring|Spring Festival Sweets||1||127}}
+{{ShipDisplay|2|Mutsuki|DD|Theme Park|Cotton Candy Dreams||1||182}}
+{{ShipDisplay|2|Mutsuki|DD|Kai|Mutsuki (Retrofit)||1}}
+{{ShipDisplay|2|Kisaragi|DD||'''Construction'''}}
+{{ShipDisplay|2|Kisaragi|DD|New Year|New Year's Wish||1||101}}
+{{ShipDisplay|2|Kisaragi|DD|Kai|Kisaragi (Retrofit)||1}}
+{{ShipDisplay|2|Uzuki|DD||'''Construction'''}}
+{{ShipDisplay|2|Uzuki|DD|Home Relaxation|Sleepy Uzuki|{{Gem}} 700}}
+{{ShipDisplay|2|Minazuki|DD||'''Construction'''}}
+{{ShipDisplay|3|Fumizuki|DD||'''Construction'''}}
+{{ShipDisplay|3|Fumizuki|DD|Home Relaxation|Sleepy Fairy|{{Gem}} 700}}
+{{ShipDisplay|3|Nagatsuki|DD||'''Construction'''}}
+{{ShipDisplay|3|Nagatsuki|DD|Maid|Dangerous Kitty Maid?|{{Gem}} 780|||104}}
+{{ShipDisplay|2|Mikazuki|DD||'''Construction'''}}
+{{ShipDisplay|2|Mikazuki|DD|Halloween|Sweet Zombie|{{Gem}} 780|||119}}
+{{ShipDisplay|4|Umikaze|DD||'''Construction'''}}
+{{ShipDisplay|4|Umikaze|DD|Bunny|Soft and Fluffy Therapy|{{Gem}} 780|||145}}
+{{ShipDisplay|4|Umikaze|DD|School|Baby Steps|{{Gem}} 780|||155}}
+{{ShipDisplay|4|Yamakaze|DD||'''Construction'''}}
+{{ShipDisplay|4|Yamakaze|DD|Bunny|Now for a Magic Trick!|{{Gem}} 780|||145}}
+{{ShipDisplay|5|Kawakaze|DD||'''Construction'''}}
+{{ShipDisplay|5|Kawakaze|DD|Event|Monochromatic Interlude|{{Gem}} 800}}
+{{ShipDisplay|5|Kawakaze|DD|Travel|Guardian Fox, Forever Loyal||1||126}}
+{{ShipDisplay|5|Kawakaze|DD|Wedding|Unsullied White Fox||1}}
+{{ShipDisplay|3|Kiyonami|DD||'''Construction'''}}
+{{ShipDisplay|3|Kiyonami|DD|Christmas|Festive Riding Hood?|{{Gem}} 800|||125}}
+{{ShipDisplay|4|Niizuki|DD||'''Construction'''}}
+{{ShipDisplay|4|Harutsuki|DD||'''Construction'''}}
+{{ShipDisplay|4|Harutsuki|DD|New Year|A Dance for the Coming Spring||1||126}}
+{{ShipDisplay|4|Harutsuki|DD|RPG|Little Steamy Sprite|{{Gem}} 780|1||172}}
+{{ShipDisplay|4|Yoizuki|DD||'''Construction'''}}
+{{ShipDisplay|4|Yoizuki|DD|Sport|Sports Festival Preparations|{{Gem}} 780|||112}}
+{{ShipDisplay|4|Yoizuki|DD|Spring|Firecrackers and Steamed Buns|{{Gem}} 800|||144}}
+{{ShipDisplay|3|Urakaze|DD||'''Construction'''}}
+{{ShipDisplay|3|Urakaze|DD|Christmas|Seasonal Shogun|{{Gem}} 780|||100}}
+{{ShipDisplay|3|Urakaze|DD|School|Sengoku☆Shredder!|{{Gem}} 780|||103}}
+{{ShipDisplay|3|Isokaze|DD||'''Construction'''}}
+{{ShipDisplay|3|Isokaze|DD|New Year|New Year's Campaign|{{Gem}} 780|||101}}
+{{ShipDisplay|3|Isokaze|DD|School|Sengoku☆Smasher!||1||103}}
+{{ShipDisplay|3|Hamakaze|DD||'''Construction'''}}
+{{ShipDisplay|3|Hamakaze|DD|School|The Honors Student|{{Gem}} 780|1||103}}
+{{ShipDisplay|3|Hamakaze|DD|Maid|The Secret Ingredient is Love?!|{{Gem}} 780|||160}}
+{{ShipDisplay|3|Hamakaze|DD|Kai|Hamakaze (Retrofit)||1}}
+{{ShipDisplay|3|Tanikaze|DD||'''Construction'''}}
+{{ShipDisplay|3|Tanikaze|DD|Misc|Lost Girl and Labyrinth Butterfly|{{Gem}} 700}}
+{{ShipDisplay|3|Tanikaze|DD|Maid|Sparkly-Clean|{{Gem}} 780|||160}}
+{{ShipDisplay|3|Tanikaze|DD|Kai|Tanikaze||1}}
+{{ShipDisplay|3|Asashio|DD||'''Construction'''}}
+{{ShipDisplay|3|Asashio|DD|School|The Transfer Student Underneath the Dancing Petals|{{Gem}} 880|||103}}
+{{ShipDisplay|3|Asashio|DD|New Year|Snow-Dusted Lynx Tips|{{Gem}} 800|||143}}
+{{ShipDisplay|3|Asashio|DD|Spring|Robes of Dancing Clouds|{{Gem}} 800|||152}}
+{{ShipDisplay|3|Ooshio|DD||'''Construction'''}}
+{{ShipDisplay|3|Ooshio|DD|Christmas|The Reindeer's Present||1||100}}
+{{ShipDisplay|3|Ooshio|DD|Party|Woozy Party||1||115}}
+{{ShipDisplay|3|Ooshio|DD|Spring|Bringer of Fortunes|{{Gem}} 800|||144}}
+{{ShipDisplay|3|Ooshio|DD|School|Let's 'ave Lunch|{{Gem}} 780|||147}}
+{{ShipDisplay|3|Michishio|DD||'''Construction'''}}
+{{ShipDisplay|3|Michishio|DD|Party|Fluttering Fanfare||1||146}}
+{{ShipDisplay|3|Arashio|DD||'''Construction'''}}
+{{ShipDisplay|3|Arashio|DD|Festival|The Gentlest Firework|{{Gem}} 780|1||114}}
+{{ShipDisplay|4|Uranami|DD||'''Construction'''}}
+{{ShipDisplay|4|Uranami|DD|Misc|Snow Vanguard|{{Gem}} 700|1}}
+{{ShipDisplay|3|Hatakaze|DD||'''Construction'''}}
+{{ShipDisplay|4|Makinami|DD||'''Construction'''}}
+{{ShipDisplay|4|Makinami|DD|School|Time for School!|{{Gem}} 780|1||103}}
+{{ShipDisplay|4|Kasumi|DD||'''Construction'''}}
+{{ShipDisplay|4|Kasumi|DD|New Year|New Year's Comfort|{{Gem}} 780|||126}}
+{{ShipDisplay|4|Kasumi|DD|School|At School with Foo|{{Gem}} 780|||103}}
+{{ShipDisplay|4|Kasumi|DD|Kai|Kasumi (Retrofit)||1}}
+{{ShipDisplay|4|Hanazuki|DD||'''Construction'''}}
+{{ShipDisplay|4|Hanazuki|DD|Summer|Morning Moon, Beachside Flower|{{Gem}} 780|1||106}}
+{{ShipDisplay|4|Hanazuki|DD|Spring|Blossoming Spring, Resplendent Moon|{{Gem}} 800|||152}}
+{{ShipDisplay|4|Naganami|DD||'''Construction'''}}
+{{ShipDisplay|4|Naganami|DD|Maid|Long Waves of Happiness|{{Gem}} 780|1||104}}
+{{ShipDisplay|4|Naganami|DD|Party|Long-Awaited Warmth|{{Gem}} 780|||146}}
+{{ShipDisplay|4|Naganami|DD|Spring|Nestling Up for the Long Nights|{{Gem}} 800|||152}}
+{{ShipDisplay|4|Naganami|DD|Casual|Heartmelting Warmth|{{Gem}} 780|1||109}}
+{{ShipDisplay|4|Naganami|DD|Wedding|Waves of Eternal Love||1}}
+{{ShipDisplay|5|Suzutsuki|DD||'''Construction'''}}
+{{ShipDisplay|5|Suzutsuki|DD|Summer|Suzutsuki, Beachside Attendant!|{{Gem}} 880|||106}}
+{{ShipDisplay|5|Suzutsuki|DD|New Year|Suzutsuki, Hanetsuki Adept!|{{Gem}} 880|||101}}
+{{ShipDisplay|3|Oite|DD||'''Construction'''}}
+{{ShipDisplay|3|Oite|DD|Summer|Summer Dedication|{{Gem}} 780|1||106}}
+{{ShipDisplay|3|Oite|DD|Spring|Jet Ink, Silver Quills|{{Gem}} 800|||152}}
+{{ShipDisplay|5|Kazagumo|DD||'''Construction'''}}
+{{ShipDisplay|5|Kazagumo|DD|School|After-School Melody|{{Gem}} 880|||103}}
+{{ShipDisplay|5|Kazagumo|DD|Summer|Placid Waves, Passionate Heart|{{Gem}} 980||DYN|164}}
+{{ShipDisplay|5|Kazagumo|DD|Home Relaxation|Diligent Domestic Discipline|{{Gem}} 1180||L2D|142}}
+{{ShipDisplay|5|Wakatsuki|DD||'''Construction'''}}
+{{ShipDisplay|5|Wakatsuki|DD|Maid|Slapdash Blue Sparrow|{{Gem}} 880|||160}}
+{{ShipDisplay|5|Wakatsuki|DD|Spring|Blue Sparrow Heralding Spring||1||175}}
+{{ShipDisplay|5|Hatsuzuki|DD||'''Construction'''}}
+{{ShipDisplay|5|Hatsuzuki|DD|Summer|August's First Romance|{{Gem}} 1180||L2D|117}}
+{{ShipDisplay|5|Hatsuzuki|DD|Travel|Luxurious Celebration Time||1|L2D|135}}
+{{ShipDisplay|4|Asanagi|DD||'''Construction'''}}
+{{ShipDisplay|4|Asanagi|DD|Summer|Lulled by Rough Seas|{{Gem}} 780|||133}}
+{{ShipDisplay|4|Suzunami|DD||'''Construction'''}}
+{{ShipDisplay|4|Suzunami|DD|Theme Park|Winter Beauty's Ball Gown|{{Gem}} 800|||181}}
+{{ShipDisplay|4|Taekaze|DD||'''Construction'''}}
+{{ShipDisplay|4|Taekaze|DD|Ninja|Kunoichi's Emergency Landing|{{Gem}} 780|1||307}}
+{{ShipDisplay|5|Fujinami|DD||'''Construction'''}}
+{{ShipDisplay|5|Fujinami|DD|Home Relaxation|Secret Fashion Show For You|{{Gem}} 880|1||193}}
+{{ShipDisplay|4|Yuubari|CL||'''Construction'''}}
+{{ShipDisplay|4|Yuubari|CL|Kai|Yuubari (Retrofit)||1}}
+{{ShipDisplay|2|Nagara|CL||'''Construction'''}}
+{{ShipDisplay|2|Nagara|CL|Spring|Spring Breeze Leisure||1||128}}
+{{ShipDisplay|3|Isuzu|DD||'''Construction'''}}
+{{ShipDisplay|3|Isuzu|DD|Halloween|Night of Fairy Tale|{{Gem}} 700}}
+{{ShipDisplay|3|Isuzu|DD|Christmas|Cozy Christmas Eve|{{Gem}} 800|||125}}
+{{ShipDisplay|3|Isuzu|DD|Bunny|Accidental Overheat?|{{Gem}} 700}}
+{{ShipDisplay|3|Isuzu|DD|Sport|Charge, My Trusty Steeds!||1||112}}
+{{ShipDisplay|3|Isuzu|DD|Kai|Isuzu (Retrofit)||1}}
+{{ShipDisplay|4|Natori|CL||'''Construction'''}}
+{{ShipDisplay|4|Natori|CL|Summer|Beach Paradise|{{Gem}} 780|||106}}
+{{ShipDisplay|4|Natori|CL|Party|Boisterous Night on the Cruise|{{Gem}} 780|||146}}
+{{ShipDisplay|4|Yura|CL||'''Construction'''}}
+{{ShipDisplay|4|Yura|CL|Bunny|We are Succubi?|{{Gem}} 780|||145}}
+{{ShipDisplay|4|Kinu|CL||'''Construction'''}}
+{{ShipDisplay|4|Kinu|CL|New Year|New Year's Blade Demon||1||126}}
+{{ShipDisplay|4|Kinu|CL|Bunny|Token and Ghost|{{Gem}} 780|||145}}
+{{ShipDisplay|4|Kinu|CL|Kai|Kinu (Retrofit)||1}}
+{{ShipDisplay|2|Abukuma|CL||'''Construction'''}}
+{{ShipDisplay|2|Abukuma|CL|Kai|Abukuma (Retrofit)||1}}
+{{ShipDisplay|4|Mogami|CA||'''Construction'''}}
+{{ShipDisplay|4|Mogami|CA|Kai|Mogami (Retrofit)||1}}
+{{ShipDisplay|4|Mikuma|CL||'''Construction'''}}
+{{ShipDisplay|4|Mikuma|CL|Dance|Offerings of Floral Grace|{{Gem}} 780|||142}}
+{{ShipDisplay|3|Sendai|CL||'''Construction'''}}
+{{ShipDisplay|3|Sendai|CL|Kai|Sendai (Retrofit)||1}}
+{{ShipDisplay|4|Jintsuu|CL||'''Construction'''}}
+{{ShipDisplay|4|Jintsuu|CL|Summer|The Tactician's Vacation|{{Gem}} 780|1||106}}
+{{ShipDisplay|4|Jintsuu|CL|Fairy Tale|The Gray Wolf's Ploy|{{Gem}} 780|1||158}}
+{{ShipDisplay|4|Jintsuu|CL|Kai|Jintsuu (Retrofit)||1}}
+{{ShipDisplay|3|Naka|CL||'''Construction'''}}
+{{ShipDisplay|3|Naka|CL|Summer|Foxy Summer Surfer|{{Gem}} 780|1||106}}
+{{ShipDisplay|4|Agano|CL||'''Construction'''}}
+{{ShipDisplay|4|Agano|CL|Christmas|Christmas Eve Tease|{{Gem}} 800|||125}}
+{{ShipDisplay|4|Agano|CL|Casual|Dating Game?|{{Gem}} 780|1||113}}
+{{ShipDisplay|4|Agano|CL|Party|Blue Butterfly's Confession|{{Gem}} 800|||135}}
+{{ShipDisplay|5|Noshiro|CL||'''Construction'''}}
+{{ShipDisplay|5|Noshiro|CL|New Year|Uncharted Festival Grounds?|{{Gem}} 1180|||126}}
+{{ShipDisplay|5|Noshiro|CL|Party|Xanadu's Eventide|{{Gem}} 900|||135}}
+{{ShipDisplay|5|Noshiro|CL|Spring|Fragrance of the Eastern Snow|{{Gem}} 900|||144}}
+{{ShipDisplay|5|Noshiro|CL|Home Relaxation|Cozy Enclave|{{Gem}} 880|||109}}
+{{ShipDisplay|5|Noshiro|CL|Maid|Hold the Ice|{{Gem}} 880|||150}}
+{{ShipDisplay|5|Noshiro|CL|Summer|Unwinding in the Sunshine|{{Gem}} 1180||L2D|133}}
+{{ShipDisplay|5|Noshiro|CL|Casual|Dressed-Up Date|{{Gem}} 880|1||529}}
+{{ShipDisplay|5|Noshiro|CL|Wedding|A Tale of Two Lovers||1}}
+{{ShipDisplay|5|Sakawa|CL||'''Construction'''}}
+{{ShipDisplay|5|Sakawa|CL|Maid|The Colors of Love|{{Gem}} 1180|||160}}
+{{ShipDisplay|5|Sakawa|CL|Summer|Icy Indulgence|{{Gem}} 880|||168}}
+{{ShipDisplay|5|Sakawa|CL|Party|The Keys of Love|{{Gem}} 900|||161}}
+{{ShipDisplay|5|Noshiro μ|CL||'''Construction'''}}
+{{ShipDisplay|5|Watarase|CL||'''Construction'''}}
+{{ShipDisplay|5|Watarase|CL|Party|Garments of Everlasting Magic|{{Gem}} 1200||L2D|182}}
+{{ShipDisplay|4|Ayase|CL||'''Construction'''}}
+{{ShipDisplay|4|Ayase|CL|Home Relaxation|A Glimpse of the Moon Rabbit|{{Gem}} 880||DYN|590}}
+{{ShipDisplay|4|Minase|CL||'''Construction'''}}
+{{ShipDisplay|4|Minase|CL|Ninja|Maidenly Meditation|{{Gem}} 780|1|DYN|142}}
+{{ShipDisplay|4|Kizu|CL||'''Construction'''}}
+{{ShipDisplay|4|Kizu|CL|Special Exercise|Thunder Dragon Caught in a Web|{{Gem}} 780|1|DYN|494}}
+{{ShipDisplay|4|Nayoro|CL||'''Construction'''}}
+{{ShipDisplay|4|Nayoro|CL|Special Exercise|Electric Affection|{{Gem}} 1080|1|L2D|154}}
+{{ShipDisplay|2|Furutaka|CA||'''Construction'''}}
+{{ShipDisplay|2|Furutaka|CA|Kai|Furutaka (Retrofit)||1}}
+{{ShipDisplay|2|Kako|CA||'''Construction'''}}
+{{ShipDisplay|2|Kako|CA|Kai|Kako (Retrofit)||1}}
+{{ShipDisplay|2|Aoba|CA||'''Construction'''}}
+{{ShipDisplay|2|Kinugasa|CA||'''Construction'''}}
+{{ShipDisplay|5|Chikuma|CA||'''Construction'''}}
+{{ShipDisplay|5|Chikuma|CA|Bunny|Premium Prize on the Table|{{Gem}} 880|1||608}}
+{{ShipDisplay|3|Myoukou|CA||'''Construction'''}}
+{{ShipDisplay|3|Nachi|CA||'''Construction'''}}
+{{ShipDisplay|3|Nachi|CA|Kai|Nachi (Retrofit)||1}}
+{{ShipDisplay|4|Ashigara|DD||'''Construction'''}}
+{{ShipDisplay|4|Ashigara|DD|New Year|Brief Intermission|{{Gem}} 780|||101}}
+{{ShipDisplay|4|Ashigara|DD|Summer|Kaleidoscopic Summer|{{Gem}} 780|1||106}}
+{{ShipDisplay|4|Haguro|CA||'''Construction'''}}
+{{ShipDisplay|4|Haguro|CA|Maid|A Blessing in Disguise?|{{Gem}} 780|||160}}
+{{ShipDisplay|4|Haguro|CA|Casual|Caught By Nightfall|{{Gem}} 780|||108}}
+{{ShipDisplay|5|Takao|CA||'''Construction'''}}
+{{ShipDisplay|5|Takao|CA|Summer|Beach Rhapsody|{{Gem}} 700|||106}}
+{{ShipDisplay|5|Takao|CA|Spring|The Lessons of Spring|{{Gem}} 880|||102}}
+{{ShipDisplay|5|Takao|CA|School|School Romanza|{{Gem}} 880|||103}}
+{{ShipDisplay|5|Takao|CA|RaceQueen|Full Throttle Charmer|{{Gem}} 900|||132}}
+{{ShipDisplay|5|Takao|CA|Ninja|Divine Exorcist's Blade|{{Gem}} 1030|1|DYN|154}}
+{{ShipDisplay|5|Takao|CA|Home Relaxation|Inner Cultivation|{{Gem}} 1260|1|L2D|319}}
+{{ShipDisplay|5|Takao|CA|Wedding|Sakura Hanami||1}}
+{{ShipDisplay|5|Atago|CA||'''Construction'''}}
+{{ShipDisplay|5|Atago|CA|Summer|Summer March|{{Gem}} 700|||106}}
+{{ShipDisplay|5|Atago|CA|New Year|Hallmarks of Winter|{{Gem}} 780|||101}}
+{{ShipDisplay|5|Atago|CA|School|School Traumerei|{{Gem}} 880|||103}}
+{{ShipDisplay|5|Atago|CA|RaceQueen|Stunning Speedster|{{Gem}} 900|||132}}
+{{ShipDisplay|5|Atago|CA|Halloween|Full Moon's Feral Wolf|{{Gem}} 980|1|DYN|174}}
+{{ShipDisplay|5|Atago|CA|Wedding|Lily-White Vow||1}}
+{{ShipDisplay|5|Maya|CA||'''Construction'''}}
+{{ShipDisplay|5|Maya|CA|Special Exercise|Hunter of the Heart|{{Gem}} 880|1||154}}
+{{ShipDisplay|5|Choukai|CA||'''Construction'''}}
+{{ShipDisplay|5|Choukai|CA|Maid|Tidy Store, Tidy Mind|{{Gem}} 880|||150}}
+{{ShipDisplay|5|Choukai|CA|Special Exercise|Steal Your Heart|{{Gem}} 980|1|DYN|494}}
+{{ShipDisplay|4|Suzuya|CA||'''Construction'''}}
+{{ShipDisplay|4|Suzuya|CA|Hospital|Midnight Care|{{Gem}} 780|1||138}}
+{{ShipDisplay|4|Kumano|CA||'''Construction'''}}
+{{ShipDisplay|4|Kumano|CA|Summer|Fancy Waves|{{Gem}} 780|||106}}
+{{ShipDisplay|4|Kumano|CA|Home Relaxation|PJ Poker Party|{{Gem}} 780|||109}}
+{{ShipDisplay|4|Kumano|CA|Dance|One Thousand and One Nights' Wishes|{{Gem}} 800|||159}}
+{{ShipDisplay|6|Unzen|BC||'''Construction'''}}
+{{ShipDisplay|6|Unzen|BC|Summer|Sojourn Through Clear Seas|{{Gem}} 1180||L2D|168}}
+{{ShipDisplay|6|Unzen|BC|Ninja|Arcane Ninja Knowledge|{{Gem}} 1180|1|L2D|190}}
+{{ShipDisplay|5|Asama|CA||'''Construction'''}}
+{{ShipDisplay|5|Asama|CA|Ninja|Blooming Upon a Bewitching Night|{{Gem}} 1180|1|L2D|172}}
+{{ShipDisplay|4|Kongou|BC||'''Construction'''}}
+{{ShipDisplay|4|Kongou|BC|New Year|The Beauties of Nature|{{Gem}} 780|||101}}
+{{ShipDisplay|4|Kongou|BC|Hospital|Hospital Talent|{{Gem}} 780|||138}}
+{{ShipDisplay|4|Kongou|BC|School|Breezy Commute|{{Gem}} 780|||103}}
+{{ShipDisplay|4|Kongou|BC|Summer|Troubled Seas|{{Gem}} 880|1|DYN|164}}
+{{ShipDisplay|4|Hiei|BC||'''Construction'''}}
+{{ShipDisplay|4|Hiei|BC|Home Relaxation|Moonlit Cruise|{{Gem}} 700|1}}
+{{ShipDisplay|4|Hiei|BC|Spring|Fragrant Red Plum|{{Gem}} 800|||128}}
+{{ShipDisplay|4|Hiei|BC|Summer|Beauty of the White Sands|{{Gem}} 780|1||106}}
+{{ShipDisplay|4|Haruna|BC||'''Construction'''}}
+{{ShipDisplay|4|Haruna|BC|School|Free Time Before Class|{{Gem}} 880|||103}}
+{{ShipDisplay|4|Haruna|BC|Party|Scarlet Innocence|{{Gem}} 800|||135}}
+{{ShipDisplay|4|Haruna|BC|New Year|The Elegant Lotus|{{Gem}} 800|||143}}
+{{ShipDisplay|4|Kirishima|BC||'''Construction'''}}
+{{ShipDisplay|4|Kirishima|BC|School|After-School Cannon Time|{{Gem}} 880|1||103}}
+{{ShipDisplay|4|Kirishima|BC|Casual|Summery Audacity|{{Gem}} 780|1||105}}
+{{ShipDisplay|4|Kirishima|BC|New Year|Casual Dazzle|{{Gem}} 780|||126}}
+{{ShipDisplay|4|Kirishima|BC|Spring|Graceful Ink Incense|{{Gem}} 800|||144}}
+{{ShipDisplay|5|Amagi|BC||'''Construction'''}}
+{{ShipDisplay|5|Amagi|BC|Summer|Wending Waters, Serene Lotus|{{Gem}} 880|||106}}
+{{ShipDisplay|5|Amagi|BC|Party|Red Kite Respite|{{Gem}} 1180||L2D|146}}
+{{ShipDisplay|4|Hiei-chan|BC||'''Construction'''}}
+{{ShipDisplay|4|Amagi-chan|BC||'''Construction'''}}
+{{ShipDisplay|4|Kongou μ|BC||'''Construction'''}}
+{{ShipDisplay|3|Fusou|BBV||'''Construction'''}}
+{{ShipDisplay|3|Fusou|BBV|Spring|The Celebration of Spring|{{Gem}} 680|||102}}
+{{ShipDisplay|3|Fusou|BBV|Home Relaxation|Perfect Partner?|{{Gem}} 780|||109}}
+{{ShipDisplay|3|Fusou|BBV|Wedding|United in Heart and Soul||1}}
+{{ShipDisplay|3|Fusou|BBV|Kai|Fusou (Retrofit)||1}}
+{{ShipDisplay|3|Yamashiro|BBV||'''Construction'''}}
+{{ShipDisplay|3|Yamashiro|BBV|Summer|Summer Offensive?||1||106}}
+{{ShipDisplay|3|Yamashiro|BBV|Christmas|Holiday Offensive|{{Gem}} 680|||100}}
+{{ShipDisplay|3|Yamashiro|BBV|Party|Dressy Black Cat||1||107}}
+{{ShipDisplay|3|Yamashiro|BBV|Atre|Sales Clerk Offensive?!||1}}
+{{ShipDisplay|3|Yamashiro|BBV|Casual|Vacation Offensive!||1}}
+{{ShipDisplay|3|Yamashiro|BBV|School|Street Corner Offensive!|{{Gem}} 780|1||103}}
+{{ShipDisplay|3|Yamashiro|BBV|Wedding|Bridal Attack!||1}}
+{{ShipDisplay|3|Yamashiro|BBV|Kai|Yamashiro (Retrofit)||1}}
+{{ShipDisplay|3|Ise|BBV||'''Construction'''}}
+{{ShipDisplay|3|Ise|BBV|Kai|Ise (Retrofit)||1}}
+{{ShipDisplay|3|Hyuuga|BBV||'''Construction'''}}
+{{ShipDisplay|3|Hyuuga|BBV|Kai|Hyuuga (Retrofit)||1}}
+{{ShipDisplay|5|Nagato|BB||'''Construction'''}}
+{{ShipDisplay|5|Nagato|BB|Home Relaxation|Great Fox's Respite|{{Gem}} 880|||111}}
+{{ShipDisplay|5|Nagato|BB|New Year|Guardian Fox's Shining Furisode|{{Gem}} 880|||126}}
+{{ShipDisplay|5|Nagato|BB|Home Relaxation2|Guardian Fox's Vacation|{{Gem}} 880|||142}}
+{{ShipDisplay|5|Nagato|BB|Party|Guardian Fox's Procession|{{Gem}} 880|||155}}
+{{ShipDisplay|5|Nagato|BB|Spring|Guardian Fox's Blessed Bonds|{{Gem}} 1000|1|DYN|152}}
+{{ShipDisplay|5|Nagato|BB|Wedding|Great Fox's White Gown||1}}
+{{ShipDisplay|4|Mutsu|BB||'''Construction'''}}
+{{ShipDisplay|4|Mutsu|BB|Event|Warring States Warship|{{Gem}} 780|||111}}
+{{ShipDisplay|4|Mutsu|BB|Maid|A Maid's Mis-service?|{{Gem}} 780|||160}}
+{{ShipDisplay|5|Kaga(BB)|CB||'''Construction'''}}
+{{ShipDisplay|5|Tosa|BB||'''Construction'''}}
+{{ShipDisplay|5|Tosa|BB|Summer|Hometown Zest|{{Gem}} 880|1||106}}
+{{ShipDisplay|5|Tosa|BB|Home Relaxation|A Glimpse of Greatness|{{Gem}} 980||DYN|180}}
+{{ShipDisplay|6|Musashi|BB||'''Construction'''}}
+{{ShipDisplay|6|Musashi|BB|Maid|Violet Moonglow|{{Gem}} 800}}
+{{ShipDisplay|6|Musashi|BB|Theme Park|The Purple Rabbit's Marksmanship|{{Gem}} 1200||L2D|181}}
+{{ShipDisplay|6|Musashi|BB|Wedding|Purest Wisteria||1}}
+{{ShipDisplay|5|Mikasa|BB||'''Construction'''}}
+{{ShipDisplay|5|Mikasa|BB|School|Style of the Sakura Capital|{{Gem}} 880|1||105}}
+{{ShipDisplay|5|Mikasa|BB|New Year|Blossom-Viewing Season|{{Gem}} 880|1||113}}
+{{ShipDisplay|5|Mikasa|BB|Home Relaxation|Reverence for Rest and Relaxation|{{Gem}} 880|||109}}
+{{ShipDisplay|5|Mikasa|BB|Maid|A Romantic Respite|{{Gem}} 880|||160}}
+{{ShipDisplay|5|Mikasa|BB|New Year2|Beauty in Indigo|{{Gem}} 880|1||129}}
+{{ShipDisplay|5|Mikasa|BB|Wedding|Untarnished Splendor||1}}
+{{ShipDisplay|5|Kii|BB||'''Construction'''}}
+{{ShipDisplay|5|Kii|BB|Summer|Poolside Persuasion|{{Gem}} 880|||133}}
+{{ShipDisplay|5|Owari|BB||'''Construction'''}}
+{{ShipDisplay|5|Owari|BB|Summer|Shimmering Forsythia|{{Gem}} 980||DYN|133}}
+{{ShipDisplay|5|Owari|BB|Halloween|My Wish is For Love|{{Gem}} 1180|1|L2D|156}}
+{{ShipDisplay|5|Suruga|BB||'''Construction'''}}
+{{ShipDisplay|5|Suruga|BB|New Year|Hundred Flowers' Auspice|{{Gem}} 1180|||126}}
+{{ShipDisplay|5|Suruga|BB|School|Straightfaced Model Student|{{Gem}} 880|1||103}}
+{{ShipDisplay|5|Suruga|BB|Christmas|Uneventful Holiday Greetings|{{Gem}} 1180|||151}}
+{{ShipDisplay|5|Oumi|BB||'''Construction'''}}
+{{ShipDisplay|5|Oumi|BB|Ninja|A Failed Escape?|{{Gem}} 1180|1|L2D|172}}
+{{ShipDisplay|3|Hiyou|CVL||'''Construction'''}}
+{{ShipDisplay|3|Junyou|CVL||'''Construction'''}}
+{{ShipDisplay|4|Houshou|CVL||'''Construction'''}}
+{{ShipDisplay|4|Houshou|CVL|Festival|The Dream of the Autumn Pillow||1}}
+{{ShipDisplay|5|Zuihou|CVL||'''Construction'''}}
+{{ShipDisplay|5|Zuihou|CVL|Theme Park|Joy Comes on Fledgling Wings|{{Gem}} 900|1||181}}
+{{ShipDisplay|3|Shouhou|DD||'''Construction'''}}
+{{ShipDisplay|3|Shouhou|DD|Halloween|Patrolling Witch|{{Gem}} 600}}
+{{ShipDisplay|3|Shouhou|DD|Kai|Shouhou (Retrofit)||1}}
+{{ShipDisplay|4|Ryuujou|CVL||'''Construction'''}}
+{{ShipDisplay|4|Ryuujou|CVL|Home Relaxation|Slacking Samurai|{{Gem}} 780|||109}}
+{{ShipDisplay|4|Ryuujou|CVL|School|Dragon Hunter: Ryuujou's Rise|{{Gem}} 780|||103}}
+{{ShipDisplay|4|Ryuujou|CVL|Theme Park|The Dragon Slides In!|{{Gem}} 800|||181}}
+{{ShipDisplay|5|Ryuuhou|CVL||'''Construction'''}}
+{{ShipDisplay|5|Ryuuhou|CVL|New Year|Firebird's New Year Dance|{{Gem}} 1180|||126}}
+{{ShipDisplay|4|Chitose|CVL||'''Construction'''}}
+{{ShipDisplay|4|Chitose|CVL|Summer|Summer Shine|{{Gem}} 780|||133}}
+{{ShipDisplay|4|Chitose|CVL|Spring|Mosaic of Blending Colors|{{Gem}} 780|||157}}
+{{ShipDisplay|4|Chitose|CVL|Spring2|Tea Amidst the Lotus|{{Gem}} 700|1}}
+{{ShipDisplay|4|Chiyoda|CVL||'''Construction'''}}
+{{ShipDisplay|4|Chiyoda|CVL|Summer|Shimmering Surf|{{Gem}} 780|||106}}
+{{ShipDisplay|4|Chiyoda|CVL|Spring|Wine Amidst the Leaves|{{Gem}} 700|1}}
+{{ShipDisplay|5|Akagi|CV||'''Construction'''}}
+{{ShipDisplay|5|Akagi|CV|Summer|Paradise Amaryllis|{{Gem}} 600|||106}}
+{{ShipDisplay|5|Akagi|CV|New Year|Plum and Snow|{{Gem}} 880|||101}}
+{{ShipDisplay|5|Akagi|CV|Party|Ruby-Laced Beauty|{{Gem}} 880|||136}}
+{{ShipDisplay|5|Akagi|CV|Spring|Dawn-Phoenix's Summons|{{Gem}} 1200|||152}}
+{{ShipDisplay|5|Akagi|CV|New Year2|Precipice of Sweetness|{{Gem}} 880|1||129}}
+{{ShipDisplay|5|Akagi|CV|Wedding|Deep Crimson Poppy||1}}
+{{ShipDisplay|5|Kaga|CV||'''Construction'''}}
+{{ShipDisplay|5|Kaga|CV|Summer|Everlasting Killing Stone|{{Gem}} 600|||106}}
+{{ShipDisplay|5|Kaga|CV|New Year|White Fox's New Year|{{Gem}} 880|||101}}
+{{ShipDisplay|5|Kaga|CV|Party|Exalted White Wings|{{Gem}} 900|||135}}
+{{ShipDisplay|5|Kaga|CV|New Year2|Gentle Blossom's Sigh|{{Gem}} 880|1||142}}
+{{ShipDisplay|5|Kaga|CV|Spring|Dusk-Simurgh's Vigil|{{Gem}} 900|||152}}
+{{ShipDisplay|5|Kaga|CV|Travel|Snowsilk Fox Dance||1||155}}
+{{ShipDisplay|5|Kaga|CV|Wedding|Sacred Blue Lily||1}}
+{{ShipDisplay|4|Souryuu|CV||'''Construction'''}}
+{{ShipDisplay|4|Souryuu|CV|New Year|The Crane Amidst the Pines|{{Gem}} 680|||101}}
+{{ShipDisplay|4|Souryuu|CV|School|The Counselor Girl|{{Gem}} 780|||103}}
+{{ShipDisplay|4|Souryuu|CV|Kai|Souryuu (Retrofit)||1}}
+{{ShipDisplay|4|Hiryuu|CV||'''Construction'''}}
+{{ShipDisplay|4|Hiryuu|CV|School|After School Bullies|{{Gem}} 780|||103}}
+{{ShipDisplay|4|Hiryuu|CV|Kai|Hiryuu (Retrofit)||1}}
+{{ShipDisplay|5|Shoukaku|CV||'''Construction'''}}
+{{ShipDisplay|5|Shoukaku|CV|Party|The Crane that Dances With the Wind|{{Gem}} 1180|||107}}
+{{ShipDisplay|5|Shoukaku|CV|RaceQueen|Sororal Wings|{{Gem}} 900|||132}}
+{{ShipDisplay|5|Shoukaku|CV|Wedding|White Crane of Domestic Bliss||1}}
+{{ShipDisplay|5|Zuikaku|CV||'''Construction'''}}
+{{ShipDisplay|5|Zuikaku|CV|Festival|Ceremonial Crane|{{Gem}} 880|1||114}}
+{{ShipDisplay|5|Zuikaku|CV|RaceQueen|The Wind's True Name|{{Gem}} 900|||132}}
+{{ShipDisplay|5|Zuikaku|CV|RaceQueen2|Zoom Like the Wind|{{Gem}} 900|1||132}}
+{{ShipDisplay|5|Taihou|CV||'''Construction'''}}
+{{ShipDisplay|5|Taihou|CV|Party|Forbidden Fruit|{{Gem}} 1180|||107}}
+{{ShipDisplay|5|Taihou|CV|Spring|Phoenix's Spring Song|{{Gem}} 1200|||128}}
+{{ShipDisplay|5|Taihou|CV|RaceQueen|Enraptured Companion|{{Gem}} 900|||132}}
+{{ShipDisplay|5|Taihou|CV|School|Sweet Time After School|{{Gem}} 1180||L2D|147}}
+{{ShipDisplay|5|Taihou|CV|Summer|Seaside Daydreams|{{Gem}} 1180||L2D|133}}
+{{ShipDisplay|5|Taihou|CV|Bunny|Fun on the Baize|{{Gem}} 1180|1|L2D|145}}
+{{ShipDisplay|5|Taihou|CV|Wedding|Temptation on the Sea Breeze||1}}
+{{ShipDisplay|6|Shinano|CV||'''Construction'''}}
+{{ShipDisplay|6|Shinano|CV|Party|Dreams of the Hazy Moon|{{Gem}} 900|||135}}
+{{ShipDisplay|6|Shinano|CV|RaceQueen|Moonlit Chrome|{{Gem}} 1200||L2D|132}}
+{{ShipDisplay|6|Shinano|CV|Summer|Dreamy White Sands|{{Gem}} 1180||L2D|133}}
+{{ShipDisplay|6|Shinano|CV|Bunny|Visions of Fantasy|{{Gem}} 1180|1|L2D|608}}
+{{ShipDisplay|6|Shinano|CV|Spring|Embrace Upon A Melted Dream|{{Gem}} 1100|1|L2D}}
+{{ShipDisplay|4|Akagi-chan|CV||'''Construction'''}}
+{{ShipDisplay|5|Akagi μ|CV||'''Construction'''}}
+{{ShipDisplay|5|Taihou μ|CV||'''Construction'''}}
+{{ShipDisplay|5|Katsuragi|CV||'''Construction'''}}
+{{ShipDisplay|5|Katsuragi|CV|Bunny|Night-Illuminating Festival|{{Gem}} 880|||145}}
+{{ShipDisplay|5|Katsuragi|CV|Summer|Shallow-Water Leisure|{{Gem}} 880|||133}}
+{{ShipDisplay|4|Taihou-chan|CV||'''Construction'''}}
+{{ShipDisplay|4|Shinano-chan|CV||'''Construction'''}}
+{{ShipDisplay|6|Amagi(CV)|CV||'''Construction'''}}
+{{ShipDisplay|6|Amagi(CV)|CV|Party|Throne of Fallen Petals|{{Gem}} 1180||L2D|177}}
+{{ShipDisplay|6|Amagi(CV)|CV|Wedding|Moonlit Blossom on Placid Seas||1||530}}
+{{ShipDisplay|6|Hakuhou|CV||'''Construction'''}}
+{{ShipDisplay|6|Hakuhou|CV|Ninja|Floral Ninja Roleplay|{{Gem}} 1260|1|L2D|172}}
+{{ShipDisplay|5|Unryuu|CV||'''Construction'''}}
+{{ShipDisplay|5|Unryuu|CV|Special Exercise|Mirage in the Night|{{Gem}} 1100|1|DUAL|154}}
+{{ShipDisplay|5|Unryuu|CV|Special ExerciseForm2|Mirage in the Night||1|DUAL|154}}
+{{ShipDisplay|5|I-19|SS||'''Construction'''}}
+{{ShipDisplay|5|I-19|SS|School|Departure's Gentle Breeze|{{Gem}} 880|||103}}
+{{ShipDisplay|5|I-19|SS|Home Relaxation|Pillowy Paradise|{{Gem}} 880|1||109}}
+{{ShipDisplay|5|I-19|SS|Bunny|Blossoming Bunny|{{Gem}} 880|||145}}
+{{ShipDisplay|4|I-26|SS||'''Construction'''}}
+{{ShipDisplay|4|I-26|SS|School|Deep-Sea Rabbit|{{Gem}} 780|||103}}
+{{ShipDisplay|4|I-26|SS|Festival|Shortly Before the Fireworks|{{Gem}} 780|1||114}}
+{{ShipDisplay|4|I-58|SS||'''Construction'''}}
+{{ShipDisplay|4|I-25|SS||'''Construction'''}}
+{{ShipDisplay|4|I-25|SS|School|Coral Reef Bunny|{{Gem}} 780|1||103}}
+{{ShipDisplay|4|I-25|SS|Spring|Sweet Wine of Celebration|{{Gem}} 800|||144}}
+{{ShipDisplay|4|I-56|SS||'''Construction'''}}
+{{ShipDisplay|4|I-56|SS|School|Wallflower in the Corner||1||103}}
+{{ShipDisplay|5|I-168|SS||'''Construction'''}}
+{{ShipDisplay|5|I-168|SS|Festival|Festive Mood!|{{Gem}} 880|1||114}}
+{{ShipDisplay|5|Akashi|AR||'''Construction'''}}
+{{ShipDisplay|5|Akashi|AR|New Year|Akashi's in the Red, Nya!|{{Gem}} 780|||101}}
+{{ShipDisplay|5|Akashi|AR|Party|The Black Cat Cometh!|{{Gem}} 880|||107}}
+{{ShipDisplay|5|Akashi|AR|Event|Welcome to AzurCon!||1}}
+{{ShipDisplay|5|Akashi|AR|Sofmap|Welcome to Sofmap!||1}}
+{{ShipDisplay|5|Akashi|AR|Wedding|White Cat's Repayment||1}}
+{{ShipDisplay|5|I-13|SSV||'''Construction'''}}
+{{ShipDisplay|5|I-13|SSV|Travel|After-School Observations||1||105}}
+{{ShipDisplay|6|I-404|CL||'''Construction'''}}
+{{ShipDisplay|6|I-404|CL|Ninja|Dance of Crimson Strings|{{Gem}} 1050|1|DUAL|172}}
+{{ShipDisplay|6|I-404|CL|NinjaEX|Dance of Crimson Strings||1|DUAL|172}}
+{{ShipDisplay|4|Kashino|AE||'''Construction'''}}
+{{ShipDisplay|4|Kashino|AE|Summer|Hot Springs Relaxation|{{Gem}} 1080|||106}}
+{{ShipDisplay|4|Kashino|AE|Maid|Maid for Mayhem|{{Gem}} 1080|||160}}
+{{ShipDisplay|4|Kashino|AE|Party|Robust Floral Strings|{{Gem}} 1080||L2D|172}}
+{{ShipDisplay|4|Kashino|AE|Theme Park|Fresh and Sweet|{{Gem}} 900||DYN|181}}
+{{ShipDisplay|4|Ayanami|DD|New Year|Pulse of the New Year|{{Gem}} 780|||126}}
+{{ShipDisplay|4|Ayanami|DD|Party|Nightfall Raiment|{{Gem}} 1100|||135}}
+{{ShipDisplay|4|Ayanami|DD|Bluray2|Off-Duty Battle Station Gear||1||109}}
+{{ShipDisplay|4|Ayanami|DD|Spring2|Dynasty Shipgirl|{{Gem}} 800|||152}}
+{{ShipDisplay|4|Ayanami|DD|KFC|Cola Fills You With Determination|{{Gem}} 700|1}}
+{{ShipDisplay|4|Ayanami|DD|RPG|Dynamic Kick!|{{Gem}} 780|1||158}}
+{{ShipDisplay|4|Ayanami|DD|Party2|Disarming Deep Blue|{{Gem}} 780|||146}}
+{{ShipDisplay|5|Noshiro|CL|Hot Springs|A Dip in the Moonlight|{{Gem}} 900|1|DYN}}
+{{ShipDisplay|5|Ibuki|CA||'''Construction'''}}
+{{ShipDisplay|5|Ibuki|CA|New Year|Winter Sylph's Reverie|{{Gem}} 1180|||101}}
+{{ShipDisplay|5|Ibuki|CA|Party|Snow on the Wind|{{Gem}} 880|||115}}
+{{ShipDisplay|5|Ibuki|CA|Spring|Arrival of Spring|{{Gem}} 900|||127}}
+{{ShipDisplay|5|Ibuki|CA|Home Relaxation|Tranquil Sunya|{{Gem}} 880|||109}}
+{{ShipDisplay|5|Ibuki|CA|Summer|Traces of Summery Love|{{Gem}} 980|1|DYN|164}}
+{{ShipDisplay|5|Izumo|DD||'''Construction'''}}
+{{ShipDisplay|5|Izumo|DD|New Year|Izumo's Thousand Cherry Trees|{{Gem}} 880|||101}}
+{{ShipDisplay|5|Izumo|DD|RPG|Tail-Stirred Cocktail|{{Gem}} 980|1|DYN|156}}
+{{ShipDisplay|5|Kitakaze|DD||'''Construction'''}}
+{{ShipDisplay|5|Kitakaze|DD|Festival|Celebration Conquest!|{{Gem}} 880|1||114}}
+{{ShipDisplay|5|Kitakaze|DD|Travel|Night of Doves and Magic||1||159}}
+{{ShipDisplay|6|Azuma|CB||'''Construction'''}}
+{{ShipDisplay|6|Azuma|CB|Spring|Soft Voice of Spring|{{Gem}} 1200|||128}}
+{{ShipDisplay|6|Azuma|CB|Work|Career Counseling for the Groom|{{Gem}} 1180|1|L2D|602}}
+{{ShipDisplay|6|Azuma|CB|Wedding|Lily-White Longing||1}}
+{{ShipDisplay|6|Hakuryuu|CV||'''Construction'''}}
+{{ShipDisplay|6|Hakuryuu|CV|Maid|Slice, Dice, and Serve|{{Gem}} 880|||150}}
+{{ShipDisplay|6|Hakuryuu|CV|Party|Flash of Silk and Strings|{{Gem}} 1180||L2D|172}}
+{{ShipDisplay|6|Hakuryuu|CV|Festival|Folded Over a Thousand Times|{{Gem}} 880|1||126}}
+{{ShipDisplay|6|Hakuryuu|CV|Home Relaxation|Four Fine Layers|{{Gem}} 880|1||109}}
+{{ShipDisplay|5|Shimanto|CL||'''Construction'''}}
+{{ShipDisplay|5|Shimanto|CL|Maid|The Comfy Dragon God|{{Gem}} 880|||172}}
+{{ShipDisplay|5|Shimanto|CL|Summer|The Relaxing Dragon God|{{Gem}} 1680|1|DUAL}}
+{{ShipDisplay|5|Shimanto|CL|SummerForm2|The Relaxing Dragon God||1|DUAL|191}}
+{{ShipDisplay|5|Daisen|BB||'''Construction'''}}
+{{ShipDisplay|5|Daisen|BB|Bunny|Bunny Priestess in Prayer|{{Gem}} 980|1|DYN|160}}
+{{ShipDisplay|4|Leberecht Maass (Z1)|DD||'''Construction'''}}
+{{ShipDisplay|4|Leberecht Maass (Z1)|DD|School|"Rebellious" Top Student|{{Gem}} 780|||103}}
+{{ShipDisplay|4|Leberecht Maass (Z1)|DD|Kai|Z1 (Retrofit)||1}}
+{{ShipDisplay|4|Z2|DD||'''Construction'''}}
+{{ShipDisplay|4|Z2|DD|Casual|High-Rise, High-Style|{{Gem}} 700}}
+{{ShipDisplay|4|Z2|DD|Festival|Of Koi and Evening Hues|{{Gem}} 780|1||114}}
+{{ShipDisplay|4|Z9|DD||'''Construction'''}}
+{{ShipDisplay|4|Z9|DD|Bunny|Teary Cocktail|{{Gem}} 780|1||608}}
+{{ShipDisplay|4|Z11|DD||'''Construction'''}}
+{{ShipDisplay|4|Z11|DD|Bunny|Service, Sincerity, and Insolvency|{{Gem}} 780|1||150}}
+{{ShipDisplay|4|Z13|DD||'''Construction'''}}
+{{ShipDisplay|4|Z13|DD|Work|Strategic Date Solution|{{Gem}} 1080|1|L2D|185}}
+{{ShipDisplay|4|Z16|DD||'''Construction'''}}
+{{ShipDisplay|4|Z16|DD|Sport|Guaranteed Grand Slam!|{{Gem}} 780|||112}}
+{{ShipDisplay|3|Z18|DD||'''Construction'''}}
+{{ShipDisplay|3|Hermann Künne (Z19)|DD||'''Construction'''}}
+{{ShipDisplay|2|Karl Galster (Z20)|DD||'''Construction'''}}
+{{ShipDisplay|2|Wilhelm Heidkamp (Z21)|DD||'''Construction'''}}
+{{ShipDisplay|4|Z23|DD||'''Construction'''}}
+{{ShipDisplay|4|Z23|DD|Bilibili|Philosophy Sensei||1}}
+{{ShipDisplay|4|Z23|DD|Summer|Breezy Doubles|{{Gem}} 780|||106}}
+{{ShipDisplay|4|Z23|DD|CoCo|Perfect Smile?|{{Gem}} 700}}
+{{ShipDisplay|4|Z23|DD|Party|The Banquet's Honor Student|{{Gem}} 780|||115}}
+{{ShipDisplay|4|Z23|DD|Bluray|Café Trainee @New Base||1}}
+{{ShipDisplay|4|Z23|DD|Idol|Serious Idol @Acting Manager?!|{{Gem}} 800|||120}}
+{{ShipDisplay|4|Z23|DD|Kinokuniya|The Eyecatch in the Rye?||1}}
+{{ShipDisplay|4|Z23|DD|Wedding|Schwarze Hochzeit||1}}
+{{ShipDisplay|4|Z23|DD|Kai|Z23 (Retrofit)||1}}
+{{ShipDisplay|4|Z24|DD||'''Construction'''}}
+{{ShipDisplay|4|Z24|DD|New Year|Festival-going Fiend|{{Gem}} 800|||143}}
+{{ShipDisplay|4|Z24|DD|Sport|The Devil on the Court|{{Gem}} 780|||112}}
+{{ShipDisplay|4|Z24|DD|Halloween|Blood-Red Dance Beneath the Moon|{{Gem}} 780|||174}}
+{{ShipDisplay|4|Z25|DD||'''Construction'''}}
+{{ShipDisplay|4|Z25|DD|Summer|Hot Summer's Cool Breeze|{{Gem}} 780|||106}}
+{{ShipDisplay|4|Z26|DD||'''Construction'''}}
+{{ShipDisplay|4|Z26|DD|Home Relaxation|Sharing is Caring|{{Gem}} 780|||109}}
+{{ShipDisplay|4|Z28|DD||'''Construction'''}}
+{{ShipDisplay|4|Z28|DD|New Year|New Year Smorgasbord!|{{Gem}} 780|||126}}
+{{ShipDisplay|4|Z28|DD|Party|Sylvan Celebration|{{Gem}} 780|||155}}
+{{ShipDisplay|4|Z35|DD||'''Construction'''}}
+{{ShipDisplay|4|Z35|DD|New Year|Projekt Kirschblüte|{{Gem}} 780|||126}}
+{{ShipDisplay|4|Z35|DD|Maid|Liebender Engel|{{Gem}} 780|1||145}}
+{{ShipDisplay|4|Z35|DD|Theme Park|Himmel: Beyond Love's Boundaries|{{Gem}} 800|||181}}
+{{ShipDisplay|4|Z36|DD||'''Construction'''}}
+{{ShipDisplay|4|Z43|DD||'''Construction'''}}
+{{ShipDisplay|4|Z43|DD|School|A Secret Base For Two|{{Gem}} 780|||509}}
+{{ShipDisplay|5|Z46|DD||'''Construction'''}}
+{{ShipDisplay|5|Z46|DD|Summer|Her First Summer|{{Gem}} 1180|||106}}
+{{ShipDisplay|5|Z46|DD|Sport|Girls' Relay|{{Gem}} 1180|||112}}
+{{ShipDisplay|5|Z46|DD|Idol|Star-Lit★Chocolate|{{Gem}} 1200|||120}}
+{{ShipDisplay|5|Z46|DD|Spring|Jianzhi Fantasia|{{Gem}} 900|||144}}
+{{ShipDisplay|5|Z46|DD|Maid|Chronicles of the Dust Wars|{{Gem}} 880|||150}}
+{{ShipDisplay|5|Z46|DD|RPG|The Bard of Hamelin||1||178}}
+{{ShipDisplay|5|Z47|DD||'''Construction'''}}
+{{ShipDisplay|5|Z47|DD|School|Young-Again Filter|{{Gem}} 800}}
+{{ShipDisplay|5|Z47|DD|Travel|Batter ★ Home Run||1||112}}
+{{ShipDisplay|6|Z52|DD||'''Construction'''}}
+{{ShipDisplay|6|Z52|DD|Bunny|The Rapid Rabbit|{{Gem}} 980|1|DYN|145}}
+{{ShipDisplay|5|Otto von Alvensleben|DD||'''Construction'''}}
+{{ShipDisplay|5|Otto von Alvensleben|DD|Summer|Hunter Becomes Hunted|{{Gem}} 880|||158}}
+{{ShipDisplay|5|Otto von Alvensleben|DD|Maid|The Clumsy Maid is in a Bind!|{{Gem}} 980|1|DYN|136}}
+{{ShipDisplay|2|Königsberg|CL||'''Construction'''}}
+{{ShipDisplay|2|Karlsruhe|CL||'''Construction'''}}
+{{ShipDisplay|2|Karlsruhe|CL|Kai|Karlsruhe (Retrofit)||1}}
+{{ShipDisplay|2|Köln|CL||'''Construction'''}}
+{{ShipDisplay|2|Köln|CL|Kai|Köln (Retrofit)||1}}
+{{ShipDisplay|3|Leipzig|CL||'''Construction'''}}
+{{ShipDisplay|3|Leipzig|CL|Maid|Storefront Training|{{Gem}} 780|||150}}
+{{ShipDisplay|3|Leipzig|CL|Kai|Leipzig (Retrofit)||1}}
+{{ShipDisplay|4|Nürnberg|CL||'''Construction'''}}
+{{ShipDisplay|4|Nürnberg|CL|New Year|Spring Wanderer|{{Gem}} 780|||126}}
+{{ShipDisplay|5|Magdeburg|CL||'''Construction'''}}
+{{ShipDisplay|5|Magdeburg|CL|Maid|Cat Café Cleanup|{{Gem}} 880|||150}}
+{{ShipDisplay|5|Magdeburg|CL|Summer|Gone Fishing|{{Gem}} 880|||133}}
+{{ShipDisplay|5|Emden|CL||'''Construction'''}}
+{{ShipDisplay|5|Emden|CL|Vampire|White-Black Partita|{{Gem}} 1180|||156}}
+{{ShipDisplay|5|Emden|CL|Spring|Moonsilver Union|{{Gem}} 900|||152}}
+{{ShipDisplay|5|Emden|CL|Work|Duet of Guiding Stars|{{Gem}} 1030|1|DYN|539}}
+{{ShipDisplay|4|Elbing|CL||'''Construction'''}}
+{{ShipDisplay|4|Elbing|CL|Vampire|The Throne of Misfortune|{{Gem}} 780|||156}}
+{{ShipDisplay|4|Elbing|CL|Home Relaxation|Sleepless Night's Wishes|{{Gem}} 700|1}}
+{{ShipDisplay|4|Elbing|CL|Spring|Beauty Beneath the Spring Limelight|{{Gem}} 800|||152}}
+{{ShipDisplay|5|Regensburg|CL||'''Construction'''}}
+{{ShipDisplay|5|Regensburg|CL|Summer|Dark Dragon, Brilliant Beach|{{Gem}} 1180||L2D|168}}
+{{ShipDisplay|5|Regensburg|CL|Bunny|The Dark Dragon's Dungeon|{{Gem}} 880|1||154}}
+{{ShipDisplay|5|Duisburg|CL||'''Construction'''}}
+{{ShipDisplay|5|Duisburg|CL|Bunny|Endurance Training (Gone Wrong)|{{Gem}} 980|1|DYN|145}}
+{{ShipDisplay|4|Admiral Hipper|CA||'''Construction'''}}
+{{ShipDisplay|4|Admiral Hipper|CA|Festival|Sunshine by the Hot Spring|{{Gem}} 780|1||114}}
+{{ShipDisplay|5|Blücher|CA||'''Construction'''}}
+{{ShipDisplay|5|Blücher|CA|Sport|High-Altitude Head Over Heels|{{Gem}} 900|||132}}
+{{ShipDisplay|5|Blücher|CA|RPG|Skyward Burning Love|{{Gem}} 880|1||176}}
+{{ShipDisplay|5|Blücher|CA|School|The After-School Wait||1||147}}
+{{ShipDisplay|5|Prinz Eugen|CA||'''Construction'''}}
+{{ShipDisplay|5|Prinz Eugen|CA|Summer|Unfading Smile|{{Gem}} 800|||106}}
+{{ShipDisplay|5|Prinz Eugen|CA|New Year|Profusion of Flowers|{{Gem}} 880|||101}}
+{{ShipDisplay|5|Prinz Eugen|CA|Party|Cordial Cornflower|{{Gem}} 880|||115}}
+{{ShipDisplay|5|Prinz Eugen|CA|RaceQueen|Final Lap|{{Gem}} 1200|||132}}
+{{ShipDisplay|5|Prinz Eugen|CA|Maid|Kindred Evening Spirits|{{Gem}} 1180||L2D|145}}
+{{ShipDisplay|5|Prinz Eugen|CA|Sport|Brilliant Touchdown|{{Gem}} 980|1|DYN|112}}
+{{ShipDisplay|5|Prinz Eugen|CA|Bunny|Between Tipsiness and a Wager|{{Gem}} 1260|1|L2D|145}}
+{{ShipDisplay|5|Prinz Eugen|CA|Wedding|Symphonic Fate||1}}
+{{ShipDisplay|4|Deutschland|CA||'''Construction'''}}
+{{ShipDisplay|4|Deutschland|CA|Party|Dark Demon Princess||1}}
+{{ShipDisplay|4|Deutschland|CA|Summer|Service Time?!|{{Gem}} 1080|||106}}
+{{ShipDisplay|4|Deutschland|CA|Party2|Demon Princess' Dark Hour Banquet|{{Gem}} 780|||115}}
+{{ShipDisplay|4|Deutschland|CA|Spring|Lantern-Lit Ruler|{{Gem}} 800|||128}}
+{{ShipDisplay|4|Admiral Graf Spee|CA||'''Construction'''}}
+{{ShipDisplay|4|Admiral Graf Spee|CA|School|Girl's Sunday|{{Gem}} 800|||103}}
+{{ShipDisplay|4|Admiral Graf Spee|CA|Casual|Peaceful Daily Life|{{Gem}} 700}}
+{{ShipDisplay|4|Admiral Graf Spee|CA|Party|A Novel Anniversary|{{Gem}} 780|||115}}
+{{ShipDisplay|4|Admiral Graf Spee|CA|Idol|World's♥Cutest|{{Gem}} 1100|||120}}
+{{ShipDisplay|4|Admiral Hipper μ|CA||'''Construction'''}}
+{{ShipDisplay|5|Roon μ|CA||'''Construction'''}}
+{{ShipDisplay|5|Prinz Heinrich|CA||'''Construction'''}}
+{{ShipDisplay|5|Prinz Heinrich|CA|New Year|Fireworks and Tapestries|{{Gem}} 880|||126}}
+{{ShipDisplay|5|Prinz Heinrich|CA|Summer|Rabbit on Watch|{{Gem}} 1180|||164}}
+{{ShipDisplay|5|Prinz Heinrich|CA|School|Secret Boss o' the Underworld?|{{Gem}} 880|||147}}
+{{ShipDisplay|5|Prinz Heinrich|CA|Party|Heinrich on Stage|{{Gem}} 900|||159}}
+{{ShipDisplay|5|Prinz Adalbert|CA||'''Construction'''}}
+{{ShipDisplay|5|Prinz Adalbert|CA|Maid|After-Hours Service|{{Gem}} 1180|||145}}
+{{ShipDisplay|5|Prinz Adalbert|CA|Home Relaxation|Bathroom Slip-Up|{{Gem}} 1180||L2D|109}}
+{{ShipDisplay|4|Yorck|CA||'''Construction'''}}
+{{ShipDisplay|4|Yorck|CA|Vampire|Breaker under the Blood Moon|{{Gem}} 780|||156}}
+{{ShipDisplay|4|Yorck|CA|Summer|Late-Night Companion|{{Gem}} 880|1|DYN|146}}
+{{ShipDisplay|4|Little Prinz Eugen|CA||'''Construction'''}}
+{{ShipDisplay|4|Little Spee|BC||'''Construction'''}}
+{{ShipDisplay|5|Friedrich Carl|CA||'''Construction'''}}
+{{ShipDisplay|5|Friedrich Carl|CA|Home Relaxation|A Game of Love|{{Gem}} 880|1||185}}
+{{ShipDisplay|5|Friedrich Carl|CA|Summer|Tender Summer Care|{{Gem}} 1180|1|L2D|106}}
+{{ShipDisplay|5|Prinz Eugen μ|CA||'''Construction'''}}
+{{ShipDisplay|4|Little Ägir|CB||'''Construction'''}}
+{{ShipDisplay|4|Scharnhorst|BC||'''Construction'''}}
+{{ShipDisplay|4|Scharnhorst|BC|Spring|Panther und Pflaume|{{Gem}} 800|||127}}
+{{ShipDisplay|4|Gneisenau|BC||'''Construction'''}}
+{{ShipDisplay|4|Gneisenau|BC|Halloween|Nightmarish Succubus|{{Gem}} 1080|||119}}
+{{ShipDisplay|5|Seydlitz|BC||'''Construction'''}}
+{{ShipDisplay|5|Seydlitz|BC|Vampire|Heir of the Vampire Killer|{{Gem}} 880|||156}}
+{{ShipDisplay|5|Seydlitz|BC|Party|Floral Liberation|{{Gem}} 900|||161}}
+{{ShipDisplay|5|Seydlitz|BC|Casual|An Officer's Streetwear|{{Gem}} 880|1||148}}
+{{ShipDisplay|5|Seydlitz|BC|Special Exercise|Double the Danger|{{Gem}} 880|1||154}}
+{{ShipDisplay|5|Lützow|BC||'''Construction'''}}
+{{ShipDisplay|5|Lützow|BC|Vampire|Everlasting Blood Banquet|{{Gem}} 1180|||107}}
+{{ShipDisplay|5|Lützow|BC|Spring|Steaming-Hot Treat|{{Gem}} 880|||165}}
+{{ShipDisplay|5|Lützow|BC|Wedding|Sleeping White Beauty||1}}
+{{ShipDisplay|5|Brünhilde|BC||'''Construction'''}}
+{{ShipDisplay|5|Brünhilde|BC|Sport|Grain-Seizing Grani|{{Gem}} 880|||112}}
+{{ShipDisplay|5|Alvitr|BC||'''Construction'''}}
+{{ShipDisplay|5|Alvitr|BC|Work|Muspel's Torrid Secrets|{{Gem}} 980||DYN|169}}
+{{ShipDisplay|5|Admiral Zenker|BC||'''Construction'''}}
+{{ShipDisplay|5|Admiral Zenker|BC|Special Exercise|Fun with...Interrogations?|{{Gem}} 1180|1|L2D|131}}
+{{ShipDisplay|5|Bismarck|BB||'''Construction'''}}
+{{ShipDisplay|5|Bismarck|BB|Party|Beacon of the Iron Blood|{{Gem}} 1180|||115}}
+{{ShipDisplay|5|Bismarck|BB|Maid|Iron-Black Elysium|{{Gem}} 880|||145}}
+{{ShipDisplay|5|Bismarck|BB|Christmas|Unpacked Surprise|{{Gem}} 1180|1|L2D|193}}
+{{ShipDisplay|5|Bismarck|BB|Wedding|Wedding Dominion||1}}
+{{ShipDisplay|5|Tirpitz|BB||'''Construction'''}}
+{{ShipDisplay|5|Tirpitz|BB|Summer|Snow-Melting Summer|{{Gem}} 1180|||106}}
+{{ShipDisplay|5|Tirpitz|BB|Party|Iron Blood Snowstorm|{{Gem}} 880|||115}}
+{{ShipDisplay|5|Tirpitz|BB|New Year|Seasonal Pine and the Frost Flower|{{Gem}} 900|||143}}
+{{ShipDisplay|5|Tirpitz|BB|Spring|A Vase for the Frost Flower|{{Gem}} 880|||157}}
+{{ShipDisplay|5|Tirpitz|BB|RaceQueen|Pit Stop Standby||1||186}}
+{{ShipDisplay|6|Ulrich von Hutten|BB||'''Construction'''}}
+{{ShipDisplay|6|Ulrich von Hutten|BB|Maid|Mayhem Maid|{{Gem}} 1180||L2D|150}}
+{{ShipDisplay|6|Ulrich von Hutten|BB|RaceQueen|Ignition Matrician|{{Gem}} 1200||L2D|132}}
+{{ShipDisplay|6|Ulrich von Hutten|BB|School|What Comes After the Bell|{{Gem}} 980|1|DYN|147}}
+{{ShipDisplay|6|Ulrich von Hutten|BB|Wedding|Liebestrank||1||135}}
+{{ShipDisplay|4|Thüringen|BB||'''Construction'''}}
+{{ShipDisplay|4|Thüringen|BB|Vampire|Tidying in the Moonlight|{{Gem}} 780|||156}}
+{{ShipDisplay|6|Bismarck Zwei|BB||'''Construction'''}}
+{{ShipDisplay|6|Bismarck Zwei|BB|Summer|Crystal-Clear Holiday|{{Gem}} 980||DYN|133}}
+{{ShipDisplay|6|Bismarck Zwei|BB|Casual|Bathed in Brightness and Spirit|{{Gem}} 900|1|DYN}}
+{{ShipDisplay|4|Little Friedrich|BB||'''Construction'''}}
+{{ShipDisplay|4|Weser|CVL||'''Construction'''}}
+{{ShipDisplay|4|Weser|CVL|New Year|Obsidian Elegance|{{Gem}} 780|||136}}
+{{ShipDisplay|4|Weser|CVL|Party|Urbane Onyx|{{Gem}} 1080|||146}}
+{{ShipDisplay|4|Weser|CVL|Summer|Wave-Washed Paradise|{{Gem}} 780|||133}}
+{{ShipDisplay|4|Weser|CVL|Maid|Offtime Cafe||1||142}}
+{{ShipDisplay|4|Elbe|CVL||'''Construction'''}}
+{{ShipDisplay|4|Elbe|CVL|Maid|Time to Show Off?|{{Gem}} 780|||150}}
+{{ShipDisplay|4|Elbe|CVL|Casual|Pure-Hearted Bad Girl|{{Gem}} 1080||L2D|105}}
+{{ShipDisplay|4|Jade|CVL||'''Construction'''}}
+{{ShipDisplay|4|Jade|CVL|Summer|A Lick of Summer|{{Gem}} 780|||168}}
+{{ShipDisplay|4|Jade|CVL|RPG|A Good Girl's Magic|{{Gem}} 780|1||174}}
+{{ShipDisplay|5|Graf Zeppelin|CV||'''Construction'''}}
+{{ShipDisplay|5|Graf Zeppelin|CV|Summer|Beachside Urd|{{Gem}} 1180|||106}}
+{{ShipDisplay|5|Graf Zeppelin|CV|Spring|Intoxicating Crimson|{{Gem}} 880|1||302}}
+{{ShipDisplay|4|Zeppy|CV||'''Construction'''}}
+{{ShipDisplay|5|Peter Strasser|CV||'''Construction'''}}
+{{ShipDisplay|5|Peter Strasser|CV|New Year|Chronos's Kalendae|{{Gem}} 1200|||143}}
+{{ShipDisplay|5|Peter Strasser|CV|Party|A Moment Frozen in Pure White|{{Gem}} 880|||146}}
+{{ShipDisplay|5|Peter Strasser|CV|Spring|Lustrous Jade of the Golden House|{{Gem}} 880|||175}}
+{{ShipDisplay|6|Fritz Rumey|CV||'''Construction'''}}
+{{ShipDisplay|6|Fritz Rumey|CV|Bunny|Schwarzes Kaninchen|{{Gem}} 1180|1|L2D|145}}
+{{ShipDisplay|5|U-81|SS||'''Construction'''}}
+{{ShipDisplay|5|U-81|SS|Party|Soft Serenade|{{Gem}} 880|||107}}
+{{ShipDisplay|5|U-81|SS|Spring|Lantern-Lit Full Moon|{{Gem}} 900|||152}}
+{{ShipDisplay|5|U-47|SS||'''Construction'''}}
+{{ShipDisplay|5|U-47|SS|Casual|Rookie Rider|{{Gem}} 880|||105}}
+{{ShipDisplay|5|U-47|SS|Party|Eigenen Raum|{{Gem}} 880|||115}}
+{{ShipDisplay|5|U-47|SS|Maid|Urban Maid|{{Gem}} 800}}
+{{ShipDisplay|5|U-47|SS|Vampire|Sanguine Moon Sojourn|{{Gem}} 880|||156}}
+{{ShipDisplay|5|U-47|SS|Spring|Hook, Line, and Sinker|{{Gem}} 900|||152}}
+{{ShipDisplay|4|U-557|SS||'''Construction'''}}
+{{ShipDisplay|4|U-556|SS||'''Construction'''}}
+{{ShipDisplay|4|U-556|SS|Party|Party Knight!||1}}
+{{ShipDisplay|4|U-556|SS|Wild West|Prairie Knight|{{Gem}} 780|||176}}
+{{ShipDisplay|4|U-73|SS||'''Construction'''}}
+{{ShipDisplay|4|U-73|SS|School|Science Rules!||1}}
+{{ShipDisplay|4|U-73|SS|Spring|New Year's Chemistry||1||144}}
+{{ShipDisplay|5|U-101|SS||'''Construction'''}}
+{{ShipDisplay|5|U-101|SS|School|Ironbrass Trombonist|{{Gem}} 880|1||103}}
+{{ShipDisplay|4|U-522|SS||'''Construction'''}}
+{{ShipDisplay|4|U-110|SS||'''Construction'''}}
+{{ShipDisplay|4|U-110|SS|School|Kleiner Hai|{{Gem}} 780|1||103}}
+{{ShipDisplay|4|U-110|SS|Party|A Cute, Sharky Reverie|{{Gem}} 800|||135}}
+{{ShipDisplay|4|U-110|SS|Idol|Garnished Supershark|{{Gem}} 800|||120}}
+{{ShipDisplay|4|U-110|SS|New Year|New Year, Small Shark|{{Gem}} 780|||126}}
+{{ShipDisplay|4|U-110|SS|Spring|Springtime Shark|{{Gem}} 800|||152}}
+{{ShipDisplay|5|U-96|SS||'''Construction'''}}
+{{ShipDisplay|5|U-96|SS|Home Relaxation|Secret Gaming Session|{{Gem}} 880|||109}}
+{{ShipDisplay|5|U-96|SS|Sport|How Heavy Are Those Barbells?|{{Gem}} 880|||112}}
+{{ShipDisplay|5|U-96|SS|RaceQueen|Wolfen Dolly|{{Gem}} 980||DYN|186}}
+{{ShipDisplay|5|U-37|SS||'''Construction'''}}
+{{ShipDisplay|5|U-37|SS|New Year|New Year's Nightingale|{{Gem}} 880|||101}}
+{{ShipDisplay|5|U-37|SS|Special Exercise|Keeping Peace in the Streets|{{Gem}} 880|1||529}}
+{{ShipDisplay|4|U-410|SS||'''Construction'''}}
+{{ShipDisplay|4|U-410|SS|Spring|Spring Festival Scheme|{{Gem}} 800|||144}}
+{{ShipDisplay|4|U-410|SS|Travel|Practice Makes Perfect||1||112}}
+{{ShipDisplay|4|U-1206|SS||'''Construction'''}}
+{{ShipDisplay|4|U-1206|SS|Maid|Maid Just for You|{{Gem}} 780|||150}}
+{{ShipDisplay|4|U-31|SS||'''Construction'''}}
+{{ShipDisplay|4|U-31|SS|School|Let's Go Home|{{Gem}} 780|||185}}
+{{ShipDisplay|5|U-552|SS||'''Construction'''}}
+{{ShipDisplay|5|U-552|SS|Special Exercise|Special Sightseeing Service|{{Gem}} 880|1||170}}
+{{ShipDisplay|4|Z23|DD|Home Relaxation|Keeper of the Comf-Fort||1||109}}
+{{ShipDisplay|4|Z23|DD|RPG|Upgrade Failure?!|{{Gem}} 780|1||158}}
+{{ShipDisplay|4|Z23|DD|Party2|Tanz der Blumen|{{Gem}} 780|||136}}
+{{ShipDisplay|4|Z23|DD|Spring|Inky Antics|{{Gem}} 800|1||144}}
+{{ShipDisplay|5|Roon|CA||'''Construction'''}}
+{{ShipDisplay|5|Roon|CA|Party|Dark Red Grin|{{Gem}} 880|||115}}
+{{ShipDisplay|5|Roon|CA|Spring|Viridescent Lullaby|{{Gem}} 1180|||157}}
+{{ShipDisplay|5|Roon|CA|Wedding|The Abyssal Embrace||1||135}}
+{{ShipDisplay|6|Friedrich der Große|BB||'''Construction'''}}
+{{ShipDisplay|6|Friedrich der Große|BB|New Year|Dark Raiments of Gagaku|{{Gem}} 880|||126}}
+{{ShipDisplay|6|Friedrich der Große|BB|Summer|One Summer Night's Intimacy|{{Gem}} 1180||L2D|164}}
+{{ShipDisplay|6|Friedrich der Große|BB|Spring|Boudoir's Lingering Flame|{{Gem}} 1680|1|DUAL|175}}
+{{ShipDisplay|6|Friedrich der Große|BB|SpringForm2|Boudoir's Lingering Flame||1|DUAL|175}}
+{{ShipDisplay|6|Friedrich der Große|BB|Wedding|Zeremonie of the Cradle||1}}
+{{ShipDisplay|5|Mainz|CL||'''Construction'''}}
+{{ShipDisplay|5|Mainz|CL|Hot Springs|The Silkiest Brew|{{Gem}} 880|||167}}
+{{ShipDisplay|5|Mainz|CL|Spring|A Blend of Serenity|{{Gem}} 1180|1|L2D|302}}
+{{ShipDisplay|5|Odin|BC||'''Construction'''}}
+{{ShipDisplay|5|Odin|BC|New Year|Black Strokes upon Blank Snow|{{Gem}} 880|||126}}
+{{ShipDisplay|6|Ägir|CB||'''Construction'''}}
+{{ShipDisplay|6|Ägir|CB|Maid|Iron Blood's Dragon Maid|{{Gem}} 1180|||136}}
+{{ShipDisplay|6|Ägir|CB|Spring|Golden Dragon Among Auspicious Clouds|{{Gem}} 1180||L2D|157}}
+{{ShipDisplay|6|Ägir|CB|Home Relaxation|One-on-One Leisure Time|{{Gem}} 1180|1|L2D|145}}
+{{ShipDisplay|5|August von Parseval|CV||'''Construction'''}}
+{{ShipDisplay|5|August von Parseval|CV|Maid|The Conquered Unhulde|{{Gem}} 880|||150}}
+{{ShipDisplay|5|August von Parseval|CV|Home Relaxation|The Unhulde's Midday Respite|{{Gem}} 980|1|DYN|193}}
+{{ShipDisplay|5|Prinz Rupprecht|BC||'''Construction'''}}
+{{ShipDisplay|5|Prinz Rupprecht|BC|Spring|The Gate Dragon's Advent|{{Gem}} 1180||L2D|165}}
+{{ShipDisplay|5|Prinz Rupprecht|BC|Theme Park|Midnight Pearl|{{Gem}} 880|||180}}
+{{ShipDisplay|5|Felix Schultz|DD||'''Construction'''}}
+{{ShipDisplay|5|Felix Schultz|DD|Maid|Sweet, Sleepy "Revenge"|{{Gem}} 880|||501}}
+{{ShipDisplay|6|Hindenburg|CA||'''Construction'''}}
+{{ShipDisplay|6|Hindenburg|CA|Bunny|Delirious Duel|{{Gem}} 1180||L2D|501}}
+{{ShipDisplay|6|Hindenburg|CA|Spring|Dancer of the Deep Chamber|{{Gem}} 1180|1|L2D|157}}
+{{ShipDisplay|6|Mecklenburg|BB||'''Construction'''}}
+{{ShipDisplay|6|Mecklenburg|BB|Maid|Branding Witchcraft|{{Gem}} 1260|1|L2D|156}}
+{{ShipDisplay|4|An Shan|DD||'''Construction'''}}
+{{ShipDisplay|4|An Shan|DD|School|Setting Sun, Hearts as One|{{Gem}} 780|||108}}
+{{ShipDisplay|4|An Shan|DD|Kai|An Shan (Retrofit)||1}}
+{{ShipDisplay|4|Fu Shun|DD||'''Construction'''}}
+{{ShipDisplay|4|Fu Shun|DD|Spring|The Unbreakable Baozi Heist||1||165}}
+{{ShipDisplay|4|Fu Shun|DD|Kai|Fu Shun (Retrofit)||1}}
+{{ShipDisplay|4|Chang Chun|DD||'''Construction'''}}
+{{ShipDisplay|4|Chang Chun|DD|Spring|The Joy of Spring|{{Gem}} 780|||102}}
+{{ShipDisplay|4|Chang Chun|DD|Spring2|Fortune Arrives in Red|{{Gem}} 800|||152}}
+{{ShipDisplay|4|Chang Chun|DD|Kai|Chang Chun (Retrofit)||1}}
+{{ShipDisplay|4|Tai Yuan|DD||'''Construction'''}}
+{{ShipDisplay|4|Tai Yuan|DD|Spring|The Golden Dragon's Festivities|{{Gem}} 1080|||102}}
+{{ShipDisplay|4|Tai Yuan|DD|Home Relaxation|Two Hearts, One Cushion|{{Gem}} 780|1||185}}
+{{ShipDisplay|4|Tai Yuan|DD|Kai|Tai Yuan (Retrofit)||1}}
+{{ShipDisplay|4|Lung Wu|DD||'''Construction'''}}
+{{ShipDisplay|4|Lung Wu|DD|Spring|Ascendant Dragon's Spring Feast|{{Gem}} 1100||L2D|144}}
+{{ShipDisplay|4|Lung Wu|DD|Summer|Invitation to Jade Seas||1||173}}
+{{ShipDisplay|4|Hu Pen|DD||'''Construction'''}}
+{{ShipDisplay|4|Hu Pen|DD|Spring|Prancing Tiger Welcomes the Spring|{{Gem}} 900||DYN|144}}
+{{ShipDisplay|4|Fei Yuen|DD||'''Construction'''}}
+{{ShipDisplay|4|Fei Yuen|DD|Spring|Flying Clouds, Flailing Pranks|{{Gem}} 800|||144}}
+{{ShipDisplay|4|Fei Yuen|DD|Spring2|Lady Yuen's Sugary Artillery|{{Gem}} 780|1||197}}
+{{ShipDisplay|4|Chang Feng|DD||'''Construction'''}}
+{{ShipDisplay|4|Chang Feng|DD|Spring|Cozy Spring Cleaning|{{Gem}} 780|1||165}}
+{{ShipDisplay|4|Chang Feng|DD|Spring2|A Sky Blue Eclipsing Jade||1||190}}
+{{ShipDisplay|4|Fu Po|DD||'''Construction'''}}
+{{ShipDisplay|4|Fu Po|DD|Spring|Mischievous Tidings|{{Gem}} 780|1||165}}
+{{ShipDisplay|4|Yat Sen|CL||'''Construction'''}}
+{{ShipDisplay|4|Yat Sen|CL|Spring|Paragon of Celestial Grace|{{Gem}} 880||DYN|157}}
+{{ShipDisplay|4|Yat Sen|CL|Spring2|Pristine Leaves, Rich Warmth||1||157}}
+{{ShipDisplay|4|Yat Sen|CL|Wedding|Coronal Afterglow||1}}
+{{ShipDisplay|4|Yat Sen|CL|Kai|Yat Sen (Retrofit)||1}}
+{{ShipDisplay|4|Ning Hai|CL||'''Construction'''}}
+{{ShipDisplay|4|Ning Hai|CL|Summer|Summer Hunger|{{Gem}} 800|||106}}
+{{ShipDisplay|4|Ning Hai|CL|Festival|Moon Palace Rabbit|{{Gem}} 800|1}}
+{{ShipDisplay|4|Ning Hai|CL|Idol|Dragon Sisters! -N|{{Gem}} 1100|||120}}
+{{ShipDisplay|4|Ning Hai|CL|Spring|Springtime Sojourn|{{Gem}} 780|||129}}
+{{ShipDisplay|4|Ning Hai|CL|Party|Gorgeous Violet|{{Gem}} 800|||135}}
+{{ShipDisplay|4|Ning Hai|CL|Casual|Da Bao's Friend!||1}}
+{{ShipDisplay|4|Ning Hai|CL|Maid|Hectic Kitchen|{{Gem}} 780|1||165}}
+{{ShipDisplay|4|Ning Hai|CL|Kai|Ning Hai (Retrofit)||1}}
+{{ShipDisplay|4|Ping Hai|CL||'''Construction'''}}
+{{ShipDisplay|4|Ping Hai|CL|Summer|Summer Vacation|{{Gem}} 500|||106}}
+{{ShipDisplay|4|Ping Hai|CL|Festival|Osmanthus Moon Rabbit|{{Gem}} 800|1}}
+{{ShipDisplay|4|Ping Hai|CL|Idol|Dragon Sisters! -P|{{Gem}} 1100|||120}}
+{{ShipDisplay|4|Ping Hai|CL|Spring|Great Gourmet Expedition|{{Gem}} 780|||129}}
+{{ShipDisplay|4|Ping Hai|CL|Party|Delicious Crimson|{{Gem}} 1100|||135}}
+{{ShipDisplay|4|Ping Hai|CL|Casual|Baobao's Buddy!||1}}
+{{ShipDisplay|4|Ping Hai|CL|Maid|Lively Banquet Preparations|{{Gem}} 780|1||165}}
+{{ShipDisplay|4|Ping Hai|CL|Kai|Ping Hai (Retrofit)||1}}
+{{ShipDisplay|4|Ying Swei|CL||'''Construction'''}}
+{{ShipDisplay|4|Ying Swei|CL|Spring|Snowy Pine's Warmth||1||144}}
+{{ShipDisplay|4|Ying Swei|CL|Spring2|Frolicking Flowers, Verse I|{{Gem}} 1080|||157}}
+{{ShipDisplay|4|Ying Swei|CL|Summer|Blue Waves, Limpid Summer|{{Gem}} 880|1|DYN|117}}
+{{ShipDisplay|4|Ying Swei|CL|Kai|Ying Swei (Retrofit)||1}}
+{{ShipDisplay|4|Chao Ho|CL||'''Construction'''}}
+{{ShipDisplay|4|Chao Ho|CL|Spring|Plum Blossom's Illumination|{{Gem}} 800|||144}}
+{{ShipDisplay|4|Chao Ho|CL|Spring2|Frolicking Flowers, Verse II|{{Gem}} 1080||L2D|157}}
+{{ShipDisplay|4|Chao Ho|CL|Summer|Azure Ripples, Shimmering Sun|{{Gem}} 880|1|DYN|117}}
+{{ShipDisplay|4|Chao Ho|CL|Kai|Chao Ho (Retrofit)||1}}
+{{ShipDisplay|4|Hai Tien|CL||'''Construction'''}}
+{{ShipDisplay|4|Hai Tien|CL|Spring|Verse-Weaver at the Water's Edge|{{Gem}} 800|||152}}
+{{ShipDisplay|4|Hai Tien|CL|Goddess|Soaring Apsaras||1||152}}
+{{ShipDisplay|4|Hai Tien|CL|Halloween|Autumn Night of Wandering Spirits|{{Gem}} 780|||174}}
+{{ShipDisplay|4|Hai Tien|CL|Spring2|Baker of Heart into Sweets||1||127}}
+{{ShipDisplay|4|Hai Tien|CL|Wedding|Luan-Feng's Everlasting Duet||1}}
+{{ShipDisplay|4|Hai Chi|CL||'''Construction'''}}
+{{ShipDisplay|4|Hai Chi|CL|Spring|A Dance Among the Lotuses|{{Gem}} 800|||152}}
+{{ShipDisplay|4|Chi An|CL||'''Construction'''}}
+{{ShipDisplay|4|Chi An|CL|Spring|Lanternlit Stroll|{{Gem}} 800|||152}}
+{{ShipDisplay|4|Chi An|CL|Nile Colors|Exotic Dreamland|{{Gem}} 1080|1|L2D|303}}
+{{ShipDisplay|4|Hai Yung|CL||'''Construction'''}}
+{{ShipDisplay|4|Hai Yung|CL|Spring|Maple Impressions|{{Gem}} 780|1||302}}
+{{ShipDisplay|4|Hai Chou|CL||'''Construction'''}}
+{{ShipDisplay|4|Hai Chou|CL|Spring|Aroma of Awakening|{{Gem}} 950|1|DYN|175}}
+{{ShipDisplay|4|Hai Chou|CL|SpringASMR|Aroma of Awakening||1|DYN|175}}
+{{ShipDisplay|5|Chien Wu|CA||'''Construction'''}}
+{{ShipDisplay|5|Chien Wu|CA|Spring|Dressed for Just Tonight|{{Gem}} 1680|1|DUAL|157}}
+{{ShipDisplay|5|Chien Wu|CA|SpringForm2|Dressed for Just Tonight||1|DUAL|157}}
+{{ShipDisplay|5|Chien Wu|CA|Home Relaxation|All-Nighter Masterpiece|{{Gem}} 980|1|DYN|313}}
+{{ShipDisplay|5|Chang Wu|CA||'''Construction'''}}
+{{ShipDisplay|5|Chang Wu|CA|Spring|In Full Glory, Spring's Branch Blooms|{{Gem}} 1280|1|L2D|152}}
+{{ShipDisplay|5|Huan Ch'ang|BC||'''Construction'''}}
+{{ShipDisplay|5|Huan Ch'ang|BC|Spring|Dance Beneath the Moonlight|{{Gem}} 980||DYN|157}}
+{{ShipDisplay|4|Chen Hai|CVL||'''Construction'''}}
+{{ShipDisplay|4|Chen Hai|CVL|Spring|Vestibule of Wonders|{{Gem}} 800|||152}}
+{{ShipDisplay|4|Chen Hai|CVL|Party|Cerulean Ripples|{{Gem}} 800|||161}}
+{{ShipDisplay|4|Chen Hai|CVL|Spring2|Sylvan Garden's Embroidery||1}}
+{{ShipDisplay|4|Chen Hai|CVL|Kai|Chen Hai (Retrofit)||1}}
+{{ShipDisplay|4|Hwah Jah|CVL||'''Construction'''}}
+{{ShipDisplay|4|Hwah Jah|CVL|Spring|The Festive Undead|{{Gem}} 900||DYN|152}}
+{{ShipDisplay|4|Hwah Jah|CVL|Kai|Hwah Jah (Retrofit)||1}}
+{{ShipDisplay|4|Ting An|AE||'''Construction'''}}
+{{ShipDisplay|4|Ting An|AE|Spring|Tender White Jade|{{Gem}} 780|||165}}
+{{ShipDisplay|4|Ting An|AE|Theme Park|Undercover or Uncovered?!|{{Gem}} 780|||145}}
+{{ShipDisplay||导驱type20测试机|||'''Construction'''}}
+{{ShipDisplay||导驱type21测试机|||'''Construction'''}}
+{{ShipDisplay|5|Harbin|CL||'''Construction'''}}
+{{ShipDisplay|5|Harbin|CL|Summer|Union Between Sea and Sky|{{Gem}} 880|||133}}
+{{ShipDisplay|5|Harbin|CL|Summer2|Set Sail for Summer Treasure|{{Gem}} 980|1|DYN|179}}
+{{ShipDisplay|5|Harbin|CL|Wedding|Red Paeonia||1}}
+{{ShipDisplay|4|Carabiniere|DD||'''Construction'''}}
+{{ShipDisplay|4|Carabiniere|DD|Casual|Refreshing Sundress|{{Gem}} 780|||105}}
+{{ShipDisplay|4|Vincenzo Gioberti|DD||'''Construction'''}}
+{{ShipDisplay|4|Vincenzo Gioberti|DD|Party|Fair Lady's Invitation|{{Gem}} 780|||146}}
+{{ShipDisplay|4|Maestrale|DD||'''Construction'''}}
+{{ShipDisplay|4|Maestrale|DD|Summer|Lonesome Beachfarer|{{Gem}} 780|||106}}
+{{ShipDisplay|4|Libeccio|DD||'''Construction'''}}
+{{ShipDisplay|4|Libeccio|DD|Summer|Beachbound Southwestern Wind!|{{Gem}} 780|||106}}
+{{ShipDisplay|4|Nicoloso da Recco|DD||'''Construction'''}}
+{{ShipDisplay|4|Nicoloso da Recco|DD|Summer|To a Smashing Voyage!|{{Gem}} 780|||106}}
+{{ShipDisplay|5|Pompeo Magno|DD||'''Construction'''}}
+{{ShipDisplay|5|Pompeo Magno|DD|School|Quaver Daydream|{{Gem}} 880|||103}}
+{{ShipDisplay|4|Alfredo Oriani|DD||'''Construction'''}}
+{{ShipDisplay|4|Alfredo Oriani|DD|Dance|Vivacious Vivace|{{Gem}} 780|||155}}
+{{ShipDisplay|4|Emanuele Pessagno|DD||'''Construction'''}}
+{{ShipDisplay|4|Emanuele Pessagno|DD|Dance|Backstage Blunders|{{Gem}} 780|||185}}
+{{ShipDisplay|5|Attilio Regolo|DD||'''Construction'''}}
+{{ShipDisplay|5|Attilio Regolo|DD|Work|Castle of Inspiration|{{Gem}} 880|||109}}
+{{ShipDisplay|5|Attilio Regolo|DD|Party|Angel from Above||1||155}}
+{{ShipDisplay|4|Giosuè Carducci|DD||'''Construction'''}}
+{{ShipDisplay|4|Giosuè Carducci|DD|Nile Colors|Verses in Balance|{{Gem}} 780|1||303}}
+{{ShipDisplay|4|Ugolino Vivaldi|DD||'''Construction'''}}
+{{ShipDisplay|4|Ugolino Vivaldi|DD|Home Relaxation|An Unexpected Catch!|{{Gem}} 700|1}}
+{{ShipDisplay|5|Duca degli Abruzzi|CL||'''Construction'''}}
+{{ShipDisplay|5|Duca degli Abruzzi|CL|Summer|Lustrous Onyx Sirenetta|{{Gem}} 880|||133}}
+{{ShipDisplay|5|Giuseppe Garibaldi|CL||'''Construction'''}}
+{{ShipDisplay|5|Giuseppe Garibaldi|CL|Dance|Noble Ivory Plumes|{{Gem}} 900|||159}}
+{{ShipDisplay|4|Bartolomeo Colleoni|CL||'''Construction'''}}
+{{ShipDisplay|4|Bartolomeo Colleoni|CL|Nile Colors|The Empress' Romantic Ambush|{{Gem}} 780|1||304}}
+{{ShipDisplay|4|Alberto di Giussano|CL||'''Construction'''}}
+{{ShipDisplay|4|Alberto di Giussano|CL|Home Relaxation|A Magnificent Mistake|{{Gem}} 780|1||313}}
+{{ShipDisplay|3|Trento|CA||'''Construction'''}}
+{{ShipDisplay|3|Trento|CA|Summer|Summer's Hotness?|{{Gem}} 780|||106}}
+{{ShipDisplay|5|Zara|CA||'''Construction'''}}
+{{ShipDisplay|5|Zara|CA|Summer|Poolside Coincidence|{{Gem}} 1180|||117}}
+{{ShipDisplay|5|Pola|CA||'''Construction'''}}
+{{ShipDisplay|5|Pola|CA|Summer|Seaside Coincidence|{{Gem}} 1180|||117}}
+{{ShipDisplay|4|Trieste|CA||'''Construction'''}}
+{{ShipDisplay|4|Trieste|CA|School|Rooftop Lunch Break|{{Gem}} 780|||147}}
+{{ShipDisplay|4|Trieste|CA|Hot Springs|Amore Termico|{{Gem}} 880||DYN|167}}
+{{ShipDisplay|4|Trieste|CA|Spring|A Brush of Springtime Ink|{{Gem}} 780|1|DYN|302}}
+{{ShipDisplay|4|Bolzano|CA||'''Construction'''}}
+{{ShipDisplay|4|Bolzano|CA|Dance|A Flutter in the Moment|{{Gem}} 800|||159}}
+{{ShipDisplay|4|Bolzano|CA|Summer|Tempting Treasure|{{Gem}} 780|||164}}
+{{ShipDisplay|4|Bolzano|CA|Spring|A Special Night Just for Us|{{Gem}} 780|1||302}}
+{{ShipDisplay|5|Gorizia|CA||'''Construction'''}}
+{{ShipDisplay|5|Gorizia|CA|Work|Unrequited Office Love?|{{Gem}} 1180||L2D|169}}
+{{ShipDisplay|5|Gorizia|CA|Special Exercise|The Spy Who Crushed on Me|{{Gem}} 980|1|DYN|494}}
+{{ShipDisplay|5|Vittorio Veneto|BB||'''Construction'''}}
+{{ShipDisplay|5|Vittorio Veneto|BB|Summer|The Flower of La Spezia|{{Gem}} 1180|||106}}
+{{ShipDisplay|5|Littorio|BB||'''Construction'''}}
+{{ShipDisplay|5|Littorio|BB|Summer|The Glory of Naples|{{Gem}} 880|||106}}
+{{ShipDisplay|5|Littorio|BB|Party|Calabria Aurea|{{Gem}} 880|||136}}
+{{ShipDisplay|5|Littorio|BB|Home Relaxation|Lounging Emerald|{{Gem}} 880|||109}}
+{{ShipDisplay|5|Littorio|BB|Work|Sitting in the Rain|{{Gem}} 880|||169}}
+{{ShipDisplay|5|Roma|BB||'''Construction'''}}
+{{ShipDisplay|5|Roma|BB|Dance|White Heron of Darkest Night|{{Gem}} 1200||L2D|159}}
+{{ShipDisplay|5|Roma|BB|Summer|Vacation Upon the Tiber||1||539}}
+{{ShipDisplay|3|Conte di Cavour|BB||'''Construction'''}}
+{{ShipDisplay|3|Conte di Cavour|BB|Summer|Fierce Beachside Battle|{{Gem}} 780|||106}}
+{{ShipDisplay|4|Giulio Cesare|BB||'''Construction'''}}
+{{ShipDisplay|4|Giulio Cesare|BB|Home Relaxation|Fitness Master|{{Gem}} 700}}
+{{ShipDisplay|4|Giulio Cesare|BB|Summer|High Tide Under the Sunlight|{{Gem}} 780|||133}}
+{{ShipDisplay|4|Andrea Doria|BB||'''Construction'''}}
+{{ShipDisplay|4|Andrea Doria|BB|Work|Have a Safe Flight|{{Gem}} 780|||170}}
+{{ShipDisplay|6|Raffaello|BB||'''Construction'''}}
+{{ShipDisplay|6|Raffaello|BB|Nile Colors|Protector of Love and Beauty|{{Gem}} 1180|1|L2D|303}}
+{{ShipDisplay|5|Francesco Caracciolo|BB||'''Construction'''}}
+{{ShipDisplay|5|Francesco Caracciolo|BB|Home Relaxation|Confession Under the Spotlight|{{Gem}} 980|1|DYN|313}}
+{{ShipDisplay|5|Aquila|CV||'''Construction'''}}
+{{ShipDisplay|5|Aquila|CV|Summer|Sardegnian Shallows and Sunshine|{{Gem}} 880|||106}}
+{{ShipDisplay|5|Aquila|CV|Party|A Sip of Sardegnian Elegance|{{Gem}} 880|||146}}
+{{ShipDisplay|5|Impero|CV||'''Construction'''}}
+{{ShipDisplay|5|Impero|CV|School|Languid Librarian|{{Gem}} 880|||147}}
+{{ShipDisplay|5|Impero|CV|Work|Drunken Drowsy Dreamer|{{Gem}} 880|1||190}}
+{{ShipDisplay|4|Torricelli|SS||'''Construction'''}}
+{{ShipDisplay|4|Torricelli|SS|Summer|Shady Seaside|{{Gem}} 780|||106}}
+{{ShipDisplay|5|Leonardo da Vinci|SS||'''Construction'''}}
+{{ShipDisplay|5|Leonardo da Vinci|SS|Dance|Riverside Pirouette|{{Gem}} 880|||158}}
+{{ShipDisplay|5|Maggiore Baracca|SS||'''Construction'''}}
+{{ShipDisplay|5|Maggiore Baracca|SS|Nile Colors|The God Craves Punishment|{{Gem}} 980|1|DYN|303}}
+{{ShipDisplay|5|Marco Polo|BB||'''Construction'''}}
+{{ShipDisplay|5|Marco Polo|BB|Maid|The Queen of Hearts|{{Gem}} 880|||145}}
+{{ShipDisplay|6|Napoli|CA||'''Construction'''}}
+{{ShipDisplay|6|Napoli|CA|Bunny|Dreamy Night|{{Gem}} 1180|1|L2D|145}}
+{{ShipDisplay|5|Vittorio Cuniberti|DD||'''Construction'''}}
+{{ShipDisplay|5|Vittorio Cuniberti|DD|Maid|On the Habits of Cats|{{Gem}} 880|1||185}}
+{{ShipDisplay|4|Grozny|DD||'''Construction'''}}
+{{ShipDisplay|4|Grozny|DD|Special Exercise|Bad Bunny Behind Bars|{{Gem}} 1080|||130}}
+{{ShipDisplay|4|Grozny|DD|Home Relaxation|Bunny Remodeling Plan?|{{Gem}} 780|||109}}
+{{ShipDisplay|4|Grozny|DD|Special Exercise2|Shadowy Syndicate Showdown|{{Gem}} 1080|||154}}
+{{ShipDisplay|4|Grozny|DD|Spring|Tea Party with Królik|{{Gem}} 780|||157}}
+{{ShipDisplay|4|Grozny|DD|Hot Springs|Bunny in the Banya|{{Gem}} 1080|||167}}
+{{ShipDisplay|4|Minsk|DD||'''Construction'''}}
+{{ShipDisplay|4|Minsk|DD|Special Exercise|Thunderous Jailor|{{Gem}} 780|||130}}
+{{ShipDisplay|5|Tashkent|DD||'''Construction'''}}
+{{ShipDisplay|5|Tashkent|DD|Special Exercise|The Bound Cruiser|{{Gem}} 880|||130}}
+{{ShipDisplay|5|Tashkent|DD|Home Relaxation|The Blue Snoozer|{{Gem}} 880|||109}}
+{{ShipDisplay|5|Tashkent|DD|Party|The Sprite's Snapshot|{{Gem}} 980||DYN|146}}
+{{ShipDisplay|5|Tashkent μ|DD||'''Construction'''}}
+{{ShipDisplay|4|Stremitelny|DD||'''Construction'''}}
+{{ShipDisplay|4|Stremitelny|DD|Home Relaxation|No Snow No Life|{{Gem}} 780|||109}}
+{{ShipDisplay|4|Stremitelny|DD|Travel|Nurse on the Night Shift||1||309}}
+{{ShipDisplay|4|Gremyashchy|DD||'''Construction'''}}
+{{ShipDisplay|4|Gremyashchy|DD|Home Relaxation|A Daytime Delight is in a Book|{{Gem}} 780|||109}}
+{{ShipDisplay|4|Gromky|DD||'''Construction'''}}
+{{ShipDisplay|4|Gromky|DD|Home Relaxation|Morning's Beckoning|{{Gem}} 780|||109}}
+{{ShipDisplay|4|Soobrazitelny|DD||'''Construction'''}}
+{{ShipDisplay|4|Soobrazitelny|DD|Special Exercise|The Machinery of Life|{{Gem}} 780|||154}}
+{{ShipDisplay|5|Kiev|DD||'''Construction'''}}
+{{ShipDisplay|5|Kiev|DD|Special Exercise|Backstreet Silver Sonata|{{Gem}} 880|||154}}
+{{ShipDisplay|5|Kiev|DD|Dance|Víla of the Crystal Lake||1||125}}
+{{ShipDisplay|5|Ognevoy|DD||'''Construction'''}}
+{{ShipDisplay|5|Ognevoy|DD|Special Exercise|Blue Nova|{{Gem}} 880|1||154}}
+{{ShipDisplay|4|Svirepy|DD||'''Construction'''}}
+{{ShipDisplay|4|Svirepy|DD|Special Exercise|Rebellious Artist|{{Gem}} 780|1||154}}
+{{ShipDisplay|5|Ozornoy|DD||'''Construction'''}}
+{{ShipDisplay|5|Ozornoy|DD|Spring|The White-Robed Wind Rider Ascends|{{Gem}} 900|1||152}}
+{{ShipDisplay|5|Avrora|CL||'''Construction'''}}
+{{ShipDisplay|5|Avrora|CL|Prison|Shackled Saule|{{Gem}} 880|||130}}
+{{ShipDisplay|5|Avrora|CL|Special Exercise|Not Cut Out For This?|{{Gem}} 880|||154}}
+{{ShipDisplay|5|Avrora|CL|Travel|Mellow Seaspray||1||146}}
+{{ShipDisplay|4|Pamiat' Merkuria|CL||'''Construction'''}}
+{{ShipDisplay|4|Pamiat' Merkuria|CL|Prison|Caged Minx|{{Gem}} 780|||130}}
+{{ShipDisplay|4|Pamiat' Merkuria|CL|Casual|Sweet Cherry Memories|{{Gem}} 780|||109}}
+{{ShipDisplay|4|Pamiat' Merkuria|CL|Travel|Chic and Cheeky||1||105}}
+{{ShipDisplay|4|Pamiat' Merkuria|CL|Home Relaxation|Mercurial Chocolate Love|{{Gem}} 780|||109}}
+{{ShipDisplay|4|Pamiat' Merkuria|CL|Event|Pick and Choose!||1||185}}
+{{ShipDisplay|4|Pamiat' Merkuria|CL|Kai|Pamiat' Merkuria (Retrofit)||1}}
+{{ShipDisplay|5|Chapayev|CL||'''Construction'''}}
+{{ShipDisplay|5|Chapayev|CL|Special Exercise|The Captive Cavalier|{{Gem}} 880|||130}}
+{{ShipDisplay|5|Chapayev|CL|Home Relaxation|White Cavalier's Respite|{{Gem}} 880|||109}}
+{{ShipDisplay|5|Chapayev|CL|Festival|Indigo & Lantern-Lit Summer Night|{{Gem}} 880|1||114}}
+{{ShipDisplay|5|Chapayev|CL|Party|Melody of the White Cavalier|{{Gem}} 900|||159}}
+{{ShipDisplay|5|Kirov|CL||'''Construction'''}}
+{{ShipDisplay|5|Kirov|CL|Home Relaxation|Blend R|{{Gem}} 880|||109}}
+{{ShipDisplay|5|Kirov|CL|Special Exercise|Drifting Justice|{{Gem}} 1180|||154}}
+{{ShipDisplay|5|Kirov|CL|Sport|High Jump Star|{{Gem}} 880|||112}}
+{{ShipDisplay|5|Kuybyshev|CL||'''Construction'''}}
+{{ShipDisplay|5|Kuybyshev|CL|Spring|Maestro of Sterling Strings|{{Gem}} 900|||152}}
+{{ShipDisplay|5|Kuybyshev|CL|Bunny|Rainy Day Blues|{{Gem}} 880|1||145}}
+{{ShipDisplay|4|Murmansk|CL||'''Construction'''}}
+{{ShipDisplay|4|Murmansk|CL|Home Relaxation|Sceneries of Pure Snow|{{Gem}} 780|||109}}
+{{ShipDisplay|4|Murmansk|CL|Spring|Chamber of Fragrance|{{Gem}} 880|1|DYN|157}}
+{{ShipDisplay|5|Voroshilov|CL||'''Construction'''}}
+{{ShipDisplay|5|Voroshilov|CL|Hot Springs|Devoted as the Warm Snow|{{Gem}} 980||DYN|142}}
+{{ShipDisplay|5|Voroshilov|CL|Hospital|The Nurse's Special Rehearsal|{{Gem}} 980|1|DYN|308}}
+{{ShipDisplay|4|Oleg|CL||'''Construction'''}}
+{{ShipDisplay|4|Oleg|CL|Home Relaxation|Repose by the Fireplace|{{Gem}} 780|1||606}}
+{{ShipDisplay|4|Krasny Kavkaz|CL||'''Construction'''}}
+{{ShipDisplay|4|Krasny Kavkaz|CL|Spring|Playing Blind ♥|{{Gem}} 880|1|DYN|197}}
+{{ShipDisplay|4|Bogatyr|CL||'''Construction'''}}
+{{ShipDisplay|4|Bogatyr|CL|Spring|Emotional Data Maintenance|{{Gem}} 950|1|DYN|144}}
+{{ShipDisplay|5|Tallinn|CA||'''Construction'''}}
+{{ShipDisplay|5|Tallinn|CA|Home Relaxation|Nostalgic Pilsner|{{Gem}} 880|||136}}
+{{ShipDisplay|5|Tallinn|CA|Special Exercise|As You Say, Ma'am!|{{Gem}} 880|||154}}
+{{ShipDisplay|5|Tallinn|CA|Spring|Night of Full Moon and Overflowing Love|{{Gem}} 980|1|DYN|102}}
+{{ShipDisplay|5|Kursk|CA||'''Construction'''}}
+{{ShipDisplay|5|Kursk|CA|Hot Springs|Lone Wolf Amid the Steam|{{Gem}} 1180||L2D|167}}
+{{ShipDisplay|5|Kursk|CA|Party|Beauty and the Hunter|{{Gem}} 880|||146}}
+{{ShipDisplay|6|Moskva|CA||'''Construction'''}}
+{{ShipDisplay|6|Moskva|CA|Spring|Awaiting the Next Move|{{Gem}} 980|1|DYN|302}}
+{{ShipDisplay|4|Gangut|BB||'''Construction'''}}
+{{ShipDisplay|4|Gangut|BB|Prison|Imposing Warden|{{Gem}} 780|||131}}
+{{ShipDisplay|4|Gangut|BB|Casual|Keeper of the Firewater|{{Gem}} 780|||136}}
+{{ShipDisplay|6|Sovetsky Soyuz|BB||'''Construction'''}}
+{{ShipDisplay|6|Sovetsky Soyuz|BB|Special Exercise|Skyfall Agent|{{Gem}} 1180|1|L2D|154}}
+{{ShipDisplay|6|Sovetsky Soyuz|BB|NinjaForm2|Stringed Interrogation||1|DUAL|172}}
+{{ShipDisplay|6|Sovetsky Soyuz|BB|Ninja|Stringed Interrogation|{{Gem}} 1680|1|DUAL|142}}
+{{ShipDisplay|5|Sovetskaya Belorussiya|BB||'''Construction'''}}
+{{ShipDisplay|5|Sovetskaya Belorussiya|BB|Home Relaxation|Relaxation Stratagem|{{Gem}} 880|||136}}
+{{ShipDisplay|5|Sovetskaya Belorussiya|BB|Summer|Ripples and a Fluttering Veil|{{Gem}} 880|1||106}}
+{{ShipDisplay|5|Sovetskaya Rossiya|BB||'''Construction'''}}
+{{ShipDisplay|5|Sovetskaya Rossiya|BB|Special Exercise|The Lackadaisical Lookout|{{Gem}} 880|||130}}
+{{ShipDisplay|4|Arkhangelsk|BB||'''Construction'''}}
+{{ShipDisplay|4|Arkhangelsk|BB|Special Exercise|Grandiose Getaway|{{Gem}} 780|||154}}
+{{ShipDisplay|4|Arkhangelsk|BB|RPG|Supporting Sorceress|{{Gem}} 880|1|DYN|177}}
+{{ShipDisplay|4|Sevastopol|BB||'''Construction'''}}
+{{ShipDisplay|4|Sevastopol|BB|Hot Springs|More than a Little Drunk|{{Gem}} 880|||167}}
+{{ShipDisplay|4|Poltava|BB||'''Construction'''}}
+{{ShipDisplay|4|Poltava|BB|Special Exercise|Meeting the Mafia Queen|{{Gem}} 780|1||146}}
+{{ShipDisplay|5|Kazan|BB||'''Construction'''}}
+{{ShipDisplay|5|Kazan|BB|Home Relaxation|The Warm Morning Sunshine|{{Gem}} 980|1|DYN|606}}
+{{ShipDisplay|5|Volga|CV||'''Construction'''}}
+{{ShipDisplay|5|Volga|CV|Special Exercise|An Irresistible AR Adventure|{{Gem}} 880|||154}}
+{{ShipDisplay|6|Kronshtadt|CB||'''Construction'''}}
+{{ShipDisplay|6|Kronshtadt|CB|Special Exercise|Begin the Rush!|{{Gem}} 1180|||154}}
+{{ShipDisplay|6|Kronshtadt|CB|RPG|Animal Agent|{{Gem}} 900|1|DYN}}
+{{ShipDisplay|5|Chkalov|CV||'''Construction'''}}
+{{ShipDisplay|5|Chkalov|CV|Summer|Seaside Sunset|{{Gem}} 880|||164}}
+{{ShipDisplay|6|Admiral Nakhimov|CV||'''Construction'''}}
+{{ShipDisplay|6|Admiral Nakhimov|CV|Bunny|First Time in the Limelight|{{Gem}} 1180|1|L2D|150}}
+{{ShipDisplay|6|Admiral Nakhimov|CV|Casual|A Fresh, Green Day||1|L2D|307}}
+{{ShipDisplay|6|Admiral Nakhimov|CV|RaceQueen|Cheerleading Mechanic?|{{Gem}} 980|1|L2D|186}}
+{{ShipDisplay|5|Dmitri Donskoi|CL||'''Construction'''}}
+{{ShipDisplay|5|Dmitri Donskoi|CL|Bunny|Bedside Bunny|{{Gem}} 880|1||185}}
+{{ShipDisplay|5|Le Triomphant|DD||'''Construction'''}}
+{{ShipDisplay|3|Forbin|DD||'''Construction'''}}
+{{ShipDisplay|3|Forbin|DD|Casual|Fleur Blanche|{{Gem}} 700}}
+{{ShipDisplay|3|Forbin|DD|School|École de Chevalier|{{Gem}} 780|||103}}
+{{ShipDisplay|3|Forbin|DD|Party|Feast of Champagne|{{Gem}} 800|||135}}
+{{ShipDisplay|3|Forbin|DD|Wedding|Fleur de Mariée||1}}
+{{ShipDisplay|3|Forbin|DD|Kai|Forbin (Retrofit)||1}}
+{{ShipDisplay|4|Le Téméraire|DD||'''Construction'''}}
+{{ShipDisplay|4|Le Téméraire|DD|Summer|Summery Temeraire!|{{Gem}} 780|||106}}
+{{ShipDisplay|4|Le Téméraire|DD|Home Relaxation|Dreamy Dolce|{{Gem}} 780|||109}}
+{{ShipDisplay|4|Le Téméraire|DD|Sport|Cheering Star|{{Gem}} 780|1||112}}
+{{ShipDisplay|4|L'Opiniâtre|DD||'''Construction'''}}
+{{ShipDisplay|4|L'Opiniâtre|DD|Summer|Beachside Magician|{{Gem}} 780|||106}}
+{{ShipDisplay|5|Le Hardi|DD||'''Construction'''}}
+{{ShipDisplay|5|Le Hardi|DD|Hot Springs|Sticky Situation|{{Gem}} 880|1||191}}
+{{ShipDisplay|5|Le Terrible|DD||'''Construction'''}}
+{{ShipDisplay|5|Le Terrible|DD|Home Relaxation|Silence, Slumber, and Solace|{{Gem}} 880|||109}}
+{{ShipDisplay|5|Le Terrible|DD|Summer|Sunlight, Seaspray, and Sanctity||1||133}}
+{{ShipDisplay|4|Maillé Brézé|DD||'''Construction'''}}
+{{ShipDisplay|4|Maillé Brézé|DD|Home Relaxation|The Noble Knight's Last Stand|{{Gem}} 780|||109}}
+{{ShipDisplay|4|Maillé Brézé|DD|Party|Sugary Sabbatical|{{Gem}} 780|||146}}
+{{ShipDisplay|4|Le Téméraire μ|DD||'''Construction'''}}
+{{ShipDisplay|4|Émile Bertin|CL||'''Construction'''}}
+{{ShipDisplay|4|Émile Bertin|CL|Summer|Côte d'Azur|{{Gem}} 1080|||106}}
+{{ShipDisplay|4|Émile Bertin|CL|Maid|Maid Fantastique|{{Gem}} 1080|||104}}
+{{ShipDisplay|4|Émile Bertin|CL|Party|Gilded Dance|{{Gem}} 780|||146}}
+{{ShipDisplay|4|Émile Bertin|CL|Kai|Émile Bertin (Retrofit)||1}}
+{{ShipDisplay|5|Jeanne d'Arc|CL||'''Construction'''}}
+{{ShipDisplay|5|Jeanne d'Arc|CL|Summer|Saintess of the Sea|{{Gem}} 880|||134}}
+{{ShipDisplay|5|Jeanne d'Arc|CL|Spring|Patron Saintess of Celebration|{{Gem}} 900|1||128}}
+{{ShipDisplay|5|Guichen|CL||'''Construction'''}}
+{{ShipDisplay|5|Guichen|CL|Dance|Sorcière on Ice|{{Gem}} 900|||125}}
+{{ShipDisplay|5|Guichen|CL|Maid|Milk and Kisses|{{Gem}} 1050|1|DYN|185}}
+{{ShipDisplay|5|Guichen|CL|MaidASMR|Milk&Kiss||1|DYN|185}}
+{{ShipDisplay|4|Duguay-Trouin|CL||'''Construction'''}}
+{{ShipDisplay|4|Duguay-Trouin|CL|Hot Springs|Covetous Bathgoer|{{Gem}} 880|1|DYN|167}}
+{{ShipDisplay|4|Suffren|CA||'''Construction'''}}
+{{ShipDisplay|4|Suffren|CA|Sport|Impulsive Incident|{{Gem}} 780|||103}}
+{{ShipDisplay|4|Suffren|CA|Party|Unrivaled Winsomeness||1||146}}
+{{ShipDisplay|5|Brennus|CA||'''Construction'''}}
+{{ShipDisplay|5|Brennus|CA|Summer|Musician on Blade's Precipice|{{Gem}} 880|1||180}}
+{{ShipDisplay|5|Brennus|CA|Festival|Timeless Nocturne|{{Gem}} 900|1||143}}
+{{ShipDisplay|4|Duquesne|CA||'''Construction'''}}
+{{ShipDisplay|4|Duquesne|CA|Hot Springs|Wetness of a Crimson Night|{{Gem}} 780|1||164}}
+{{ShipDisplay|5|Masséna|BC||'''Construction'''}}
+{{ShipDisplay|5|Masséna|BC|Hot Springs|Sweetly Intoxicating Spring|{{Gem}} 1180|1|L2D|167}}
+{{ShipDisplay|5|Richelieu|CB||'''Construction'''}}
+{{ShipDisplay|5|Richelieu|CB|Summer|Fleuron of the Waves|{{Gem}} 1180|||133}}
+{{ShipDisplay|5|Richelieu|CB|New Year|Evergreen Prophecy|{{Gem}} 1180|||126}}
+{{ShipDisplay|4|Lyon|BB||'''Construction'''}}
+{{ShipDisplay|4|Lyon|BB|Sport|Paired Exercise|{{Gem}} 780|||109}}
+{{ShipDisplay|6|Alsace|BB||'''Construction'''}}
+{{ShipDisplay|6|Alsace|BB|Summer|Heat-Beating Summer Sacrament|{{Gem}} 1180|1|L2D|539}}
+{{ShipDisplay|6|Alsace|BB|Ninja|Tipsy Oni on a Sacred Night|{{Gem}} 1180|1|L2D|142}}
+{{ShipDisplay|5|Bois Belleau|CVL||'''Construction'''}}
+{{ShipDisplay|5|Bois Belleau|CVL|Hot Springs|Steamy Therapy|{{Gem}} 1180|1|L2D}}
+{{ShipDisplay|4|Béarn|CV||'''Construction'''}}
+{{ShipDisplay|4|Béarn|CV|Summer|Summer Lifeguard|{{Gem}} 780|||106}}
+{{ShipDisplay|5|Painlevé|CV||'''Construction'''}}
+{{ShipDisplay|5|Painlevé|CV|Sport|Team Stretching|{{Gem}} 980||DYN|109}}
+{{ShipDisplay|5|Painlevé|CV|Summer|Fresh and Fortunate|{{Gem}} 1180||L2D|133}}
+{{ShipDisplay|4|Surcouf|SS||'''Construction'''}}
+{{ShipDisplay|4|Surcouf|SS|Casual|Shopping Time!|{{Gem}} 1080|||118}}
+{{ShipDisplay|4|Surcouf|SS|Summer|Loisirs Balnéaires|{{Gem}} 1080|||106}}
+{{ShipDisplay|5|Saint Louis|CA||'''Construction'''}}
+{{ShipDisplay|5|Saint Louis|CA|Party|Holy Knight's Resplendence|{{Gem}} 1200|||135}}
+{{ShipDisplay|5|Saint Louis|CA|Spring|Alluring Administrator|{{Gem}} 900|||144}}
+{{ShipDisplay|5|Champagne|BB||'''Construction'''}}
+{{ShipDisplay|5|Champagne|BB|New Year|Lapis Lazuli's First Dream|{{Gem}} 900|||143}}
+{{ShipDisplay|5|Champagne|BB|Wedding|Adulation Eternal||1}}
+{{ShipDisplay|6|Brest|CB||'''Construction'''}}
+{{ShipDisplay|6|Brest|CB|Summer|Marine Muse|{{Gem}} 1180||L2D|164}}
+{{ShipDisplay|6|Brest|CB|Spring|Moonlit Night's Spring Vista|{{Gem}} 1200|1|L2D|144}}
+{{ShipDisplay|5|Bayard|CL||'''Construction'''}}
+{{ShipDisplay|5|Bayard|CL|Bunny|The Most Treacherous Trial|{{Gem}} 880|1||608}}
+{{ShipDisplay||Königsberg|CL|UI|Königsberg||1}}
+{{ShipDisplay||Karlsruhe|CL}}
+{{ShipDisplay||Köln|CL|UI|Köln||1}}
+{{ShipDisplay||Suffolk|CA}}
+{{ShipDisplay||Norfolk|CA}}
+{{ShipDisplay||Hood|BC}}
+{{ShipDisplay||Prince of Wales|BB}}
+{{ShipDisplay||Ark Royal|CV}}
+{{ShipDisplay||Prinz Eugen|CA}}
+{{ShipDisplay||Bismarck|BB}}
+{{ShipDisplay||Tester|BB||?????||1}}
+{{ShipDisplay||?????|BB}}
+{{ShipDisplay||Tone|BB}}
+{{ShipDisplay||Kirishima|BB}}
+{{ShipDisplay||Mogami|BB}}
+{{ShipDisplay||Atago|BB}}
+{{ShipDisplay||Kongou|BB}}
+{{ShipDisplay||Yat Sen}}
+{{ShipDisplay||?????|BB}}
+{{ShipDisplay||Ning Hai|CL|Memory|Ning Hai||1}}
+{{ShipDisplay||Ping Hai|CL|Memory|Ping Hai||1}}
+{{ShipDisplay||Yat Sen|CL|Memory|Yat Sen||1}}
+{{ShipDisplay||Shoukaku|CV|Memory|Shoukaku||1}}
+{{ShipDisplay||Zuikaku|CV|Memory|Zuikaku||1}}
+{{ShipDisplay||Yat Sen|CL}}
+{{ShipDisplay||Akashi|AR}}
+{{ShipDisplay||Ayanami|DD}}
+{{ShipDisplay||Takao|CA}}
+{{ShipDisplay||Atago|BB}}
+{{ShipDisplay||Shoukaku|CV}}
+{{ShipDisplay||Zuikaku|CV}}
+{{ShipDisplay||Mikasa|BB}}
+{{ShipDisplay||Hiei|BB}}
+{{ShipDisplay||Mikasa|BB|Memory|Mikasa||1}}
+{{ShipDisplay||Hiei|BB|Memory|Hiei||1}}
+{{ShipDisplay||Richelieu}}
+{{ShipDisplay||Jeanne}}
+{{ShipDisplay||Richelieu||Memory|Richelieu||1}}
+{{ShipDisplay||Jean Bart||Memory|Jean Bart||1}}
+{{ShipDisplay||Enterprise|CV|Memory|Enterprise||1}}
+{{ShipDisplay||Observer|BB|Memory|?????||1}}
+{{ShipDisplay||Enterprise META|CV||Enterprise||1}}
+{{ShipDisplay||Blanc|DD|Memory|Blanc||1}}
+{{ShipDisplay||Vert|CV|Memory|Vert||1}}
+{{ShipDisplay||Glorious|CV}}
+{{ShipDisplay||Great Fox's Respite}}
+{{ShipDisplay||Helena}}
+{{ShipDisplay||North Carolina}}
+{{ShipDisplay||Washington}}
+{{ShipDisplay||Enterprise META|CV||？？？？？||1}}
+{{ShipDisplay||Observer Zero|CV||Observer zero||1}}
+{{ShipDisplay||Warspite}}
+{{ShipDisplay||Chang Chun}}
+{{ShipDisplay||Kizuna AI||WithoutRigging|Kizuna AI||1}}
+{{ShipDisplay||U-556|SS}}
+{{ShipDisplay||U-556|SS}}
+{{ShipDisplay||U-556|SS}}
+{{ShipDisplay||Cat}}
+{{ShipDisplay||Enterprise}}
+{{ShipDisplay||Denver}}
+{{ShipDisplay||Columbia}}
+{{ShipDisplay||Montpelier}}
+{{ShipDisplay||Cleveland}}
+{{ShipDisplay||Takao META||Shadow|Takao||1}}
+{{ShipDisplay||Enterprise META||Shadow|Enterprise||1}}
+{{ShipDisplay||Arbiter: The Empress III}}
+{{ShipDisplay||Takao META|||Takao||1}}
+{{ShipDisplay||Baltimore||Shadow|Baltimore||1}}
+{{ShipDisplay||Hornet||OriginalShadow|Hornet||1}}
+{{ShipDisplay||Kitakaze|DD}}
+{{ShipDisplay||Kitakaze}}
+{{ShipDisplay||Pola}}
+{{ShipDisplay||Vittorio Veneto}}
+{{ShipDisplay||Warspite Retrofit|BB}}
+{{ShipDisplay||Suruga}}
+{{ShipDisplay||Bulldog||Shadow|？？？||1}}
+{{ShipDisplay||Abercrombie||HalloweenShadow|？？？||1}}
+{{ShipDisplay||Gascogne μ||WithoutRigging|Gascogne μ||1}}
+{{ShipDisplay||Akagi μ||WithoutRigging|Akagi μ||1}}
+{{ShipDisplay||Cleveland μ||WithoutRigging|Cleveland μ||1}}
+{{ShipDisplay||Admiral Hipper μ||WithoutRigging|Admiral Hipper μ||1}}
+{{ShipDisplay||Sheffield μ||WithoutRigging|Sheffield μ||1}}
+{{ShipDisplay||Shirakami Fubuki||WithoutRigging|Shirakami Fubuki||1}}
+{{ShipDisplay||Tokino Sora||WithoutRigging|Tokino Sora||1}}
+{{ShipDisplay||Minato Aqua||WithoutRigging|Minato Aqua||1}}
+{{ShipDisplay||Natsuiro Matsuri||WithoutRigging|Natsuiro Matsuri||1}}
+{{ShipDisplay||Nakiri Ayame||WithoutRigging|Nakiri Ayame||1}}
+{{ShipDisplay||Murasaki Shion||WithoutRigging|Murasaki Shion||1}}
+{{ShipDisplay||Ookami Mio||WithoutRigging|Ookami Mio||1}}
+{{ShipDisplay||Dido}}
+{{ShipDisplay||Kirov}}
+{{ShipDisplay||Sovetsky Soyuz||WithoutRigging|Sovetsky Soyuz||1}}
+{{ShipDisplay||Omitter}}
+{{ShipDisplay||Sovetskaya Rossiya||Shadow|？？？||1}}
+{{ShipDisplay||Gangut||Shadow|？？？||1}}
+{{ShipDisplay||Tashkent||Shadow|？？？||1}}
+{{ShipDisplay||Chapayev||Shadow|？？？||1}}
+{{ShipDisplay||Grozny||Shadow|？？？||1}}
+{{ShipDisplay||Pamiat' Merkuria||Shadow|？？？||1}}
+{{ShipDisplay||Sovetsky Soyuz||Shadow|？？？||1}}
+{{ShipDisplay||Enterprise META||Shadow|？？？||1}}
+{{ShipDisplay||？？？}}
+{{ShipDisplay||Compiler||Shadow|？？？||1}}
+{{ShipDisplay||Compiler}}
+{{ShipDisplay||Purifier||Shadow|Purifier||1}}
+{{ShipDisplay||Observer}}
+{{ShipDisplay||Purifier}}
+{{ShipDisplay||Compiler|||？？？||1}}
+{{ShipDisplay||Universal Bulin}}
+{{ShipDisplay||Vauquelin}}
+{{ShipDisplay||Le Terrible}}
+{{ShipDisplay||Algérie||Shadow|Algérie?||1}}
+{{ShipDisplay||Jean Bart||Shadow|Jean Bart||1}}
+{{ShipDisplay||Laffey}}
+{{ShipDisplay||Javelin}}
+{{ShipDisplay||Z23}}
+{{ShipDisplay||Ayanami}}
+{{ShipDisplay||Tirpitz}}
+{{ShipDisplay||Graf Zeppelin}}
+{{ShipDisplay||Gneisenau}}
+{{ShipDisplay||Shoukaku}}
+{{ShipDisplay||Zuikaku}}
+{{ShipDisplay||Yamashiro (Retrofit)}}
+{{ShipDisplay||North Carolina}}
+{{ShipDisplay||Washington}}
+{{ShipDisplay||Enterprise}}
+{{ShipDisplay||Duke of York}}
+{{ShipDisplay||Victorious}}
+{{ShipDisplay||Mikasa}}
+{{ShipDisplay||Massachusetts}}
+{{ShipDisplay||Hood}}
+{{ShipDisplay||Ark Royal}}
+{{ShipDisplay||Akagi}}
+{{ShipDisplay||Kaga}}
+{{ShipDisplay||Renown}}
+{{ShipDisplay||King George V}}
+{{ShipDisplay||Warspite}}
+{{ShipDisplay||Illustrious}}
+{{ShipDisplay||Formidable}}
+{{ShipDisplay||Sovetskaya Rossiya}}
+{{ShipDisplay||Gangut}}
+{{ShipDisplay||Saratoga}}
+{{ShipDisplay||Essex}}
+{{ShipDisplay||Intrepid}}
+{{ShipDisplay||Bunker Hill}}
+{{ShipDisplay||Kaga}}
+{{ShipDisplay||Béarn}}
+{{ShipDisplay||Howe}}
+{{ShipDisplay||Valiant}}
+{{ShipDisplay||Perseus}}
+{{ShipDisplay||Eagle}}
+{{ShipDisplay||Nagato}}
+{{ShipDisplay||Ranger}}
+{{ShipDisplay||Kaga}}
+{{ShipDisplay||Houshou}}
+{{ShipDisplay||Rodney}}
+{{ShipDisplay||Yamashiro}}
+{{ShipDisplay||TB}}
+{{ShipDisplay||Arbiter: Strength VIII}}
+{{ShipDisplay||Arbiter: Temperance XIV}}
+{{ShipDisplay||Arbiter: The Hermit IX}}
+{{ShipDisplay||Yorktown||Shadow|Yorktown||1}}
+{{ShipDisplay||Enterprise||Shadow|Enterprise||1}}
+{{ShipDisplay||Hornet||Shadow|Hornet||1}}
+{{ShipDisplay||Amagi||Shadow|Amagi||1}}
+{{ShipDisplay||Marie Rose||WithoutRigging|Marie Rose||1}}
+{{ShipDisplay||Honoka||WithoutRigging|Honoka||1}}
+{{ShipDisplay||Kasumi||WithoutRigging|Kasumi||1}}
+{{ShipDisplay||Misaki||WithoutRigging|Misaki||1}}
+{{ShipDisplay||Nagisa||WithoutRigging|Nagisa||1}}
+{{ShipDisplay||Nyotengu||WithoutRigging|Nyotengu||1}}
+{{ShipDisplay||Monica||WithoutRigging|Monica||1}}
+{{ShipDisplay||Dr. Aoste||Shadow|Dr. Aoste||1}}
+{{ShipDisplay||Dr. Anzeel||Shadow|Dr. Anzeel||1}}
+{{ShipDisplay||Sovetskaya Belorussiya||Shadow|？？？||1}}
+{{ShipDisplay||Universal Enhanced Rigging (Experimental) +α||Event|Universal Enhanced Rigging (Experimental) +α||1}}
+{{ShipDisplay||Prototype Bulin MKII}}
+{{ShipDisplay||Suffolk||CN|Suffolk||1}}
+{{ShipDisplay||Tester||CN|？？？||1}}
+{{ShipDisplay||Souryuu META'||Shadow|Souryuu META'||1}}
+{{ShipDisplay||Helena META}}
+{{ShipDisplay||Yorktown META}}
+{{ShipDisplay||San Francisco||WithoutRigging|San Francisco||1}}
+{{ShipDisplay||Roon||Crosswave|Roon||1}}
+{{ShipDisplay||Scharnhorst||Shadow|Scharnhorst||1}}
+{{ShipDisplay||Arbiter: The Lovers VI}}
+{{ShipDisplay||Allen M. Sumner||Shadow|？？？||1}}
+{{ShipDisplay||Bon Homme Richard META|||Bon Homme Richard||1}}
+{{ShipDisplay||TB||Shadow|？||1}}
+{{ShipDisplay||Prototype Bulin MKII|DD}}
+{{ShipDisplay||544845544F574552}}
+{{ShipDisplay||Renown META}}
+{{ShipDisplay||Repulse META}}
+{{ShipDisplay||Janus}}
+{{ShipDisplay||Roma||Ghost|Roma||1}}
+{{ShipDisplay||Musashi||WithoutRigging|Musashi||1}}
+{{ShipDisplay||Jintsuu META}}
+{{ShipDisplay||Dr. Anzeel}}
+{{ShipDisplay||Dr. Aoste}}
+{{ShipDisplay||Laffey II||WithoutBG|Laffey II||1}}
+{{ShipDisplay||Arbiter: The Devil XV}}
+{{ShipDisplay||Jintsuu}}
+{{ShipDisplay||New Jersey}}
+{{ShipDisplay||Queen Elizabeth META}}
+{{ShipDisplay||La Galissonnière META}}
+{{ShipDisplay||Sovetsky Soyuz||Original2|Sovetsky Soyuz||1}}
+{{ShipDisplay||Arbiter: The Hermit IX META|||Arbiter: The Hermit IX||1}}
+{{ShipDisplay||Arbiter: The Tower XVI}}
+{{ShipDisplay||Arbiter: The Hierophant V|||▅H▊▇ro▅■ph▇▆▅||1}}
+{{ShipDisplay||Jeanne d'Arc}}
+{{ShipDisplay||Sheffield}}
+{{ShipDisplay||Noshiro}}
+{{ShipDisplay||Suruga}}
+{{ShipDisplay||Impero}}
+{{ShipDisplay||Lyon}}
+{{ShipDisplay||Memphis META}}
+{{ShipDisplay||Duca degli Abruzzi}}
+{{ShipDisplay||Kronshtadt}}
+{{ShipDisplay||Hiryuu META}}
+{{ShipDisplay||Ark Royal META}}
+{{ShipDisplay||Illustrious}}
+{{ShipDisplay||Gascogne}}
+{{ShipDisplay||Champagne}}
+{{ShipDisplay||Odin}}
+{{ShipDisplay||Saint Louis}}
+{{ShipDisplay||Prinz Rupprecht}}
+{{ShipDisplay||Flandre}}
+{{ShipDisplay||Zuihou}}
+{{ShipDisplay||Silver Fox||Shadow|Silver Fox||1}}
+{{ShipDisplay||MECHWar Protocol Fortress|||War Protocol Fortress||1}}
+{{ShipDisplay||War Protocol Fortress}}
+{{ShipDisplay||Essex META}}
+{{ShipDisplay||Silver Fox}}
+{{ShipDisplay||Colette}}
+{{ShipDisplay||拉菲-传说级魔法师|BB}}
+{{ShipDisplay||标枪-传说级勇者|DD}}
+{{ShipDisplay||Z23- 传说级战士|DD}}
+{{ShipDisplay||绫波-传说级格斗家|DD}}
+{{ShipDisplay||抚顺-勇者|CL}}
+{{ShipDisplay||利物浦-神官|CV}}
+{{ShipDisplay||独角兽-见习神官|CVL}}
+{{ShipDisplay||努比亚人-药剂师|BC}}
+{{ShipDisplay||鲁莽-王国军二级魔法师|DD}}
+{{ShipDisplay||倔强-王国军二级魔法师|DD}}
+{{ShipDisplay||阿尔及利亚-王国军方旗骑士|CA}}
+{{ShipDisplay||不屈-王国军守护骑士|DD}}
+{{ShipDisplay||圣女贞德-王国军圣女|CL}}
+{{ShipDisplay||前卫-王国军方旗骑士|BB}}
+{{ShipDisplay||霞飞-战斗天使|CV}}
+{{ShipDisplay||Gilded Age Mech|CB}}
+{{ShipDisplay||Gilded Age Mech}}
+{{ShipDisplay||Gilded Age Mech}}
+{{ShipDisplay||腓特烈·卡尔-钢铁教会机械师|CV}}
+{{ShipDisplay||War Protocol Scythe|||Death's Shadow||1}}
+{{ShipDisplay||Emden|| NPC|Emden||1}}
+{{ShipDisplay||Miss D}}
+{{ShipDisplay||Arbiter: The Moon XVIII|||moon||1}}
+{{ShipDisplay||Wichita META}}
+{{ShipDisplay||Cheshire}}
+{{ShipDisplay||Tosa}}
+{{ShipDisplay||Prinz Adalbert}}
+{{ShipDisplay||Tashkent}}
+{{ShipDisplay||Scylla}}
+{{ShipDisplay||Natori}}
+{{ShipDisplay||Saratoga}}
+{{ShipDisplay||Kursk}}
+{{ShipDisplay||Alsace|| NPC|Alsace||1}}
+{{ShipDisplay||St. Louis|| NPC|St. Louis||1}}
+{{ShipDisplay||Le Malin|| NPC|Le Malin||1}}
+{{ShipDisplay||Mogador|| NPC|Mogador||1}}
+{{ShipDisplay||Amagi|| NPC|Amagi||1}}
+{{ShipDisplay||Akagi|| NPC|Akagi||1}}
+{{ShipDisplay||Kaga|| NPC|Kaga||1}}
+{{ShipDisplay||Akagi META|||Akagi||1}}
+{{ShipDisplay||Akagi META (Kaga)|||Akagi||1}}
+{{ShipDisplay||Akagi META (Amagi)|||Akagi||1}}
+{{ShipDisplay||Akagi META (Akagi)|||Akagi||1}}
+{{ShipDisplay||Ark Royal}}
+{{ShipDisplay||Kashino|| NPC|Kashino||1}}
+{{ShipDisplay||Bremerton|| NPC|Bremerton||1}}
+{{ShipDisplay||Prinz Rupprecht}}
+{{ShipDisplay||Ryuujou}}
+{{ShipDisplay||Gloucester}}
+{{ShipDisplay||Musashi}}
+{{ShipDisplay||Sirius|| NPC|Sirius||1}}
+{{ShipDisplay||Ganj-i-Sawai|| NPC|Ganj-i-Sawai||1}}
+{{ShipDisplay||Fancy|| NPC|Fancy||1}}
+{{ShipDisplay||Portsmouth Adventure|| NPC|Portsmouth Adventure||1}}
+{{ShipDisplay||Dolphin|| NPC|Dolphin||1}}
+{{ShipDisplay||Owari|| NPC|Owari||1}}
+{{ShipDisplay||Madam M}}
+{{ShipDisplay||Yorktown META||Shadow|？？？||1}}
+{{ShipDisplay||TB||Baby|TB||1}}
+{{ShipDisplay||Star Beast}}
+{{ShipDisplay||MECHArbiter: The Magician I|||Arbiter: The Magician I||1}}
+{{ShipDisplay||New Jersey|| NPC|New Jersey||1}}
+{{ShipDisplay||Jean Bart|| NPC|Jean Bart||1}}
+{{ShipDisplay||Mainz|| NPC|Mainz||1}}
+{{ShipDisplay||Andrea Doria META|| NPC|Andrea Doria META||1}}
+{{ShipDisplay||Eutopia Savoy}}
+{{ShipDisplay||War Protocol Moon}}
+{{ShipDisplay||MECHArbiter: The Chariot VII}}
+{{ShipDisplay||War Protocol Scythe}}
+{{ShipDisplay||Arbiter: The Chariot VII}}
+{{ShipDisplay||Bon Homme Richard||School|Bon Homme Richard||1}}
+{{ShipDisplay||TB||BabyPlushie|Super AI: TC||1}}
+{{ShipDisplay||TB||BabyPlushie|？？||1}}
+{{ShipDisplay||马可波罗 王座|CB}}
+{{ShipDisplay||Lady E}}
+{{ShipDisplay||Glorious META|| NPC|Glorious META||1}}
+{{ShipDisplay||Grenville META|| NPC|Grenville META||1}}
+{{ShipDisplay||Arbiter: The Star XVII}}
+{{ShipDisplay||Arbiter: The Magician I}}
+{{ShipDisplay||Erebus META|| NPC|Erebus META||1}}
+{{ShipDisplay||Hunter META|| NPC|Hunter META||1}}
+{{ShipDisplay||Compiler|CV}}
+{{ShipDisplay||Formidable||Party2 NPC|Formidable||1}}
+{{ShipDisplay||Monarch||Summer NPC|Monarch||1}}
+{{ShipDisplay||Friedrich Carl||Summer NPC|Friedrich Carl||1}}
+{{ShipDisplay||Maryland||WithoutBG NPC|Maryland||1}}
+{{ShipDisplay||Hatsuzuki||WithoutBG NPC|Hatsuzuki||1}}
+{{ShipDisplay||BLACK★ROCK SHOOTER||WithoutRigging|BLACK★ROCK SHOOTER||1}}
+{{ShipDisplay||DEAD MASTER||WithoutRigging|DEAD MASTER||1}}
+{{ShipDisplay||？？？}}
+{{ShipDisplay||Flammi}}
+{{ShipDisplay||Yumia Liessfeldt||WithoutRigging|Yumia Liessfeldt||1}}
+{{ShipDisplay||Isla von Duerer||WithoutRigging|Isla von Duerer||1}}
+{{ShipDisplay||Nina Friede||WithoutRigging|Nina Friede||1}}
+{{ShipDisplay||Lenja||WithoutRigging|Lenja||1}}
+{{ShipDisplay||Ryouko Amahara||Shadow|？？？?||1}}
+{{ShipDisplay||Alsace||Ninja NPC|Alsace||1}}
+{{ShipDisplay||Brennus||Festival NPC|Brennus||1}}
+{{ShipDisplay||Guam||Ninja NPC|Guam||1}}
+{{ShipDisplay||Gascogne||Festival NPC|Gascogne||1}}
+{{ShipDisplay||Laffey II||Festival NPC|Laffey II||1}}
+{{ShipDisplay||Warspite||Ninja NPC|Warspite||1}}
+{{ShipDisplay||Unzen||Ninja NPC|Unzen||1}}
+{{ShipDisplay||Hestia||WithoutRigging|Hestia||1}}
+{{ShipDisplay||Ryu Lion||WithoutRigging|Ryu Lion||1}}
+{{ShipDisplay||unknown_undefined}}
+{{ShipDisplay||Ordainer El}}
+{{ShipDisplay||Arbiter: The Star XVII|||Star Beast?||1}}
+{{ShipDisplay||Ryouko Amahara}}
+{{ShipDisplay||Bon Homme Richard}}
+{{ShipDisplay||Maria}}
+{{ShipDisplay||马可波罗 王座}}
+{{ShipDisplay||Compiler|BB||Arbiter: The Chariot VII||1}}
+{{ShipDisplay||Nayoro|| NPC|Nayoro||1}}
+{{ShipDisplay|3|Le Mars|DD||'''Construction'''}}
+{{ShipDisplay|3|Le Mars|DD|Summer|Été Brillant||1||106}}
+{{ShipDisplay|3|Le Mars|DD|School|Écolière Heureuse|{{Gem}} 780|||103}}
+{{ShipDisplay|3|Le Mars|DD|Spring|Splendorous Debut||1||157}}
+{{ShipDisplay|3|Le Mars|DD|Kai|Le Mars (Retrofit)||1}}
+{{ShipDisplay|4|Tartu|DD||'''Construction'''}}
+{{ShipDisplay|4|Tartu|DD|Summer|Overthinking Summer|{{Gem}} 780|||106}}
+{{ShipDisplay|4|Vauquelin|DD||'''Construction'''}}
+{{ShipDisplay|4|Vauquelin|DD|Summer|Innocent Summer Knight|{{Gem}} 780|||106}}
+{{ShipDisplay|4|Vauquelin|DD|Party|One-Girl Orchestra|{{Gem}} 780|||146}}
+{{ShipDisplay|4|Vauquelin|DD|Travel|Otherworldly Adventure||1||155}}
+{{ShipDisplay|4|Kersaint|DD||'''Construction'''}}
+{{ShipDisplay|4|Kersaint|DD|Sport|Reverent Runner|{{Gem}} 880||DYN|171}}
+{{ShipDisplay|4|Kersaint|DD|Wild West|A Saint's Mercy Can Do No Wrong|{{Gem}} 900||DYN|176}}
+{{ShipDisplay|4|Fleuret|DD||'''Construction'''}}
+{{ShipDisplay|4|Fleuret|DD|Bunny|Up All Knight to Get Lucky|{{Gem}} 780|1||180}}
+{{ShipDisplay|4|Épée|DD||'''Construction'''}}
+{{ShipDisplay|4|Épée|DD|Bunny|Poor, Lonely Knight|{{Gem}} 780|1||150}}
+{{ShipDisplay|6|Mogador|DD||'''Construction'''}}
+{{ShipDisplay|6|Mogador|DD|Summer|Locker Room Lechery|{{Gem}} 1180|1|L2D|164}}
+{{ShipDisplay|6|Mogador|DD|Hospital|Olfactory Nursery Call|{{Gem}} 1180|1|L2D|308}}
+{{ShipDisplay|5|Le Malin|DD||'''Construction'''}}
+{{ShipDisplay|5|Le Malin|DD|Home Relaxation|Sleepy Sunday|{{Gem}} 800}}
+{{ShipDisplay|5|Le Malin|DD|Summer|Mercredi at the Secret Base|{{Gem}} 1180|||106}}
+{{ShipDisplay|5|Le Malin|DD|Bunny|Listless Lapin|{{Gem}} 1180|||145}}
+{{ShipDisplay|5|Le Malin μ|DD||'''Construction'''}}
+{{ShipDisplay|5|L'Indomptable|DD||'''Construction'''}}
+{{ShipDisplay|5|L'Indomptable|DD|Fairy Tale|Little Red Riding Hood's Worries|{{Gem}} 880|1||158}}
+{{ShipDisplay|5|L'Indomptable|DD|Spring|Temp in Low Temperatures|{{Gem}} 780|||165}}
+{{ShipDisplay|5|L'Indomptable|DD|Special Exercise|The Covert Eavesdropper!|{{Gem}} 880|1||160}}
+{{ShipDisplay|5|L'Audacieux|DD||'''Construction'''}}
+{{ShipDisplay|5|L'Audacieux|DD|RaceQueen|Protector Beneath the Parasol|{{Gem}} 880|||186}}
+{{ShipDisplay|4|La Galissonnière|CL||'''Construction'''}}
+{{ShipDisplay|4|La Galissonnière|CL|Summer|Pristine Piscene|{{Gem}} 780|||133}}
+{{ShipDisplay|4|La Galissonnière|CL|Spring|Lush Spring Dreams|{{Gem}} 1100|||144}}
+{{ShipDisplay|4|La Galissonnière|CL|Halloween|Black Cat of All Hallows' Eve|{{Gem}} 1080|||119}}
+{{ShipDisplay|5|Marseillaise|CL||'''Construction'''}}
+{{ShipDisplay|5|Marseillaise|CL|Sport|Fighting Angel's Regimen|{{Gem}} 980||DYN|109}}
+{{ShipDisplay|4|Foch|CA||'''Construction'''}}
+{{ShipDisplay|4|Foch|CA|Casual|Rainbow Rendezvous|{{Gem}} 780|1||105}}
+{{ShipDisplay|4|Foch|CA|Travel|Majestic Majordomo||1||150}}
+{{ShipDisplay|5|Algérie|CA||'''Construction'''}}
+{{ShipDisplay|5|Algérie|CA|Summer|White Sand Paradise|{{Gem}} 880|||106}}
+{{ShipDisplay|5|Algérie|CA|Fairy Tale|Red Queen's Decree|{{Gem}} 880|1||158}}
+{{ShipDisplay|4|Dupleix|CA||'''Construction'''}}
+{{ShipDisplay|4|Dupleix|CA|RaceQueen|Final Check|{{Gem}} 780|||186}}
+{{ShipDisplay|4|Dunkerque|BC||'''Construction'''}}
+{{ShipDisplay|4|Dunkerque|BC|Summer|Summer Sucré|{{Gem}} 1080|||106}}
+{{ShipDisplay|4|Dunkerque|BC|Casual|Afternoon Venus|{{Gem}} 780|||116}}
+{{ShipDisplay|5|Strasbourg|BC||'''Construction'''}}
+{{ShipDisplay|5|Strasbourg|BC|RaceQueen|Faerie of the Race Circuit|{{Gem}} 1180||L2D|186}}
+{{ShipDisplay|5|Jean Bart|BB||'''Construction'''}}
+{{ShipDisplay|5|Jean Bart|BB|Party|Uninhibited Bloodstone|{{Gem}} 880|||115}}
+{{ShipDisplay|5|Jean Bart|BB|Summer|Private Après Midi|{{Gem}} 1180|||133}}
+{{ShipDisplay|5|Jean Bart|BB|New Year|First Snow Upon the Cutlass's Edge|{{Gem}} 1180|||126}}
+{{ShipDisplay|5|Jean Bart|BB|Spring|Springlight Étoiles|{{Gem}} 1180|1|L2D|302}}
+{{ShipDisplay|5|Clemenceau|BB||'''Construction'''}}
+{{ShipDisplay|5|Clemenceau|BB|Sport|Splendid Breeze|{{Gem}} 1180||L2D|118}}
+{{ShipDisplay|5|Gascogne μ|BB||'''Construction'''}}
+{{ShipDisplay|5|Joffre|CV||'''Construction'''}}
+{{ShipDisplay|5|Joffre|CV|Fairy Tale|Ensorcelled Snow White|{{Gem}} 880|1||158}}
+{{ShipDisplay|5|Joffre|CV|Hot Springs|Sublime Elysium|{{Gem}} 980||DYN|167}}
+{{ShipDisplay|5|Joffre|CV|RaceQueen|Blessings' First Flight|{{Gem}} 1100||L2D}}
+{{ShipDisplay|5|Gascogne|BB||'''Construction'''}}
+{{ShipDisplay|5|Gascogne|BB|Summer|Tropical Environs Acclimation Service Equipment|{{Gem}} 880|||106}}
+{{ShipDisplay|5|Gascogne|BB|Festival|Traveling Mood Mechanism|{{Gem}} 880|1||142}}
+{{ShipDisplay|5|Flandre|BB||'''Construction'''}}
+{{ShipDisplay|5|Flandre|BB|Maid|If Love is a Sin, Thou Art Forgiven|{{Gem}} 880|||150}}
+{{ShipDisplay|4|Evertsen|DD||'''Construction'''}}
+{{ShipDisplay|4|Evertsen|DD|Home Relaxation|Basking by the Window|{{Gem}} 880|1|DYN|185}}
+{{ShipDisplay|5|De Zeven Provinciën|CL||'''Construction'''}}
+{{ShipDisplay|5|De Zeven Provinciën|CL|Home Relaxation|Snuggling for Warmth|{{Gem}} 1180|1|L2D|185}}
+{{ShipDisplay|6|Gouden Leeuw|CA||'''Construction'''}}
+{{ShipDisplay|6|Gouden Leeuw|CA|Maid|An Intimate Cleaning|{{Gem}} 1260|1|L2D|116}}
+{{ShipDisplay|5|Royal Fortune|IXs||'''Construction'''}}
+{{ShipDisplay|5|Royal Fortune|IXs|Halloween|Treats from the Deep|{{Gem}} 880|||156}}
+{{ShipDisplay|5|Royal Fortune|IXs|Summer|Eyes on the Prize|{{Gem}} 980||DYN|168}}
+{{ShipDisplay|5|São Martinho|IXm||'''Construction'''}}
+{{ShipDisplay|5|São Martinho|IXm|Halloween|The Golden Shadow|{{Gem}} 880|||174}}
+{{ShipDisplay|5|Golden Hind|IXv||'''Construction'''}}
+{{ShipDisplay|5|Golden Hind|IXv|Halloween|Forlorn Femme Fatale|{{Gem}} 1180||L2D|174}}
+{{ShipDisplay|5|Mary Celeste|IXs||'''Construction'''}}
+{{ShipDisplay|5|Mary Celeste|IXs|Halloween|Grim Night's Reaper|{{Gem}} 880|||174}}
+{{ShipDisplay|4|Whydah|IXs||'''Construction'''}}
+{{ShipDisplay|4|Whydah|IXs|Halloween|Lazy Pirate Angel|{{Gem}} 880||DYN|174}}
+{{ShipDisplay|4|Adventure Galley|IXv||'''Construction'''}}
+{{ShipDisplay|4|Adventure Galley|IXv|Halloween|Carnival Under the Blood Moon|{{Gem}} 780|||174}}
+{{ShipDisplay|5|Ganj-i-Sawai|IXm||'''Construction'''}}
+{{ShipDisplay|5|Ganj-i-Sawai|IXm|Halloween|Mermaid in Distress|{{Gem}} 980|1|DYN|134}}
+{{ShipDisplay|5|Fancy|IXv||'''Construction'''}}
+{{ShipDisplay|5|Fancy|IXv|Halloween|Grave of Your Liking|{{Gem}} 880|1||177}}
+{{ShipDisplay|5|Amity|IXs||'''Construction'''}}
+{{ShipDisplay|5|Amity|IXs|Halloween|Friendly Franken|{{Gem}} 980|1|DYN|525}}
+{{ShipDisplay|4|Portsmouth Adventure|IXv||'''Construction'''}}
+{{ShipDisplay|4|Portsmouth Adventure|IXv|Halloween|Adventurous Surprise|{{Gem}} 780|1||174}}
+{{ShipDisplay|4|Dolphin|IXs||'''Construction'''}}
+{{ShipDisplay|4|Dolphin|IXs|Halloween|Incantation of Revival|{{Gem}} 780|1||177}}
+{{ShipDisplay|5|Queen Anne's Revenge|IXm||'''Construction'''}}
+{{ShipDisplay|5|Queen Anne's Revenge|IXm|RPG|Call of the Creeping Embrace|{{Gem}} 1180|1|L2D|525}}
+{{ShipDisplay|5|Lyme|IXv||'''Construction'''}}
+{{ShipDisplay|5|Lyme|IXv|RPG|Corrupting Trap|{{Gem}} 980|1|DYN|194}}
+{{ShipDisplay|5|Pearl|IXm||'''Construction'''}}
+{{ShipDisplay|5|Pearl|IXm|RPG|Fallen Angel in the Dark Castle|{{Gem}} 1260|1|L2D|156}}
+{{ShipDisplay|4|Royal James|IXv||'''Construction'''}}
+{{ShipDisplay|4|Royal James|IXv|RPG|The Forbidden Slurp|{{Gem}} 780|1||162}}
+{{ShipDisplay|4|Adventure|IXs||'''Construction'''}}
+{{ShipDisplay|4|Adventure|IXs|RPG|Master of the Safe House|{{Gem}} 880|1|DYN|156}}
+{{ShipDisplay|4|Hunter META|DD||'''Construction'''}}
+{{ShipDisplay|4|Fortune META|DD||'''Construction'''}}
+{{ShipDisplay|4|Hatakaze META|DD||'''Construction'''}}
+{{ShipDisplay|4|Kimberly META|DD||'''Construction'''}}
+{{ShipDisplay|4|Vampire META|DD||'''Construction'''}}
+{{ShipDisplay|4|Kasumi META|DD||'''Construction'''}}
+{{ShipDisplay|4|Grenville META|DD||'''Construction'''}}
+{{ShipDisplay|5|Kawakaze META|DD||'''Construction'''}}
+{{ShipDisplay|5|Yuudachi META|DD||'''Construction'''}}
+{{ShipDisplay|4|Dewey META|DD||'''Construction'''}}
+{{ShipDisplay|4|Carabiniere META|DD||'''Construction'''}}
+{{ShipDisplay|5|Helena META|CL||'''Construction'''}}
+{{ShipDisplay|4|Memphis META|CL||'''Construction'''}}
+{{ShipDisplay|4|Sheffield META|CL||'''Construction'''}}
+{{ShipDisplay|4|La Galissonnière META|CL||'''Construction'''}}
+{{ShipDisplay|5|Jintsuu META|CL||'''Construction'''}}
+{{ShipDisplay|5|Kirov META|CL||'''Construction'''}}
+{{ShipDisplay|5|Pamiat' Merkuria META|CL||'''Construction'''}}
+{{ShipDisplay|4|Boise META|CL||'''Construction'''}}
+{{ShipDisplay|5|Cleveland META|CL||'''Construction'''}}
+{{ShipDisplay|4|Köln META|CL||'''Construction'''}}
+{{ShipDisplay|5|Regensburg META|CL||'''Construction'''}}
+{{ShipDisplay|4|Trento META|CA||'''Construction'''}}
+{{ShipDisplay|5|Algérie META|CA||'''Construction'''}}
+{{ShipDisplay|4|Foch META|CA||'''Construction'''}}
+{{ShipDisplay|5|Wichita META|CA||'''Construction'''}}
+{{ShipDisplay|5|Admiral Hipper META|CA||'''Construction'''}}
+{{ShipDisplay|4|Bolzano META|CA||'''Construction'''}}
+{{ShipDisplay|5|Gneisenau META|BC||'''Construction'''}}
+{{ShipDisplay|5|Scharnhorst META|BC||'''Construction'''}}
+{{ShipDisplay|5|Repulse META|BC||'''Construction'''}}
+{{ShipDisplay|5|Renown META|BC||'''Construction'''}}
+{{ShipDisplay|5|Hiei META|BC||'''Construction'''}}
+{{ShipDisplay|4|Dunkerque META|BC||'''Construction'''}}
+{{ShipDisplay|4|Fusou META|BB||'''Construction'''}}
+{{ShipDisplay|4|Yamashiro META|BB||'''Construction'''}}
+{{ShipDisplay|5|Arizona META|BB||'''Construction'''}}
+{{ShipDisplay|5|Queen Elizabeth META|BB||'''Construction'''}}
+{{ShipDisplay|5|Rodney META|BB||'''Construction'''}}
+{{ShipDisplay|5|Nagato META|BB||'''Construction'''}}
+{{ShipDisplay|4|Giulio Cesare META|BB||'''Construction'''}}
+{{ShipDisplay|5|Andrea Doria META|BB||'''Construction'''}}
+{{ShipDisplay|4|Nevada META|BB||'''Construction'''}}
+{{ShipDisplay|5|Gangut META|BB||'''Construction'''}}
+{{ShipDisplay|4|Hiyou META|CVL||'''Construction'''}}
+{{ShipDisplay|4|Junyou META|CVL||'''Construction'''}}
+{{ShipDisplay|4|Princeton META|CVL||'''Construction'''}}
+{{ShipDisplay|4|Houshou META|CVL||'''Construction'''}}
+{{ShipDisplay|5|Hiryuu META|CV||'''Construction'''}}
+{{ShipDisplay|5|Ark Royal META|CV||'''Construction'''}}
+{{ShipDisplay|5|Souryuu META|CV||'''Construction'''}}
+{{ShipDisplay|5|Béarn META|CV||'''Construction'''}}
+{{ShipDisplay|5|Taihou META|CV||'''Construction'''}}
+{{ShipDisplay|5|Hornet META|CV||'''Construction'''}}
+{{ShipDisplay|5|Glorious META|CV||'''Construction'''}}
+{{ShipDisplay|5|Yorktown META|CV||'''Construction'''}}
+{{ShipDisplay|5|U-556 META|SS||'''Construction'''}}
+{{ShipDisplay|4|Vestal META|AR||'''Construction'''}}
+{{ShipDisplay|4|Erebus META|BM||'''Construction'''}}
+{{ShipDisplay||Navi||Home Relaxation|Imp of the Bathtub|{{Gem}} 880|1|DYN|220}}
+{{ShipDisplay||TB||Misc|Data Set: My Countless Selves|{{Gem}} 880|1|DYN|494}}
+{{ShipDisplay||Lora||Home Relaxation|Closeness on a Holiday|{{Gem}} 880|1|DYN|313}}
+{{ShipDisplay|4|Neptune (Neptunia)|CL||Neptune||1}}
+{{ShipDisplay|4|Noire|CA||'''Construction'''}}
+{{ShipDisplay|4|Blanc|DD||'''Construction'''}}
+{{ShipDisplay|4|Vert|CV||'''Construction'''}}
+{{ShipDisplay|5|Purple Heart|CL||'''Construction'''}}
+{{ShipDisplay|5|Purple Heart|CL|Collab|Goddesses' Promise|{{Gem}} 880|1||201}}
+{{ShipDisplay|5|Black Heart|CA||'''Construction'''}}
+{{ShipDisplay|5|Black Heart|CA|Collab|Goddesses' Smile|{{Gem}} 880|1||202}}
+{{ShipDisplay|5|White Heart|DD||'''Construction'''}}
+{{ShipDisplay|5|White Heart|DD|Collab|Goddesses' Humility|{{Gem}} 880|1||203}}
+{{ShipDisplay|5|Green Heart|CV||'''Construction'''}}
+{{ShipDisplay|5|Green Heart|CV|Collab|Goddesses' Moment|{{Gem}} 880|1||204}}
+{{ShipDisplay|4|Kizuna AI|DD||'''Construction'''}}
+{{ShipDisplay|4|Kizuna AI|DD|Festival|Festive Kizuna AI|{{Gem}} 780|1||114}}
+{{ShipDisplay|5|Elegant Kizuna AI|CA||'''Construction'''}}
+{{ShipDisplay|5|Anniversary Kizuna AI|CV||'''Construction'''}}
+{{ShipDisplay|5|Super Gamer Kizuna AI|BB||'''Construction'''}}
+{{ShipDisplay|5|Shirakami Fubuki|DD||'''Construction'''}}
+{{ShipDisplay|5|Shirakami Fubuki|DD|Summer|Beachside Fox|{{Gem}} 900|1||106}}
+{{ShipDisplay|5|Tokino Sora|CV||'''Construction'''}}
+{{ShipDisplay|5|Tokino Sora|CV|Summer|Under the Clear Sky|{{Gem}} 900|1||106}}
+{{ShipDisplay|5|Minato Aqua|SS||'''Construction'''}}
+{{ShipDisplay|5|Minato Aqua|SS|Home Relaxation|Marine Maid|{{Gem}} 900|1||124}}
+{{ShipDisplay|4|Natsuiro Matsuri|DD||'''Construction'''}}
+{{ShipDisplay|4|Natsuiro Matsuri|DD|Home Relaxation|Matsuri's Day Off|{{Gem}} 800|1||122}}
+{{ShipDisplay|4|Nakiri Ayame|CA||'''Construction'''}}
+{{ShipDisplay|4|Nakiri Ayame|CA|Summer|Summertime Nakiri|{{Gem}} 800|1||106}}
+{{ShipDisplay|4|Murasaki Shion|CVL||'''Construction'''}}
+{{ShipDisplay|4|Murasaki Shion|CVL|Home Relaxation|Virtual Magician|{{Gem}} 800|1||123}}
+{{ShipDisplay|4|Ookami Mio|CV||'''Construction'''}}
+{{ShipDisplay|4|Ookami Mio|CV|Summer|Summer Vacation|{{Gem}} 800|1||106}}
+{{ShipDisplay|5|Marie Rose|DD||'''Construction'''}}
+{{ShipDisplay|5|Marie Rose|DD|Summer|Devilish Servant Against the Splashing Waves|{{Gem}} 900|1||106}}
+{{ShipDisplay|5|Marie Rose|DD|Hot Springs|Steamy Venus|{{Gem}} 1200|1||142}}
+{{ShipDisplay|5|Honoka|BB||'''Construction'''}}
+{{ShipDisplay|5|Honoka|BB|Summer|Summer Angel on the Shore|{{Gem}} 900|1||106}}
+{{ShipDisplay|5|Kasumi (Venus Vacation)|CA||Kasumi||1}}
+{{ShipDisplay|5|Kasumi (Venus Vacation)|CA|Summer|Springside Mist|{{Gem}} 900|1||142}}
+{{ShipDisplay|5|Misaki|CL||'''Construction'''}}
+{{ShipDisplay|5|Misaki|CL|Summer|Golden Photoshoot|{{Gem}} 900|1||106}}
+{{ShipDisplay|5|Misaki|CL|Summer2|Blooms in the Night Sky|{{Gem}} 1000|1|DYN|164}}
+{{ShipDisplay|4|Nagisa|BB||'''Construction'''}}
+{{ShipDisplay|4|Nagisa|BB|Summer|Blue Skies, Good Vibes|{{Gem}} 800|1||106}}
+{{ShipDisplay|4|Nyotengu|CV||'''Construction'''}}
+{{ShipDisplay|4|Nyotengu|CV|Summer|Scarlet-Tinged Hot Spring Vacation|{{Gem}} 800|1||142}}
+{{ShipDisplay|4|Monica|CL||'''Construction'''}}
+{{ShipDisplay|4|Monica|CL|Summer|The Ace of Hearts|{{Gem}} 800|1||106}}
+{{ShipDisplay|5|Luna|CVL||'''Construction'''}}
+{{ShipDisplay|5|Luna|CVL|Summer|Venus of the Beach|{{Gem}} 1000|1|DYN|106}}
+{{ShipDisplay|5|Tamaki|BC||'''Construction'''}}
+{{ShipDisplay|5|Tamaki|BC|Summer|Venus Shower Time|{{Gem}} 900|1||164}}
+{{ShipDisplay|5|Elise|CV||'''Construction'''}}
+{{ShipDisplay|5|Elise|CV|Summer|One Divine Afternoon|{{Gem}} 1000|1|DYN|701}}
+{{ShipDisplay|5|Shizuku|BB||'''Construction'''}}
+{{ShipDisplay|5|Shizuku|BB|Summer|Frolicking in the Tide|{{Gem}} 1000|1|DYN|701}}
+{{ShipDisplay|5|Shandy|CA||'''Construction'''}}
+{{ShipDisplay|5|Shandy|CA|Summer|An Enchanting Sip|{{Gem}} 1000|1|DYN|180}}
+{{ShipDisplay|5|Tsukushi|DD||'''Construction'''}}
+{{ShipDisplay|5|Tsukushi|DD|Summer|Dream Machine|{{Gem}} 1000|1|DYN|193}}
+{{ShipDisplay|5|Patty|SS||'''Construction'''}}
+{{ShipDisplay|5|Patty|SS|Summer|Fluffy-Wuffy Paradise|{{Gem}} 1000|1|DYN|145}}
+{{ShipDisplay|5|Yukino|CL||'''Construction'''}}
+{{ShipDisplay|5|Yukino|CL|Summer|Charming Beast|{{Gem}} 1000|1|DYN|106}}
+{{ShipDisplay|5|Haruka Amami|CL||'''Construction'''}}
+{{ShipDisplay|5|Haruka Amami|CL|Festival|A Taste of Tranquility|{{Gem}} 880|1||114}}
+{{ShipDisplay|5|Chihaya Kisaragi|CV||'''Construction'''}}
+{{ShipDisplay|5|Chihaya Kisaragi|CV|Festival|Reflections of Heavenly Flowers|{{Gem}} 880|1||142}}
+{{ShipDisplay|5|Iori Minase|BB||'''Construction'''}}
+{{ShipDisplay|5|Iori Minase|BB|Festival|A Little Evening Secret|{{Gem}} 880|1||142}}
+{{ShipDisplay|5|Azusa Miura|CA||'''Construction'''}}
+{{ShipDisplay|5|Azusa Miura|CA|Festival|Midsummer Relaxation|{{Gem}} 880|1||142}}
+{{ShipDisplay|4|Ritsuko Akizuki|AE||'''Construction'''}}
+{{ShipDisplay|4|Ritsuko Akizuki|AE|Festival|Paddle Showdown - Summer Formation|{{Gem}} 780|1||142}}
+{{ShipDisplay|4|Ami Futami|SS||'''Construction'''}}
+{{ShipDisplay|4|Ami Futami|SS|Festival|Summer Flowers and Sizzling Beats|{{Gem}} 780|1||114}}
+{{ShipDisplay|4|Mami Futami|SS||'''Construction'''}}
+{{ShipDisplay|4|Mami Futami|SS|Festival|Alluring Festival|{{Gem}} 780|1||114}}
+{{ShipDisplay|5|Rikka Takarada|CL||'''Construction'''}}
+{{ShipDisplay|5|Rikka Takarada|CL|Casual|Blue Sky Station|{{Gem}} 900|1||112}}
+{{ShipDisplay|5|Rikka Takarada|CL|Home Relaxation|Bedroom Attire|{{Gem}} 900|1||109}}
+{{ShipDisplay|5|Akane Shinjo|BB||'''Construction'''}}
+{{ShipDisplay|5|Akane Shinjo|BB|Home Relaxation|A Vacation Just for Two|{{Gem}} 900|1||109}}
+{{ShipDisplay|5|Akane Shinjo|BB|Home Relaxation2|Room of Secrets|{{Gem}} 900|1||109}}
+{{ShipDisplay|4|Hass|CL||'''Construction'''}}
+{{ShipDisplay|4|Hass|CL|Casual|Seaside Scoop!|{{Gem}} 800|1||148}}
+{{ShipDisplay|4|Namiko|CA||'''Construction'''}}
+{{ShipDisplay|4|Namiko|CA|Casual|Miss Street-Wise|{{Gem}} 800|1||148}}
+{{ShipDisplay|5|Yume Minami|CA||'''Construction'''}}
+{{ShipDisplay|5|Yume Minami|CA|Casual|A Dream Upon an Open Windowsill|{{Gem}} 820|1}}
+{{ShipDisplay|5|Yume Minami|CA|Home Relaxation|Morning Routine|{{Gem}} 900|1||109}}
+{{ShipDisplay|5|Chise Asukagawa|CV||'''Construction'''}}
+{{ShipDisplay|5|Chise Asukagawa|CV|Casual|Together, Swimming through the Sky|{{Gem}} 900|1||105}}
+{{ShipDisplay|5|Chise Asukagawa|CV|Home Relaxation|Laundry Day|{{Gem}} 900|1||109}}
+{{ShipDisplay|4|Mujina|BB||'''Construction'''}}
+{{ShipDisplay|4|Mujina|BB|Casual|Golden Promenade|{{Gem}} 800|1||105}}
+{{ShipDisplay|5|The 2nd|BBV||'''Construction'''}}
+{{ShipDisplay|5|The 2nd|BBV|Home Relaxation|Private Time|{{Gem}} 900|1||109}}
+{{ShipDisplay|5|Princess Hime|AE||'''Construction'''}}
+{{ShipDisplay|5|Princess Hime|AE|Home Relaxation|Nightcap Time|{{Gem}} 900|1||142}}
+{{ShipDisplay||Augment Module|||'''Construction'''}}
+{{ShipDisplay||Augment Module|||'''Construction'''}}
+{{ShipDisplay|5|Rogue Kaiser Gridman|CL||'''Construction'''}}
+{{ShipDisplay|5|Reisalin Stout|CL||'''Construction'''}}
+{{ShipDisplay|5|Reisalin Stout|CL|Home Relaxation|Late-Night Alchemist|{{Gem}} 820|1}}
+{{ShipDisplay|5|Reisalin Stout|CL|Home Relaxation2|New Culinary Horizons|{{Gem}} 1000|1|DYN|131}}
+{{ShipDisplay|5|Klaudia Valentz|CVL||'''Construction'''}}
+{{ShipDisplay|5|Klaudia Valentz|CVL|Home Relaxation|Bedtime Memories|{{Gem}} 900|1||163}}
+{{ShipDisplay|5|Patricia Abelheim|BB||'''Construction'''}}
+{{ShipDisplay|5|Patricia Abelheim|BB|Home Relaxation|Rest Betwixt Dreams and Reality|{{Gem}} 900|1||163}}
+{{ShipDisplay|4|Lila Decyrus|CA||'''Construction'''}}
+{{ShipDisplay|4|Lila Decyrus|CA|Home Relaxation|Moonlit Encounter|{{Gem}} 800|1||156}}
+{{ShipDisplay|4|Serri Glaus|CV||'''Construction'''}}
+{{ShipDisplay|4|Serri Glaus|CV|Home Relaxation|Fairy Dreamer Beneath the Starry Sky|{{Gem}} 800|1||158}}
+{{ShipDisplay|5|Kala Ideas|CB||'''Construction'''}}
+{{ShipDisplay|5|Kala Ideas|CB|Home Relaxation|Chief Turned Chef|{{Gem}} 1000|1|DYN|606}}
+{{ShipDisplay|5|Asuka|CL||'''Construction'''}}
+{{ShipDisplay|5|Asuka|CL|Summer|Blue Oceans|{{Gem}} 900|1||168}}
+{{ShipDisplay|5|Ikaruga|CA||'''Construction'''}}
+{{ShipDisplay|5|Ikaruga|CA|Summer|A Moment of Peace|{{Gem}} 900|1||133}}
+{{ShipDisplay|5|Homura|SS||'''Construction'''}}
+{{ShipDisplay|5|Homura|SS|Summer|The Shinobi Angler|{{Gem}} 900|1||133}}
+{{ShipDisplay|5|Yumi|CV||'''Construction'''}}
+{{ShipDisplay|5|Yumi|CV|Summer|Afternoon Teatime|{{Gem}} 900|1||133}}
+{{ShipDisplay|5|Fubuki (Senran Kagura)|BB||Fubuki||1}}
+{{ShipDisplay|5|Fubuki (Senran Kagura)|BB|Summer|Sunset Witch|{{Gem}} 900|1||164}}
+{{ShipDisplay|4|Murasaki|CVL||'''Construction'''}}
+{{ShipDisplay|4|Murasaki|CVL|Summer|The Shut-In Princess's Lament|{{Gem}} 800|1||164}}
+{{ShipDisplay|4|Yūyaki|CA||'''Construction'''}}
+{{ShipDisplay|4|Yūyaki|CA|Summer|Blue Sky Lagoon|{{Gem}} 800|1||168}}
+{{ShipDisplay|5|Lala Satalin Deviluke|CA||'''Construction'''}}
+{{ShipDisplay|5|Lala Satalin Deviluke|CA|Home Relaxation|A Princess Imprisoned|{{Gem}} 900|1||185}}
+{{ShipDisplay|5|Nana Astar Deviluke|DD||'''Construction'''}}
+{{ShipDisplay|5|Nana Astar Deviluke|DD|Home Relaxation|High Roller|{{Gem}} 900|1||193}}
+{{ShipDisplay|5|Momo Belia Deviluke|CL||'''Construction'''}}
+{{ShipDisplay|5|Momo Belia Deviluke|CL|Home Relaxation|A Waking Dream|{{Gem}} 900|1||193}}
+{{ShipDisplay|5|Golden Darkness|BB||'''Construction'''}}
+{{ShipDisplay|5|Golden Darkness|BB|Home Relaxation|Pajama Status: On|{{Gem}} 900|1||193}}
+{{ShipDisplay|4|Haruna Sairenji|BC||'''Construction'''}}
+{{ShipDisplay|4|Haruna Sairenji|BC|Home Relaxation|On One Serene Night|{{Gem}} 800|1||109}}
+{{ShipDisplay|4|Yui Kotegawa|CV||'''Construction'''}}
+{{ShipDisplay|4|Yui Kotegawa|CV|Home Relaxation|The Disciplinarian's Day Off|{{Gem}} 800|1||185}}
+{{ShipDisplay|5|BLACK★ROCK SHOOTER|BC||'''Construction'''}}
+{{ShipDisplay|5|BLACK★ROCK SHOOTER|BC|Summer|Goddess in Black|{{Gem}} 980|1|DYN|106}}
+{{ShipDisplay|5|DEAD MASTER|CV||'''Construction'''}}
+{{ShipDisplay|5|DEAD MASTER|CV|Summer|Warrior's Respite|{{Gem}} 900|1|DYN}}
+{{ShipDisplay|5|Yumia Liessfeldt|CVL||'''Construction'''}}
+{{ShipDisplay|5|Yumia Liessfeldt|CVL|Home Relaxation|Everyone's Favorite Patissier|{{Gem}} 1000|1|DYN|163}}
+{{ShipDisplay|5|Isla von Duerer|CL||'''Construction'''}}
+{{ShipDisplay|5|Isla von Duerer|CL|Home Relaxation|Open-Air Vacationeer|{{Gem}} 1000|1|DYN|158}}
+{{ShipDisplay|5|Nina Friede|BB||'''Construction'''}}
+{{ShipDisplay|5|Nina Friede|BB|Home Relaxation|Café & Diner Mode|{{Gem}} 1000|1|DYN|160}}
+{{ShipDisplay|5|Lenja|DD||'''Construction'''}}
+{{ShipDisplay|5|Lenja|DD|Home Relaxation|Summer Vacation Time|{{Gem}} 1000|1|DYN|106}}
+{{ShipDisplay|5|Hestia|AR||'''Construction'''}}
+{{ShipDisplay|5|Hestia|AR|Summer|Godly Vacation!|{{Gem}} 1000|1|DYN|539}}
+{{ShipDisplay|5|Ryu Lion|CL||'''Construction'''}}
+{{ShipDisplay|5|Ryu Lion|CL|Maid|Night at the Pub|{{Gem}} 1000|1|DYN|163}}
+{{ShipDisplay|5|Tohka Yatogami|CA||'''Construction'''}}
+{{ShipDisplay|5|Tohka Yatogami|CA|Summer|Break Time|{{Gem}} 1000|1|DYN|168}}
+{{ShipDisplay|5|Origami Tobiichi|CV||'''Construction'''}}
+{{ShipDisplay|5|Origami Tobiichi|CV|Summer|The Spirit of Allure|{{Gem}} 1000|1|DYN|106}}
+{{ShipDisplay|5|Kotori Itsuka|BB||'''Construction'''}}
+{{ShipDisplay|5|Kotori Itsuka|BB|Summer|Waterside Goddess|{{Gem}} 920|1|DYN}}
+{{ShipDisplay|5|Yoshino|CVL||'''Construction'''}}
+{{ShipDisplay|5|Yoshino|CVL|Summer|Secret Base|{{Gem}} 1000|1|DYN|106}}
+{{ShipDisplay|5|Kurumi Tokisaki|CL||'''Construction'''}}
+{{ShipDisplay|5|Kurumi Tokisaki|CL|Summer|Twin Rose|{{Gem}} 1000|1|DYN|109}}
+{{ShipDisplay|5|Kaguya Yamai・Yuzuru Yamai|CL||'''Construction'''}}
+{{ShipDisplay|5|Kaguya Yamai・Yuzuru Yamai|CL|Summer|Blue Ocean Rendezvous|{{Gem}} 1000|1|DYN|539}}
+{{ShipDisplay|5|Eldridge|DD|Spring|Electrifying Moon-Viewing|{{Gem}} 880|1||302}}
+{{ShipDisplay|5|Ingraham|DD|Travel|Wanderer in a Miniature World||1||158}}
+{{ShipDisplay|4|Miller|DD|Spooky|Miller the GOAT, Guardian of the Bridge|{{Gem}} 780|1||126}}
+{{ShipDisplay|5|Collett|DD||'''Construction'''}}
+{{ShipDisplay|5|Collett|DD|RaceQueen|Full-Auto Maintenance|{{Gem}} 880|1||186}}
+{{ShipDisplay|4|Harrison|DD||'''Construction'''}}
+{{ShipDisplay|4|Harrison|DD|RaceQueen|Accidental Pursuit Race?|{{Gem}} 780|1||326}}
+{{ShipDisplay|4|John Rodgers|DD||'''Construction'''}}
+{{ShipDisplay|4|John Rodgers|DD|RaceQueen|Grid Girl's Interval|{{Gem}} 780|1||186}}
+{{ShipDisplay|5|Vicksburg|CL||'''Construction'''}}
+{{ShipDisplay|5|Vicksburg|CL|RaceQueen|Dazzling Diva of the Raceway|{{Gem}} 1100|1|DUAL|326}}
+{{ShipDisplay|5|Vicksburg|CL|RaceQueenForm2|Dazzling Diva of the Raceway||1|DUAL|326}}
+{{ShipDisplay|4|Quincy|CA|Travel|Extracurricular Tutoring||1||519}}
+{{ShipDisplay|5|Bennington|CV||'''Construction'''}}
+{{ShipDisplay|5|Bennington|CV|Summer|Sunshine Chaser|{{Gem}} 1260|1|L2D|118}}
+{{ShipDisplay|4|Independence|CVL|Summer|Aching for Relaxation|{{Gem}} 780|1||164}}
+{{ShipDisplay|5|Essex|CV|Summer|Telepathy Training|{{Gem}} 980|1|DYN|134}}
+{{ShipDisplay|6|Kearsarge|BBV|Wedding|Code: OATH||1||545}}
+{{ShipDisplay|4|Griffin|DD||'''Construction'''}}
+{{ShipDisplay|4|Griffin|DD|Hospital|Tensest Relaxation Therapy|{{Gem}} 780|1||308}}
+{{ShipDisplay|4|Hardy|DD|Kai|Hardy (Retrofit)||1}}
+{{ShipDisplay|4|Hostile|DD||'''Construction'''}}
+{{ShipDisplay|4|Hostile|DD|Spooky|Coastal Vigil|{{Gem}} 780|1||164}}
+{{ShipDisplay|5|Janus|DD|Summer|Shimmering Splashes Above the Clouds|{{Gem}} 1260|1|L2D|133}}
+{{ShipDisplay|4|Hasty|DD||'''Construction'''}}
+{{ShipDisplay|4|Hasty|DD|Spooky|Sleepless Dollhouse|{{Gem}} 780|1||177}}
+{{ShipDisplay|5|Belfast|CL|Kai|Belfast (Retrofit)||1|DYN}}
+{{ShipDisplay|5|Sirius|CL|Wedding|Alba Sirius||1||507}}
+{{ShipDisplay|5|Scylla|CL|Wedding|Pure Promise Amidst a Sea of Flowers||1||530}}
+{{ShipDisplay|5|Superb|CL||'''Construction'''}}
+{{ShipDisplay|5|Superb|CL|Hospital|Superb Dentistry|{{Gem}} 980|1|DYN|138}}
+{{ShipDisplay|6|Tiger|CL||'''Construction'''}}
+{{ShipDisplay|6|Tiger|CL|Spooky|Maiden of the Stars|{{Gem}} 1050|1|DYN|142}}
+{{ShipDisplay|6|Tiger|CL|SpookyASMR|Maiden of the Stars||1|DYN|142}}
+{{ShipDisplay|5|Surrey|CA||'''Construction'''}}
+{{ShipDisplay|5|Surrey|CA|Hospital|Feverish and Disheveled|{{Gem}} 880|1||109}}
+{{ShipDisplay|5|Hood|BC|Party2|Elegance Meant for One|{{Gem}} 980|1|DYN|322}}
+{{ShipDisplay|6|Lion|BB|Spooky|Alleyway Temptress|{{Gem}} 1260|1|L2D|497}}
+{{ShipDisplay|5|Indomitable|CV|RaceQueen|The Laid-Back Navigator|{{Gem}} 1260|1|L2D|326}}
+{{ShipDisplay|4|Javelin|DD|Fairy Tale|PINKLOVE★Heart Lancer|{{Gem}} 780|1||154}}
+{{ShipDisplay|5|Illustrious|CV|Spooky|Wandering Glow of Midnight|{{Gem}} 1260|1|L2D|177}}
+{{ShipDisplay|5|Cheshire|CA|Fairy Tale|Cheshire Cat's Fairytale Maze|{{Gem}} 1280|1|L2D|159}}
+{{ShipDisplay|6|Plymouth|CL|Hospital|An Angelic Physical|{{Gem}} 1260|1|L2D|308}}
+{{ShipDisplay|5|Duncan|BC||'''Construction'''}}
+{{ShipDisplay|4|Miyuki|DD|Travel2|Mochi Mishaps||1||190}}
+{{ShipDisplay|5|Amatsukaze|DD||'''Construction'''}}
+{{ShipDisplay|5|Amatsukaze|DD|Spooky|The Fox Spirit Descends On Heavenly Winds|{{Gem}} 1100|1|DUAL|602}}
+{{ShipDisplay|5|Amatsukaze|DD|SpookyForm2|The Fox Spirit Descends On Heavenly Winds||1|DUAL|602}}
+{{ShipDisplay|5|Hatsuzuki|DD|Wedding|Red Bridge of Fate||1||126}}
+{{ShipDisplay|4|Unzen-chan|CA||'''Construction'''}}
+{{ShipDisplay|6|Azuchi|BC||'''Construction'''}}
+{{ShipDisplay|6|Azuchi|BC|Spooky|Testing Courage in Crimson|{{Gem}} 1680|1|DUAL}}
+{{ShipDisplay|6|Azuchi|BC|SpookyForm2|Testing Courage in Crimson||1|DUAL|497}}
+{{ShipDisplay|6|Musashi|BB|RaceQueen|Cheering For You Alone|{{Gem}} 1280|1|L2D|132}}
+{{ShipDisplay|5|Owari|BB|Wedding|Now, My Heart Overflows With Emotion||1||322}}
+{{ShipDisplay|4|Musashi-chan|BB||'''Construction'''}}
+{{ShipDisplay|5|Shoukaku|CV|Spooky|The Crane's Gratitude|{{Gem}} 980|1|DYN|126}}
+{{ShipDisplay|6|Shinano|CV|Wedding|Vow of Blossoms and Dreams||1||322}}
+{{ShipDisplay|6|Amagi(CV)|CV|Summer|The Mermaid of the Emerald Sea|{{Gem}} 1180|1|L2D|134}}
+{{ShipDisplay|6|Hakuhou|CV|Spooky|Sunshower Fox Bride|{{Gem}} 1260|1|L2D|142}}
+{{ShipDisplay|5|I-14|SSV||'''Construction'''}}
+{{ShipDisplay|5|I-14|SSV|Spooky|Thousand-Faced Nothingness|{{Gem}} 980|1|DYN|142}}
+{{ShipDisplay|5|Takahashi|CL||'''Construction'''}}
+{{ShipDisplay|4|Z11|DD|Hospital|Cheer Up, Ms. Nurse!|{{Gem}} 800|1||670}}
+{{ShipDisplay|4|Z14|DD||'''Construction'''}}
+{{ShipDisplay|4|Z14|DD|Summer|Lost in the Summer Sun|{{Gem}} 780|1||164}}
+{{ShipDisplay|4|Z15|DD||'''Construction'''}}
+{{ShipDisplay|4|Z15|DD|Summer|Dancing Diver|{{Gem}} 930|1|DYN|134}}
+{{ShipDisplay|6|Z52|DD|Summer|Sprintender Sommer!||1||168}}
+{{ShipDisplay|5|Emden|CL|Summer|Waterside Whispers at Dusk|{{Gem}} 1050|1|DYN|180}}
+{{ShipDisplay|5|Emden|CL|SummerASMR|Waterside Whispers at Dusk||1|DYN|180}}
+{{ShipDisplay|4|Admiral Hipper|CA|Kai|Admiral Hipper (Retrofit)||1}}
+{{ShipDisplay|5|Prinz Adalbert|CA|Theme Park|The Black-and-White Magician|{{Gem}} 980|1|DYN|665}}
+{{ShipDisplay|4|Yorck|CA|Spooky|Phantasmagoric Night Dancer|{{Gem}} 950|1|DYN|159}}
+{{ShipDisplay|5|Friedrich Carl|CA|Spooky|The Midnight Channel|{{Gem}} 1260|1|L2D|310}}
+{{ShipDisplay|5|Prinz Moritz|CA||'''Construction'''}}
+{{ShipDisplay|5|Prinz Moritz|CA|Summer|The Genie's Game|{{Gem}} 1030|1|DYN|610}}
+{{ShipDisplay|6|Götz von Berlichingen|BB||'''Construction'''}}
+{{ShipDisplay|6|Götz von Berlichingen|BB|Summer|Rapture Beneath the Blood Moon|{{Gem}} 1260|1|L2D|149}}
+{{ShipDisplay|6|Fritz Rumey|CV|RaceQueen|Verabredung in the Night Breeze|{{Gem}} 1000|1|L2D|161}}
+{{ShipDisplay|6|U-2501|SS||'''Construction'''}}
+{{ShipDisplay|6|U-2501|SS|Summer|Treasure Behind the Water Curtain|{{Gem}} 1180|1|L2D|193}}
+{{ShipDisplay|5|Roon|CA|Casual|Enticement in the Indigo Darkness|{{Gem}} 880|1||193}}
+{{ShipDisplay|5|August von Parseval|CV|Party|Night Rendezvous with the Unhulde|{{Gem}} 1280|1|L2D|135}}
+{{ShipDisplay|6|Max Immelmann|CV||'''Construction'''}}
+{{ShipDisplay|4|Yat Sen|CL|Summer|Pristine Waves Embrace the Wind|{{Gem}} 880|1|DYN|539}}
+{{ShipDisplay|4|Chen Hai|CVL|Wedding|A Night of Passion||1||144}}
+{{ShipDisplay|4|Hwah Jah|CVL|Spring2|As Lustrous as Lacquer||1|DYN|157}}
+{{ShipDisplay|6|Raffaello|BB|Theme Park|Magical Combo Masterpiece|{{Gem}} 980|1|DYN|665}}
+{{ShipDisplay|5|Leonardo da Vinci|SS|Theme Park|Swinging Inventor Girl|{{Gem}} 880|1||665}}
+{{ShipDisplay|5|Marco Polo|BB|Theme Park|Ambitious Showcase|{{Gem}} 980|1|DYN|665}}
+{{ShipDisplay|4|L'Intrépide|DD||'''Construction'''}}
+{{ShipDisplay|4|L'Intrépide|DD|Theme Park|Blazing Dash!|{{Gem}} 900|1|DYN|159}}
+{{ShipDisplay|4|Émile Bertin|CL|Fairy Tale|Éclat Magique||1||159}}
+{{ShipDisplay|5|Arromanches|CVL||'''Construction'''}}
+{{ShipDisplay|5|Arromanches|CVL|Theme Park|Acrobatic Archery|{{Gem}} 1050|1|DYN|159}}
+{{ShipDisplay|5|Cherbourg|CB||'''Construction'''}}
+{{ShipDisplay|5|Cherbourg|CB|Theme Park|What's Inside the Bear|{{Gem}} 1280|1|L2D|159}}
+{{ShipDisplay|5|Saint Louis|CA|Summer|Holiness to Haziness|{{Gem}} 1180|1|L2D|145}}
+{{ShipDisplay|5|Orage|DD||'''Construction'''}}
+{{ShipDisplay||Elbe META|| NPC|Elbe META||1}}
+{{ShipDisplay||Königsberg META|| NPC|Königsberg META||1}}
+{{ShipDisplay||August von Parseval||Party NPC|August von Parseval||1}}
+{{ShipDisplay||Janus||Summer NPC|Janus||1}}
+{{ShipDisplay||Emden||Summer NPC|Emden||1}}
+{{ShipDisplay||Saint Louis||Summer NPC|Saint Louis||1}}
+{{ShipDisplay||Arbiter: The Emperor IV}}
+{{ShipDisplay||Surrey|| NPC|Surrey||1}}
+{{ShipDisplay||Bon Homme Richard||Shadow|Bon Homme Richard||1}}
+{{ShipDisplay||Soobrazitelny META|DD| NPC|Soobrazitelny META||1}}
+{{ShipDisplay||Saratoga META|CV| NPC|Saratoga META||1}}
+{{ShipDisplay||Error XIII}}
+{{ShipDisplay||Vicksburg|| NPC|Vicksburg||1}}
+{{ShipDisplay||Collett|| NPC|Collett||1}}
+{{ShipDisplay||Bennington|| NPC|Bennington||1}}
+{{ShipDisplay||？？？||Shadow|？？？||1}}
+{{ShipDisplay||Amatsukaze|| NPC|Amatsukaze||1}}
+{{ShipDisplay||Émile Bertin|| NPC|Émile Bertin||1}}
+{{ShipDisplay||？？|| NPC|？？||1}}
+{{ShipDisplay||？？？|| NPC|？？？||1}}
+{{ShipDisplay||Illustrious|| NPC|Illustrious||1}}
+{{ShipDisplay||Azuchi.|| NPC|Azuchi.||1}}
+{{ShipDisplay|6|Mogador|DD|Summer2|Diving for Desire|{{Gem}} 1680|1|DUAL|611}}
+{{ShipDisplay|6|Mogador|DD|Summer2Form2|Diving for Desire||1|DUAL}}
+{{ShipDisplay|4|Evertsen|DD|Casual|Guardian Fae of the Mangroves||1||518}}
+{{ShipDisplay|6|Valparaíso|BB||'''Construction'''}}
+{{ShipDisplay|5|Golden Hind|IXv|SpookyForm2|The Pale Phantom's Smile||1|DUAL|156}}
+{{ShipDisplay|5|Golden Hind|IXv|Spooky|The Pale Phantom's Smile|{{Gem}} 1680|1|DUAL|156}}
+{{ShipDisplay|5|Ganj-i-Sawai|IXm|Hospital|My Innermost Self|{{Gem}} 1200|1|L2D|670}}
+{{ShipDisplay|5|Bristol META|DD||'''Construction'''}}
+{{ShipDisplay|4|Soobrazitelny META|DD||'''Construction'''}}
+{{ShipDisplay|4|Königsberg META|CL||'''Construction'''}}
+{{ShipDisplay|4|Nürnberg META|CL||'''Construction'''}}
+{{ShipDisplay|5|Elbe META|CVL||'''Construction'''}}
+{{ShipDisplay|5|Victorious META|CV||'''Construction'''}}
+{{ShipDisplay|5|Saratoga META|CV||'''Construction'''}}
+{{ShipDisplay|5|A2|CA||'''Construction'''}}
+{{ShipDisplay|5|A2|CA|Party|fruit of tempt[A]tion|{{Gem}} 1000|1|DYN|450}}
+{{ShipDisplay|5|2B|CL||'''Construction'''}}
+{{ShipDisplay|5|2B|CL|Party|[B]rief respite|{{Gem}} 1000|1|DYN|450}}

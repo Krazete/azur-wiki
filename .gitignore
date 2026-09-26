@@ -6,6 +6,10 @@ CN
 EN
 JP
 input
-output
+output/*
+!output/skinname.txt
+!output/skinname.json
+!output/slashname.json
+!output/skintemplate.wiki
 versionlog.json
 one-offs/valentine*_wikitext.json
