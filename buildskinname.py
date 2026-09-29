@@ -111,47 +111,47 @@ fixes = {
     'buli_super_2': {'type': 'Event'},
     'aierdeliqi_7': {'type': 10},
     'aisaikesi_6': {'type': 'Detective'}, # Essex
-    'bushi_2': {'type': 9}, #Bush
+    'bushi_2': {'type': 9}, # Bush
     'afuleer_2': {'type': 'Prison'}, # Avrora
-    'salatuojia_3': {'type': 'Hanbok'}, #Saratoga
-    'salatuojia_4': {'type': 'Kizuna'}, #Saratoga
-    'salatuojia_5': {'type': 'Event'}, #Saratoga
-    'salatuojia_9': {'type': 'Food'}, #Saratoga
-    'qiye_5': {'type': 'Bluray'}, #Enterprise
-    'dahuangfeng_3': {'type': 'Pizza'}, #Hornet
+    'salatuojia_3': {'type': 'Hanbok'}, # Saratoga
+    'salatuojia_4': {'type': 'Kizuna'}, # Saratoga
+    'salatuojia_5': {'type': 'Event'}, # Saratoga
+    'salatuojia_9': {'type': 'Food'}, # Saratoga
+    'qiye_5': {'type': 'Bluray'}, # Enterprise
+    'dahuangfeng_3': {'type': 'Pizza'}, # Hornet
     'lafei_5': {'type': 'CoCo'}, # Laffey
-    'lafei_11': {'type': 'KFC'}, #Laffey
-    'akasita_3': {'type': 'Misc'}, #Acasta
-    'xiefeierde_2': {'type': 'Misc'}, #Sheffield
-    'beierfasite_5': {'type': 'Bluray'}, #Belfast
-    'beierfasite_7': {'type': 'Pizza'}, #Belfast
-    'niukasier_2': {'type': 'Flower'}, #Newcastle
-    'dujiaoshou_2': {'type': 'Event'}, #Unicorn
-    'guanghui_2': {'type': 'Tea Party'}, #Illustrious
-    'guanghui_4': {'type': 'Hanbok'}, #Illustrious
-    'heianjie_2': {'type': 10}, #Erebus
-    'chuixue_4': {'type': 'Atre'}, #Fubuki
-    'chuixue_6': {'type': 'Pizza'}, #Fubuki
-    'xiao_2': {'type': 'Camp'}, #Akatsuki
-    'xiao_5': {'type': 'Travel'}, #Akatsuki
-    'lei_2': {'type': 'Tea Party'}, #Ikazuchi
-    'dian_2': {'type': 'Tea Party'}, #Inazuma
-    'xuefeng_2': {'type': 'Event'}, #Yukikaze
-    'chuchun_2': {'type': 'Snow'}, #Hatsuharu
-    'jiangfeng_2': {'type': 'Event'}, #Kawakaze
-    'gufeng_2': {'type': 'Misc'}, #Tanikaze
-    'pubo_2': {'type': 'Misc'}, #Uranami
-    'shancheng_7': {'type': 'Atre'}, #Yamashiro
-    'luao_2': {'type': 'Event'}, #Mutsu
-    'sanli_2': {'type': 4}, #Mikasa
-    'sanli_4': {'type': 2}, #Mikasa
-    'fengxiang_2': {'type': 10}, #Houshou
-    'mingshi_4': {'type': 'Event'}, #Akashi
-    'mingshi_5': {'type': 'Sofmap'}, #Akashi
-    'z23_2': {'type': 'Bilibili'}, #Z23
-    'z23_4': {'type': 'CoCo'}, #Z23
-    'z23_8': {'type': 'Bluray'}, #Z23
-    'z23_6': {'type': 'Kinokuniya'}, #Z23
+    'lafei_11': {'type': 'KFC'}, # Laffey
+    'akasita_3': {'type': 'Misc'}, # Acasta
+    'xiefeierde_2': {'type': 'Misc'}, # Sheffield
+    'beierfasite_5': {'type': 'Bluray'}, # Belfast
+    'beierfasite_7': {'type': 'Pizza'}, # Belfast
+    'niukasier_2': {'type': 'Flower'}, # Newcastle
+    'dujiaoshou_2': {'type': 'Event'}, # Unicorn
+    'guanghui_2': {'type': 'Tea Party'}, # Illustrious
+    'guanghui_4': {'type': 'Hanbok'}, # Illustrious
+    'heianjie_2': {'type': 10}, # Erebus
+    'chuixue_4': {'type': 'Atre'}, # Fubuki
+    'chuixue_6': {'type': 'Pizza'}, # Fubuki
+    'xiao_2': {'type': 'Camp'}, # Akatsuki
+    'xiao_5': {'type': 'Travel'}, # Akatsuki
+    'lei_2': {'type': 'Tea Party'}, # Ikazuchi
+    'dian_2': {'type': 'Tea Party'}, # Inazuma
+    'xuefeng_2': {'type': 'Event'}, # Yukikaze
+    'chuchun_2': {'type': 'Snow'}, # Hatsuharu
+    'jiangfeng_2': {'type': 'Event'}, # Kawakaze
+    'gufeng_2': {'type': 'Misc'}, # Tanikaze
+    'pubo_2': {'type': 'Misc'}, # Uranami
+    'shancheng_7': {'type': 'Atre'}, # Yamashiro
+    'luao_2': {'type': 'Event'}, # Mutsu
+    'sanli_2': {'type': 4}, # Mikasa
+    'sanli_4': {'type': 2}, # Mikasa
+    'fengxiang_2': {'type': 10}, # Houshou
+    'mingshi_4': {'type': 'Event'}, # Akashi
+    'mingshi_5': {'type': 'Sofmap'}, # Akashi
+    'z23_2': {'type': 'Bilibili'}, # Z23
+    'z23_4': {'type': 'CoCo'}, # Z23
+    'z23_8': {'type': 'Bluray'}, # Z23
+    'z23_6': {'type': 'Kinokuniya'}, # Z23
     'ninghai_3': {'type': 10}, # Ning Hai
     'pinghai_3': {'type': 10}, # Ping Hai
     'haitian_3': {'type': 'Goddess'}, # Hai Tien
@@ -247,10 +247,15 @@ fixes = {
     'xipeierhaijunshangjiang_g': {'base': 'Admiral Hipper', 'type': 9997},
     'z14_2': {'base': 'Z14', 'type': 6},
     'z15_2': {'base': 'Z15', 'type': 6},
-    'npcaimudeng_5': {'base': 'Emden', 'type': 6}, # guess; future skin
-    'npcaogusite_4': {'base': 'August von Parseval', 'type': 7}, # guess; future skin
-    'npcluyijiushi_4': {'base': 'Saint Louis', 'type': 6}, # guess; future skin
-    'npcyanusi_7': {'base': 'Janus', 'type': 6}, # guess; future skin
+    'npcaimudeng_5': {'base': 'Emden', 'type': 6},
+    'npcaogusite_4': {'base': 'August von Parseval', 'type': 7},
+    'npcluyijiushi_4': {'base': 'Saint Louis', 'type': 6},
+    'npcyanusi_7': {'base': 'Janus', 'type': 6},
+    'congmang_2_hei': {'base': 'Hasty', 'type': 'SpookyShadow'},
+    'npcshi_3': {'base': 'Lion', 'type': 'SpookyShadow'},
+    'npcjinluhao_3': {'base': 'Golden Hind', 'type': 'SpookyShadow'}, # swapped; currently Form2 in game
+    'jinluhao_3': {'type': 'Spooky'}, # swapped; currently Form2 in game
+    'jinluhao_4': {'type': 'SpookyForm2'}, # swapped; currently Form1 in game
     # shadows
     'qiye_dark': {'base': 'Enterprise META'}, # not shadow
     'qiye_dark_shadow': {'base': 'Enterprise META'},
@@ -438,7 +443,7 @@ def build_skinnames():
                 print('WARNING: Skin {} ({}) has extra name ({})'.format(skid, jsonfile[paint][1], wikiname))
         else:
             jsonfile[paint] = (npc, wikiname, slashname)
-        if suffix == '' and basename == skinname:
+        if suffix == '' and basename == wikiname:
             wikifile.append('{{{{{}}}}}'.format('|'.join([
                 'ShipDisplay',
                 rarity,

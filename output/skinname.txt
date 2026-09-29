@@ -1375,9 +1375,9 @@
   399063    6  191      siwanshi_4                       ShimantoSummerForm2
   399070    0    0      dashan                           Daisen
   399071   16  160      dashan_2                         DaisenBunny
-  401010    0    0      z1                               Leberecht Maass (Z1)
-  401011    4  103      z1_2                             Leberecht Maass (Z1)School
-  401019 9997    0      z1_g                             Leberecht Maass (Z1)Kai
+  401010    0    0      z1                               Z1
+  401011    4  103      z1_2                             Z1School
+  401019 9997    0      z1_g                             Z1Kai
   401020    0    0      z2                               Z2
   401021    9    0      z2_2                             Z2Casual
   401022   10  114      z2_3                             Z2Festival
@@ -1390,9 +1390,9 @@
   401160    0    0      z16                              Z16
   401161   13  112      z16_2                            Z16Sport
   401180    0    0      z18                              Z18
-  401190    0    0      z19                              Hermann Künne (Z19)
-  401200    0    0      z20                              Karl Galster (Z20)
-  401210    0    0      z21                              Wilhelm Heidkamp (Z21)
+  401190    0    0      z19                              Z19
+  401200    0    0      z20                              Z20
+  401210    0    0      z21                              Z21
   401230    0    0      z23                              Z23
   401231 9999    0      z23_2                            Z23Bilibili
   401232    6  106      z23_7                            Z23Summer
@@ -2029,14 +2029,14 @@
   900009    0    0 NPC  ougen                            Prinz Eugen
   900010    0    0 NPC  bisimai                          Bismarck
   900011    0    0 NPC  unknown1                         Tester
-  900012    0    0 NPC  unknown2                         ?????
+  900012    0    0 NPC  unknown2                         Observer
   900013    0    0 NPC  ligen                            Tone
   900014    0    0 NPC  wudao                            Kirishima
   900015    0    0 NPC  zuishang                         Mogami
   900016    0    0 NPC  aidang                           Atago
   900017    0    0 NPC  jingang                          Kongou
   900020    0    0 NPC  yixian                           Yat Sen
-  900021    0    0 NPC  unknown3                         ?????
+  900021    0    0 NPC  unknown3                         Purifier
   900022    0    0 NPC  ninghai_memory                   Ning HaiMemory
   900023    0    0 NPC  pinghai_memory                   Ping HaiMemory
   900024    0    0 NPC  yixian_memory                    Yat SenMemory
@@ -2819,19 +2819,19 @@
   900553    0    0 NPC  npcweikesibao_2                  Vicksburg NPC
   900554    0    0 NPC  npckelaite_2                     Collett NPC
   900555    0    0 NPC  npcbenningdun_2                  Bennington NPC
-  900556    0    0 NPC  congmang_2_hei                   ？？？Shadow
+  900556    0    0 NPC  congmang_2_hei                   HastySpookyShadow
   900557    0    0 NPC  npctianjinfeng_2                 Amatsukaze NPC
   900558    0    0 NPC  npcaimierbeierding_5             Émile Bertin NPC
-  900559    0    0 NPC  npcshi_3                         ？？ NPC
-  900560    0    0 NPC  npcjinluhao_3                    ？？？ NPC
+  900559    0    0 NPC  npcshi_3                         LionSpookyShadow NPC
+  900560    0    0 NPC  npcjinluhao_3                    Golden HindSpookyShadow NPC
   900561    0    0 NPC  npcguanghui_9                    Illustrious NPC
   900562    0    0 NPC  npcantu_2                        Azuchi. NPC
   901073    6  611      mojiaduoer_4                     MogadorSummer2
   901074    6    0      mojiaduoer_5                     MogadorSummer2Form2
  1101012    9  518      aifosen_3                        EvertsenCasual
  1299010    0    0      waerpalaisuo                     Valparaíso
- 9600032   29  156      jinluhao_3                       Golden HindSpookyForm2
- 9600033   29  156      jinluhao_4                       Golden HindSpooky
+ 9600032   29  156      jinluhao_3                       Golden HindSpooky
+ 9600033   29  156      jinluhao_4                       Golden HindSpookyForm2
  9600072   15  670      gangyishawa_3                    Ganj-i-SawaiHospital
  9701120    0    0      bulisituoer_alter                Bristol META
  9701130    0    0      lingmin_alter                    Soobrazitelny META

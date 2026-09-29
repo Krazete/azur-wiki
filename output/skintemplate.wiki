@@ -640,7 +640,7 @@
 {{ShipDisplay|5|Charybdis|CL|Summer|Prim Sea Breeze|{{Gem}} 880|||133}}
 {{ShipDisplay|4|Bellona|CL||'''Construction'''}}
 {{ShipDisplay|4|Bellona|CL|Maid|Armed to Clean|{{Gem}} 780|||150}}
-{{ShipDisplay|4|Enterprise (Royal Navy)|CL||Enterprise||1}}
+{{ShipDisplay|4|Enterprise (Royal Navy)|CL||'''Construction'''}}
 {{ShipDisplay|5|Scylla|CL||'''Construction'''}}
 {{ShipDisplay|5|Scylla|CL|School|Femme Fatale Fresher|{{Gem}} 800}}
 {{ShipDisplay|5|Scylla|CL|Party|Bathed in the Limelight|{{Gem}} 900|||135}}
@@ -1374,9 +1374,9 @@
 {{ShipDisplay|5|Shimanto|CL|SummerForm2|The Relaxing Dragon God||1|DUAL|191}}
 {{ShipDisplay|5|Daisen|BB||'''Construction'''}}
 {{ShipDisplay|5|Daisen|BB|Bunny|Bunny Priestess in Prayer|{{Gem}} 980|1|DYN|160}}
-{{ShipDisplay|4|Leberecht Maass (Z1)|DD||'''Construction'''}}
-{{ShipDisplay|4|Leberecht Maass (Z1)|DD|School|"Rebellious" Top Student|{{Gem}} 780|||103}}
-{{ShipDisplay|4|Leberecht Maass (Z1)|DD|Kai|Z1 (Retrofit)||1}}
+{{ShipDisplay|4|Z1|DD||'''Construction'''}}
+{{ShipDisplay|4|Z1|DD|School|"Rebellious" Top Student|{{Gem}} 780|||103}}
+{{ShipDisplay|4|Z1|DD|Kai|Z1 (Retrofit)||1}}
 {{ShipDisplay|4|Z2|DD||'''Construction'''}}
 {{ShipDisplay|4|Z2|DD|Casual|High-Rise, High-Style|{{Gem}} 700}}
 {{ShipDisplay|4|Z2|DD|Festival|Of Koi and Evening Hues|{{Gem}} 780|1||114}}
@@ -1389,9 +1389,9 @@
 {{ShipDisplay|4|Z16|DD||'''Construction'''}}
 {{ShipDisplay|4|Z16|DD|Sport|Guaranteed Grand Slam!|{{Gem}} 780|||112}}
 {{ShipDisplay|3|Z18|DD||'''Construction'''}}
-{{ShipDisplay|3|Hermann Künne (Z19)|DD||'''Construction'''}}
-{{ShipDisplay|2|Karl Galster (Z20)|DD||'''Construction'''}}
-{{ShipDisplay|2|Wilhelm Heidkamp (Z21)|DD||'''Construction'''}}
+{{ShipDisplay|3|Z19|DD||'''Construction'''}}
+{{ShipDisplay|2|Z20|DD||'''Construction'''}}
+{{ShipDisplay|2|Z21|DD||'''Construction'''}}
 {{ShipDisplay|4|Z23|DD||'''Construction'''}}
 {{ShipDisplay|4|Z23|DD|Bilibili|Philosophy Sensei||1}}
 {{ShipDisplay|4|Z23|DD|Summer|Breezy Doubles|{{Gem}} 780|||106}}
@@ -2027,15 +2027,15 @@
 {{ShipDisplay||Ark Royal|CV}}
 {{ShipDisplay||Prinz Eugen|CA}}
 {{ShipDisplay||Bismarck|BB}}
-{{ShipDisplay||Tester|BB||?????||1}}
-{{ShipDisplay||?????|BB}}
+{{ShipDisplay||Tester|BB}}
+{{ShipDisplay||Observer|BB}}
 {{ShipDisplay||Tone|BB}}
 {{ShipDisplay||Kirishima|BB}}
 {{ShipDisplay||Mogami|BB}}
 {{ShipDisplay||Atago|BB}}
 {{ShipDisplay||Kongou|BB}}
 {{ShipDisplay||Yat Sen}}
-{{ShipDisplay||?????|BB}}
+{{ShipDisplay||Purifier|BB}}
 {{ShipDisplay||Ning Hai|CL|Memory|Ning Hai||1}}
 {{ShipDisplay||Ping Hai|CL|Memory|Ping Hai||1}}
 {{ShipDisplay||Yat Sen|CL|Memory|Yat Sen||1}}
@@ -2058,7 +2058,7 @@
 {{ShipDisplay||Jean Bart||Memory|Jean Bart||1}}
 {{ShipDisplay||Enterprise|CV|Memory|Enterprise||1}}
 {{ShipDisplay||Observer|BB|Memory|?????||1}}
-{{ShipDisplay||Enterprise META|CV||Enterprise||1}}
+{{ShipDisplay||Enterprise META|CV}}
 {{ShipDisplay||Blanc|DD|Memory|Blanc||1}}
 {{ShipDisplay||Vert|CV|Memory|Vert||1}}
 {{ShipDisplay||Glorious|CV}}
@@ -2066,8 +2066,8 @@
 {{ShipDisplay||Helena}}
 {{ShipDisplay||North Carolina}}
 {{ShipDisplay||Washington}}
-{{ShipDisplay||Enterprise META|CV||？？？？？||1}}
-{{ShipDisplay||Observer Zero|CV||Observer zero||1}}
+{{ShipDisplay||Enterprise META|CV}}
+{{ShipDisplay||Observer Zero|CV}}
 {{ShipDisplay||Warspite}}
 {{ShipDisplay||Chang Chun}}
 {{ShipDisplay||Kizuna AI||WithoutRigging|Kizuna AI||1}}
@@ -2083,7 +2083,7 @@
 {{ShipDisplay||Takao META||Shadow|Takao||1}}
 {{ShipDisplay||Enterprise META||Shadow|Enterprise||1}}
 {{ShipDisplay||Arbiter: The Empress III}}
-{{ShipDisplay||Takao META|||Takao||1}}
+{{ShipDisplay||Takao META}}
 {{ShipDisplay||Baltimore||Shadow|Baltimore||1}}
 {{ShipDisplay||Hornet||OriginalShadow|Hornet||1}}
 {{ShipDisplay||Kitakaze|DD}}
@@ -2124,7 +2124,7 @@
 {{ShipDisplay||Purifier||Shadow|Purifier||1}}
 {{ShipDisplay||Observer}}
 {{ShipDisplay||Purifier}}
-{{ShipDisplay||Compiler|||？？？||1}}
+{{ShipDisplay||Compiler}}
 {{ShipDisplay||Universal Bulin}}
 {{ShipDisplay||Vauquelin}}
 {{ShipDisplay||Le Terrible}}
@@ -2204,7 +2204,7 @@
 {{ShipDisplay||Scharnhorst||Shadow|Scharnhorst||1}}
 {{ShipDisplay||Arbiter: The Lovers VI}}
 {{ShipDisplay||Allen M. Sumner||Shadow|？？？||1}}
-{{ShipDisplay||Bon Homme Richard META|||Bon Homme Richard||1}}
+{{ShipDisplay||Bon Homme Richard META}}
 {{ShipDisplay||TB||Shadow|？||1}}
 {{ShipDisplay||Prototype Bulin MKII|DD}}
 {{ShipDisplay||544845544F574552}}
@@ -2223,9 +2223,9 @@
 {{ShipDisplay||Queen Elizabeth META}}
 {{ShipDisplay||La Galissonnière META}}
 {{ShipDisplay||Sovetsky Soyuz||Original2|Sovetsky Soyuz||1}}
-{{ShipDisplay||Arbiter: The Hermit IX META|||Arbiter: The Hermit IX||1}}
+{{ShipDisplay||Arbiter: The Hermit IX META}}
 {{ShipDisplay||Arbiter: The Tower XVI}}
-{{ShipDisplay||Arbiter: The Hierophant V|||▅H▊▇ro▅■ph▇▆▅||1}}
+{{ShipDisplay||Arbiter: The Hierophant V}}
 {{ShipDisplay||Jeanne d'Arc}}
 {{ShipDisplay||Sheffield}}
 {{ShipDisplay||Noshiro}}
@@ -2246,7 +2246,7 @@
 {{ShipDisplay||Flandre}}
 {{ShipDisplay||Zuihou}}
 {{ShipDisplay||Silver Fox||Shadow|Silver Fox||1}}
-{{ShipDisplay||MECHWar Protocol Fortress|||War Protocol Fortress||1}}
+{{ShipDisplay||MECHWar Protocol Fortress}}
 {{ShipDisplay||War Protocol Fortress}}
 {{ShipDisplay||Essex META}}
 {{ShipDisplay||Silver Fox}}
@@ -2270,10 +2270,10 @@
 {{ShipDisplay||Gilded Age Mech}}
 {{ShipDisplay||Gilded Age Mech}}
 {{ShipDisplay||腓特烈·卡尔-钢铁教会机械师|CV}}
-{{ShipDisplay||War Protocol Scythe|||Death's Shadow||1}}
+{{ShipDisplay||War Protocol Scythe}}
 {{ShipDisplay||Emden|| NPC|Emden||1}}
 {{ShipDisplay||Miss D}}
-{{ShipDisplay||Arbiter: The Moon XVIII|||moon||1}}
+{{ShipDisplay||Arbiter: The Moon XVIII}}
 {{ShipDisplay||Wichita META}}
 {{ShipDisplay||Cheshire}}
 {{ShipDisplay||Tosa}}
@@ -2290,10 +2290,10 @@
 {{ShipDisplay||Amagi|| NPC|Amagi||1}}
 {{ShipDisplay||Akagi|| NPC|Akagi||1}}
 {{ShipDisplay||Kaga|| NPC|Kaga||1}}
-{{ShipDisplay||Akagi META|||Akagi||1}}
-{{ShipDisplay||Akagi META (Kaga)|||Akagi||1}}
-{{ShipDisplay||Akagi META (Amagi)|||Akagi||1}}
-{{ShipDisplay||Akagi META (Akagi)|||Akagi||1}}
+{{ShipDisplay||Akagi META}}
+{{ShipDisplay||Akagi META (Kaga)}}
+{{ShipDisplay||Akagi META (Amagi)}}
+{{ShipDisplay||Akagi META (Akagi)}}
 {{ShipDisplay||Ark Royal}}
 {{ShipDisplay||Kashino|| NPC|Kashino||1}}
 {{ShipDisplay||Bremerton|| NPC|Bremerton||1}}
@@ -2311,7 +2311,7 @@
 {{ShipDisplay||Yorktown META||Shadow|？？？||1}}
 {{ShipDisplay||TB||Baby|TB||1}}
 {{ShipDisplay||Star Beast}}
-{{ShipDisplay||MECHArbiter: The Magician I|||Arbiter: The Magician I||1}}
+{{ShipDisplay||MECHArbiter: The Magician I}}
 {{ShipDisplay||New Jersey|| NPC|New Jersey||1}}
 {{ShipDisplay||Jean Bart|| NPC|Jean Bart||1}}
 {{ShipDisplay||Mainz|| NPC|Mainz||1}}
@@ -2358,12 +2358,12 @@
 {{ShipDisplay||Ryu Lion||WithoutRigging|Ryu Lion||1}}
 {{ShipDisplay||unknown_undefined}}
 {{ShipDisplay||Ordainer El}}
-{{ShipDisplay||Arbiter: The Star XVII|||Star Beast?||1}}
+{{ShipDisplay||Arbiter: The Star XVII}}
 {{ShipDisplay||Ryouko Amahara}}
 {{ShipDisplay||Bon Homme Richard}}
 {{ShipDisplay||Maria}}
 {{ShipDisplay||马可波罗 王座}}
-{{ShipDisplay||Compiler|BB||Arbiter: The Chariot VII||1}}
+{{ShipDisplay||Compiler|BB}}
 {{ShipDisplay||Nayoro|| NPC|Nayoro||1}}
 {{ShipDisplay|3|Le Mars|DD||'''Construction'''}}
 {{ShipDisplay|3|Le Mars|DD|Summer|Été Brillant||1||106}}
@@ -2534,7 +2534,7 @@
 {{ShipDisplay||Navi||Home Relaxation|Imp of the Bathtub|{{Gem}} 880|1|DYN|220}}
 {{ShipDisplay||TB||Misc|Data Set: My Countless Selves|{{Gem}} 880|1|DYN|494}}
 {{ShipDisplay||Lora||Home Relaxation|Closeness on a Holiday|{{Gem}} 880|1|DYN|313}}
-{{ShipDisplay|4|Neptune (Neptunia)|CL||Neptune||1}}
+{{ShipDisplay|4|Neptune (Neptunia)|CL||'''Construction'''}}
 {{ShipDisplay|4|Noire|CA||'''Construction'''}}
 {{ShipDisplay|4|Blanc|DD||'''Construction'''}}
 {{ShipDisplay|4|Vert|CV||'''Construction'''}}
@@ -2570,7 +2570,7 @@
 {{ShipDisplay|5|Marie Rose|DD|Hot Springs|Steamy Venus|{{Gem}} 1200|1||142}}
 {{ShipDisplay|5|Honoka|BB||'''Construction'''}}
 {{ShipDisplay|5|Honoka|BB|Summer|Summer Angel on the Shore|{{Gem}} 900|1||106}}
-{{ShipDisplay|5|Kasumi (Venus Vacation)|CA||Kasumi||1}}
+{{ShipDisplay|5|Kasumi (Venus Vacation)|CA||'''Construction'''}}
 {{ShipDisplay|5|Kasumi (Venus Vacation)|CA|Summer|Springside Mist|{{Gem}} 900|1||142}}
 {{ShipDisplay|5|Misaki|CL||'''Construction'''}}
 {{ShipDisplay|5|Misaki|CL|Summer|Golden Photoshoot|{{Gem}} 900|1||106}}
@@ -2634,7 +2634,7 @@
 {{ShipDisplay|5|Princess Hime|AE||'''Construction'''}}
 {{ShipDisplay|5|Princess Hime|AE|Home Relaxation|Nightcap Time|{{Gem}} 900|1||142}}
 {{ShipDisplay||Augment Module|||'''Construction'''}}
-{{ShipDisplay||Augment Module|||'''Construction'''}}
+{{ShipDisplay||Augment Module||2|Augment Module||1}}
 {{ShipDisplay|5|Rogue Kaiser Gridman|CL||'''Construction'''}}
 {{ShipDisplay|5|Reisalin Stout|CL||'''Construction'''}}
 {{ShipDisplay|5|Reisalin Stout|CL|Home Relaxation|Late-Night Alchemist|{{Gem}} 820|1}}
@@ -2657,7 +2657,7 @@
 {{ShipDisplay|5|Homura|SS|Summer|The Shinobi Angler|{{Gem}} 900|1||133}}
 {{ShipDisplay|5|Yumi|CV||'''Construction'''}}
 {{ShipDisplay|5|Yumi|CV|Summer|Afternoon Teatime|{{Gem}} 900|1||133}}
-{{ShipDisplay|5|Fubuki (Senran Kagura)|BB||Fubuki||1}}
+{{ShipDisplay|5|Fubuki (Senran Kagura)|BB||'''Construction'''}}
 {{ShipDisplay|5|Fubuki (Senran Kagura)|BB|Summer|Sunset Witch|{{Gem}} 900|1||164}}
 {{ShipDisplay|4|Murasaki|CVL||'''Construction'''}}
 {{ShipDisplay|4|Murasaki|CVL|Summer|The Shut-In Princess's Lament|{{Gem}} 800|1||164}}
@@ -2818,19 +2818,19 @@
 {{ShipDisplay||Vicksburg|| NPC|Vicksburg||1}}
 {{ShipDisplay||Collett|| NPC|Collett||1}}
 {{ShipDisplay||Bennington|| NPC|Bennington||1}}
-{{ShipDisplay||？？？||Shadow|？？？||1}}
+{{ShipDisplay||Hasty||SpookyShadow|？？？||1}}
 {{ShipDisplay||Amatsukaze|| NPC|Amatsukaze||1}}
 {{ShipDisplay||Émile Bertin|| NPC|Émile Bertin||1}}
-{{ShipDisplay||？？|| NPC|？？||1}}
-{{ShipDisplay||？？？|| NPC|？？？||1}}
+{{ShipDisplay||Lion||SpookyShadow NPC|？？||1}}
+{{ShipDisplay||Golden Hind||SpookyShadow NPC|？？？||1}}
 {{ShipDisplay||Illustrious|| NPC|Illustrious||1}}
 {{ShipDisplay||Azuchi.|| NPC|Azuchi.||1}}
 {{ShipDisplay|6|Mogador|DD|Summer2|Diving for Desire|{{Gem}} 1680|1|DUAL|611}}
 {{ShipDisplay|6|Mogador|DD|Summer2Form2|Diving for Desire||1|DUAL}}
 {{ShipDisplay|4|Evertsen|DD|Casual|Guardian Fae of the Mangroves||1||518}}
 {{ShipDisplay|6|Valparaíso|BB||'''Construction'''}}
-{{ShipDisplay|5|Golden Hind|IXv|SpookyForm2|The Pale Phantom's Smile||1|DUAL|156}}
-{{ShipDisplay|5|Golden Hind|IXv|Spooky|The Pale Phantom's Smile|{{Gem}} 1680|1|DUAL|156}}
+{{ShipDisplay|5|Golden Hind|IXv|Spooky|The Pale Phantom's Smile||1|DUAL|156}}
+{{ShipDisplay|5|Golden Hind|IXv|SpookyForm2|The Pale Phantom's Smile|{{Gem}} 1680|1|DUAL|156}}
 {{ShipDisplay|5|Ganj-i-Sawai|IXm|Hospital|My Innermost Self|{{Gem}} 1200|1|L2D|670}}
 {{ShipDisplay|5|Bristol META|DD||'''Construction'''}}
 {{ShipDisplay|4|Soobrazitelny META|DD||'''Construction'''}}
