@@ -141,7 +141,7 @@ for obj in assetbundles.objects:
         if obj.type.name in ['Texture2D', 'Sprite']:
             try:
                 asset.image.save('{}.png'.format(outpath))
-                if parent.name == 'activitybanner':
+                if parent.name in ['activitybanner', 'mainuibanner']:
                     asset.image.convert('RGB').save('{}.jpg'.format(outpath))
             except PermissionError:
                 print('PermissionError for asset.image: \'{}\''.format(assetfile))

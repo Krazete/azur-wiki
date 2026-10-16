@@ -109,7 +109,7 @@
 {{ShipDisplay|5|Ingraham|DD|Bunny|Fixin' for a Mixin'|{{Gem}} 880|1||145}}
 {{ShipDisplay|5|Bristol|DD||'''Construction'''}}
 {{ShipDisplay|5|Bristol|DD|Spring|Tales from the Empery|{{Gem}} 900|||144}}
-{{ShipDisplay|5|Bristol|DD|Halloween|"Head" Investigator|{{Gem}} 880|1||174}}
+{{ShipDisplay|5|Bristol|DD|Halloween|"Head" Investigator|{{Gem}} 880|||174}}
 {{ShipDisplay|4|Hammann II|DD||'''Construction'''}}
 {{ShipDisplay|4|Hammann II|DD|Summer|Another Rebellious Summer|{{Gem}} 780|||106}}
 {{ShipDisplay|4|Hammann II|DD|Maid|Hammann's Scrumptious Spells||1||185}}
@@ -966,7 +966,7 @@
 {{ShipDisplay|4|Niizuki|DD||'''Construction'''}}
 {{ShipDisplay|4|Harutsuki|DD||'''Construction'''}}
 {{ShipDisplay|4|Harutsuki|DD|New Year|A Dance for the Coming Spring||1||126}}
-{{ShipDisplay|4|Harutsuki|DD|RPG|Little Steamy Sprite|{{Gem}} 780|1||172}}
+{{ShipDisplay|4|Harutsuki|DD|RPG|Little Steamy Sprite|{{Gem}} 780|||172}}
 {{ShipDisplay|4|Yoizuki|DD||'''Construction'''}}
 {{ShipDisplay|4|Yoizuki|DD|Sport|Sports Festival Preparations|{{Gem}} 780|||112}}
 {{ShipDisplay|4|Yoizuki|DD|Spring|Firecrackers and Steamed Buns|{{Gem}} 800|||144}}
@@ -1130,7 +1130,7 @@
 {{ShipDisplay|5|Atago|CA|New Year|Hallmarks of Winter|{{Gem}} 780|||101}}
 {{ShipDisplay|5|Atago|CA|School|School Traumerei|{{Gem}} 880|||103}}
 {{ShipDisplay|5|Atago|CA|RaceQueen|Stunning Speedster|{{Gem}} 900|||132}}
-{{ShipDisplay|5|Atago|CA|Halloween|Full Moon's Feral Wolf|{{Gem}} 980|1|DYN|174}}
+{{ShipDisplay|5|Atago|CA|Halloween|Full Moon's Feral Wolf|{{Gem}} 980||DYN|174}}
 {{ShipDisplay|5|Atago|CA|Wedding|Lily-White Vow||1}}
 {{ShipDisplay|5|Maya|CA||'''Construction'''}}
 {{ShipDisplay|5|Maya|CA|Special Exercise|Hunter of the Heart|{{Gem}} 880|1||154}}
@@ -1219,7 +1219,7 @@
 {{ShipDisplay|5|Kii|BB|Summer|Poolside Persuasion|{{Gem}} 880|||133}}
 {{ShipDisplay|5|Owari|BB||'''Construction'''}}
 {{ShipDisplay|5|Owari|BB|Summer|Shimmering Forsythia|{{Gem}} 980||DYN|133}}
-{{ShipDisplay|5|Owari|BB|Halloween|My Wish is For Love|{{Gem}} 1180|1|L2D|156}}
+{{ShipDisplay|5|Owari|BB|Halloween|My Wish is For Love|{{Gem}} 1180||L2D|156}}
 {{ShipDisplay|5|Suruga|BB||'''Construction'''}}
 {{ShipDisplay|5|Suruga|BB|New Year|Hundred Flowers' Auspice|{{Gem}} 1180|||126}}
 {{ShipDisplay|5|Suruga|BB|School|Straightfaced Model Student|{{Gem}} 880|1||103}}
@@ -1355,7 +1355,7 @@
 {{ShipDisplay|5|Ibuki|CA|Summer|Traces of Summery Love|{{Gem}} 980|1|DYN|164}}
 {{ShipDisplay|5|Izumo|DD||'''Construction'''}}
 {{ShipDisplay|5|Izumo|DD|New Year|Izumo's Thousand Cherry Trees|{{Gem}} 880|||101}}
-{{ShipDisplay|5|Izumo|DD|RPG|Tail-Stirred Cocktail|{{Gem}} 980|1|DYN|156}}
+{{ShipDisplay|5|Izumo|DD|RPG|Tail-Stirred Cocktail|{{Gem}} 980||DYN|156}}
 {{ShipDisplay|5|Kitakaze|DD||'''Construction'''}}
 {{ShipDisplay|5|Kitakaze|DD|Festival|Celebration Conquest!|{{Gem}} 880|1||114}}
 {{ShipDisplay|5|Kitakaze|DD|Travel|Night of Doves and Magic||1||159}}
@@ -1933,7 +1933,7 @@
 {{ShipDisplay|5|Volga|CV|Special Exercise|An Irresistible AR Adventure|{{Gem}} 880|||154}}
 {{ShipDisplay|6|Kronshtadt|CB||'''Construction'''}}
 {{ShipDisplay|6|Kronshtadt|CB|Special Exercise|Begin the Rush!|{{Gem}} 1180|||154}}
-{{ShipDisplay|6|Kronshtadt|CB|RPG|Animal Agent|{{Gem}} 900|1|DYN}}
+{{ShipDisplay|6|Kronshtadt|CB|RPG|Animal Agent|{{Gem}} 900||DYN}}
 {{ShipDisplay|5|Chkalov|CV||'''Construction'''}}
 {{ShipDisplay|5|Chkalov|CV|Summer|Seaside Sunset|{{Gem}} 880|||164}}
 {{ShipDisplay|6|Admiral Nakhimov|CV||'''Construction'''}}
@@ -2453,25 +2453,25 @@
 {{ShipDisplay|4|Adventure Galley|IXv||'''Construction'''}}
 {{ShipDisplay|4|Adventure Galley|IXv|Halloween|Carnival Under the Blood Moon|{{Gem}} 780|||174}}
 {{ShipDisplay|5|Ganj-i-Sawai|IXm||'''Construction'''}}
-{{ShipDisplay|5|Ganj-i-Sawai|IXm|Halloween|Mermaid in Distress|{{Gem}} 980|1|DYN|134}}
+{{ShipDisplay|5|Ganj-i-Sawai|IXm|Halloween|Mermaid in Distress|{{Gem}} 980||DYN|134}}
 {{ShipDisplay|5|Fancy|IXv||'''Construction'''}}
-{{ShipDisplay|5|Fancy|IXv|Halloween|Grave of Your Liking|{{Gem}} 880|1||177}}
+{{ShipDisplay|5|Fancy|IXv|Halloween|Grave of Your Liking|{{Gem}} 880|||177}}
 {{ShipDisplay|5|Amity|IXs||'''Construction'''}}
-{{ShipDisplay|5|Amity|IXs|Halloween|Friendly Franken|{{Gem}} 980|1|DYN|525}}
+{{ShipDisplay|5|Amity|IXs|Halloween|Friendly Franken|{{Gem}} 980||DYN|525}}
 {{ShipDisplay|4|Portsmouth Adventure|IXv||'''Construction'''}}
-{{ShipDisplay|4|Portsmouth Adventure|IXv|Halloween|Adventurous Surprise|{{Gem}} 780|1||174}}
+{{ShipDisplay|4|Portsmouth Adventure|IXv|Halloween|Adventurous Surprise|{{Gem}} 780|||174}}
 {{ShipDisplay|4|Dolphin|IXs||'''Construction'''}}
-{{ShipDisplay|4|Dolphin|IXs|Halloween|Incantation of Revival|{{Gem}} 780|1||177}}
+{{ShipDisplay|4|Dolphin|IXs|Halloween|Incantation of Revival|{{Gem}} 780|||177}}
 {{ShipDisplay|5|Queen Anne's Revenge|IXm||'''Construction'''}}
-{{ShipDisplay|5|Queen Anne's Revenge|IXm|RPG|Call of the Creeping Embrace|{{Gem}} 1180|1|L2D|525}}
+{{ShipDisplay|5|Queen Anne's Revenge|IXm|RPG|Call of the Creeping Embrace|{{Gem}} 1180||L2D|525}}
 {{ShipDisplay|5|Lyme|IXv||'''Construction'''}}
-{{ShipDisplay|5|Lyme|IXv|RPG|Corrupting Trap|{{Gem}} 980|1|DYN|194}}
+{{ShipDisplay|5|Lyme|IXv|RPG|Corrupting Trap|{{Gem}} 980||DYN|194}}
 {{ShipDisplay|5|Pearl|IXm||'''Construction'''}}
-{{ShipDisplay|5|Pearl|IXm|RPG|Fallen Angel in the Dark Castle|{{Gem}} 1260|1|L2D|156}}
+{{ShipDisplay|5|Pearl|IXm|RPG|Fallen Angel in the Dark Castle|{{Gem}} 1260||L2D|156}}
 {{ShipDisplay|4|Royal James|IXv||'''Construction'''}}
-{{ShipDisplay|4|Royal James|IXv|RPG|The Forbidden Slurp|{{Gem}} 780|1||162}}
+{{ShipDisplay|4|Royal James|IXv|RPG|The Forbidden Slurp|{{Gem}} 780|||162}}
 {{ShipDisplay|4|Adventure|IXs||'''Construction'''}}
-{{ShipDisplay|4|Adventure|IXs|RPG|Master of the Safe House|{{Gem}} 880|1|DYN|156}}
+{{ShipDisplay|4|Adventure|IXs|RPG|Master of the Safe House|{{Gem}} 880||DYN|156}}
 {{ShipDisplay|4|Hunter META|DD||'''Construction'''}}
 {{ShipDisplay|4|Fortune META|DD||'''Construction'''}}
 {{ShipDisplay|4|Hatakaze META|DD||'''Construction'''}}
@@ -2827,6 +2827,7 @@
 {{ShipDisplay||Azuchi.|| NPC|Azuchi.||1}}
 {{ShipDisplay|6|Mogador|DD|Summer2|Diving for Desire|{{Gem}} 1680|1|DUAL|611}}
 {{ShipDisplay|6|Mogador|DD|Summer2Form2|Diving for Desire||1|DUAL}}
+{{ShipDisplay|5|Algérie|CA|Maid|The Strict Maid Isn't So Strict||1||501}}
 {{ShipDisplay|4|Evertsen|DD|Casual|Guardian Fae of the Mangroves||1||518}}
 {{ShipDisplay|6|Valparaíso|BB||'''Construction'''}}
 {{ShipDisplay|5|Golden Hind|IXv|Spooky|The Pale Phantom's Smile||1|DUAL|156}}

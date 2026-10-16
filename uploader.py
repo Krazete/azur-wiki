@@ -73,6 +73,7 @@ patterns = {
     r'/iconframe/': '[[Category:Portrait frames]]',
     r'/levelmap/': '[[Category:Campaign]]',
     r'/loadingbg/': '[[Category:Loading Screens]]',
+    r'/mainuibanner/': '[[Category:Event banners]]',
     r'/mangapic/': '[[Category:Comics]]',
     r'/MEDALLION/': '[[Category:Medallions]]',
     r'/medalalbum/': '[[Category:Commemorative Album thumbnails]]',
