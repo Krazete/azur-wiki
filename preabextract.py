@@ -9,7 +9,7 @@ parser.add_argument('-s', '--skip', action='store_true', help='skip downloading 
 args = parser.parse_args()
 
 paintings = set()
-for root, dirs, files in os.walk(os.path.join('AssetBundles')):
+for root, dirs, files in os.walk('AssetBundles'):
     for file in files:
         if re.match(r'^AssetBundles[\\/]painting(?:face)?$', root):
             paint = re.sub(r'(_(rw|tex|hx|bj|n|shophx))+$', '', file)

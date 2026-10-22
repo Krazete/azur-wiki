@@ -304,10 +304,22 @@ def get_decoded_name(skin):
     name = re.sub(r'\s+', ' ', skin['name']) # only affects Reisalin Stout
     return name.strip()
 
+def export_namecode():
+    ncs = {}
+    for cid in book['code']:
+        if cid.isdigit():
+            nc = book['code'][cid]['name'].strip()
+            nc = re.sub(r'Grosse', 'Große', nc) # for Friedrich der Große
+            nc = re.sub(r'\s+', ' ', nc) # for Reisalin Stout
+            ncs[cid] = nc
+    with open('output/namecode.json', 'w', encoding='utf-8') as fp:
+        json.dump(ncs, fp, ensure_ascii=False, indent=4)
+
 def get_painting_lower(skin):
     return skin['painting'].lower()
 
 def build_skinnames():
+    datafile = []
     txtfile = ['{:>8s} {:>4s} {:>4s} {:>4s} {:32s} {}'.format('SkinID', 'Shop', 'BG', 'NPC', 'Painting', 'Filename / Title')]
     jsonfile = {}
     wikifile = []
@@ -428,14 +440,16 @@ def build_skinnames():
         listing = book['shop'].get(str(skin['shop_id']), {})
         price = listing.get('resource_num', 0)
 
-        txtfile.append('{:8d} {:4d} {:4d} {:4s} {:32s} {}'.format(
+        dataline = [
             int(skid),
             int(tyid),
             int(bg),
             'NPC' if npc else '',
             paint,
             wikiname # + ('' if wikiname == skinname else ' / {}'.format(skinname))
-        ))
+        ]
+        datafile.append(dataline)
+        txtfile.append('{:8d} {:4d} {:4d} {:4s} {:32s} {}'.format(*dataline))
         if paint in jsonfile:
             if jsonfile[paint][0]:
                 jsonfile[paint] = (npc, wikiname, slashname)
@@ -479,7 +493,9 @@ def build_skinnames():
                 '{}{}'.format(fixbase, fixtype),
                 '{}/{}'.format(fixbase, fixtype) if fixtype else fixbase
             )
-    with open('output/skinname.txt', 'w', encoding='utf-8') as fp:
+    with open('output/skindata.json', 'w', encoding='utf-8') as fp:
+        json.dump(datafile, fp, ensure_ascii=False, indent=4)
+    with open('output/skindata.txt', 'w', encoding='utf-8') as fp:
         fp.write('\n'.join(txtfile))
     with open('output/skinname.json', 'w', encoding='utf-8') as fp:
         json.dump({x: jsonfile[x][1] for x in jsonfile}, fp, ensure_ascii=False, indent=4)
@@ -511,6 +527,7 @@ def main(dl, lang='EN'):
         ])
     init_book(lang)
     build_skinnames()
+    export_namecode()
 
 if __name__ == '__main__':
     parser = ArgumentParser()

@@ -32,6 +32,12 @@ iconnames = {
 }
 
 regexsubs = {
+    # 'islandfurnitureicon': {
+    #     r'^furniture_(\d+)$': 'IslandFurnIcon \g<1>'
+    # },
+    'islandskillicon': {
+        r'^chara_all_skill_(\d+)$': 'IslandSkill \g<1>'
+    },
     'levelmap': {
         r'^map_(\d+)$': 'Chapter \g<1>'
     },

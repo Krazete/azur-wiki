@@ -7,7 +7,7 @@ EN
 JP
 input
 output/*
-!output/skinname.txt
+!output/skindata.txt
 !output/slashname.json
 !output/skintemplate.wiki
 versionlog.json
