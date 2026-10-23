@@ -2741,6 +2741,7 @@
   203140    0    0      sali                             Surrey
   203141   15  109      sali_2                           SurreyHospital
   204035    7  322      hude_6                           HoodParty2
+  205075   24  132      yuekegongjue_5                   Duke of YorkRPG
   205162   29  497      shi_3                            LionSpooky
   207122   14  326      bunao_3                          IndomitableRaceQueen
   231211   19  154      biaoqiang_10                     JavelinFairy Tale
@@ -2766,6 +2767,7 @@
   307162   29  142      baifeng_3                        HakuhouSpooky
   317030    0    0      i14                              I-14
   317031   29  142      i14_2                            I-14Spooky
+  399072   24  177      dashan_3                         DaisenRPG
   399080    0    0      gaoliang                         Takahashi
   401112   15  670      z11_3                            Z11Hospital
   401140    0    0      z14                              Z14
@@ -2826,14 +2828,28 @@
   900560    0    0 NPC  npcjinluhao_3                    Golden HindSpookyShadow NPC
   900561    0    0 NPC  npcguanghui_9                    Illustrious NPC
   900562    0    0 NPC  npcantu_2                        Azuchi. NPC
+  900563    0    0 NPC  changshehao_hei                  Ormrinn LangiShadow
+  900564    0    0 NPC  nichao_hei                       nichaoShadow
   901073    6  611      mojiaduoer_4                     MogadorSummer2
   901074    6    0      mojiaduoer_5                     MogadorSummer2Form2
   903023   17  501      aerjiliya_4                      AlgérieMaid
  1101012    9  518      aifosen_3                        EvertsenCasual
+ 1102012   24  156      qisheng_3                        De Zeven ProvinciënRPG
  1299010    0    0      waerpalaisuo                     Valparaíso
  9600032   29  156      jinluhao_3                       Golden HindSpooky
  9600033   29  156      jinluhao_4                       Golden HindSpookyForm2
  9600072   15  670      gangyishawa_3                    Ganj-i-SawaiHospital
+ 9600122   24  156      anninvwang_3                     Queen Anne's RevengeRPG2
+ 9600170    0    0      shuixinghao                      Merkuriy
+ 9600171   24  156      shuixinghao_2                    MerkuriyRPG
+ 9600180    0    0      tiejiaohao                       Járnbarðinn
+ 9600181   24  507      tiejiaohao_2                     JárnbarðinnRPG
+ 9600190    0    0      sailimiye                        Selimiye
+ 9600191   24  525      sailimiye_2                      SelimiyeRPG
+ 9600200    0    0      changshehao                      Ormrinn Langi
+ 9600201   24  450      changshehao_2                    Ormrinn LangiRPG
+ 9600210    0    0      leiyierbei                       Riyala Bey
+ 9600211   24  120      leiyierbei_2                     Riyala BeyRPG
  9701120    0    0      bulisituoer_alter                Bristol META
  9701130    0    0      lingmin_alter                    Soobrazitelny META
  9702120    0    0      kenisibao_alter                  Königsberg META

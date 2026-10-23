@@ -488,6 +488,7 @@ bgnames = {
     'logo_rotwolf': 'Rotwolf',
     'yichangderichangjinxingzhong': 'A Slightly Paranormal State of Affairs',
     'youyingmicheng': 'Tales of the Paranormal',
+    'wuaihuilang': 'Tempesta and the Corridor of Fog',
     # Project Identity
     'project_tb': 'Project Identity TB',
     'project_oceana': 'Project Identity Oceana',

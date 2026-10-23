@@ -66,6 +66,7 @@ ignored = [ # only directories of depth 1-2
     'char', # chibi spine models
     'chargo',
     'clutter',
+    'coreactivityuitable', # menu text graphics
     'cue', # voice audio
     'dorm3d', # 3d models
     'effect',

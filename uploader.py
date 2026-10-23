@@ -64,6 +64,9 @@ patterns = {
     r'/bg/Memory .+ CG \d+\.png': '[[Category:Memory artwork]]',
     r'/collectionfileillustration/': '[[Category:Collection Archives images]]',
     r'/combatuistyle/': '[[Category:Battle UI previews]]',
+    r'/commanderhrz/': '[[Category:Meowfficer images]]',
+    r'/commandericon/': '[[Category:Meowfficer images]]',
+    r'/commanderpainting/': '[[Category:Meowfficer images]]',
     r'/commanderskillicon/': '[[Category:Meowfficer skill icons]]',
     # r'/crusingwindow/': '[[Category:Event banners]]', # discontinued after Season 23
     r'/emoji': '[[Category:Chat stickers]]',

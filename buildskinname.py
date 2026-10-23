@@ -272,6 +272,8 @@ fixes = {
     'suweiaitongmeng_dark': {'base': 'Sovetsky Soyuz', 'type': 'Shadow'},
     'tashigan_dark': {'base': 'Tashkent', 'type': 'Shadow'},
     'weiyan_dark': {'base': 'Grozny', 'type': 'Shadow'},
+    'changshehao_hei': {'base': 'Ormrinn Langi'},
+    'nichao_hei': {'base': 'nichao'}, # ??????
 }
 
 book = {}

@@ -2458,8 +2458,8 @@
 {{ShipDisplay|5|Fancy|IXv|Halloween|Grave of Your Liking|{{Gem}} 880|||177}}
 {{ShipDisplay|5|Amity|IXs||'''Construction'''}}
 {{ShipDisplay|5|Amity|IXs|Halloween|Friendly Franken|{{Gem}} 980||DYN|525}}
-{{ShipDisplay|4|Portsmouth Adventure|IXv||'''Construction'''}}
-{{ShipDisplay|4|Portsmouth Adventure|IXv|Halloween|Adventurous Surprise|{{Gem}} 780|||174}}
+{{ShipDisplay|5|Portsmouth Adventure|IXv||'''Construction'''}}
+{{ShipDisplay|5|Portsmouth Adventure|IXv|Halloween|Adventurous Surprise|{{Gem}} 780|||174}}
 {{ShipDisplay|4|Dolphin|IXs||'''Construction'''}}
 {{ShipDisplay|4|Dolphin|IXs|Halloween|Incantation of Revival|{{Gem}} 780|||177}}
 {{ShipDisplay|5|Queen Anne's Revenge|IXm||'''Construction'''}}
@@ -2740,6 +2740,7 @@
 {{ShipDisplay|5|Surrey|CA||'''Construction'''}}
 {{ShipDisplay|5|Surrey|CA|Hospital|Feverish and Disheveled|{{Gem}} 880|1||109}}
 {{ShipDisplay|5|Hood|BC|Party2|Elegance Meant for One|{{Gem}} 980|1|DYN|322}}
+{{ShipDisplay|5|Duke of York|BB|RPG|Femme Fatale's Bewitching Veil|{{Gem}} 1050|1|DYN|132}}
 {{ShipDisplay|6|Lion|BB|Spooky|Alleyway Temptress|{{Gem}} 1260|1|L2D|497}}
 {{ShipDisplay|5|Indomitable|CV|RaceQueen|The Laid-Back Navigator|{{Gem}} 1260|1|L2D|326}}
 {{ShipDisplay|4|Javelin|DD|Fairy Tale|PINKLOVE★Heart Lancer|{{Gem}} 780|1||154}}
@@ -2765,6 +2766,7 @@
 {{ShipDisplay|6|Hakuhou|CV|Spooky|Sunshower Fox Bride|{{Gem}} 1260|1|L2D|142}}
 {{ShipDisplay|5|I-14|SSV||'''Construction'''}}
 {{ShipDisplay|5|I-14|SSV|Spooky|Thousand-Faced Nothingness|{{Gem}} 980|1|DYN|142}}
+{{ShipDisplay|5|Daisen|BB|RPG|Angel in the Devil's Mirror?|{{Gem}} 880|1||177}}
 {{ShipDisplay|5|Takahashi|CL||'''Construction'''}}
 {{ShipDisplay|4|Z11|DD|Hospital|Cheer Up, Ms. Nurse!|{{Gem}} 800|1||670}}
 {{ShipDisplay|4|Z14|DD||'''Construction'''}}
@@ -2825,14 +2827,28 @@
 {{ShipDisplay||Golden Hind||SpookyShadow NPC|？？？||1}}
 {{ShipDisplay||Illustrious|| NPC|Illustrious||1}}
 {{ShipDisplay||Azuchi.|| NPC|Azuchi.||1}}
+{{ShipDisplay||Ormrinn Langi||Shadow|？？？||1}}
+{{ShipDisplay||nichao||Shadow|？？？||1}}
 {{ShipDisplay|6|Mogador|DD|Summer2|Diving for Desire|{{Gem}} 1680|1|DUAL|611}}
 {{ShipDisplay|6|Mogador|DD|Summer2Form2|Diving for Desire||1|DUAL}}
 {{ShipDisplay|5|Algérie|CA|Maid|The Strict Maid Isn't So Strict||1||501}}
 {{ShipDisplay|4|Evertsen|DD|Casual|Guardian Fae of the Mangroves||1||518}}
+{{ShipDisplay|5|De Zeven Provinciën|CL|RPG|Archangel of Wings Impure|{{Gem}} 1030|1|L2D|156}}
 {{ShipDisplay|6|Valparaíso|BB||'''Construction'''}}
 {{ShipDisplay|5|Golden Hind|IXv|Spooky|The Pale Phantom's Smile||1|DUAL|156}}
 {{ShipDisplay|5|Golden Hind|IXv|SpookyForm2|The Pale Phantom's Smile|{{Gem}} 1680|1|DUAL|156}}
 {{ShipDisplay|5|Ganj-i-Sawai|IXm|Hospital|My Innermost Self|{{Gem}} 1200|1|L2D|670}}
+{{ShipDisplay|5|Queen Anne's Revenge|IXm|RPG2|Seductive Wings of Dark Depravity|{{Gem}} 980|1|L2D|156}}
+{{ShipDisplay|5|Merkuriy|IXv||'''Construction'''}}
+{{ShipDisplay|5|Merkuriy|IXv|RPG|Envoy Angel of Love|{{Gem}} 1260|1|L2D|156}}
+{{ShipDisplay|5|Járnbarðinn|IXs||'''Construction'''}}
+{{ShipDisplay|5|Járnbarðinn|IXs|RPG|Fallen Angel Astray|{{Gem}} 980|1|DYN|507}}
+{{ShipDisplay|5|Selimiye|IXm||'''Construction'''}}
+{{ShipDisplay|5|Selimiye|IXm|RPG|Seer in a Bind|{{Gem}} 1260|1|L2D|525}}
+{{ShipDisplay|4|Ormrinn Langi|IXv||'''Construction'''}}
+{{ShipDisplay|4|Ormrinn Langi|IXv|RPG|Pure-White Predator|{{Gem}} 780|1||450}}
+{{ShipDisplay|4|Riyala Bey|IXm||'''Construction'''}}
+{{ShipDisplay|4|Riyala Bey|IXm|RPG|Angelic Idol☆in Training|{{Gem}} 800|1||120}}
 {{ShipDisplay|5|Bristol META|DD||'''Construction'''}}
 {{ShipDisplay|4|Soobrazitelny META|DD||'''Construction'''}}
 {{ShipDisplay|4|Königsberg META|CL||'''Construction'''}}
