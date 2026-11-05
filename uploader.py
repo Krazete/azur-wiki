@@ -93,6 +93,7 @@ patterns = {
     r'/equips/\d+\.png': '[[Category:EQUIPMENTTYPE]]',
     r'/gamehallicon/': '[[Category:Arcade banners]]',
     r'/iconframe/': '[[Category:Portrait frames]]',
+    r'/islandskillicon/': '[[Category:Island Planner icons]]',
     r'/levelmap/': '[[Category:Campaign]]',
     r'/loadingbg/': '[[Category:Loading Screens]]',
     r'/mainuibanner/': '[[Category:Event banners]]',

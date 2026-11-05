@@ -73,6 +73,8 @@ def main():
         if not chid.isdigit():
             continue
         char = book['char'][chid]
+        if char['skill_id'] in [1031, 1033]: # for Royal Fortune and Ognevoy; same skill, but descriptions are different
+            char['skill_id'] = 1031
         if char['skill_id'] in sects:
             sects[char['skill_id']][-1] += format_charname(char['name'])
             continue
@@ -89,6 +91,8 @@ def main():
                 ))
                 sect.append(skill['name'])
                 desc = skill['desc']
+                if char['skill_id'] in [1031, 1033]: # for Royal Fortune and Ognevoy; match descriptions by replacing proper noun with pronoun
+                    desc = re.sub(r'(Ognevoy|Royal Fortune)', 'her', skill['desc'])
                 for i, da in enumerate(skill['desc_add']):
                     desc = re.sub(
                         '(\${}%)'.format(i + 1),
