@@ -20,19 +20,23 @@ def signin(): # use https://azurlane.koumakan.jp/wiki/Special:BotPasswords
         alw.login(username, password)
     return alw
 
+def getresult(response, pageid):
+    result = response.get('result', 'Unknown')
+    if result == 'Unknown':
+        result = response.get('upload', {}).get('result', 'Unknown')
+    print('{}: {}'.format(result, pageid))
+    if result != 'Success':
+        print(response)
+    return result
+
 def uploadimage(path, content='', summary='', ignore=False):
     with open(path, 'rb') as fp:
         pathsplit = path.split('/')
         response = alw.upload(fp, pathsplit[-1], content, ignore=ignore, comment=summary)
-        result = response.get('result', 'Unknown')
-        if result == 'Unknown':
-            result = response.get('upload', {}).get('result', 'Unknown')
-        print('{}: {}'.format(result, pathsplit[-1]))
+        result = getresult(response, pathsplit[-1])
         if result == 'Success':
             os.makedirs('Texture2D/_UPLOADED_/{}'.format('/'.join(pathsplit[1:-1])), exist_ok=True)
             shutil.move(path, 'Texture2D/_UPLOADED_/{}'.format('/'.join(pathsplit[1:])))
-        else:
-            print(response)
     sleep(0.5)
 
 def updateimage(path, summary='update'):
@@ -45,6 +49,21 @@ def cleanup():
             files.remove('.DS_Store')
         if len(dirs) + len(files) <= 0:
             os.rmdir(root)
+
+def movepage(name, newname, reason=''):
+    page = alw.pages.get(name)
+    response = page.move(newname, reason)
+    getresult(response, newname)
+    sleep(1)
+    response2 = page.append('{{delete}}')
+    getresult(response2, name)
+    sleep(1)
+
+def editpage(name, content, summary=''):
+    page = alw.pages.get(name)
+    response = page.edit(content, summary, True)
+    getresult(response, name)
+    sleep(5)
 
 ships = []
 for paintingname in shipnames: # base names only
