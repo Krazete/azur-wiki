@@ -46,6 +46,8 @@ def init_book():
 def get_groupid(title, i=0):
     '''Get memory group id by title or title fragment.'''
     for gid in book['group']['EN']:
+        if not gid.isdigit():
+            continue
         if title in book['group']['EN'][gid]['title']:
             if i < 1:
                 return gid
@@ -264,13 +266,22 @@ def build_memory(gid):
         ]
         for i, mid in enumerate(group['memories']):
             memory = book['memory'][lang][str(mid)]
-            lines += [
+            linestart = [
                 'Chapter {}='.format(i + 1),
                 '{{Story',
-                '| Title = {}'.format(memory['title'].strip()),
+                '| Title = {}'.format(denamecode(memory['title'], lang).strip()),
                 '| Unlock = {}'.format(denamecode(memory['condition'], lang).strip()),
                 '| Language = {}'.format(lang)
             ]
+            if str(gid) == "98": # Fate Simulation
+                linestart[0] = '{}='.format( # get actor in first script
+                    denamecode(
+                        getwikiname(
+                            book['story'][lang][memory['story'].lower()]['scripts'][0].get('actor'),
+                            lang
+                        ), lang)
+                    )
+            lines += linestart
             sid = memory['story']
             if sid.lower() in book['story'][lang]:
                 story = book['story'][lang][sid.lower()]
@@ -498,6 +509,7 @@ bgnames = {
     'main_twilight': 'MainTwilightBG',
     'main_night': 'MainNightBG',
     'story_mikasa': 'Bg mikasa 1',
+    'story_room': 'Room',
     '': '',
 }
 
