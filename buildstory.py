@@ -96,8 +96,11 @@ def parse_scripts(scripts, lang, defaultTb):
     mismatches = set()
     for script in scripts:
         if isinstance(script, str):
-            print('Not a script:', script)
-            continue
+            if script in scripts and isinstance(scripts[script], dict):
+                script = scripts[script] # might be a simple indexed dict instead of a list
+            else:
+                print('Not a script:', script)
+                continue
         skinid = script.get('actor')
         if skinid and skinid < 0: # specifically, -2
             skinid = defaultTb
@@ -273,14 +276,14 @@ def build_memory(gid):
                 '| Unlock = {}'.format(denamecode(memory['condition'], lang).strip()),
                 '| Language = {}'.format(lang)
             ]
-            if str(gid) == "98": # Fate Simulation
-                linestart[0] = '{}='.format( # get actor in first script
-                    denamecode(
-                        getwikiname(
-                            book['story'][lang][memory['story'].lower()]['scripts'][0].get('actor'),
-                            lang
-                        ), lang)
-                    )
+            if int(gid) == 98: # Fate Simulation
+                linestart[0] = '{}='.format(denamecode(getwikiname(
+                    book['story'][lang][memory['story'].lower()]['scripts'][0].get('actor'), # get actor in 1st script
+                    lang
+                ), lang))
+            if int(gid) == 166: # Hall of Fame
+                actor = memory['ship_group'] # only hall of fame stories use this parameter
+                linestart[0] = '{}='.format(denamecode(getwikiname('{}0'.format(actor), 'EN'), 'EN'))
             lines += linestart
             sid = memory['story']
             if sid.lower() in book['story'][lang]:
@@ -370,7 +373,8 @@ memory_type = {
         2: 'Special',
         3: 'Permanent'
     },
-    3: {0: 'Character'}
+    3: {0: 'Character'},
+    4: {0: 'Character'} # Hall of Fame
 }
 
 bgnames = {
@@ -510,6 +514,8 @@ bgnames = {
     'main_night': 'MainNightBG',
     'story_mikasa': 'Bg mikasa 1',
     'story_room': 'Room',
+    'story_nepu1': 'Visitors From Another Dimension Background 1',
+    'story_nepu2': 'Visitors From Another Dimension Background 2',
     '': '',
 }
 
