@@ -105,6 +105,10 @@ fixes = {
     'z20': {'base': 'Z20'},
     'z21': {'base': 'Z21'},
     'npclingmin_alter': {'base': 'Soobrazitelny META'},
+    'lilisha': {'base': 'Liliel Angel ParatroopersRirisa'}, # removed the `/`
+    'lilisha_2': {'base': 'Liliel Angel ParatroopersRirisa'}, # removed the `/`
+    'jumeihuali': {'base': 'Miriella Angel ParatroopersMikari'}, # removed the `/`
+    'jumeihuali_2': {'base': 'Miriella Angel ParatroopersMikari'}, # removed the `/`
     # type only
     'gin_2': {'type': 'Event'},
     'kin_2': {'type': 'Event'},
@@ -194,6 +198,8 @@ fixes = {
     'npcyunxian_3': {'type': 28}, # Unzen
     'adiliao_3': {'type': 7}, # Attilio Regolo
     'biaoqiang_4': {'type': 'CoCo'}, # Javelin
+    'jinluhao_3': {'type': 'Spooky'}, # swapped; currently Form2 in game
+    'jinluhao_4': {'type': 'SpookyForm2'}, # swapped; currently Form1 in game
     # base and type
     'linghangyuan1_1': {'base': 'TB', 'type': 'Baby'},
     'linghangyuan1_2': {'base': 'TB', 'type': 'BabyCasual'},
@@ -254,8 +260,6 @@ fixes = {
     'congmang_2_hei': {'base': 'Hasty', 'type': 'SpookyShadow'},
     'npcshi_3': {'base': 'Lion', 'type': 'SpookyShadow'},
     'npcjinluhao_3': {'base': 'Golden Hind', 'type': 'SpookyShadow'}, # swapped; currently Form2 in game
-    'jinluhao_3': {'type': 'Spooky'}, # swapped; currently Form2 in game
-    'jinluhao_4': {'type': 'SpookyForm2'}, # swapped; currently Form1 in game
     # shadows
     'qiye_dark': {'base': 'Enterprise META'}, # not shadow
     'qiye_dark_shadow': {'base': 'Enterprise META'},

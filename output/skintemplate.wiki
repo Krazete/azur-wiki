@@ -2860,3 +2860,7 @@
 {{ShipDisplay|5|A2|CA|Party|fruit of tempt[A]tion|{{Gem}} 1000|1|DYN|450}}
 {{ShipDisplay|5|2B|CL||'''Construction'''}}
 {{ShipDisplay|5|2B|CL|Party|[B]rief respite|{{Gem}} 1000|1|DYN|450}}
+{{ShipDisplay|5|Liliel Angel ParatroopersRirisa|CVL||'''Construction'''}}
+{{ShipDisplay|5|Liliel Angel ParatroopersRirisa|CVL|Casual|Both in Heart and Mind|{{Gem}} 1000|1|DYN|196}}
+{{ShipDisplay|5|Miriella Angel ParatroopersMikari|CL||'''Construction'''}}
+{{ShipDisplay|5|Miriella Angel ParatroopersMikari|CL|Casual|For My Lucky Star|{{Gem}} 1000|1|DYN|196}}

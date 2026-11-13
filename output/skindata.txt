@@ -2861,3 +2861,7 @@
 11700011    7  450      a2_2                             A2Party
 11700020    0    0      2b                               2B
 11700021    7  450      2b_2                             2BParty
+11800010    0    0      lilisha                          Liliel Angel ParatroopersRirisa
+11800011    9  196      lilisha_2                        Liliel Angel ParatroopersRirisaCasual
+11800020    0    0      jumeihuali                       Miriella Angel ParatroopersMikari
+11800021    9  196      jumeihuali_2                     Miriella Angel ParatroopersMikariCasual

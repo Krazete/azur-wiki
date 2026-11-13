@@ -74,7 +74,7 @@ def getwikiname(skinid, lang):
     ]:
         paint = re.sub(r'^npc|_(wjz|idolns|s|n)$', '', paint) # force standard sprite; may fail if nonexistent (e.g. new unreleased skin in Port Fashion Collection preview)
     if lang == 'EN':
-        return wikinames.get(paint, '')
+        return re.sub(r'(Angel Paratroopers)', '\g<1>&sol;', wikinames.get(paint, '')) # fix the `/` for 2.5D collab ships
     sgid = skin.get('ship_group')
     stid = skin.get('shop_type_id')
     if not stid:
@@ -504,6 +504,7 @@ bgnames = {
     'yichangderichangjinxingzhong': 'A Slightly Paranormal State of Affairs',
     'youyingmicheng': 'Tales of the Paranormal',
     'wuaihuilang': 'Tempesta and the Corridor of Fog',
+    '2.5ds': 'It\'s Showtime! Angels\' Azur Stage - Club Exhibition',
     # Project Identity
     'project_tb': 'Project Identity TB',
     'project_oceana': 'Project Identity Oceana',
