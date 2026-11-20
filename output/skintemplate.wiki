@@ -2716,6 +2716,7 @@
 {{ShipDisplay|5|Vicksburg|CL|RaceQueen|Dazzling Diva of the Raceway|{{Gem}} 1100|1|DUAL|326}}
 {{ShipDisplay|5|Vicksburg|CL|RaceQueenForm2|Dazzling Diva of the Raceway||1|DUAL|326}}
 {{ShipDisplay|4|Quincy|CA|Travel|Extracurricular Tutoring||1||519}}
+{{ShipDisplay|5|New Orleans|CA|Hospital|Intimate Midnight Shift|{{Gem}} 1030|1|DYN|138}}
 {{ShipDisplay|5|Bennington|CV||'''Construction'''}}
 {{ShipDisplay|5|Bennington|CV|Summer|Sunshine Chaser|{{Gem}} 1260|1|L2D|118}}
 {{ShipDisplay|4|Independence|CVL|Summer|Aching for Relaxation|{{Gem}} 780|1||164}}
@@ -2796,11 +2797,13 @@
 {{ShipDisplay|6|Raffaello|BB|Theme Park|Magical Combo Masterpiece|{{Gem}} 980|1|DYN|665}}
 {{ShipDisplay|5|Leonardo da Vinci|SS|Theme Park|Swinging Inventor Girl|{{Gem}} 880|1||665}}
 {{ShipDisplay|5|Marco Polo|BB|Theme Park|Ambitious Showcase|{{Gem}} 980|1|DYN|665}}
+{{ShipDisplay|6|Napoli|CA|Hospital|Lost White Bird|{{Gem}} 1180|1|L2D|138}}
 {{ShipDisplay|4|L'Intrépide|DD||'''Construction'''}}
 {{ShipDisplay|4|L'Intrépide|DD|Theme Park|Blazing Dash!|{{Gem}} 900|1|DYN|159}}
 {{ShipDisplay|4|Émile Bertin|CL|Fairy Tale|Éclat Magique||1||159}}
 {{ShipDisplay|5|Arromanches|CVL||'''Construction'''}}
 {{ShipDisplay|5|Arromanches|CVL|Theme Park|Acrobatic Archery|{{Gem}} 1050|1|DYN|159}}
+{{ShipDisplay|5|Painlevé|CV|Hospital|Angel in White Beneath Clear Skies|{{Gem}} 980|1|L2D|605}}
 {{ShipDisplay|5|Cherbourg|CB||'''Construction'''}}
 {{ShipDisplay|5|Cherbourg|CB|Theme Park|What's Inside the Bear|{{Gem}} 1280|1|L2D|159}}
 {{ShipDisplay|5|Saint Louis|CA|Summer|Holiness to Haziness|{{Gem}} 1180|1|L2D|145}}

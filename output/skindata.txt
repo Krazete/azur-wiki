@@ -2717,6 +2717,7 @@
   102361   14  326      weikesibao_2                     VicksburgRaceQueen
   102362   14  326      weikesibao_3                     VicksburgRaceQueenForm2
   103092    4  519      kunxi_4                          QuincyTravel
+  103122   15  138      xinaoerliang_3                   New OrleansHospital
   107200    0    0      benningdun                       Bennington
   107201    6  118      benningdun_2                     BenningtonSummer
   107225    6  164      duli_7                           IndependenceSummer
@@ -2797,11 +2798,13 @@
   605082   26  665      lafeier_3                        RaffaelloTheme Park
   608022   26  665      dafenqi_3                        Leonardo da VinciTheme Park
   699012   26  665      makeboluo_3                      Marco PoloTheme Park
+  699022   15  138      nabulesi_3                       NapoliHospital
   801060    0    0      wuju                             L'Intrépide
   801061   26  159      wuju_2                           L'IntrépideTheme Park
   802014   19  159      aimierbeierding_5                Émile BertinFairy Tale
   806020    0    0      aluomangshi                      Arromanches
   806021   26  159      aluomangshi_2                    ArromanchesTheme Park
+  807023   15  605      banerwei_4                       PainlevéHospital
   818010    0    0      sebao                            Cherbourg
   818011   26  159      sebao_2                          CherbourgTheme Park
   899013    6  145      luyijiushi_4                     Saint LouisSummer

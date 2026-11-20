@@ -97,6 +97,7 @@ ignored = [ # only directories of depth 1-2
     'sfurniture',
     'shipdesignicon',
     'shopbanner',
+    'shopbanner_text',
     'shoppainting',
     'spineitem',
     'spinepainting',
@@ -147,9 +148,10 @@ for obj in assetbundles.objects:
         os.makedirs(parent, exist_ok=True)
         if obj.type.name in ['Texture2D', 'Sprite']:
             try:
-                asset.image.save('{}.png'.format(outpath))
                 if parent.name in ['activitybanner', 'mainuibanner']:
                     asset.image.convert('RGB').save('{}.jpg'.format(outpath))
+                else:
+                    asset.image.save('{}.png'.format(outpath))
             except PermissionError:
                 print('PermissionError for asset.image: \'{}\''.format(assetfile))
                 continue
